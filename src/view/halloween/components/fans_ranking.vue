@@ -131,7 +131,7 @@
                     // }else if(token_!='(null)' && token_!='') {
                     //     http.defaults.headers.common['Authorization'] = 'Token ' + token_;
                     // }
-                    http.get('/ranking/idolActAllByFans',{
+                    http.get('/ranking/idolActVideoByFans',{
                         params: {
                             activityId: getParams('activityId'),
                             idolId: self.$route.query.idolId
