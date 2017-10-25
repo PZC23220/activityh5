@@ -198,22 +198,22 @@
             var self = this;
             if(self.isFans) {
                 if(location.hostname == 'h5.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `http://share.groupy.vip/html/activity_halloween/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `http://share.groupy.cn/html/activity_halloween/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }
-                var title = `Groupyと【可楽生活】のコラボ企画`;
-                var description = `大人気雑誌に登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
-                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/banner-coke.jpg`;
+                var title = `Groupyハロウィン動画コンテスト`;
+                var description = `起動画面・イベントバナーに登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
+                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween.jpg`;
             }else {
                 if(location.hostname == 'h5.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.vip/html/activity_halloween/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.cn/html/activity_halloween/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var title = `Groupyと【可楽生活】のコラボ企画`;
-                var description = `上位1が大人気雑誌に登場？！動画がいっぱい投稿されているので、応援しよう^人^）`;
-                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/banner-coke.jpg`;
+                var title = `Groupyハロウィン動画コンテスト`;
+                var description = `ファンランキング上位3名はハロウィンギフトと推しメンの直筆メッセージカードが貰える！今すぐ応援してGETしよう`;
+                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween.jpg`;
             }
             console.log(shareURL)
             window.setupWebViewJavascriptBridge(function(bridge) {
