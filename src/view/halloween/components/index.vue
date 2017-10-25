@@ -58,6 +58,14 @@
                 <p v-html="activity.fansrule.p2"></p>
                 <p v-html="activity.fansrule.p3"></p>
             </div>
+            <div class="activity_rule">
+                <h4>{{activity.warning.title}}</h4>
+                <p v-html="activity.warning.p1"></p>
+                <p v-html="activity.warning.p2"></p>
+                <p v-html="activity.warning.p3"></p>
+                <p v-html="activity.warning.p4"></p>
+                <p v-html="activity.warning.p5"></p>
+            </div>
             <div class="activity_ranking" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
                 <p class="no_ranking" v-if="ranking.length<0 && loadingShow">{{activity.noRanking}}</p>
@@ -161,7 +169,7 @@
                     all: '全体ランキング',
                     more: 'もっと見る',
                     rule: {
-                        title: '応募方法',
+                        title: '参加方法：',
                         p1: '1. イベント期間中、<i>「#ハロウィン」</i>タグをつけて投稿します。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。'
                     },
@@ -174,6 +182,14 @@
                         p1: '1. 全ての参加動画のLike数（ハート）の合計によってランキングが決まります。',
                         p2: '2. ランキングはイベント詳細ページにリアルタイムで確認できます。',
                         p3: '3.イベント期間外は、<i>「＃ハロウィン」</i>をつけて投稿しても集計されません。'
+                    },
+                    warning: {
+                        title: '注意事項：',
+                        p1: '1. 最終結果は最終日以降にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
+                        p2: '2. 当選アイドルは直筆メッセージカードと起動画面掲載用写真を11/10までにご提出いただきます。',
+                        p3: '3.プレゼントの権利を獲得されたファンは、11/10までにprize@groupy.cn、または公式Twitter@GGroupyyyのDMにてご連絡ください。',
+                        p4: '3.ファン向けのプレゼントは準備が出来次第、Groupy運営からお届け致します。受け取りに、費用は一切かかりません。',
+                        p5: '3.プレゼントの権利は当選者本人のものとし、第三者へ譲渡・転売することはできません。'
                     },
                     rewards: [{
                         p1: 'ファンランキング上位3名に「ハロウィン限定ギフト」と「推しメンの直筆メッセージカード」をプレゼントします。',
