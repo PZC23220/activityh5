@@ -2,11 +2,11 @@
   "js": {
     "min": {
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     }
   },
   "css": {
