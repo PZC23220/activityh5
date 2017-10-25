@@ -12,6 +12,6 @@
  @import "../../css/reset.css";
  @import "src/css/common.scss";
  @import "src/css/idol_activity.scss";
- @import "src/css/idol_activity_top10.scss";
+ // @import "src/css/fans_ranking.scss";
 </style>
 

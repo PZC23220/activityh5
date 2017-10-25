@@ -53,61 +53,20 @@
                             </div>
                         </li>
                     </div>
-                    <li v-if="rakingList.length>0">
-                        <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
-                        <img v-lazy="rakingList[0].fans?rakingList[0].fans.avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'" alt="" class="avatar">
+                    <li v-for="(idol,key) in rakingList" v-if="key < len">
+                        <span v-if="key == 0"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
+                        <span v-if="key == 1"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
+                        <span v-if="key == 2"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
+                        <span v-if="key > 2">{{key+1}}</span>
+                        <img v-lazy="idol.avatar" alt="" class="avatar">
                         <div class="fans_content">
                             <span>
-                                <em>{{rakingList[0].fans?rakingList[0].fans.nickname:'...'}}</em>
-                                <!-- <img :src="rakingList.length>0?('/static/images/icon_level_'+ (rakingList[0].fans.levelPlatform) +'.png'): 'http://h5.groupy.vip/static/images/icon_level_0.png'" onerror="this.src='http://h5.groupy.vip/static/images/icon_level_0.png'" class="level" alt=""> -->
-                                <span class="level">Lv.{{rakingList[0].fans?(rakingList[0].fans.levelPlatform?rakingList[0].fans.levelPlatform:0):0}}</span>
-                                <img class="medal_level" :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/medal/icon_medal_'+(rakingList[0].fans.medal)+'.png'" v-if="rakingList[0].fans?(rakingList[0].fans.medal&&rakingList[0].fans.medal>0):false" alt="">
+                                <em>{{idol.nickname?idol.nickname:'...'}}</em>
+                                <span class="level">Lv.{{idol.level_platform?idol.level_platform:0}}</span>
+                                <!-- <img class="medal_level" :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/medal/icon_medal_'+(idol.medal)+'.png'" v-if="idol?(idol.medal&&idol.medal>0):false" alt=""> -->
                             </span>
-                            <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">{{rakingList[0].expendGprice?Number(rakingList[0].expendGprice).toLocaleString(): 0}}</span>
+                            <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png" alt="">{{idol.score?Number(idol.score).toLocaleString(): 0}}</span>
                         </div>
-                        <!-- <i class="fans_medal"><img src="" alt="" class="avatar"><img src="" alt="" class="medal"></i> -->
-                    </li>
-                    <li v-if="rakingList.length>1">
-                        <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
-                        <img v-lazy="rakingList[1].fans?rakingList[1].fans.avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'" alt="" class="avatar">
-                        <div class="fans_content">
-                            <span>
-                                <em>{{rakingList[1].fans?rakingList[1].fans.nickname:'...'}}</em>
-                                <!-- <img :src="rakingList[1].fans?('/static/images/icon_level_'+ (rakingList[1].fans.levelPlatform+1) +'.png'): 'http://h5.groupy.vip/static/images/icon_level_0.png'" onerror="this.src='http://h5.groupy.vip/static/images/icon_level_0.png'" class="level" alt=""> -->
-                                <span class="level">Lv.{{rakingList[1].fans?(rakingList[1].fans.levelPlatform?rakingList[1].fans.levelPlatform:0):0}}</span>
-                                <img class="medal_level" :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/medal/icon_medal_'+(rakingList[1].fans.medal)+'.png'" v-if="rakingList[1].fans?(rakingList[1].fans.medal&&rakingList[1].fans.medal>0):false" alt="">
-                            </span>
-                            <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">{{rakingList[1].expendGprice?Number(rakingList[1].expendGprice).toLocaleString(): 0}}</span>
-                        </div>
-                        <!-- <i class="fans_medal"><img src="" alt="" class="avatar"><img src="" alt="" class="medal"></i> -->
-                    </li>
-                    <li v-if="rakingList.length>2">
-                        <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
-                        <img v-lazy="rakingList[2].fans?rakingList[2].fans.avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'" alt="" class="avatar">
-                        <div class="fans_content">
-                            <span>
-                                <em>{{rakingList[2].fans?rakingList[2].fans.nickname:'...'}}</em>
-                                <!-- <img :src="rakingList[2].fans?('/static/images/icon_level_'+ (rakingList[2].fans.levelPlatform+2) +'.png'): 'http://h5.groupy.vip/static/images/icon_level_0.png'" onerror="this.src='http://h5.groupy.vip/static/images/icon_level_0.png'" class="level" alt=""> -->
-                                <span class="level">Lv.{{rakingList[2].fans?(rakingList[2].fans.levelPlatform?rakingList[2].fans.levelPlatform:0):0}}</span>
-                                <img class="medal_level" :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/medal/icon_medal_'+(rakingList[2].fans.medal)+'.png'" v-if="rakingList[2].fans?(rakingList[2].fans.medal&&rakingList[2].fans.medal>0):false" alt="">
-                            </span>
-                            <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">{{rakingList[2].expendGprice?Number(rakingList[2].expendGprice).toLocaleString(): 0}}</span>
-                        </div>
-                        <!-- <i class="fans_medal"><img src="" alt="" class="avatar"><img src="" alt="" class="medal"></i> -->
-                    </li>
-                    <li v-for="(idol,key) in rakingList" v-if="key > 2 && key < len">
-                        <span>{{key+1}}</span>
-                        <img v-lazy="idol.fans?idol.fans.avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'" alt="" class="avatar">
-                        <div class="fans_content">
-                            <span>
-                                <em>{{idol.fans?idol.fans.nickname:'...'}}</em>
-                                <!-- <img :src="idol.fans?('/static/images/icon_level_'+ (idol.fans.levelPlatform+1) +'.png'): 'http://h5.groupy.vip/static/images/icon_level_0.png'" onerror="this.src='http://h5.groupy.vip/static/images/icon_level_0.png'" class="level" alt=""> -->
-                                <span class="level">Lv.{{idol.fans?(idol.fans.levelPlatform?idol.fans.levelPlatform:0):0}}</span>
-                                <img class="medal_level" :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/medal/icon_medal_'+(idol.fans.medal)+'.png'" v-if="idol.fans?(idol.fans.medal&&idol.fans.medal>0):false" alt="">
-                            </span>
-                            <span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">{{idol.expendGprice?Number(idol.expendGprice).toLocaleString(): 0}}</span>
-                        </div>
-                        <!-- <i class="fans_medal"><img src="" alt="" class="avatar"><img src="" alt="" class="medal"></i> -->
                     </li>
                 </ul>
                 <div class="default_page default_page3"  v-if="default1">
@@ -119,6 +78,9 @@
          </div>
     </div>
 </template>
+<style type="text/css" lang="scss" scoped>
+     @import "../../../css/fans_ranking.scss";
+</style>
 <script>
     // import VueScroller from 'vue-scroller';
     import Scroll from 'src/components/scroll.vue';
@@ -129,7 +91,6 @@
             return {
                 rakingList: [],
                 meObj: {},
-                loadingBig: false,
                 len: 20,
                 default1: false,
                 idx: 0,
@@ -164,47 +125,39 @@
                 let self = this;
                 if(self.idx < 2) {
                     self.idx++;
-                    let token_ = getParams('token');
-                    if(token) {
-                        http.defaults.headers.common['Authorization'] = 'Token '+token;
-                    }else if(token_!='(null)' && token_!='') {
-                        http.defaults.headers.common['Authorization'] = 'Token ' + token_;
-                    }
-                    http.get('/statistic/gb',{
+                    // let token_ = getParams('token');
+                    // if(token) {
+                    //     http.defaults.headers.common['Authorization'] = 'Token '+token;
+                    // }else if(token_!='(null)' && token_!='') {
+                    //     http.defaults.headers.common['Authorization'] = 'Token ' + token_;
+                    // }
+                    http.get('/ranking/idolActAllByFans',{
                         params: {
-                            idolId: getParams('idolId')
+                            activityId: getParams('activityId'),
+                            idolId: self.$route.query.idolId
                         }
                     }).then(function(res){
+                        console.log(res)
                         if(res.status == 200) {
-                            self.loadingBig = true;
-                            if(res.data.fansList.length > 0) {
+                            if(res.data.length > 0) {
                                 self.default1 = false;
-                                self.rakingList = res.data.fansList;
-                                for(var i=0;i<self.rakingList.length;i++) {
-                                    // console.log(self.rakingList[i].fansId == 160)
-                                    if(self.rakingList[i].fansId == getParams('fansId')) {
-                                        self.meObj = self.rakingList[i];
-                                        self.meObj.position = (i+1);
-                                        console.log(self.rakingList)
-                                        return;
-                                    }
-                                }
+                                self.rakingList = res.data;
+                                // for(var i=0;i<self.rakingList.length;i++) {
+                                //     if(self.rakingList[i].fansId == getParams('fansId')) {
+                                //         self.meObj = self.rakingList[i];
+                                //         self.meObj.position = (i+1);
+                                //         console.log(self.rakingList)
+                                //         return;
+                                //     }
+                                // }
                             }else {
                                 self.default1 = true;
                             }
                         }else {
-                            window.setupWebViewJavascriptBridge(function(bridge) {
-                                bridge.callHandler('getToken', {'targetType':'0','targetId':'0'}, function responseCallback(responseData) {
-                                    self.getRanking(responseData.token);
-                                })
-                            })
+                           self.default1 = true;
                         }
                     }).catch(function(err){
-                        window.setupWebViewJavascriptBridge(function(bridge) {
-                            bridge.callHandler('getToken', {'targetType':'0','targetId':'0'}, function responseCallback(responseData) {
-                                self.getRanking(responseData.token);
-                            })
-                        })
+                                self.getRanking();
                     });
                     
                 }else {
@@ -240,11 +193,6 @@
                       done()
                     }, 1500)
                 }
-            }
-        },
-        computed: {
-            swiper() {
-                return this.$refs.mySwiper.swiper
             }
         },
         created() {

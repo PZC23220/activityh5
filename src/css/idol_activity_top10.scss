@@ -1,5 +1,94 @@
-   .content {
-       background-image: linear-gradient(140deg, #FFCC54 6%, #FF927C 100%); 
+
+    .avatar-content {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        display: block;
+        // vertical-align: middle;
+        img:last-child {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border: 1px solid #FC4083;
+        }
+        img:first-child {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 15px;
+        }
+    }
+    .idolName-content {
+        display: block;
+        margin: 0 auto;
+        max-width: calc(50vw - 90px);
+        span {
+            display: block;
+            text-align: center;
+            img {
+                width: 12px;
+                margin-right: 5px;
+            }
+        }
+        span,i {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        i {
+            max-width: calc(33.33333vw - 18px);
+            display: inline-block;
+            vertical-align: middle;
+        }
+        @media screen and (min-width: 500px) {
+            i {
+                max-width: 120px;
+            }
+            span {
+                max-width: 140px;
+            }
+        }
+    }
+    .ranking-download {
+        width: 100px;
+        height: 25px;
+        line-height: 25px;
+        border-radius:25px;
+        font-size: 14px;
+        margin: 17px auto 0;
+    }
+    .ranking-idol-content {
+        padding: 10px 12px 0;
+    }
+    .ranking-fans-content {
+        display: flex;
+        border-top: 1px solid #FFB2C6;
+        margin-top: 12px;
+        padding: 12px;
+    }
+    .ranking-idol {
+        flex: 1;
+        text-align: ceter;
+    }
+    .fans-likes-ranking {
+        text-align: center;
+        padding-bottom: 10px;
+        a {
+            display: inline-block;
+            border: 1px solid #FC4083;
+            border-radius: 25px;
+            font-size: 14px;
+            color: #FC4083;
+            height: 25px;
+            line-height: 25px;
+            padding: 0px 12px;
+        }
+    }
+    .content {
+        background-image: linear-gradient(140deg, #FFCC54 6%, #FF927C 100%);   
     }
     h2 {
         font-size: 16px;
@@ -25,7 +114,6 @@
             overflow: hidden;
             text-align: center;
             border-bottom: 1px solid #eee;
-            padding: 10px 12px;
             background-color: #FFF5F7;
             border: 2px solid #FFB2C7;
             border-radius: 8px;
@@ -213,92 +301,4 @@
         color: #666;
         margin: 15px auto;
         text-align: center;
-    }
-    .avatar-content {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin: 0 auto 10px;
-        display: block;
-        // vertical-align: middle;
-        img:last-child {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            box-sizing: border-box;
-            border: 1px solid #FC4083;
-        }
-        img:first-child {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 15px;
-        }
-    }
-    .idolName-content {
-        display: block;
-        margin: 0 auto;
-        max-width: calc(50vw - 90px);
-        span {
-            display: block;
-            text-align: center;
-            img {
-                width: 12px;
-                margin-right: 5px;
-            }
-        }
-        span,i {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        i {
-            max-width: calc(33.33333vw - 18px);
-            display: inline-block;
-            vertical-align: middle;
-        }
-        @media screen and (min-width: 500px) {
-            i {
-                max-width: 120px;
-            }
-            span {
-                max-width: 140px;
-            }
-        }
-    }
-    .ranking-download {
-        width: 100px;
-        height: 25px;
-        line-height: 25px;
-        border-radius:25px;
-        font-size: 14px;
-        margin: 17px auto 0;
-    }
-    .ranking-idol-content {
-        padding: 10px 12px 0;
-    }
-    .ranking-fans-content {
-        display: flex;
-        border-top: 1px solid #FFB2C6;
-        margin-top: 12px;
-        padding: 12px;
-    }
-    .ranking-idol {
-        flex: 1;
-        text-align: ceter;
-    }
-    .fans-likes-ranking {
-        text-align: center;
-        padding-bottom: 10px;
-        a {
-            display: inline-block;
-            border: 1px solid #FC4083;
-            border-radius: 25px;
-            font-size: 14px;
-            color: #FC4083;
-            height: 25px;
-            line-height: 25px;
-            padding: 0px 12px;
-        }
     }

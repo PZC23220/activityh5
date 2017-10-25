@@ -1,41 +1,41 @@
-    .header {
-        padding: 0;
-        box-sizing: border-box;
-        line-height: 43px;
-        background: #fafafa;
-        color: #666;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
-        .go_back {
-            font-size: 18px;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            text-align: center;
-            img {
-                position: absolute;
-                left: 12px;
-                width: 22px;
-                padding: 10.5px 5px;
-            }
-            p {
-                float: right;
-                border: 1px solid #FC4083;
-                border-radius: 50px;
-                font-size: 16px;
-                color: #FC4083;
-                width: 72px;
-                height: 32px;
-                line-height: 32px;
-                margin-top: 3px;
-            }
-        }
-    }
-    .content.ios {
-        top: 41px;
-        height: calc(100vh - 41px);
-    }
-    .content {
-        top: 84px;
-        height: calc(100vh - 84px);
-    }
+    // .header {
+    //     padding: 0;
+    //     box-sizing: border-box;
+    //     line-height: 43px;
+    //     background: #fafafa;
+    //     color: #666;
+    //     border-bottom: 1px solid rgba(0,0,0,0.1);
+    //     .go_back {
+    //         font-size: 18px;
+    //         border-bottom: 1px solid rgba(0,0,0,0.1);
+    //         text-align: center;
+    //         img {
+    //             position: absolute;
+    //             left: 12px;
+    //             width: 22px;
+    //             padding: 10.5px 5px;
+    //         }
+    //         p {
+    //             float: right;
+    //             border: 1px solid #FC4083;
+    //             border-radius: 50px;
+    //             font-size: 16px;
+    //             color: #FC4083;
+    //             width: 72px;
+    //             height: 32px;
+    //             line-height: 32px;
+    //             margin-top: 3px;
+    //         }
+    //     }
+    // }
+    // .content.ios {
+    //     top: 41px;
+    //     height: calc(100vh - 41px);
+    // }
+    // .content {
+    //     top: 84px;
+    //     height: calc(100vh - 84px);
+    // }
     .ranking_type {
         padding: 0 12px;
         color: #999;
