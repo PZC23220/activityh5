@@ -1,0 +1,16 @@
+{
+  "js": {
+    "min": {
+      "/js/halloween.js": "//js/halloween/halloween.js",
+      "/js/undefined.js": "//js/vconsole.min.js"
+    },
+    "debug": {
+      "/js/halloween.js": "//js/halloween/halloween.js",
+      "/js/undefined.js": "//js/vconsole.min.js"
+    }
+  },
+  "css": {
+    "/css/undefined.css": "//css/reset.css"
+  },
+  "static_root": ""
+}
