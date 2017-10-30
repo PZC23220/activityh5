@@ -19,10 +19,12 @@
     "sass-loader": "^6.0.6",
     "vconsole": "^2.5.2",
     "vue": "^2.3.3",
+    "vue-awesome-swiper": "^2.6.7",
     "vue-directive-touch": "^1.0.9",
     "vue-lazyload": "^1.0.5",
     "vue-resource": "^1.1.1",
     "vue-router": "^2.3.1",
+    "vue2-google-maps": "^0.8.4",
     "vuex": "^2.0.0",
     "webpack-uglify-parallel": "^0.1.3"
   },

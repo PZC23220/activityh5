@@ -1,0 +1,547 @@
+.content {
+    text-align: center;
+    background: #2D285A;
+}
+// 轮播图内容
+.event-live {
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+.event-content {
+    // width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.event-bg-content {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    line-height: 100vh;
+}
+.event-bg {
+    height: 100vh;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.vertical-align {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+}
+// 首页图内容
+.index-content {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0;
+    top: 50vh;
+    margin-top: -375px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+.index-idol {
+    margin: 20px 0;
+}
+.index-reservation, 
+.index-activity-content {
+    display: inline-block;
+    >span {
+        display: inline-block;
+    }
+}
+.index-activity-content-end {
+    margin-top: 7px;
+}
+.reservation {
+    width: 92px;
+    height: 25px;
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -209px;
+    margin-right: 11px;
+}
+.index-time-start {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -248px;
+    width: 140px;height: 65px;
+}
+.index-time-end {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -330px;
+    width: 140px;height: 65px;
+}
+.index-activity-ffacg {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -404px;
+    width: 310px;height: 41px;
+    margin-left: 14.8px;
+    margin-right: 8px;
+}
+.index-activity-live {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -446px;
+    width: 310px;height: 41px;
+    margin-left: 14.8px;
+    margin-right: 8px;
+}
+.index-activity-goto {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -510px;
+    width: 28px;height: 18px;
+    margin: 6.5px 0;
+}
+.index-activity-goto-live {
+    background-position: 0 -542px;
+}
+.index-activity-goto-reservation {
+    margin: 3.5px 0;
+}
+// ffacg
+.event-live-content {
+    position: relative;
+    .event-bg {
+        max-height: 700px;
+    }
+}
+.ffacg-content-auto {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ffacg-content {
+    text-align: left;
+    width: 760px;
+    left: 50%;
+    margin-left: -380px;
+    height: auto;
+    top: 0;
+    margin-top: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+    padding: 40px 0;
+    span {
+        display: inline-block;
+    }
+}
+.ffacg-content-auto::-webkit-scrollbar {
+    width: 6px;
+}
+.ffacg-content-auto::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.ffacg-content-auto::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #46F7FF;
+    -webkit-box-shadow: inset 0 0 8px #46F7FF;
+}
+.ffacg-content-auto::-webkit-scrollbar-thumb:window-inactive {
+    background: #46F7FF;
+}
+.ffacg-content-auto::-webkit-scrollbar-track-piece {
+  width: 6px;
+}
+.ffacg-content-auto::-webkit-resizer {
+  width: 6px;
+}
+.ffacg-title {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 0;
+    width: 645px;height: 94px;
+    margin: 15px 0;
+}
+.people {
+    font-size: 20px;
+    font-weight: 600;
+    background: #ae26d4;
+    margin: 0 3px;
+}
+.hp-links {
+    color: #fff;
+    display: inline-block;
+    margin-top: 11px;
+    em {
+        text-decoration: underline;
+    }
+    >span {
+        vertical-align: middle;
+    }
+}
+.ffacg-goto {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 -202px;
+    margin: 0;
+    margin-left: 11px;
+}
+.performer {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 0 0 #F81970, -2px -3px 0 0 #46F7FF;
+    font-size: 15.36px;
+    color: #F81970;
+    letter-spacing: 2.24px;
+    padding: 0 5px;
+    margin-top: 23.3px;
+}
+.ffacg-tips {
+    margin-bottom: 30px;
+    span {
+        background: rgba(255,255,255,0.2);
+        height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+    }
+    span:first-child {
+        margin-right: 20px;
+    }
+}
+.times-content {
+    margin: 13px 0 20px;
+}
+.times-content-one {
+    height: 32px;
+    line-height: 32px;
+    >* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.times-content-one:first-child {
+    margin-right: 30px;
+}
+.time-point {
+    width: 6px;height: 6px;
+    background: #fff;
+    margin-right: 9px;
+    display: inline-block;
+}
+.time-start {
+    margin-right: 10px;
+    width: 72px;
+}
+.times {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    font-weight: 800;
+    width: 117px;
+}
+.guangzhou-address {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+.haizhu-adress {
+    line-height: 22px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.goole-map {
+    width:124px;
+    height: 22px;
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 -229px;
+    margin-left: 11px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.map-img {
+    width: 660px;
+    height: 240px;
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 -462px;
+    margin-top: 19px;
+}
+.liveImg-content {
+    width: 660px;
+    height: 495px;
+    margin-top: 22px;
+    margin-left: 16px;
+}
+.liveImg-content .event-live {
+    width: 660px;
+    height: 495px;
+    float: left;
+}
+.tab-left {
+    width: 18px;
+    height: 41px;
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 -263px;
+    margin-top: 26.5px;
+}
+.tab-right {
+    width: 18px;
+    height: 41px;
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+    background-position: 0 -315px;
+    margin-top: 26.5px;
+}
+.smallImg-content {
+    overflow: hidden;
+    margin-top: 20px;
+    max-width: 700px;
+    >* {
+        float: left;
+    }
+}
+.imgTabs-content {
+    width: 654px;
+    height: 90px;
+    overflow: hidden;
+}
+.imgTabs {
+    width: 1290px;
+    display: inline-block;
+    overflow: hidden;
+    height: 90px;
+    overflow: hidden;
+    margin-left: 0;
+    transition: all 0.5s;
+    img {
+        width: 120px;
+        height: 90px;
+        border: none;
+    }
+    >span {
+        margin-left: 9px;
+        float: left;
+        height: 90px;
+    }
+    span.active {
+        img {
+            border: 2px solid #F81970;
+            width: 116px;
+            height: 86px;
+        }
+    }
+}
+// live
+.live-title {
+    background-position: 0 -93px;
+}
+.desc-times {
+    background: #F81970;
+    margin-right: 22px;
+    width: 112px;
+    text-align:center;
+}
+.times-content-3 .desc-times {
+    background: #E58A38;
+}
+.times-content-3 .times {
+    width: 80px;
+}
+.times-title-2 {
+    background-image: linear-gradient(-59deg, #5023A3 0%, #823EAF 98%);
+    width: 524px;
+    height: 38px;
+    line-height: 38px;
+    text-align:center;
+}
+.times-content-2 {
+    margin-left: 36px;
+}
+.times-content .times-content-one:last-child .time-point {
+    margin-left: 22px;
+}
+.map-img-2 {
+    background-position: 0 -728px;
+}
+// revervation
+.reservation-content {
+    text-align: left;
+    width: 616px;
+    left: 50%;
+    margin-left: -308px;
+    color: #fff;
+    font-size: 14px;
+    height: 600px;
+    margin-top: -300px;
+    span {
+        display: inline-block;
+    }
+}
+.reservation-box {
+    width: 450px;
+    box-sizing: border-box;
+    padding: 20px 70px 20px 60px;
+    border: 1px solid #443977;
+    margin: 0 auto 8px;
+    background: rgba(45,40,80,0.5);
+}
+.reservation-title {
+    text-align: center;
+    margin-bottom: 20px;
+    span {
+        width: 144px;
+        height: 35px;
+        background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
+        background-position: 0 -385px;
+    }
+}
+.input-content {
+    margin-bottom: 12px;
+    p {
+        overflow: hidden;
+        line-height: 28px;
+        >* {
+            display: inline-block;vertical-align:middle;
+        }
+    }
+    input {
+        border: 1px solid #FFFFFF;
+        background: none;
+        width: 300px;
+        height: 30px;line-height:30px;font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 9px;
+        color: #fff;
+        margin-left: 15px;
+    }
+}
+.submit-reservation {
+    text-align: center;
+    margin-top: 40px;
+    span {
+        width: 180px;
+        height: 32px;
+        line-height: 32px;
+        background: #F81970;
+        font-size: 18px;
+        letter-spacing: 1.09px;
+    }
+}
+.reservation-warning {
+    font-weight: 600;font-size:16px;
+    margin-top: 48px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.reservation-p {
+    text-align: center;
+}
+// 左栏菜单
+.left-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    // margin-top: -360px;
+    height: 720px;
+    width: 10vw;
+    max-width: 120px;
+    text-align:center;
+    background: rgba(48,35,174,0.25);
+    box-sizing: border-box;
+    padding: 25px 0;
+    color:#fff;
+    font-size: 12px;
+    >span {
+        display: inline-block;
+    }
+}
+.tabs {
+    text-align:center;
+}
+.tabs li {
+    width: 100%;
+    transition: all 0.3s;
+    box-shadow: none;
+    cursor: pointer;
+    span {
+        display: inline-block;
+        background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    }
+    &:nth-child(2) {
+        span {
+
+            background-position: 0 -85px;
+            height: 27px;
+            margin: 17px 0 16px;
+            width: 70px;
+        }
+        background-color: rgba(24, 14, 102,0.5);
+    }
+    &:nth-child(3) {
+        span {
+            background-position: 0 -117px;
+            height: 27px;
+            margin: 17px 0 16px;
+            width: 50px;
+        }
+        background-color: rgba(49, 14, 102,0.5);
+    }
+    &:last-child {
+        span {
+            background-position: 0 -149px;
+            height: 44px;
+            margin: 8px 0;
+            width: 48px;
+        }
+        background-color: rgba(68, 14, 102,0.5);
+    }
+}
+.groupy-icon {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 0;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 35px;
+}
+.tabs li.active {
+    width: 136px;
+    box-shadow: 0 2px 0 0 #7F33AF;
+}
+.tabs li.active.one {
+    background: #180E66;
+}
+.tabs li.active.two {
+    background: #310E66;
+}
+.tabs li.active.three {
+    background: #440E66;
+}
+.groupy-icon-2 {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -574px;
+    width: 40px;height: 40px;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+.groupy-qr {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -629px;
+    width: 80px;height: 80px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+}
+.groupy-appstore {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -724px;
+    width: 80px;height: 24px;
+    margin-top: 5px;
+}
+.groupy-googleplay {
+    background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 -752px;
+    width: 80px;height: 24px;
+}
+.groupy-introduce {
+    padding: 0 5px 16px;
+}
+@media screen and (max-width: 1200px) {
+  .event-bg {
+    height: 100vh;
+    width: auto;
+    margin-left: calc(-6/7 *100vh + 50vw)
+  }
+}

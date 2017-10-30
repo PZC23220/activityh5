@@ -28,5 +28,6 @@ module.exports = {
         // 组织格式 ： 项目名 => 以项目根目录为基准的index.vue路径
         // 其在webpack中的对应格式为：[name](生成的js名) => [main.js所在路径]
         halloween: './src/view/halloween',
+        event: './src/view/event',
     },
 };
