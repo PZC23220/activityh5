@@ -131,7 +131,7 @@
                     // }else if(token_!='(null)' && token_!='') {
                     //     http.defaults.headers.common['Authorization'] = 'Token ' + token_;
                     // }
-                    http.get('http://h5.groupy.vip/japi/ranking/idolActVideoByFans',{
+                    http.get('/ranking/idolActVideoByFans',{
                         params: {
                             activityId: getParams('activityId'),
                             idolId: self.$route.query.idolId
