@@ -2,17 +2,17 @@
   <div class="content">
     <swiper :options="swiperOption" ref="mySwiper" class="event-content">
         <swiper-slide id="swiper1" class="event-live">
-          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content">
-            <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_guangzhou.png'" class="index-address"><br>
-            <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+            <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_guangzhou.png'" class="index-address"><br>
+            <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
             <!-- <span @click="changePagesLi(3)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br> -->
             <span @click="changePagesLi(1)" class="index-activity-content"><span class="index-time-start"></span><span class="index-activity-ffacg"></span><span class="index-activity-goto"></span></span><br>
             <span @click="changePagesLi(2)" class="index-activity-content index-activity-content-end"><span class="index-time-end"></span><span class="index-activity-live"></span><span class="index-activity-goto index-activity-goto-live"></span></span><br>
           </div>
         </swiper-slide>
         <swiper-slide id="swiper2" class="event-live">
-          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_ffacg.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_ffacg.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <!-- <div class="ffacg-content-auto" id="scroll1" @scroll="handleScroll"> -->
           <div class="ffacg-content-auto" id="scroll1">
             <div class="index-content ffacg-content">
@@ -23,7 +23,7 @@
                 ぜひ参加して、推しメンと一緒に中国で最高に盛り上がろう！</p>
               <a href="http://www.fireflyacg.com/" target="_blank" class="hp-links"><span>イベントHP：<em>http://www.fireflyacg.com/</em></span><span class="index-activity-goto ffacg-goto"></span></a><br>
               <span class="performer">出演アイドル</span><br>
-              <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+              <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
               <span class="performer">ステージ時間</span><br>
               <p class="times-content">
@@ -107,7 +107,7 @@
           </div>
         </swiper-slide>
         <swiper-slide id="swiper3" class="event-live">
-          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_live.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_live.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <!-- <div class="ffacg-content-auto" id="scroll2" @scroll="handleScroll2"> -->
           <div class="ffacg-content-auto" id="scroll2">
             <div class="index-content ffacg-content">
@@ -115,7 +115,7 @@
               <span class="ffacg-title live-title"></span><br>
               <p><i class="people">中国・広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
               <span class="performer">出演アイドル</span><br>
-              <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+              <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">イベント詳細</span><br>
               <p class="times-content">
                   <span class="times-content-one"><span class="desc-times">【ライブ一部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">10:00/10:30</span></span>
@@ -161,7 +161,7 @@
           </div>
         </swiper-slide>
         <!-- <swiper-slide id="swiper4" class="event-live">
-          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content reservation-content">
             <div class="reservation-box">
               <p class="reservation-title"><span></span></p>
