@@ -16,10 +16,10 @@ Vue.use(VueRouter);
 Vue.use(VueAwesomeSwiper);
 // Vue.use(VueScroller)
 Vue.use(VueLazyload, {
-    preLoad: 1,
-    error: 'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png',
-    loading: 'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png',
-    attempt: 1
+        preLoad: 1,
+        error: 'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_groupy.jpg',
+        loading: 'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_groupy.jpg',
+        attempt: 1
 })
 
 Vue.use(VueGoogleMaps, {

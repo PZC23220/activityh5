@@ -1,3 +1,6 @@
+html,body {
+    min-height: 750px;
+}
 .content {
     text-align: center;
     background: #2D285A;
@@ -6,21 +9,25 @@
 .event-live {
     width:100%;
     height: 100vh;
+    min-height: 750px;
     position: relative;
 }
 .event-content {
     // width: 100vw;
     height: 100vh;
+    min-height: 750px;
     overflow: hidden;
 }
 .event-bg-content {
     text-align: center;
     width: 100%;
     height: 100vh;
+    min-height: 750px;
     line-height: 100vh;
 }
 .event-bg {
     height: 100vh;
+    min-height: 750px;
     width: auto;
     vertical-align: middle;
     display: inline-block;
@@ -80,7 +87,7 @@
 }
 .index-activity-live {
     background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/icons.png);
-    background-position: 0 -446px;
+    background-position: 0 -448px;
     width: 310px;height: 41px;
     margin-left: 14.8px;
     margin-right: 8px;
@@ -108,14 +115,15 @@
     overflow: auto;
     width: 100vw;
     height: 100vh;
+    min-height: 750px;
     position: absolute;
     left: 0;
     top: 0;
 }
 .ffacg-content {
     text-align: left;
-    width: 760px;
     left: 50%;
+    width: 760px;
     margin-left: -380px;
     height: auto;
     top: 0;
@@ -128,27 +136,27 @@
         display: inline-block;
     }
 }
-.ffacg-content-auto::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 6px;
 }
-.ffacg-content-auto::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
-.ffacg-content-auto::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #46F7FF;
     -webkit-box-shadow: inset 0 0 8px #46F7FF;
 }
-.ffacg-content-auto::-webkit-scrollbar-thumb:window-inactive {
+::-webkit-scrollbar-thumb:window-inactive {
     background: #46F7FF;
 }
-.ffacg-content-auto::-webkit-scrollbar-track-piece {
+::-webkit-scrollbar-track-piece {
   width: 6px;
 }
-.ffacg-content-auto::-webkit-resizer {
+::-webkit-resizer {
   width: 6px;
 }
 .ffacg-title {
@@ -264,12 +272,16 @@
 .liveImg-content {
     width: 660px;
     height: 495px;
+    max-height: 495px;
+    min-height: 495px;
     margin-top: 22px;
     margin-left: 16px;
 }
 .liveImg-content .event-live {
     width: 660px;
     height: 495px;
+    max-height: 495px;
+    min-height: 495px;
     float: left;
 }
 .tab-left {
@@ -538,10 +550,29 @@
 .groupy-introduce {
     padding: 0 5px 16px;
 }
+// toast 
+.toast {
+    position: absolute;
+    bottom: 50px;
+    background: #fff;
+    color: #333;
+    width: 300px;
+    font-size: 18px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 12px 0;
+    border-radius: 4px;
+}
 @media screen and (max-width: 1200px) {
   .event-bg {
     height: 100vh;
     width: auto;
     margin-left: calc(-6/7 *100vh + 50vw)
+  }
+}
+@media screen and (max-height: 750px) {
+  .index-content {
+    top: 0;
+    margin-top: 0;
   }
 }

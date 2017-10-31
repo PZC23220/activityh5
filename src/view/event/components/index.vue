@@ -2,17 +2,17 @@
   <div class="content">
     <swiper :options="swiperOption" ref="mySwiper" class="event-content">
         <swiper-slide id="swiper1" class="event-live">
-          <div class="event-bg-content"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content">
-            <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_guangzhou.png" class="index-address"><br>
-            <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png" class="index-idol"><br>
-            <span @click="changePagesLi(1)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br>
-            <span @click="changePagesLi(2)" class="index-activity-content"><span class="index-time-start"></span><span class="index-activity-ffacg"></span><span class="index-activity-goto"></span></span><br>
-            <span @click="changePagesLi(3)" class="index-activity-content index-activity-content-end"><span class="index-time-end"></span><span class="index-activity-live"></span><span class="index-activity-goto index-activity-goto-live"></span></span><br>
+            <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_guangzhou.png'" class="index-address"><br>
+            <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+            <!-- <span @click="changePagesLi(3)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br> -->
+            <span @click="changePagesLi(1)" class="index-activity-content"><span class="index-time-start"></span><span class="index-activity-ffacg"></span><span class="index-activity-goto"></span></span><br>
+            <span @click="changePagesLi(2)" class="index-activity-content index-activity-content-end"><span class="index-time-end"></span><span class="index-activity-live"></span><span class="index-activity-goto index-activity-goto-live"></span></span><br>
           </div>
         </swiper-slide>
         <swiper-slide id="swiper2" class="event-live">
-          <div class="event-bg-content"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_ffacg.jpg" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_ffacg.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <!-- <div class="ffacg-content-auto" id="scroll1" @scroll="handleScroll"> -->
           <div class="ffacg-content-auto" id="scroll1">
             <div class="index-content ffacg-content">
@@ -23,7 +23,7 @@
                 ぜひ参加して、推しメンと一緒に中国で最高に盛り上がろう！</p>
               <a href="http://www.fireflyacg.com/" target="_blank" class="hp-links"><span>イベントHP：<em>http://www.fireflyacg.com/</em></span><span class="index-activity-goto ffacg-goto"></span></a><br>
               <span class="performer">出演アイドル</span><br>
-              <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png" class="index-idol"><br>
+              <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
               <span class="performer">ステージ時間</span><br>
               <p class="times-content">
@@ -41,7 +41,7 @@
               <gmap-map
                   :center="center2"
                   :zoom="17"
-                  style="width: 100%; height: 300px;margin-top: 19px;"
+                  style="width: 100%; max-width: 750px; height: 300px;margin-top: 19px;"
                 >
                   <gmap-marker
                     :key="index"
@@ -55,50 +55,50 @@
               <span class="performer" style="margin-left: 16px;">第16回までの開催の模様</span><br>
               <swiper :options="swiperOption2" ref="mySwiper2" class="event-content liveImg-content">
                 <swiper-slide class="event-live" id="swiper11">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/1.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/1.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper12">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/2.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/2.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper13">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/3.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/3.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper14">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/4.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/4.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper15">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/5.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/5.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper16">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/6.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/6.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper17">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/7.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/7.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper18">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/8.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/8.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper19">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/9.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/9.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper100">
-                  <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/10.jpg">
+                  <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/10.jpg'">
                 </swiper-slide>
               </swiper>
               <div class="smallImg-content" id="ffacg-content-auto-1">
                 <span class="tab-left" @click="tabImgLeft()"></span>
                 <div class="imgTabs-content">
                   <div class="imgTabs">
-                    <span class="imgtabs-span active" @click="changePagesSpan(0)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/1.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(1)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/2.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(2)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/3.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(3)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/4.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(4)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/5.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(5)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/6.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(6)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/7.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(7)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/8.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(8)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/9.jpg"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(9)"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/10.jpg"></span>
+                    <span class="imgtabs-span active" @click="changePagesSpan(0)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/1.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(1)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/2.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(2)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/3.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(3)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/4.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(4)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/5.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(5)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/6.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(6)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/7.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(7)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/8.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(8)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/9.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(9)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/10.jpg'"></span>
                   </div>
                 </div>
                 <span class="tab-right" @click="tabImgLeft(1)"></span>
@@ -107,7 +107,7 @@
           </div>
         </swiper-slide>
         <swiper-slide id="swiper3" class="event-live">
-          <div class="event-bg-content"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_live.jpg" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_live.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <!-- <div class="ffacg-content-auto" id="scroll2" @scroll="handleScroll2"> -->
           <div class="ffacg-content-auto" id="scroll2">
             <div class="index-content ffacg-content">
@@ -115,7 +115,7 @@
               <span class="ffacg-title live-title"></span><br>
               <p><i class="people">中国・広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
               <span class="performer">出演アイドル</span><br>
-              <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png" class="index-idol"><br>
+              <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">イベント詳細</span><br>
               <p class="times-content">
                   <span class="times-content-one"><span class="desc-times">【ライブ一部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">10:00/10:30</span></span>
@@ -145,7 +145,7 @@
                 <gmap-map
                   :center="center"
                   :zoom="17"
-                  style="width: 100%; height: 300px;margin-top: 19px;"
+                  style="width: 100%;max-width: 750px; height: 300px;margin-top: 19px;"
                 >
                   <gmap-marker
                     :key="index"
@@ -160,22 +160,22 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide id="swiper4" class="event-live">
-          <div class="event-bg-content"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg" class="event-bg"><span class="vertical-align"></span></div>
+        <!-- <swiper-slide id="swiper4" class="event-live">
+          <div class="event-bg-content"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content reservation-content">
             <div class="reservation-box">
               <p class="reservation-title"><span></span></p>
               <div class="input-content">
                 <p><i class="time-point"></i><span>お名前</span></p>
-                <input type="number" name="">
+                <input type="text" v-model="Sname" name="">
               </div>
               <div class="input-content">
                 <p><i class="time-point"></i><span>メールアドレス</span></p>
-                <input type="text" name="">
+                <input type="email" v-model="Semail" name="">
               </div>
               <div class="input-content">
                 <p><i class="time-point"></i><span>枚数</span></p>
-                <input type="number" name="">
+                <input type="number" v-model="Snums" min="1" name="">
               </div>
               <p class="submit-reservation"><span>予約する</span></p>
             </div>
@@ -186,14 +186,14 @@
               <br>・事件・事故などにつきまして、Groupyでは一切責任を負えません。予めご了承ください。
             </p>
           </div>
-        </swiper-slide>
+        </swiper-slide> -->
     </swiper>
     <div class="left-nav">
       <ul class="tabs">
         <li class="tabs-li" @click="changePagesLi(0)"><span class="groupy-icon"></span></li>
         <li class="tabs-li" @click="changePagesLi(1)"><span></span></li>
         <li class="tabs-li" @click="changePagesLi(2)"><span></span></li>
-        <li class="tabs-li" @click="changePagesLi(3)"><span></span></li>
+        <!-- <li class="tabs-li" @click="changePagesLi(3)"><span></span></li> -->
       </ul>
       <span class="groupy-icon-2"></span>
       <span class="groupy-introduce">Groupyでアイドルのいつもと違う一面を発見しよう！</span>
@@ -203,6 +203,7 @@
       <span class="groupy-appstore"></span>
       <span class="groupy-googleplay"></span>
     </div>
+    <!-- <div class="toast">预约成功！</div> -->
   </div>
 </template>
 
@@ -233,6 +234,7 @@
             $('.tabs-li').eq(swiper.activeIndex).addClass('active');
             $('#scroll1').scrollTop(0)
             $('#scroll2').scrollTop(0)
+            $('html').scrollTop(0)
             if(swiper.activeIndex == 1) {
               $('.tabs-li').eq(1).addClass('one');
               setTimeout(() => {
@@ -283,10 +285,35 @@
         }],
         markers2: [{
           position: {lat: 23.0983649, lng: 113.360524}
-        }]
+        }],
+        Semail: '',
+        Sname: '',
+        Snums: 1
       }
     },
     methods: {
+      pushInfo() {
+        var self = this;
+        if(self.Sname && self.Semail) {
+          var data_ = {
+            showsId: 1, 
+            showsName:'元旦中国行', 
+            showsDescription:'元旦中国行', 
+            firstName: self.Sname, 
+            email: self.Semail, 
+            nums: self.Snums 
+          }
+          http.post('/shows/applyOffical',JSON.stringify(data_))
+          .then(function(res){
+
+          })
+          .catch(function(err){
+
+          });
+        }else {
+          alert('输入框不能为空！')
+        }
+      },
       handleScroll(e) {
         var self = this;
        var top_ = $('#ffacg-content-auto-1').offset().top;
@@ -332,6 +359,7 @@
         tabs.eq(val).addClass('active');
         $('#scroll1').scrollTop(0)
         $('#scroll2').scrollTop(0)
+        $('html').scrollTop(0)
         if(val == 1) {
             $('.tabs-li').eq(1).addClass('one');
             // self.swiper.disableMousewheelControl();
