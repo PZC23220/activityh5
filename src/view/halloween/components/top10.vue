@@ -81,7 +81,7 @@
           toVideoList() {
             var self = this;
             window.setupWebViewJavascriptBridge(function(bridge) {
-                bridge.callHandler('activity_videos', {'activityId':self.activityInfo.id,'activityName':self.activityInfo.title})
+                bridge.callHandler('activity_videos', {'activityId':self.activityInfo.id,'activityName':self.activityInfo.tag})
             })
           },
           getList() {

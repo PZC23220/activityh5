@@ -26,8 +26,11 @@
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
+        alert('html')
         window.setupWebViewJavascriptBridge(function(bridge) {
+            alert('window');
             bridge.callHandler('getVideoInfo', function(res){
+              alert(res);
                 player = new YT.Player('player', {
                   height: res.height,
                   width: res.width,
