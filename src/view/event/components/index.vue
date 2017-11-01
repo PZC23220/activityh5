@@ -18,13 +18,22 @@
             <div class="index-content ffacg-content">
               <span class="index-time-start index-time-start-ffacg" id="ffacg-content-auto-3"></span><br>
               <span class="ffacg-title"></span><br>
-              <p>来場者数が<i class="people">20万人</i>を超え、中国・華南地区での<i class="people" style="background: #7230e9;">最大級アニメイベント</i>17th Firefly ACG Festival<br>
-                （広州蛍火虫動漫遊戯嘉年華／広州蛍フェスタ／FFACG Expo）が開催！<br>
-                ぜひ参加して、推しメンと一緒に中国で最高に盛り上がろう！</p>
+              <p>来場者数<i class="people">20万人</i>超の<i class="people" style="background: #7230e9;">中国最大級</i>のアニメ、ゲームのイベント第17回Firefly ACG Festival<br>
+              （下記FFACGという）にてメインステージ及び専用ブースへの出展が決定しました。<br><br>
+              Groupyのメインステージの利用時間はなんと90分！そこで、日本アイドルがFFACGに初登場！<br>
+              推しメンと共にこの記念すべき一日を盛り上げましょう。
+            </p>
               <a href="http://www.fireflyacg.com/" target="_blank" class="hp-links"><span>イベントHP：<em>http://www.fireflyacg.com/</em></span><span class="index-activity-goto ffacg-goto"></span></a><br>
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
-              <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
+              <span class="performer">詳 細</span><br>
+              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月30日</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30~15:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販</span><span class="times">15:00~16:30</span></p>
+              <p>※物販はGroupy専用ブースにて行います。<br>
+              ※ライブは無料ですが、FFACGの入場料は別途必要になります。<br>
+              ※時間は変更する場合がございます。</p>
+              <!-- <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
               <span class="performer">ステージ時間</span><br>
               <p class="times-content">
                   <span class="times-content-one"><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">13:00/13:30</span></span>
@@ -34,8 +43,8 @@
               <p class="times-content">
                   <span class="times-content-one"><i class="time-point"></i><span class="time-start">開    始</span><span class="times">15:00</span></span>
                   <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">16:00</span></span>
-              </p>
-              <span class="performer">会 場</span><br>
+              </p> -->
+              <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州保利世貿易博覧館 5/6号館 FFACG メインステージ</p>
               <p class="haizhu-adress"><span>(中国広東省広州市海珠区新港東路1000号)</span><a href="https://www.google.com.hk/maps/place/%E4%BF%9D%E5%88%A9%E4%B8%96%E8%B4%B8%E5%B1%95%E8%A7%88%E9%A6%86/@23.0983649,113.3583353,17z/data=!3m1!4b1!4m5!3m4!1s0x3402ffed1db3c62b:0x7fd136151062a33c!8m2!3d23.09836!4d113.360524?hl=zh-CN" target="_blank" class="goole-map"></a></p>
               <gmap-map
@@ -52,7 +61,7 @@
                     @click="center2=m.position"
                   ></gmap-marker>
                 </gmap-map>
-              <span class="performer" style="margin-left: 16px;">第16回までの開催の模様</span><br>
+              <span class="performer">第16回までの開催の模様</span><br>
               <swiper :options="swiperOption2" ref="mySwiper2" class="event-content liveImg-content">
                 <swiper-slide class="event-live" id="swiper11">
                   <img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/live/1.jpg'">
@@ -86,8 +95,8 @@
                 </swiper-slide>
               </swiper>
               <div class="smallImg-content" id="ffacg-content-auto-1">
-                <span class="tab-left" @click="tabImgLeft()"></span>
                 <div class="imgTabs-content">
+                  <span class="tab-left" @click="tabImgLeft()"></span>
                   <div class="imgTabs">
                     <span class="imgtabs-span active" @click="changePagesSpan(0)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/1.jpg'"></span>
                     <span class="imgtabs-span" @click="changePagesSpan(1)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/2.jpg'"></span>
@@ -100,8 +109,8 @@
                     <span class="imgtabs-span" @click="changePagesSpan(8)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/9.jpg'"></span>
                     <span class="imgtabs-span" @click="changePagesSpan(9)"><img v-lazy="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/smallLive/10.jpg'"></span>
                   </div>
+                  <span class="tab-right" @click="tabImgLeft(1)"></span>
                 </div>
-                <span class="tab-right" @click="tabImgLeft(1)"></span>
               </div>
             </div>
           </div>
@@ -273,7 +282,7 @@
               $('.imgTabs').css('margin-left','0');
             }
             if(swiper.activeIndex == 5) {
-              $('.imgTabs').css('margin-left','-645px');
+              $('.imgTabs').css('margin-left','-660px');
             }
             // $('.bgActive').css('left',`calc((100vw - 24px)*1/4*${swiper.activeIndex})`);
           },
@@ -378,7 +387,7 @@
       },
       tabImgLeft(val) {
         if(val) {
-          $('.imgTabs').css('margin-left','-645px');
+          $('.imgTabs').css('margin-left','-660px');
         }else {
           $('.imgTabs').css('margin-left','0');
         }

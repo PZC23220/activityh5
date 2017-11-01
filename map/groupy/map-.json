@@ -1,16 +1,16 @@
 {
   "js": {
     "min": {
-      "/js/undefined.js": "//js/vconsole.min.js",
       "/js/event.js": "//js/event/event.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/books.js": "//js/books/books.js"
+      "/js/books.js": "//js/books/books.js",
+      "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
-      "/js/undefined.js": "//js/vconsole.min.js",
       "/js/event.js": "//js/event/event.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/books.js": "//js/books/books.js"
+      "/js/books.js": "//js/books/books.js",
+      "/js/undefined.js": "//js/vconsole.min.js"
     }
   },
   "css": {

@@ -130,7 +130,7 @@ html,body {
     margin-top: 0;
     color: #fff;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 1.8;
     padding: 40px 0;
     span {
         display: inline-block;
@@ -169,12 +169,13 @@ html,body {
     font-size: 20px;
     font-weight: 600;
     background: #ae26d4;
-    margin: 0 3px;
+    margin: 0 5px;
+    padding: 0 3px;
 }
 .hp-links {
     color: #fff;
     display: inline-block;
-    margin-top: 11px;
+    margin-top: 24px;
     em {
         text-decoration: underline;
     }
@@ -209,6 +210,9 @@ html,body {
         margin-right: 20px;
     }
 }
+.desc-p {
+    line-height: 45px;
+}
 .times-content {
     margin: 13px 0 20px;
 }
@@ -234,11 +238,8 @@ html,body {
     width: 72px;
 }
 .times {
-    font-size: 22px;
-    letter-spacing: 1.2px;
-    font-style: italic;
-    font-weight: 800;
-    width: 117px;
+    font-size: 18px;
+    font-weight: 600;
 }
 .guangzhou-address {
     font-size: 20px;
@@ -275,7 +276,7 @@ html,body {
     max-height: 495px;
     min-height: 495px;
     margin-top: 22px;
-    margin-left: 16px;
+    // margin-left: 16px;
 }
 .liveImg-content .event-live {
     width: 660px;
@@ -290,6 +291,9 @@ html,body {
     background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
     background-position: 0 -263px;
     margin-top: 26.5px;
+    position: absolute;
+    left: 12px;
+    top: 0;
 }
 .tab-right {
     width: 18px;
@@ -297,6 +301,9 @@ html,body {
     background-image : url(http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/address.png);
     background-position: 0 -315px;
     margin-top: 26.5px;
+    position: absolute;
+    right: 12px;
+    top: 0;
 }
 .smallImg-content {
     overflow: hidden;
@@ -307,12 +314,13 @@ html,body {
     }
 }
 .imgTabs-content {
-    width: 654px;
+    width: 660px;
     height: 90px;
     overflow: hidden;
+    position: relative;
 }
 .imgTabs {
-    width: 1290px;
+    width: 1320px;
     display: inline-block;
     overflow: hidden;
     height: 90px;
@@ -325,9 +333,11 @@ html,body {
         border: none;
     }
     >span {
-        margin-left: 9px;
         float: left;
         height: 90px;
+    }
+    >span:not(:nth-child(5n-4)) {
+        margin-left: 15px;
     }
     span.active {
         img {
@@ -492,7 +502,7 @@ html,body {
         }
         background-color: rgba(49, 14, 102,0.5);
     }
-    &:last-child {
+    &:nth-child(4) {
         span {
             background-position: 0 -149px;
             height: 44px;
