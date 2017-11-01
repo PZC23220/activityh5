@@ -12,7 +12,7 @@ var spinner = ora('building for production...')
 spinner.start()
 var assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDirectory)
 // 按静态资源版本号创建目录
-rm('-rf', assetsPath)
+// rm('-rf', assetsPath)
 mkdir('-p', assetsPath)
 webpack(webpackConfig, function (err, stats) {
     spinner.stop()

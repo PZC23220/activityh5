@@ -125,7 +125,15 @@
               <p><i class="people">中国・広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
-              <span class="performer">イベント詳細</span><br>
+              <span class="performer">詳 細</span><br>
+              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月31日</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ一部</span><span class="times">10:30~13:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ二部</span><span class="times">13:30~16:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">カウントダウンパーティ</span><span class="times">22:00~26:00</span></p>
+              <p>※物販はGroupy専用ブースにて行います。<br>
+              ※ライブは無料ですが、FFACGの入場料は別途必要になります。<br>
+              ※時間は変更する場合がございます。</p>
+              <!-- <span class="performer">イベント詳細</span><br>
               <p class="times-content">
                   <span class="times-content-one"><span class="desc-times">【ライブ一部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">10:00/10:30</span></span>
                   <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">15:00</span></span>
@@ -146,7 +154,7 @@
               <p class="times-content times-content-3">
                 <span class="times-content-one"><span class="desc-times">前売り</span><span class="times">2500</span><span class="time-start">円</span></span>
                 <span class="times-content-one"><span class="desc-times">当&nbsp;&nbsp;&nbsp;&nbsp;日</span><span class="times">3500</span><span class="time-start">円</span></span>
-              </p>
+              </p> -->
               <span class="performer">会 場</span><br>
               <p class="guangzhou-address">中国広州TU凸空間</p>
               <p class="haizhu-adress"><span> (中国広東省広州市越秀区広州大道中361-365号東方花苑F1)</span><a href="https://www.google.com.hk/maps/place/TU%E5%87%B8%E7%A9%BA%E9%97%B4/@23.1286471,113.3125053,17z/data=!3m1!4b1!4m5!3m4!1s0x3402f93b30c66829:0xb654a12f6a3e38ae!8m2!3d23.1286471!4d113.314694?hl=zh-CN" target="_blank" class="goole-map"></a></p>
