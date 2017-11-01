@@ -43,7 +43,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="activity_rule" v-if="isFans">
+            <div class="activity_rule">
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
@@ -183,7 +183,7 @@
                     all: '全体ランキング',
                     more: 'もっと見る',
                     rule: {
-                        title: '参加方法：',
+                        title: '参加方法',
                         p1: '1. イベント期間中、「#読書の秋」タグをつけて投稿します。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。'
                     },
@@ -198,7 +198,7 @@
                         p3: '3.イベント期間外は、「＃読書の秋」をつけて投稿しても集計されません。'
                     },
                     warning: {
-                        title: '注意事項：',
+                        title: '注意事項',
                         p1: '1. 最終結果はイベント期間終了の翌日にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
                         p2: '2. 当選アイドルは直筆メッセージカードと起動画面掲載用の写真を11/17までにご提出いただきます。',
                         p3: '3.プレゼントの権利を獲得されたファンの方は、11/12までにprize@groupy.cn、または公式Twitter@GGroupyyyのDMにてご連絡ください。',
