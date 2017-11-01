@@ -9,12 +9,12 @@ html,body {
 img,i,em {
     vertical-align: middle;
 }
-@font-face {
-    font-family: 'Helvetica Condensed Bold Italic';
-    src: url('/font/Helvetica Condensed Bold Italic.eot');
-    src: url('/font/Helvetica Condensed Bold Italic.woff2') format('woff2'),
-         url('/font/Helvetica Condensed Bold Italic.eot?#iefix') format('embedded-opentype');
-}
+// @font-face {
+//     font-family: 'Helvetica Condensed Bold Italic';
+//     src: url('/font/Helvetica Condensed Bold Italic.eot');
+//     src: url('/font/Helvetica Condensed Bold Italic.woff2') format('woff2'),
+//          url('/font/Helvetica Condensed Bold Italic.eot?#iefix') format('embedded-opentype');
+// }
 html {
     background-color: #f7f7f7;
 }

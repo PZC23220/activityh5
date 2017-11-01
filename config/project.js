@@ -29,5 +29,6 @@ module.exports = {
         // 其在webpack中的对应格式为：[name](生成的js名) => [main.js所在路径]
         halloween: './src/view/halloween',
         event: './src/view/event',
+        books: './src/view/books',
     },
 };

@@ -3,11 +3,13 @@
     "min": {
       "/js/event.js": "//js/event/event.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
+      "/js/books.js": "//js/books/books.js",
       "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
+      "/js/books.js": "//js/books/books.js",
       "/js/undefined.js": "//js/vconsole.min.js"
     }
   },

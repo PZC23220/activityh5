@@ -1,18 +1,18 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween-over.jpg" class="banner">
-            <img v-else src="http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween.jpg" class="banner">
+            <img v-if="isOver" src="http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-books-over.png" class="banner">
+            <img v-else src="http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-books.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>ハロウィンを盛り上げよう！期間中上位のアイドルは起動画面・次のイベントバナーに掲載など豪華な特典が盛りだくさん！さらに、ファンにも、ハロウィン限定ギフトと推しメンの直筆メッセージカードを用意！</p>
+                <p>読書の秋に盛り上げよう！期間中上位のアイドルは起動画面に掲載など豪華な特典が盛りだくさん！さらに、ファンにも、推しメンからオススメの書籍と直筆メッセージカードをプレゼント！</p>
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2017年10月28日（土）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年11月2日（木）23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2017年11月3日（金）00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2017年11月9日（木）23:59:59</i></p>
                 </div>
             </div>
             <div class="activity_rule">
@@ -27,7 +27,6 @@
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
                     </div>
                 </li>
                 <li>
@@ -48,7 +47,7 @@
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
-                <p style="color: #A3488F;font-weight:600;">※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</p>
+                <p style="color: #F17B61;font-weight:600;">※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</p>
                 <!-- <p v-html="activity.rule.p3"></p> -->
             </div>
             <div class="activity_rule">
@@ -140,6 +139,21 @@
          </div>
     </div>
 </template>
+<style type="text/css">
+    .content {
+        background: #fff2f0;
+    }
+    h2 {
+        background: #F17B61;
+    }
+    h4 {
+        background-image: linear-gradient(-46deg, #F17B61 0%, #F1A542 100%);
+    }
+    .activity_reward li {
+        background: #FFEEEA;
+        border: 1px solid #F3D5CF;
+    }
+</style>
 <script>
     import http from '@api/js/http.js';
     require('@api/js/common.js')
@@ -154,7 +168,7 @@
                 isOver: false,
                 havedMe: false,
                 activity: {
-                    theme:'#ハロウィン#',
+                    theme:'#読書の秋#',
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
@@ -170,7 +184,7 @@
                     more: 'もっと見る',
                     rule: {
                         title: '参加方法：',
-                        p1: '1. イベント期間中、<i>「#ハロウィン」</i>タグをつけて投稿します。投稿内容は自由です。',
+                        p1: '1. イベント期間中、「#読書の秋」タグをつけて投稿します。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。'
                     },
                     obj: {
@@ -181,26 +195,25 @@
                         title: '集計方法',
                         p1: '1. 全ての参加動画のLike数（ハート）の合計によってランキングが決まります。',
                         p2: '2. ランキングはイベント詳細ページにリアルタイムで確認できます。',
-                        p3: '3.イベント期間外は、<i>「＃ハロウィン」</i>をつけて投稿しても集計されません。'
+                        p3: '3.イベント期間外は、「＃読書の秋」をつけて投稿しても集計されません。'
                     },
                     warning: {
                         title: '注意事項：',
                         p1: '1. 最終結果はイベント期間終了の翌日にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
-                        p2: '2. 当選アイドルは直筆メッセージカードと起動画面掲載用写真を11/10までにご提出いただきます。',
-                        p3: '3.プレゼントの権利を獲得されたファンの方は、11/5までにprize@groupy.cn、または公式Twitter@GGroupyyyのDMにてご連絡ください。',
+                        p2: '2. 当選アイドルは直筆メッセージカードと起動画面掲載用の写真を11/17までにご提出いただきます。',
+                        p3: '3.プレゼントの権利を獲得されたファンの方は、11/12までにprize@groupy.cn、または公式Twitter@GGroupyyyのDMにてご連絡ください。',
                         p4: '4.ファンの方へのプレゼントは準備が出来次第、Groupy運営からお届け致します。費用はすべて当社負担です。',
                         p5: '5.プレゼントの権利は当選者本人のものとし、第三者へ譲渡・転売することはできません。'
                     },
                     rewards: [{
-                        p1: 'ファンランキング上位3名に「ハロウィン限定ギフト」と「推しメンの直筆メッセージカード」をプレゼント。',
-                        p2: '次回のイベントのイメージキャラクターとして起用します（トップバナー・宣伝動画に出演して頂きます）。',
-                        p3: 'アプリの起動画面に登場（期間は2日間となります）。',
-                        p4: 'Twitter公式アカウントで1位として発表されます。'
+                        p1: 'ファンランキング上位3名に推しメンからオススメの「書籍」と「推しメンの直筆メッセージカード」をプレゼント。',
+                        p2: 'アプリの起動画面に登場（期間は2日間となります）。',
+                        p3: 'Twitter公式アカウントで1位として発表されます。'
                     }, {
-                        p1: 'ファンランキング上位3名に「ハロウィン限定ギフト」と「推しメンの直筆メッセージカード」をプレゼント。',
+                        p1: 'ファンランキング上位3名に推しメンからオススメの「書籍」と「推しメンの直筆メッセージカード」をプレゼント。',
                         p2: 'アプリの起動画面に登場（期間は1日となります）。'
                     }, {
-                        p1: 'ファンランキング上位3名に「ハロウィン限定ギフト」と「推しメンの直筆メッセージカード」をプレゼント。'
+                        p1: 'ファンランキング上位3名に推しメンからオススメの「書籍」と「推しメンの直筆メッセージカード」をプレゼント。'
                     }]
                 },
                 isFans: true,
@@ -212,22 +225,22 @@
             var self = this;
             if(self.isFans) {
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_halloween/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `http://share.groupy.vip/html/activity_books/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_halloween/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `http://share.groupy.cn/html/activity_books/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }
-                var title = `Groupyハロウィン動画コンテスト`;
-                var description = `起動画面・イベントバナーに登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
-                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween.jpg`;
+                var title = `Groupy読書の秋動画コンテスト`;
+                var description = `ファン上位3名は推しメンからオススメの書籍と直筆メッセージカードが貰える！今すぐGETしよう`;
+                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }else {
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_halloween/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.vip/html/activity_books/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_halloween/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.cn/html/activity_books/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var title = `Groupyハロウィン動画コンテスト`;
-                var description = `ファンランキング上位3名はハロウィンギフトと推しメンの直筆メッセージカードが貰える！今すぐ応援してGETしよう`;
-                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-halloween.jpg`;
+                var title = `Groupy読書の秋動画コンテスト`;
+                var description = `アプリ起動画面に掲載されるイベント参加中、動画をいっぱい投稿したので、応援してね`;
+                var shareImg = `http://photodebug.oss-cn-hongkong.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }
             console.log(shareURL)
             window.setupWebViewJavascriptBridge(function(bridge) {
