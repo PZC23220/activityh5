@@ -26,7 +26,6 @@
       //    after the API code downloads.
       var player;
       function getVideoInfo(res) {
-        alert('javascript');
         player = new YT.Player('player', {
           height: res.height,
           width: res.width,
@@ -36,13 +35,11 @@
             'onStateChange': onPlayerStateChange
           }
         });
+        videoPlay();
       }
       function onYouTubeIframeAPIReady() {
-        alert('html')
         window.setupWebViewJavascriptBridge(function(bridge) {
-            alert('window');
             bridge.callHandler('getVideoInfo', function(res){
-              alert(res);
                 player = new YT.Player('player', {
                   height: res.height,
                   width: res.width,
@@ -59,6 +56,9 @@
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
         event.target.playVideo();
+      }
+      function videoPlay() {
+        player.playVideo();
       }
 
       // 5. The API calls this function when the player's state changes.
