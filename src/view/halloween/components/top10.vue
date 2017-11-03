@@ -10,7 +10,7 @@
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
                         <div class="img_content">
                             <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
-                            <img v-lazy="ranking.length>0?ranking[0].avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'" class="avatar">
+                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
                             <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/activity/pic_ranking_1.png" class="ranking_pic">
                             <span class="idol_level">NO.1</span>
                         </div>
@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="ranking-fans-content" v-if="ranking.length>0">
-                        <div class="ranking-idol" v-for="(fans,key) in ranking[0].topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><img v-lazy="fans.avatar"></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                        <div class="ranking-idol" v-for="(fans,key) in ranking[0].topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
                     </div>
                     <div class="fans-likes-ranking" v-if="ranking.length>0?ranking[0].topFansList.length > 0:false"><router-link :to="'/fans_ranking?idolId='+ranking[0].idol_id">応援ランキング</router-link></div>
                     <!-- <div class="reard_moer" v-if="isFans" @click="ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">{{activity.idolPage}}</div> -->
@@ -31,7 +31,7 @@
                         <div class="idolranking_content">
                             <div class="img_content">
                                 <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown">
-                                <img v-lazy="idol.avatar" class="avatar">
+                                <span class="avatar"><img v-lazy="idol.avatar"></span>
                                 <img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/activity/pic_ranking_2.png" class="ranking_pic">
                                 <span class="idol_level">NO.{{key+1}}</span>
                             </div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="ranking-fans-content">
-                        <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><img v-lazy="fans.avatar"></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                        <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
                     </div>
                     <div class="fans-likes-ranking" v-if="idol.topFansList.length > 0"><router-link :to="'/fans_ranking?idolId='+idol.idol_id">応援ランキング</router-link></div>
                     <!-- <div class="reard_moer" v-if="isFans" @click="idol.idol_id?showIdolPage(idol.idol_id):false">{{activity.idolPage}}</div> -->

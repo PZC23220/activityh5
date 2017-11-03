@@ -58,7 +58,7 @@
                         <span v-if="key == 1"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
                         <span v-if="key == 2"><img src="http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
                         <span v-if="key > 2" :class="[{'second':key>8},{'three':key>98}]">{{key+1}}</span>
-                        <img v-lazy="idol.avatar" alt="" class="avatar">
+                        <span class="avatar"><img v-lazy="idol.avatar" alt=""></span>
                         <div class="fans_content">
                             <span>
                                 <em>{{idol.nickname?idol.nickname:'...'}}</em>

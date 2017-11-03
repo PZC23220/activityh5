@@ -143,12 +143,18 @@ img.icon {
     width: 15px !important;
     margin-top: 4px;
 }
-img.avatar {
+.avatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 8px;
     float: left;
+    overflow: hidden;
+    img {
+        width: 30px;
+        min-height: 30px;
+        vertical-align: top;
+    }
 }
 .likes {
     width: 12.55px;

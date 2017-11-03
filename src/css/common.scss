@@ -28,12 +28,12 @@ html,body {
 img,i,em {
     vertical-align: middle;
 }
-@font-face {
-    font-family: 'Helvetica Condensed Bold Italic';
-    src: url('/font/Helvetica Condensed Bold Italic.eot');
-    src: url('/font/Helvetica Condensed Bold Italic.woff2') format('woff2'),
-         url('/font/Helvetica Condensed Bold Italic.eot?#iefix') format('embedded-opentype');
-}
+// @font-face {
+//     font-family: 'Helvetica Condensed Bold Italic';
+//     src: url('/font/Helvetica Condensed Bold Italic.eot');
+//     src: url('/font/Helvetica Condensed Bold Italic.woff2') format('woff2'),
+//          url('/font/Helvetica Condensed Bold Italic.eot?#iefix') format('embedded-opentype');
+// }
 html {
     background-color: #f7f7f7;
 }
@@ -162,12 +162,18 @@ img.icon {
     width: 15px !important;
     margin-top: 4px;
 }
-img.avatar {
+.avatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 8px;
     float: left;
+    overflow: hidden;
+    display: inline-block;
+    img {
+        width: 30px;
+        min-height: 30px;
+    }
 }
 .likes {
     width: 12.55px;
@@ -255,12 +261,18 @@ img.avatar {
     div.userinfo {
         overflow: hidden;
         box-sizing: border-box;
-        img.avatar {
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
             margin-right: 9px;
             float: left;
+            overflow: hidden;
+            display: inline-block;
+            img {
+                width: 30px;
+                min-height: 30px;
+            }
         }
         i {
             color: #999;
