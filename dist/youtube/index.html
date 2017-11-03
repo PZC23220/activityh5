@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html id="html">
+<head>
+  <style type="text/css">
+    html,body {
+      margin:  0;
+      padding:  0;
+      border: none;
+      width: 100vw;
+      height:  100vh;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body id="body">
 <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 <div id="player"></div>
 
@@ -35,22 +47,24 @@
             'onStateChange': onPlayerStateChange
           }
         });
-        videoPlay();
+        // console.log(player.target)
+        // player.target.playVideo();
+      }
+      var query_ = location.search.split('?')[1].split('&');
+      var obj = {}
+      for( var i in query_) {
+        obj[query_[i].split('=')[0]] = query_[i].split('=')[1];
       }
       function onYouTubeIframeAPIReady() {
-        window.setupWebViewJavascriptBridge(function(bridge) {
-            bridge.callHandler('getVideoInfo', function(res){
-                player = new YT.Player('player', {
-                  height: res.height,
-                  width: res.width,
-                  videoId: res.videoId,
-                  events: {
-                    'onReady': onPlayerReady,
-                    'onStateChange': onPlayerStateChange
-                  }
-                });
-            })
-        })
+        player = new YT.Player('player', {
+          height: obj.height,
+          width: obj.width,
+          videoId: obj.videoId,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
       }
 
       // 4. The API will call this function when the video player is ready.
@@ -66,11 +80,11 @@
       //    the player should play for six seconds and then stop.
       var done = false;
       function onPlayerStateChange(event) {
-        console.log(event.data)
         if (event.data == YT.PlayerState.PLAYING && !done) {
           setTimeout(stopVideo, 6000);
           done = true;
         }
+        console.log(event.data)
         if(event.data == 1) {
           window.setupWebViewJavascriptBridge(function(bridge) {
             bridge.callHandler('videoPlay')
@@ -88,6 +102,7 @@
       function stopVideo() {
         player.stopVideo();
       }
+
     </script>
 </body>
 </html>
