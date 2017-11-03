@@ -84,6 +84,7 @@
           function onPlayerError(event) {
               console.log("onPlayerError");
               console.log(event.data);
+              PlayerJavaInterface.onPlayerError(event);
           }
 
           function onPlayerReady(event) {

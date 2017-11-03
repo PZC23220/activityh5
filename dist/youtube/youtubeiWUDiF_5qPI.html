@@ -19,10 +19,11 @@
         player = new YT.Player('player', {
           height: '360',
           width: '640',
-          videoId: 'iWUDiF_5qPI',
+          videoId: 'YJt7KRmv2bQ',
           events: {
             'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
+            'onError': onPlayerError,
           }
         });
       }
@@ -31,6 +32,11 @@
       function onPlayerReady(event) {
         event.target.playVideo();
       }
+
+      function onPlayerError(event) {
+              console.log("onPlayerError");
+              console.log(event);
+          }
 
       // 5. The API calls this function when the player's state changes.
       //    The function indicates that when playing a video (state=1),
