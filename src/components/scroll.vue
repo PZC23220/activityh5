@@ -202,7 +202,7 @@ export default {
   color: #666;
 }
 .yo-scroll .loadingImg i {
-    background-image: url(http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/activity/pic_1.png);
+    background-image: url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_1.png);
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
@@ -214,7 +214,7 @@ export default {
     margin-bottom: 5px;
 }
 @keyframes changebg{
-  from {background-image: url(http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/activity/pic_1.png);}
-  to {background-image: url(http://photodebug.oss-cn-hongkong.aliyuncs.com/h5_groupy/activity/pic_2.png);}
+  from {background-image: url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_1.png);}
+  to {background-image: url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_2.png);}
 }  
 </style>
