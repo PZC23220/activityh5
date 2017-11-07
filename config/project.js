@@ -30,6 +30,7 @@ module.exports = {
         halloween: './src/view/halloween',
         event: './src/view/event',
         books: './src/view/books',
+        someJapanese: './src/view/someJapanese',
         // youtube: './src/view/youtube',
     },
 };
