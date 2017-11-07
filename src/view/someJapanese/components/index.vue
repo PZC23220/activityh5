@@ -11,8 +11,8 @@
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2017年11月10日（金） 00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年11月17日（金） 23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2017年11月12日（日） 00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2017年11月19日（日） 23:59:59</i></p>
                 </div>
             </div>
             <div class="activity_rule">
@@ -154,7 +154,7 @@
                 isOver: false,
                 havedMe: false,
                 activity: {
-                    theme:'#ハロウィン#',
+                    theme:'#一番日本語#',
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
@@ -179,7 +179,7 @@
                     },
                     desc: {
                         title: '「一番日本語」とは？',
-                        p1: '<i>「一番日本語」</i>「とは、日本文化愛好者向けの月刊誌です。2008年に創刊し、日本の様々な文化を読者に紹介しています。中国語と日本語の併記に加え日本語の音声付きのため、日本語の教材としても高く評価されています。',
+                        p1: '<i>「一番日本語」</i>とは、日本文化愛好者向けの月刊誌です。2008年に創刊し、日本の様々な文化を読者に紹介しています。中国語と日本語の併記に加え日本語の音声付きのため、日本語の教材としても高く評価されています。',
                     },
                     fansrule: {
                         title: '集計方法',

@@ -5,14 +5,14 @@
       "/js/books.js": "//js/books/books.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/books.js": "//js/books/books.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     }
   },
   "css": {
