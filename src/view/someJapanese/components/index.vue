@@ -12,7 +12,7 @@
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
                     <p><span>{{activity.start}}</span><i>2017年11月12日（日） 00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年11月19日（日） 23:59:59</i></p>
+                    <p><span>{{activity.end}}</span><i>2017年11月18日（土） 23:59:59</i></p>
                 </div>
             </div>
             <div class="activity_rule">
@@ -38,6 +38,7 @@
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
+                <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity_coke_tip.jpg" style="width: 66vw;box-sizing: border-box;padding:12px;">
                 <p style="color: #FF6497;font-weight:600;">※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</p>
                 <!-- <p v-html="activity.rule.p3"></p> -->
             </div>
@@ -207,7 +208,7 @@
                     var shareURL = `http://share.groupy.cn/html/activity_someJapanese/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }
                 var title = `Groupyと【一番日本語】のコラボ企画`;
-                var description = `上位1が大人気雑誌に登場？！動画がいっぱい投稿されているので、応援しよう`;
+                var description = `中国大人気雑誌に登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-someJapanese.png`;
             }else {
                 if(location.hostname == 'activity.groupy.vip') {
@@ -216,7 +217,7 @@
                     var shareURL = `http://share.groupy.cn/html/activity_someJapanese/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
                 var title = `Groupyと【一番日本語】のコラボ企画`;
-                var description = `中国大人気雑誌に登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
+                var description = `上位1が大人気雑誌に登場？！動画がいっぱい投稿されているので、応援しよう`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-someJapanese.png`;
             }
             console.log(shareURL)

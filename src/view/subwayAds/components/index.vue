@@ -171,7 +171,7 @@
                     var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }
                 var title = `【Groupy駅看板モデル選定企画】`;
-                var description = `中国広州大型駅看板モデルを募集中！推しメンを招待して大活躍のキッカケを作ってあげよう！`;
+                var description = `中国広州大型駅看板モデル選定企画に応募しました。予選は12月1日から、応援してね`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }else {
                 if(location.hostname == 'activity.groupy.vip') {
@@ -180,7 +180,7 @@
                     var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
                 var title = `【Groupy駅看板モデル選定企画】`;
-                var description = `中国広州大型駅看板モデル選定企画に応募しました。予選は12月1日から、応援してね`;
+                var description = `中国広州大型駅看板モデルを募集中！推しメンを招待して大活躍のキッカケを作ってあげよう！`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }
             window.setupWebViewJavascriptBridge(function(bridge) {
