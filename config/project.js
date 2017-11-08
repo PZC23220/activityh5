@@ -31,6 +31,7 @@ module.exports = {
         event: './src/view/event',
         books: './src/view/books',
         someJapanese: './src/view/someJapanese',
+        subwayAds: './src/view/subwayAds',
         // youtube: './src/view/youtube',
     },
 };
