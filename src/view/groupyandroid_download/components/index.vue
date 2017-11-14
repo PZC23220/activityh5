@@ -123,7 +123,7 @@
     text-align: right;
     font-size: 16px;
     img {
-      width: 103px;
+      width: 85px;
       margin-right: 12px;
     }
     p {
