@@ -7,7 +7,7 @@
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -16,7 +16,7 @@
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {
