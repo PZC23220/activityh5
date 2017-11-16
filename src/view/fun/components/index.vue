@@ -153,7 +153,7 @@
                 isOver: false,
                 havedMe: false,
                 activity: {
-                    theme:'#ハロウィン#',
+                    theme:'#アイドル応援企画#',
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
