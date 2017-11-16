@@ -188,6 +188,9 @@
             }else {
                 this.isFans = true;
             }
+            window.setupWebViewJavascriptBridge(function(bridge) {
+                bridge.callHandler('setTitle', {'title':'Groupy広告モデル募集'})
+            })
         }
     }
 </script>
