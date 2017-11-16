@@ -20,7 +20,7 @@
     <body>
         <div id="playerId"></div>
     </body>
-    <script type="text/javascript" src="vconsole.min.js"></script>
+    <!-- <script type="text/javascript" src="vconsole.min.js"></script> -->
     <script type="text/javascript">
         var player;
         function onYouTubeIframeAPIReady() {
@@ -136,49 +136,58 @@
         // WEB to APP functions
 
         function onReady() {
-            window.YouTubePlayerBridge.onReady();
+            console.log('onReady')
+            // window.YouTubePlayerBridge.onReady();
         }
 
         function onStateChange(state) {
-            window.YouTubePlayerBridge.onStateChange(state);
+            console.log(state)
+            // window.YouTubePlayerBridge.onStateChange(state);
         }
 
         function onPlaybackQualityChange(quality) {
-            window.YouTubePlayerBridge.onPlaybackQualityChange(quality);
+            console.log(quality)
+            // window.YouTubePlayerBridge.onPlaybackQualityChange(quality);
         }
 
         function onPlaybackRateChange(rate) {
-            window.YouTubePlayerBridge.onPlaybackRateChange(rate);
+            console.log(rate)
+            // window.YouTubePlayerBridge.onPlaybackRateChange(rate);
         }
 
         function onError(error) {
-            window.YouTubePlayerBridge.onError(error);
+            console.log(error)
+            // window.YouTubePlayerBridge.onError(error);
         }
 
         function onApiChange() {
-            window.YouTubePlayerBridge.onApiChange();
+            // window.YouTubePlayerBridge.onApiChange();
         }
 
         function onCurrentSeconds() {
             console.warn(player)
             console.warn(player.getCurrentTime())
-            window.YouTubePlayerBridge.currentSeconds(player.getCurrentTime());
+            // window.YouTubePlayerBridge.currentSeconds(player.getCurrentTime());
         }
 
         function sendDuration() {
-            window.YouTubePlayerBridge.onVideoDuration(player.getDuration());
+            console.log('sendDuration')
+            // window.YouTubePlayerBridge.onVideoDuration(player.getDuration());
         }
 
         function sendVideoTitle(title) {
-            window.YouTubePlayerBridge.onVideoTitle(title);
+            console.log(title)
+            // window.YouTubePlayerBridge.onVideoTitle(title);
         }
 
         function sendVideoId(id) {
-            window.YouTubePlayerBridge.onVideoId(id);
+            console.log(id)
+            // window.YouTubePlayerBridge.onVideoId(id);
         }
 
         function setLog(msg) {
-            window.YouTubePlayerBridge.onLog(msg);
+            console.log(msg)
+            // window.YouTubePlayerBridge.onLog(msg);
         }
 
         // APP to WEB functions
@@ -219,7 +228,6 @@
 
             player.cueVideoById(videoId, startSeconds);
         }
-
     </script>
 
     <!--<script src="https://www.youtube.com/iframe_api"></script>-->
