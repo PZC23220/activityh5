@@ -20,7 +20,7 @@
     <body>
         <div id="playerId"></div>
     </body>
-
+    <script type="text/javascript" src="vconsole.min.js"></script>
     <script type="text/javascript">
         var player;
         function onYouTubeIframeAPIReady() {
@@ -160,6 +160,8 @@
         }
 
         function onCurrentSeconds() {
+            console.warn(player)
+            console.warn(player.getCurrentTime())
             window.YouTubePlayerBridge.currentSeconds(player.getCurrentTime());
         }
 
