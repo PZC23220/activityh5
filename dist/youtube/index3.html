@@ -89,12 +89,12 @@
           function onPlayerReady(event) {
             console.log("player ready ! ");
             event.target.setPlaybackQuality(videoQuality);
-            PlayerJavaInterface.onPlayerReady();
+            // PlayerJavaInterface.onPlayerReady();
             updatePlayerSize();
           }
 
           function onPlayerStateChange(event) {
-            PlayerJavaInterface.onPlayerStateChanged(event.data);
+            // PlayerJavaInterface.onPlayerStateChanged(event.data);
 
             clearInterval(refreshCurrentTimeIntervalId);
             if (event.data === 1) {
@@ -126,14 +126,14 @@
           // Deprecated since 1.4.0
           // Please use loadVideoAtTime instead.
           function loadVideo(videoId) {
-            shouldResizeTrick = PlayerJavaInterface.isPreKitKat();
+            // shouldResizeTrick = PlayerJavaInterface.isPreKitKat();
 
             curVideoId = videoId;
             player.loadVideoById(videoId, 0, videoQuality);
           }
 
           function loadVideoAtTime(videoId, time) {
-            shouldResizeTrick = PlayerJavaInterface.isPreKitKat();
+            // shouldResizeTrick = PlayerJavaInterface.isPreKitKat();
             
             curVideoId = videoId;
             player.loadVideoById(videoId, time, videoQuality);
@@ -169,7 +169,7 @@
           }
 
           function refreshCurrentTime() {
-            PlayerJavaInterface.onCurrentTimeChanged(Math.round(player.getCurrentTime()), Math.round(player.getDuration()));
+            // PlayerJavaInterface.onCurrentTimeChanged(Math.round(player.getCurrentTime()), Math.round(player.getDuration()));
           }
 
           var updatePlayerSize = function() {
