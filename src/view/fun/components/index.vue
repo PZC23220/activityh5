@@ -6,7 +6,7 @@
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>イベント期間中に2万LIke達成のアイドルに収益を全て還元！<br><i>注意：</i><br>Groupyは収益の一部をアイドルの活動資金としてアイドル側に配分しています。今回のイベントで、2万LIke達成のアイドルに対し、アプリストアの手数料を引いた収益を全てアイドルに還元しちゃいます。少しでもアイドルたちの活動にサポートできたらと考えています。</p>
+                <p>イベント期間中に2万Like達成のアイドルに収益を全て還元します！<br><i>注意：</i><br>Groupyは収益の一部をアイドルの活動資金としてアイドル側に配分しています。今回のイベントで、2万Like達成のアイドルに対し、アプリストアの手数料を引いた収益を全てアイドルに還元しちゃいます。少しでもアイドルたちの活動にサポートできたらと考えています。</p>
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
@@ -25,6 +25,7 @@
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
+                        <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                     </div>
                 </li>
             </ul>
@@ -175,7 +176,7 @@
                     },
                     obj: {
                         title: '対象',
-                        p1: 'イベント期間中に2万LIke達成のアイドル'
+                        p1: 'イベント期間中に2万Like達成のアイドル'
                     },
                     fansrule: {
                         title: '集計方法',
@@ -189,7 +190,8 @@
                         p2: '2. 特典は、アイドルの11月分の収益として12月に付与されます。'
                     },
                     rewards: [{
-                        p1: 'アプリストアの手数料を引いた収益を全てアイドルに還元'
+                        p1: 'アプリストアの手数料を引いた収益を全て2万Like達成のアイドルに還元',
+                        p2: '期間中ランキング1位のアイドルはアプリの起動画面に登場（期間は3日間となります）'
                     }]
                 },
                 isFans: true,
@@ -207,7 +209,7 @@
                         var shareURL = `http://share.groupy.cn/html/activity_fun/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【Groupyアイドル応援企画】`;
-                    var description = `期間中2万LIke達成のアイドルに収益全て還元！動画がいっぱい投稿したので、応援してね`;
+                    var description = `期間中2万Like達成のアイドルに収益全て還元！動画がいっぱい投稿したので、応援してね`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-fun.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
@@ -216,7 +218,7 @@
                         var shareURL = `http://share.groupy.cn/html/activity_fun/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【Groupyアイドル応援企画】`;
-                    var description = `期間中2万LIke達成のアイドルに収益全て還元！動画がいっぱい投稿されているので、応援しよう`;
+                    var description = `期間中2万Like達成のアイドルに収益全て還元！動画がいっぱい投稿されているので、応援しよう`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-fun.jpg`;
                 }
                 console.log(shareURL)
