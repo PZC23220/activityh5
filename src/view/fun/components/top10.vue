@@ -26,7 +26,7 @@
                     <div class="fans-likes-ranking" v-if="ranking.length>0?ranking[0].topFansList.length > 0:false"><router-link :to="'/fans_ranking?idolId='+ranking[0].idol_id">応援ランキング</router-link></div>
                     <!-- <div class="reard_moer" v-if="isFans" @click="ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">{{activity.idolPage}}</div> -->
                 </li>
-                <li v-for="(idol,key) in ranking" v-if="isOver?(idol.popularity >= 20000):true">
+                <li v-for="(idol,key) in ranking" v-if="isOver?(idol.popularity >= 20000&&key > 0):key > 0">
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
