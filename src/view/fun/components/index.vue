@@ -204,18 +204,18 @@
                 var self = this;
                 if(self.isFans) {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_fun/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.vip/html/activity_fun_begin/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_fun/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.cn/html/activity_fun_begin/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【Groupyアイドル応援企画】`;
                     var description = `期間中2万Like達成のアイドルに収益全て還元！動画がいっぱい投稿したので、応援してね`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-fun.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_fun/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `http://share.groupy.vip/html/activity_fun_begin/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_fun/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `http://share.groupy.cn/html/activity_fun_begin/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【Groupyアイドル応援企画】`;
                     var description = `期間中2万Like達成のアイドルに収益全て還元！動画がいっぱい投稿されているので、応援しよう`;
