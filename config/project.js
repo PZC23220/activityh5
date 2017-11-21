@@ -34,6 +34,7 @@ module.exports = {
         subwayAds: './src/view/subwayAds',
         groupyandroid_download: './src/view/groupyandroid_download',
         fun: './src/view/fun',
+        fun_begin: './src/view/fun_begin',
         // youtube: './src/view/youtube',
     },
 };
