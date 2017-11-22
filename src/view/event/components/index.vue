@@ -30,7 +30,7 @@
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月30日（土）</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start">前物販</span><span class="times">11:00～13:00</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30～15:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販・特典会</span><span class="times">15:00～16:30</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
               <p>※物販はGroupy専用ブースにて行います。<br>
               ※ライブは無料ですが、FFACGの入場料は別途必要になります。<br>
               ※時間は変更する場合がございます。</p>
@@ -123,7 +123,7 @@
             <div class="index-content ffacg-content">
               <span class="index-time-end" id="ffacg-content-auto-4"></span><br>
               <span class="ffacg-title live-title"></span><br>
-              <p><i class="people">中国・広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
+              <p><i class="people">中国&#183;広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
@@ -202,9 +202,9 @@
             </div>
             <p class="reservation-p">お問い合わせ：contact@groupy.vip</p>
             <p class="reservation-warning">注意事項</p>
-            <p>・金額は入場料のみの金額になります。交通費、宿泊費等はお客様のご負担となります。
-              <br>・航空券や滞在ホテルなどはお客様ご自身でご手配いただくことになります。
-              <br>・事件・事故などにつきまして、Groupyでは一切責任を負えません。予めご了承ください。
+            <p>&#183;金額は入場料のみの金額になります。交通費、宿泊費等はお客様のご負担となります。
+              <br> &#183;航空券や滞在ホテルなどはお客様ご自身でご手配いただくことになります。
+              <br> &#183;事件&#183;事故などにつきまして、Groupyでは一切責任を負えません。予めご了承ください。
             </p>
           </div>
         </swiper-slide> -->
