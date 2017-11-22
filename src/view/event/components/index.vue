@@ -27,9 +27,10 @@
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
-              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月30日</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30~15:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販</span><span class="times">15:00~16:30</span></p>
+              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月30日（土）</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">前物販</span><span class="times">11:00～13:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30～15:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販・特典会</span><span class="times">15:00～16:30</span></p>
               <p>※物販はGroupy専用ブースにて行います。<br>
               ※ライブは無料ですが、FFACGの入場料は別途必要になります。<br>
               ※時間は変更する場合がございます。</p>
@@ -126,17 +127,16 @@
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
-              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月31日</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span><span class="times">10:30~13:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ二部</span><span class="times">13:30~16:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンパーティ</span><span class="times">22:00~26:00</span></p>
+              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月31日（日）</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span><span class="times">11:00～13:15</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ二部</span><span class="times">14:00～16:15</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span><span class="times">22:30～01:40</span></p>
               <span class="performer">チッケト</span><br>
-              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">一日通し券</span><span class="times">4500円</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">VIP券</span><span class="times">6500円</span></p>
-              <p>※タイムテーブルは決定次第公開いたします。<br>
-                ※カウントダウンパーティの詳細内容は後日公開、ぜひお楽しみにしてください。<br>
-                ※チケットの予約・販売及びVIP券の特典は近日公開いたします。<br>
-                ※時間は変更する場合がこざいます。</p>
+              <!-- <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">一日通し券</span><span class="times">4500円</span></p> -->
+              <!-- <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">VIP券</span><span class="times">6500円</span></p> -->
+              <p>
+              ※タイムテーブルは決定次第公開いたします。<br>
+              ※時間は微調整する場合がございます。</p>
               <!-- <span class="performer">イベント詳細</span><br>
               <p class="times-content">
                   <span class="times-content-one"><span class="desc-times">【ライブ一部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">10:00/10:30</span></span>
