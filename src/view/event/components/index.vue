@@ -32,8 +32,8 @@
               <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30～15:00</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
               <p>※タイムテーブルは決定次第公開いたします。<br>
-                ※物販・特典会の時間は変更する場合がございます。<br>
-                ※物販・特典会はGroupy専用ブースにて行います。<br>
+                ※物販&#183;特典会の時間は変更する場合がございます。<br>
+                ※物販&#183;特典会はGroupy専用ブースにて行います。<br>
                 ※FFACGは入場料がかかりますので、チケットの予約や販売は後日案内します。</p>
               <!-- <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
               <span class="performer">ステージ時間</span><br>
