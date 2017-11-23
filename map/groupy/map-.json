@@ -3,6 +3,7 @@
     "min": {
       "/js/event.js": "//js/event/event.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/books.js": "//js/books/books.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
@@ -13,6 +14,7 @@
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/books.js": "//js/books/books.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
