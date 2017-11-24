@@ -33,6 +33,7 @@ module.exports = {
         someJapanese: './src/view/someJapanese',
         subwayAds: './src/view/subwayAds',
         groupy_download: './src/view/groupy_download',
+        groupyandroid_download: './src/view/groupyandroid_download',
         fun: './src/view/fun',
         attendance: './src/view/attendance',
         // youtube: './src/view/youtube',
