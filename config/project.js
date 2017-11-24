@@ -32,6 +32,7 @@ module.exports = {
         books: './src/view/books',
         someJapanese: './src/view/someJapanese',
         subwayAds: './src/view/subwayAds',
+        subwayAds_preliminaries: './src/view/subwayAds_preliminaries',
         groupy_download: './src/view/groupy_download',
         groupyandroid_download: './src/view/groupyandroid_download',
         fun: './src/view/fun',

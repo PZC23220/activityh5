@@ -3,6 +3,7 @@
     "min": {
       "/js/event.js": "//js/event/event.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
       "/js/books.js": "//js/books/books.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
@@ -10,11 +11,12 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
       "/js/books.js": "//js/books/books.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
@@ -22,7 +24,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {
