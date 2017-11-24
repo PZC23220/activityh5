@@ -3,7 +3,10 @@
     <div class="download-content">
       <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/index.png" alt="" class="download-groupy">
       <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/writing.png" alt="" class="download-writing">
-      <a class="download-link" target="blank" href="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk.1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>下载app</span></a>
+      <div class="download-link-content">
+        <a class="download-link" target="blank" :href="hrefs"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_apple.png" alt=""><span>iPhone</span></a>
+        <a class="download-link" style="background: #66AC20;" target="blank" href="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk.1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>Android</span></a>
+      </div>
       <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/phone.png" alt="" class="bg_banner">
     </div>
     <div class="mask-content" v-if="maskShow">
@@ -36,7 +39,8 @@
   export default {
     data() {
       return {
-        maskShow: false
+        maskShow: false,
+        hrefs: 'itms-apps://itunes.apple.com/app/id1270083927'
       }
     },
     methods: {
@@ -55,6 +59,11 @@
         }
       }else {
         self.maskShow = false;
+      }
+      if (/iphone|ipad|ipod/.test(ua)) {
+          this.hrefs = 'itms-apps://itunes.apple.com/app/id1270083927';
+      }else {
+          this.hrefs = 'https://itunes.apple.com/app/id1270083927';
       }
     }
   }
@@ -84,28 +93,41 @@
     max-width: 128px;
     margin-bottom: 14px !important;
   }
+  .download-link-content {
+    display: flex;
+    width: 77.6vw;
+    max-width: 480px;
+    margin: 0 auto;
+  }
   .download-link {
+    flex: 1;
     display: block;
     color: #fff;
-    margin: 14px auto;
+    margin: 14px 0;
     background: #000000;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
-    width: 54.66666vw;
-    max-width: 409px;
     height: 7.49625vh;
     line-height: 7.49625vh;
+    &:first-child {
+      margin-right: 11px;
+    }
     img {
-      width: 6.13333vw;
+      width: 5.6vw;
       max-width: 50px;
       vertical-align: middle;
-      margin-right: 8.5px;
+     margin-right: 8.5px;
     }
     span {
       display: inline-block;
       vertical-align: middle;
       letter-spacing: 2.22px;
-      font-size: 20px;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 500px) {
+      span {
+        font-size: 24px;
+      }
     }
   }
   .bg_banner {

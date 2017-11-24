@@ -7,7 +7,7 @@
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/attendance.js": "//js/attendance/attendance.js",
-      "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
+      "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/undefined.js": "//js/vconsole.min.js"
     },
@@ -18,7 +18,7 @@
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/attendance.js": "//js/attendance/attendance.js",
-      "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
+      "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/undefined.js": "//js/vconsole.min.js"
     }
