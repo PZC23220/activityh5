@@ -8,14 +8,12 @@
             <ul class="ranking_list">
                 <li>
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
-                        <div class="img_content">
-                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
-                        </div>
-                        <div class="name">{{ranking.length>0?(ranking[0].nickname?ranking[0].nickname:'...'):'...'}}</div>
+                        <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
+                        <div class="name">{{ranking.length>0?(ranking[0].nickname?ranking[0].nickname:'...'):'メロメロン'}}</div>
                         <div class="idol_desc">
-                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>{{activity.works}}</i></p>
-                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>{{activity.works}}</i></p>
-                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>{{activity.works}}</i></p>
+                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>フォロワー</i></p>
+                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>守護者</i></p>
+                            <p><span>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</span><i>Likes</i></p>
                         </div>
                     </div>
                     <img class="attendance-bg" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance-bg.png" alt="">
@@ -34,51 +32,24 @@
                 ranking: [],
                 idx: 0,
                 idx2: 0,
-                isFans: false,
-                isOver: false,
-                activity: {
-                    theme: 'ランキング',
-                    works: '作品',
-                    Gcoin: 'コイン',
-                    like: 'Like',
-                    videos: '参加作品一覧',
-                    idolPage: 'プロフィールへ'
-                },
                 activityInfo:{}
             }
         },
         methods: {
             shareSns(val) {
                 var self = this;
-                if(self.isFans) {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }
-                    var title = `【Groupy駅看板モデル選定企画】`;
-                    var description = `中国広州大型駅看板モデル選定企画に応募しました。予選は12月1日から、応援してね`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
+                if(location.hostname == 'activity.groupy.vip') {
+                    var shareURL = `http://share.groupy.vip/html/activity_attendance/index.html`;
                 }else {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }
-                    var title = `【Groupy駅看板モデル選定企画】`;
-                    var description = `中国広州大型駅看板モデルを募集中！推しメンを招待して大活躍のキッカケを作ってあげよう！`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
+                    var shareURL = `http://share.groupy.cn/html/activity_attendance/index.html`;
                 }
+                var title = `【Groupy皆勤賞】`;
+                var description = `11月の皆勤賞が発表されました。今すぐ確認しましょう。＃Groupy `;
+                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance.jpg`;
                 window.setupWebViewJavascriptBridge(function(bridge) {
                     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
                 })
             },
-          toVideoList() {
-            var self = this;
-            window.setupWebViewJavascriptBridge(function(bridge) {
-                bridge.callHandler('activity_videos', {'activityId':self.activityInfo.id,'activityName':self.activityInfo.tag})
-            })
-          },
           getList() {
             let self = this;
             let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
@@ -95,11 +66,6 @@
                     self.loadingShow = true;
                     var timeString = Date.parse(new Date());
                     self.activityInfo = res.data.activityInfo;
-                    if(res.data.isActivityEnded) {
-                        self.isOver = true;
-                    }else {
-                        self.isOver = false;
-                    }
                 }).catch(function(){
                     self.idx++;
                     self.getList();
@@ -124,11 +90,6 @@
         mounted() {
         },
         created() {
-            let isFans = getParams('isFans');
-            if(isFans) {
-                this.isFans = true;
-            }
-            let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
             this.getList();
         }
     }
@@ -137,6 +98,17 @@
      @import "../../../css/idol_activity_top10.scss";
      .content {
         background: #fffbfb;
+     }
+     .avatar {
+        width: 90px;
+        min-height: 90px;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        border: 2px solid #ff3e84;
+        img {
+            width: 90px;
+        }
      }
      .attendance-title {
         width: 76vw;
@@ -153,21 +125,28 @@
      .ranking_list li {
         position: relative;
         border: none;
-        padding-left: 10px;
-        padding-top: 10px;
+        padding-left: 9px;
+        padding-top: 9px;
         .ranking-idol-content {
-            padding: 12px;
+            padding: 15px 12px;
             background: #FFFBFB;
             width: calc(100vw - 36px);
             box-sizing: border-box;
             position: absolute;
             top: 0;left: 0;
             border: 1px solid #FC4083;
-            box-shadow: 0 1px 7.5px 0 rgba(252,64,131,0.18);
+            box-shadow: 0 2px 13px 0 rgba(252,64,131,0.18);
             border-radius: 5px;
         }
         &:first-child .ranking-idol-content {
             background: #FFFBFB;
+        }
+        &:first-child .name {
+            color: #FC4083;
+                margin-top: 10px;
+        }
+        &:first-child .idol_desc {
+            margin-top: 12px;
         }
         .attendance-bg {
             width: 100%;
@@ -186,6 +165,8 @@
               display: block;
               text-align: center;
               margin-left: 0;
+              color: #999;
+              margin-top: 2px;
             }
         }
      }

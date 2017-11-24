@@ -70,7 +70,7 @@
                     </li>
                 </ul>
                 <div class="default_page default_page3"  v-if="default1">
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no coin.png" alt="">
+                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no%20like.png.png" alt="">
                     <p v-html="fans_text.noneGcoin"></p>
                 </div>
             <!-- </scroller> -->
@@ -95,7 +95,7 @@
                 default1: false,
                 idx: 0,
                 fans_text: {
-                    noneGcoin: 'まだコインはないようです',
+                    noneGcoin: 'まだLikeしたファンはいないです',
                     noneLike: 'まだLikeはないようです',
                     pubMsg: '応援ランキング'
                 },
