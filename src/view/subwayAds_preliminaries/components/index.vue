@@ -1,7 +1,8 @@
 <template>
     <div class="main">
          <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
@@ -209,25 +210,14 @@ border: 1px solid #B8CAD4;
         methods: {
             shareSns(val) {
                 var self = this;
-                if(self.isFans) {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }
-                    var title = `【Groupy駅看板モデル選定企画-予選】`;
-                    var description = `上位5名＆50万Like達成のユニットは決勝に参加！動画がいっぱい投稿したので、応援してね。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                if(location.hostname == 'activity.groupy.vip') {
+                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }
-                    var title = `【Groupy駅看板モデル選定企画-予選】`;
-                    var description = `上位5名＆50万Like達成のユニットは決勝に参加！動画がいっぱい投稿されているので、応援しよう。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
+                var title = `【Groupy駅看板モデル選定企画-予選】`;
+                var description = `上位5名＆50万Like達成のユニットは決勝に参加！動画がいっぱい投稿されているので、応援しよう。`;
+                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
                     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
@@ -239,14 +229,15 @@ border: 1px solid #B8CAD4;
                 if(self.idx < 2) {
                     http.get('/ranking/idolActVideoByOrganzation',{
                         params: {
-                            activityId:getParams('activityId'),
-                            rows: 10
+                            activityId:getParams('activityId')
                         }
                     }).then(function(res){
                         console.log(res)
                         self.ranking = res.data.ranking;
                         if(res.data.isActivityEnded) {
                             self.isOver = true;
+                        }else {
+                            self.isOver = false;
                         }
                         self.loadingShow = true;
                     }).catch(function(){
@@ -267,8 +258,6 @@ border: 1px solid #B8CAD4;
         mounted() {
         },
         created() {
-            let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
-            console.log(getParams('isFans'))
             if(getParams('isFans') == 1) {
                 this.isFans = false;
             }else {
