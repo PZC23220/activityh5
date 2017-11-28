@@ -42,7 +42,6 @@
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
-                <p v-html="activity.rule.p3"></p>
                 <p v-html="activity.rule.p4"></p>
             </div>
             <div class="activity_rule">
@@ -164,7 +163,6 @@ border: 1px solid #B8CAD4;
                         title: '参加方法',
                         p1: '1. イベント期間中、「#Groupy広告モデル」タグをつけて投稿してください。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。',
-                        p3: '3.イベントの応募期間（11.08-11.30）に応募せず、予選・決勝期間中「#Groupy広告モデル」をつけて投稿しても無効とさせていただきます。',
                         p4: '<i>※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</i>'
                     },
                     desc: {
