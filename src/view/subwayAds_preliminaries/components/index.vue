@@ -27,10 +27,6 @@
                     <p><span>{{activity.end}}</span><i>2017年12月5日（火） 23:59:59</i></p>
                 </div>
             </div>
-            <div class="activity_rule">
-                <h4>{{activity.obj.title}}</h4>
-                <p v-html="activity.obj.p1"></p>
-            </div>
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
@@ -38,7 +34,7 @@
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
-                        <p><span></span><i style="color: #42A9DE;">{{activity.rewards[0].p3}}</i></p>
+                        <p><i style="color: #42A9DE;">{{activity.rewards[0].p3}}</i></p>
                     </div>
                 </li>
             </ul>
@@ -156,7 +152,7 @@ border: 1px solid #B8CAD4;
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
-                    rewardList: '参加アイドル一覧：',
+                    rewardList: 'ランキング',
                     works: '作品',
                     videos: '参加作品一覧',
                     noRanking: '集計中',
@@ -193,12 +189,12 @@ border: 1px solid #B8CAD4;
                         p3: '3.イベント期間外は、<i>「#Groupy広告モデル」</i>をつけて投稿しても集計されません。'
                     },
                     warning: {
-                        title: '注意事項：',
+                        title: '注意事項',
                         p1: '予選結果はイベント予選期間終了日の翌日にGroupyアプリおよび公式Twitter @GGroupyyy にて発表いたします。'
                     },
                     rewards: [{
-                        p1: '決勝への参加権を獲得',
-                        p2: 'アプリの起動画面に登場（期間は1日間となります）',
+                        p1: '予選ランキング上位5名かつ50万Like達成のユニット・ソロアイドル：決勝への参加権を獲得',
+                        p2: '50万Like達成のユニット・ソロアイドル：アプリの起動画面に登場（期間は1日間となります）',
                         p3: '※今回のイベントは、ユニット全員のLike数を合算した集計となりますがソロの方も参加可能です。',
                     }]
                 },
