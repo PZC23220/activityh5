@@ -30,7 +30,7 @@
     .idolName-content {
         display: block;
         margin: 0 auto;
-        max-width: calc(50vw - 90px);
+        // max-width: calc(50vw - 90px);
         span {
             display: block;
             text-align: center;
@@ -45,17 +45,9 @@
             overflow: hidden;
         }
         i {
-            max-width: calc(33.33333vw - 18px);
+            max-width: calc(100% - 18px);
             display: inline-block;
             vertical-align: middle;
-        }
-        @media screen and (min-width: 500px) {
-            i {
-                max-width: 120px;
-            }
-            span {
-                max-width: 140px;
-            }
         }
     }
     .ranking-download {
@@ -78,6 +70,7 @@
     .ranking-idol {
         flex: 1;
         text-align: ceter;
+        overflow: hidden;
     }
     .fans-likes-ranking {
         text-align: center;

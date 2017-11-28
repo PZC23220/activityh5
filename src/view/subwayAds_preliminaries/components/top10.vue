@@ -9,7 +9,7 @@
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
                         <div class="img_content">
                             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
-                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].orgLogo:ranking[0].avatar"></span>
+                            <span class="avatar"><img v-lazy="ranking.length>0?(ranking[0].orgLogo?ranking[0].orgLogo:ranking[0].avatar):'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
                             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_1.png" class="ranking_pic">
                             <span class="idol_level">NO.1</span>
                         </div>
