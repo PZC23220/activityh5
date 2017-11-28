@@ -38,9 +38,9 @@
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_attendance/index.html`;
+                    var shareURL = `http://share.groupy.vip/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_attendance/index.html`;
+                    var shareURL = `http://share.groupy.cn/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}`;
                 }
                 var title = `【Groupy皆勤賞】`;
                 var description = `${getParams('month')}月の皆勤賞が発表されました。今すぐ確認しましょう。＃Groupy `;
