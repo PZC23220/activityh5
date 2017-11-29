@@ -85,6 +85,7 @@
                 }).then(function(res){
                     console.log(res)
                     self.ranking = res.data.ranking;
+                    self.activityInfo = res.data.activityInfo;
                     if(res.data.isActivityEnded) {
                         self.isOver = true;
                     }
