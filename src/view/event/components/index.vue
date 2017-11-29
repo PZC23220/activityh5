@@ -6,7 +6,7 @@
           <div class="index-content">
             <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_guangzhou.png'" class="index-address"><br>
             <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
-            <!-- <span @click="changePagesLi(3)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br> -->
+            <span @click="changePagesLi(3)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br>
             <span @click="changePagesLi(1)" class="index-activity-content"><span class="index-time-start"></span><span class="index-activity-ffacg"></span><span class="index-activity-goto"></span></span><br>
             <span @click="changePagesLi(2)" class="index-activity-content index-activity-content-end"><span class="index-time-end"></span><span class="index-activity-live"></span><span class="index-activity-goto index-activity-goto-live"></span></span><br>
           </div>
@@ -183,7 +183,7 @@
             </div>
           </div>
         </swiper-slide>
-        <!-- <swiper-slide id="swiper4" class="event-live">
+        <swiper-slide id="swiper4" class="event-live">
           <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content reservation-content">
             <div class="reservation-box">
@@ -197,10 +197,17 @@
                 <input type="email" v-model="Semail" name="">
               </div>
               <div class="input-content">
+                <p><i class="time-point"></i><span>イベントを選択</span></p>
+                <select v-model="Slive">
+                  <option value="1">FFACG</option>
+                  <option value="2">Live</option>
+                </select>
+              </div>
+              <div class="input-content">
                 <p><i class="time-point"></i><span>枚数</span></p>
                 <input type="number" v-model="Snums" min="1" name="">
               </div>
-              <p class="submit-reservation"><span>予約する</span></p>
+              <p class="submit-reservation" @click="pushInfo()"><span>予約する</span></p>
             </div>
             <p class="reservation-p">お問い合わせ：contact@groupy.vip</p>
             <p class="reservation-warning">注意事項</p>
@@ -209,14 +216,14 @@
               <br> &#183;事件&#183;事故などにつきまして、Groupyでは一切責任を負えません。予めご了承ください。
             </p>
           </div>
-        </swiper-slide> -->
+        </swiper-slide>
     </swiper>
     <div class="left-nav">
       <ul class="tabs">
         <li class="tabs-li" @click="changePagesLi(0)"><span class="groupy-icon"></span></li>
         <li class="tabs-li" @click="changePagesLi(1)"><span></span></li>
         <li class="tabs-li" @click="changePagesLi(2)"><span></span></li>
-        <!-- <li class="tabs-li" @click="changePagesLi(3)"><span></span></li> -->
+        <li class="tabs-li" @click="changePagesLi(3)"><span></span></li>
       </ul>
       <span class="groupy-icon-2"></span>
       <span class="groupy-introduce">Groupyでアイドルのいつもと違う一面を発見しよう！</span>
@@ -226,11 +233,12 @@
       <span class="groupy-appstore"></span>
       <span class="groupy-googleplay"></span>
     </div>
-    <!-- <div class="toast">预约成功！</div> -->
+    <div class="toast" :class="{'show':toastShow}" v-html="toast"></div>
   </div>
 </template>
 
 <script>
+  import http from '@api/js/http.js';
   import { swiper, swiperSlide } from 'vue-awesome-swiper';
   import $ from 'n-zepto';
   export default {
@@ -311,30 +319,60 @@
         }],
         Semail: '',
         Sname: '',
-        Snums: 1
+        Snums: 1,
+        Slive: 1,
+        toast: '予約しました！',
+        toastShow: false,
+        idx: 1
       }
     },
     methods: {
       pushInfo() {
         var self = this;
-        if(self.Sname && self.Semail) {
-          var data_ = {
-            showsId: 1, 
-            showsName:'元旦中国行', 
-            showsDescription:'元旦中国行', 
-            firstName: self.Sname, 
-            email: self.Semail, 
-            nums: self.Snums 
+        if(self.idx < 2) {
+          if(self.Sname && self.Semail && /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(self.Semail)) {
+            let showsName;
+            if(self.Slive == 1) {
+              showsName = 'FFACG';
+            }else {
+              showsName = 'Live';
+            }
+            var data_ = {
+              showsId: self.Slive, 
+              showsName: showsName, 
+              showsDescription:'元旦中国行', 
+              firstName: self.Sname, 
+              email: self.Semail, 
+              nums: self.Snums 
+            }
+            http.post('/shows/applyOffical',JSON.stringify(data_))
+            .then(function(res){
+              self.idx++;
+              self.toast = '予約しました！';
+              self.toastShow = true;
+              setTimeout(() => {
+                self.toastShow = false;
+              },1500)
+
+            })
+            .catch(function(err){
+              self.idx++;
+              self.toast = 'エラーが発生しました。<br>しばらくしてからもう一度お試しください。';
+              self.toastShow = true;
+              setTimeout(() => {
+                self.idx = 1;
+                self.toastShow = false;
+              },1500)
+            });
+          }else {
+            self.idx++;
+            self.toast = '正しく入力してください！';
+            self.toastShow = true;
+            setTimeout(() => {
+              self.idx = 1;
+              self.toastShow = false;
+            },1500)
           }
-          http.post('/shows/applyOffical',JSON.stringify(data_))
-          .then(function(res){
-
-          })
-          .catch(function(err){
-
-          });
-        }else {
-          alert('输入框不能为空！')
         }
       },
       handleScroll(e) {
