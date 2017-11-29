@@ -5,7 +5,7 @@
           <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content">
             <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_guangzhou.png'" class="index-address"><br>
-            <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+            <!-- <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br> -->
             <span @click="changePagesLi(3)" class="index-reservation"><span class="reservation"></span><span class="index-activity-goto index-activity-goto-reservation"></span></span><br>
             <span @click="changePagesLi(1)" class="index-activity-content"><span class="index-time-start"></span><span class="index-activity-ffacg"></span><span class="index-activity-goto"></span></span><br>
             <span @click="changePagesLi(2)" class="index-activity-content index-activity-content-end"><span class="index-time-end"></span><span class="index-activity-live"></span><span class="index-activity-goto index-activity-goto-live"></span></span><br>
@@ -183,7 +183,7 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide id="swiper4" class="event-live">
+        <!-- <swiper-slide id="swiper4" class="event-live">
           <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content reservation-content">
             <div class="reservation-box">
@@ -216,14 +216,14 @@
               <br> &#183;事件&#183;事故などにつきまして、Groupyでは一切責任を負えません。予めご了承ください。
             </p>
           </div>
-        </swiper-slide>
+        </swiper-slide> -->
     </swiper>
     <div class="left-nav">
       <ul class="tabs">
         <li class="tabs-li" @click="changePagesLi(0)"><span class="groupy-icon"></span></li>
         <li class="tabs-li" @click="changePagesLi(1)"><span></span></li>
         <li class="tabs-li" @click="changePagesLi(2)"><span></span></li>
-        <li class="tabs-li" @click="changePagesLi(3)"><span></span></li>
+        <!-- <li class="tabs-li" @click="changePagesLi(3)"><span></span></li> -->
       </ul>
       <span class="groupy-icon-2"></span>
       <span class="groupy-introduce">Groupyでアイドルのいつもと違う一面を発見しよう！</span>
