@@ -86,7 +86,7 @@
                     console.log(res)
                     self.ranking = res.data.ranking;
                     self.activityInfo = res.data.activityInfo;
-                    if(res.data.isActivityEnded) {
+                    if(res.data.activityEnded) {
                         self.isOver = true;
                     }
                     self.loadingShow = true;
