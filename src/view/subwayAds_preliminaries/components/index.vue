@@ -65,8 +65,8 @@
                             <span>{{idol.orgName?idol.orgName:idol.nickname}}</span>
                             <div class="idol_desc">
                                 <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
-                                <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.totalPopularity?idol.totalPopularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
-                                <p><span><em>{{Number(idol.totalVideoCount?idol.totalVideoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
+                                <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
+                                <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                             </div>
                         </div>
                     </li>

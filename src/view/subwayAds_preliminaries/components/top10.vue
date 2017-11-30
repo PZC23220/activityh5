@@ -15,12 +15,12 @@
                         </div>
                         <div class="name">{{ranking.length>0?(ranking[0].orgName?ranking[0].orgName:ranking[0].nickname):'...'}}</div>
                         <div class="idol_desc">
-                            <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(ranking.length>0?(ranking[0].totalPopularity?ranking[0].totalPopularity:0):0).toLocaleString()}}</em></span></p>
-                            <p><span><em>{{Number(ranking.length>0?(ranking[0].totalVideoCount?ranking[0].totalVideoCount:0):0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
+                            <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(ranking.length>0?(ranking[0].popularity?ranking[0].popularity:0):0).toLocaleString()}}</em></span></p>
+                            <p><span><em>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                         </div>
                     </div>
                 </li>
-                <li v-for="(idol,key) in ranking" v-if="isOver?(idol.totalPopularity >= 500000&&key > 0 && key < 5):key > 0">
+                <li v-for="(idol,key) in ranking" v-if="isOver?(idol.popularity >= 500000&&key > 0 && key < 5):key > 0">
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
@@ -32,8 +32,8 @@
                             <div class="idol_content">
                                 <div class="name">{{idol.orgName?idol.orgName:idol.nickname}}</div>
                                 <div class="idol_desc">
-                                    <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.totalPopularity?idol.totalPopularity:0).toLocaleString()}}</em></span></p>
-                                    <p><span><em>{{Number(idol.totalVideoCount?idol.totalVideoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
+                                    <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span></p>
+                                    <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                                 </div>
                             </div>
                         </div>
