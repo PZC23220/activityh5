@@ -1,8 +1,8 @@
 <template>
     <div class="main">
         <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_finals-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_finals.jpg" class="banner">
             <h2 style="width: 155px;" v-if="isOver"><span style="left: 0;"></span>入賞アイドル<span style="right: 0;"></span></h2>
             <h2 v-else><span style="left: 0;"></span>{{activity.theme}}<span style="right: 0;"></span></h2>
             <ul class="ranking_list">

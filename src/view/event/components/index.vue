@@ -33,19 +33,10 @@
               <p class="desc-p"><i class="time-point"></i><span class="time-start">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
               <p>※タイムテーブルは決定次第公開いたします。<br>
                 ※物販&#183;特典会の時間は変更する場合がございます。<br>
-                ※物販&#183;特典会はGroupy専用ブースにて行います。<br>
-                ※FFACGは入場料がかかりますので、チケットの予約や販売は後日案内します。</p>
-              <!-- <p class="ffacg-tips"><span>料金：無料（有料アイテム販売あり）</span><span>※FFACGの入館料は別途必要です</span></p>
-              <span class="performer">ステージ時間</span><br>
-              <p class="times-content">
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">13:00/13:30</span></span>
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">15:00</span></span>
-              </p>
-              <span class="performer">物販時間</span><br>
-              <p class="times-content">
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-start">開    始</span><span class="times">15:00</span></span>
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">16:00</span></span>
-              </p> -->
+                ※物販&#183;特典会はGroupy専用ブースにて行います。</p>
+              <span class="performer">チケット代</span><br>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start" style="width: 400px;">VIPエリア（ステージに最も近いエリア）チケット</span><span class="times">60元（1000円）</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start" style="width: 400px;">FFACGチケット</span><span class="times">60元</span></p>
               <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州保利世貿易博覧館 5/6号館 FFACG メインステージ</p>
               <p class="haizhu-adress"><span>(中国広東省広州市海珠区新港東路1000号)</span><a href="https://www.google.com.hk/maps/place/%E4%BF%9D%E5%88%A9%E4%B8%96%E8%B4%B8%E5%B1%95%E8%A7%88%E9%A6%86/@23.0983649,113.3583353,17z/data=!3m1!4b1!4m5!3m4!1s0x3402ffed1db3c62b:0x7fd136151062a33c!8m2!3d23.09836!4d113.360524?hl=zh-CN" target="_blank" class="goole-map"></a></p>
@@ -131,36 +122,16 @@
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月31日（日）</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span><span class="times">11:00～13:15</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ二部</span><span class="times">14:00～16:15</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span><span class="times">22:30～01:40</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span><span class="times">22:30～01:40</span></p>
               <p style="margin-top: 10px;">
               ※タイムテーブルは決定次第公開いたします。<br>
               ※時間は微調整する場合がございます。</p>
               <span class="performer">チケット</span><br>
-              <p style="margin-top: 20px;">※チケットの予約・販売は近日公開いたします。</p>
-              <!-- <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">一日通し券</span><span class="times">4500円</span></p> -->
-              <!-- <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">VIP券</span><span class="times">6500円</span></p> -->
-              <!-- <span class="performer">イベント詳細</span><br>
-              <p class="times-content">
-                  <span class="times-content-one"><span class="desc-times">【ライブ一部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">10:00/10:30</span></span>
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">15:00</span></span>
-              </p>
-              <p class="times-content">
-                  <span class="times-content-one"><span class="desc-times">【ライブ二部】</span><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">13:00/13:30</span></span>
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">16:00</span></span>
-              </p>
-              <p class="times-title-2">【カウントダウンパーティ】</p>
-              <p class="times-content times-content-2">
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-start">開場/開演</span><span class="times">21:30/22:00</span></span>
-                  <span class="times-content-one"><i class="time-point"></i><span class="time-end">終了（予定）</span><span class="times">26:00</span></span>
-              </p>
-              <span class="performer">チケット料金（税込）</span><br>
-              <p class="times-content">
-                  <span class="times-content-one"><span class="desc-times">会員+前売り</span><span class="times" style="width: 80px;">2000</span><span class="time-start">円</span></span>
-              </p>
-              <p class="times-content times-content-3">
-                <span class="times-content-one"><span class="desc-times">前売り</span><span class="times">2500</span><span class="time-start">円</span></span>
-                <span class="times-content-one"><span class="desc-times">当&nbsp;&nbsp;&nbsp;&nbsp;日</span><span class="times">3500</span><span class="time-start">円</span></span>
-              </p> -->
+              <span class="times"style="margin-top: 20px;">一日券：420元（7000円）</span>
+              <p style="margin-top: 20px;">※ライブごとのチケットは販売しておりませんので、ご了承ください。</p>
+              <p>※整理番号でご入場をご案内致します。</p>
+              <p>※日本円でのご購入が可能です。</p>
+              <p>※予約は12月4日12:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。</p>
               <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州TU凸空間</p>
               <p class="haizhu-adress"><span> (中国広東省広州市越秀区広州大道中361-365号東方花苑F1)</span><a href="https://www.google.com.hk/maps/place/TU%E5%87%B8%E7%A9%BA%E9%97%B4/@23.1286471,113.3125053,17z/data=!3m1!4b1!4m5!3m4!1s0x3402f93b30c66829:0xb654a12f6a3e38ae!8m2!3d23.1286471!4d113.314694?hl=zh-CN" target="_blank" class="goole-map"></a></p>

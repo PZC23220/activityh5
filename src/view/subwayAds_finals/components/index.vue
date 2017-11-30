@@ -1,12 +1,12 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_finals-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_finals.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>上位5名かつ50万Like達成のユニットは決勝への参加権を獲得！さらに、Groupyアプリの起動画面に登場して貰います。。</p>
+                <p>決勝上位3名のグループは、中国・広州の中心地にある広州塔駅で大型看板に1ヶ月ジャック！1日40万人が通過するところにあなたのグループの写真が掲載されちゃいます！</p>
             </div>
             <div class="activity_rule">
                 <h4>{{activity.desc.title}}</h4>
@@ -18,13 +18,16 @@
                 <p v-html="activity.desc.p6"></p>
                 <p v-html="activity.desc.p7"></p>
                 <p v-html="activity.desc.p8"></p>
-                <!-- <p v-html="activity.rule.p3"></p> -->
+            </div>
+            <div class="activity_rule">
+                <h4>{{activity.obj.title}}</h4>
+                <p v-html="activity.obj.p1"></p>
             </div>
             <div class="activity_time">
                 <h4>予選期間</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2017年12月1日（金） 00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年12月5日（火） 23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2017年12月6日（水） 00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2017年12月10日（日） 23:59:59</i></p>
                 </div>
             </div>
             <ul class="activity_reward">
@@ -33,7 +36,6 @@
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                         <p><i style="color: #42A9DE;">{{activity.rewards[0].p3}}</i></p>
                     </div>
                 </li>
@@ -42,6 +44,7 @@
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
+                <p v-html="activity.rule.p3"></p>
                 <p v-html="activity.rule.p4"></p>
             </div>
             <div class="activity_rule">
@@ -53,6 +56,9 @@
             <div class="activity_rule">
                 <h4>{{activity.warning.title}}</h4>
                 <p v-html="activity.warning.p1"></p>
+                <p v-html="activity.warning.p2"></p>
+                <p v-html="activity.warning.p3"></p>
+                <p v-html="activity.warning.p4"></p>
             </div>
             <div class="activity_ranking" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
@@ -125,12 +131,13 @@ border: 1px solid #B8CAD4;
                         title: '参加方法',
                         p1: '1. イベント期間中、<i>「#Groupy広告モデル」</i>タグをつけて投稿してください。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。',
+                        p3: '3.決勝権を獲得してなかった方が決勝期間中<i>「#Groupy広告モデル」</i>をつけて投稿しても無効とさせていただきます。',
                         p4: '<i>※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</i>'
                     },
                     desc: {
                         title: '掲載について',
                         p1: '中国広州の地下鉄は、一日700万人以上が利用し、全市人口の65.8%を占めています！',
-                        p2: 'その中、広州で最も有名な観光スポットである広州タワーの下にあることから、命名された<i>「広州タワー駅」</i>にて、Groupyが広告出稿決定！',
+                        p2: 'その中、広州で最も有名な観光スポットである広州タワーの下にあることから、命名された「広州タワー駅」にて、Groupyが広告出稿決定！',
                         p3: '広州タワーは広州のCBD(中心業務地区)として地元の人だけではなく、海外観光客も多い！1日40万人が通過するところにあなたのグループの写真が掲載されちゃいます！',
                         p4: 'ただいま、広告モデルを募集しております！',
                         p5: '中国の多くの人々に知ってもらえるこの大チャンスをぜひつかんでくだい！',
@@ -140,7 +147,7 @@ border: 1px solid #B8CAD4;
                     },
                     obj: {
                         title: '対象',
-                        p1: '予選ランキング上位5名かつ50万Like達成のユニット・ソロアイドル'
+                        p1: '決勝ランキング上位3名のユニット・ソロアイドル'
                     },
                     fansrule: {
                         title: '集計方法',
@@ -150,12 +157,14 @@ border: 1px solid #B8CAD4;
                     },
                     warning: {
                         title: '注意事項',
-                        p1: '予選結果はイベント予選期間終了日の翌日にGroupyアプリおよび公式Twitter @GGroupyyy にて発表いたします。'
+                        p1: '1.最終結果はイベント決勝期間終了の翌日にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
+                        p2: '2.当選アイドルは広告掲載用の写真を2017年12月13日(水)までにご提出いただきます。',
+                        p3: '3.広告掲載用の写真は広州地下鉄局による審査がございます。',
+                        p4: '4.広州地下鉄局による審査の結果によって、掲載期間や掲載場所が変更されることがございます。'
                     },
                     rewards: [{
-                        p1: '予選ランキング上位5名かつ50万Like達成のユニット・ソロアイドル：決勝への参加権を獲得',
-                        p2: '50万Like達成のユニット・ソロアイドル：アプリの起動画面に登場（期間は1日間となります）',
-                        p3: '※今回のイベントは、ユニット全員のLike数を合算した集計となりますがソロの方も参加可能です。',
+                        p1: 'Groupy駅広告モデルとして起用！',
+                        p3: '※今回のイベントは、ユニット全員のLike数を合算した集計となります（ソロの方も参加可能）',
                     }]
                 },
                 isFans: true,
@@ -167,13 +176,13 @@ border: 1px solid #B8CAD4;
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds_finals/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds_finals/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var title = `【Groupy駅看板モデル選定企画-予選】`;
-                var description = `上位5名＆50万Like達成のユニットは決勝に参加！動画がいっぱい投稿されているので、応援しよう。`;
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                var title = `【Groupy駅看板モデル選定企画-決勝`;
+                var description = `上位3名は中国広州大型駅看板に掲載！動画がいっぱい投稿されているので、応援しよう。`;
+                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_finals.jpg`;
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
                     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
