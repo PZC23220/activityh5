@@ -230,7 +230,7 @@ border: 1px solid #B8CAD4;
                 this.getList();
             }
             window.setupWebViewJavascriptBridge(function(bridge) {
-                bridge.callHandler('setTitle', {'title':'Groupy広告モデル'})
+                bridge.callHandler('setTitle', {'title':'Groupy駅看板モデル選定企画-決勝'})
             })
         }
     }
