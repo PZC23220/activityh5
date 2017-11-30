@@ -11,7 +11,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -24,7 +24,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     }
   },
   "css": {
