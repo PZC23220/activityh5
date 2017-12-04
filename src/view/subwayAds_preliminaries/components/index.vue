@@ -174,9 +174,14 @@ border: 1px solid #B8CAD4;
                 }else {
                     var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var title = `【Groupy駅看板モデル選定企画】`;
-                var description = `上位3名は中国広州大型駅看板に掲載！動画がいっぱい投稿されているので、応援しよう。`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                if(self.isFans) {
+                    var title = `【Groupy駅看板モデル選定企画】`;
+                    var description = `上位3名は広州駅看板に掲載！動画がいっぱい投稿したので、応援してね`;
+                }else {
+                    var title = `【Groupy駅看板モデル選定企画】`;
+                    var description = `上位3名は中国広州大型駅看板に掲載！動画がいっぱい投稿されているので、応援しよう。`;
+                }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
                     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
