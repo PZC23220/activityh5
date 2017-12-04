@@ -170,8 +170,8 @@
               <div class="input-content">
                 <p><i class="time-point"></i><span>イベントを選択</span></p>
                 <select v-model="Slive">
-                  <option value="1">FFACG</option>
-                  <option value="2">Live</option>
+                  <option value="1">(30日)FFACG VIPエリアチケット</option>
+                  <option value="2">(31日)New Year Live 1日券</option>
                 </select>
               </div>
               <div class="input-content">

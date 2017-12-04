@@ -55,11 +55,12 @@
             if(self.idx < 2) {
                 let startDate = getParams('startDate');
                 let endDate = getParams('endDate');
+                let dateCount = getParams('dateCount');
                 http.get('/ranking/idolVideoAttendance',{
                     params: {
                         startDate:startDate,
                         endDate: endDate,
-                        dateCount: Math.round((endDate - startDate)/(24*60*60))
+                        dateCount: dateCount
                         // dateCount: 1,
                     }
                 }).then(function(res){
