@@ -304,9 +304,9 @@
           if(self.Sname && self.Semail && /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(self.Semail)) {
             let showsName;
             if(self.Slive == 1) {
-              showsName = 'FFACG';
+              showsName = '(30日)FFACG VIPエリアチケット';
             }else {
-              showsName = 'Live';
+              showsName = '(31日)New Year Live 1日券';
             }
             var data_ = {
               showsId: self.Slive, 
