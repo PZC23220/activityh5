@@ -11,8 +11,8 @@
                         <span class="avatar"><img v-lazy="idol.avatar"></span>
                         <div class="name">{{idol.nickname?idol.nickname:'...'}}</div>
                         <div class="idol_desc">
-                            <p><span>{{Number(idol.followedCount?idol.followedCount:0).toLocaleString()}}</span><i>フォロワー</i></p>
-                            <p><span>{{Number(idol.fansCount?idol.fansCount:0).toLocaleString()}}</span><i>守護者</i></p>
+                            <!-- <p><span>{{Number(idol.followedCount?idol.followedCount:0).toLocaleString()}}</span><i>フォロワー</i></p> -->
+                            <!-- <p><span>{{Number(idol.fansCount?idol.fansCount:0).toLocaleString()}}</span><i>守護者</i></p> -->
                             <p><span>{{Number(idol.popularityCount?idol.popularityCount:0).toLocaleString()}}</span><i>Likes</i></p>
                         </div>
                     </div>

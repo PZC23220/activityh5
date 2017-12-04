@@ -21,7 +21,7 @@
                         </div>
                     </div>
                 </li>
-                <li v-for="(idol,key) in ranking" v-if="isOver?(idol.popularity >= 500000&&key > 0 && key < 5):key > 0">
+                <li v-for="(idol,key) in ranking" v-if="isOver?(key > 0 && key < 3):key > 0">
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
