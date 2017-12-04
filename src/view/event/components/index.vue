@@ -323,6 +323,7 @@
               self.toastShow = true;
               setTimeout(() => {
                 self.toastShow = false;
+                location.reload();
               },1500)
 
             })
