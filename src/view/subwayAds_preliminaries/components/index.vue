@@ -6,7 +6,8 @@
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>上位5名かつ50万Like達成のユニットは決勝への参加権を獲得！さらに、Groupyアプリの起動画面に登場して貰います。。</p>
+                <p><i>※<12月04日(月)お知らせ><br>より多くのユニットがイベントに参加できるよう、イベントの期間・特典等を修正させて頂きます。 詳細をご確認ください。大変申し訳ございませんが、ご理解いただきますようお願い致します。</i></p>
+                <p>上位3名のユニットは、中国・広州の中心地にある広州塔駅で大型看板に1ヶ月ジャック！さらに、Groupyアプリの起動画面に登場して貰います。</p>
             </div>
             <div class="activity_rule">
                 <h4>{{activity.desc.title}}</h4>
@@ -24,7 +25,7 @@
                 <h4>予選期間</h4>
                 <div class="duration_time">
                     <p><span>{{activity.start}}</span><i>2017年12月1日（金） 00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年12月5日（火） 23:59:59</i></p>
+                    <p><span>{{activity.end}}</span><i>2017年12月10日（日） 23:59:59</i></p>
                 </div>
             </div>
             <ul class="activity_reward">
@@ -34,6 +35,7 @@
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
+                        <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
                         <p><i style="color: #42A9DE;">{{activity.rewards[0].p3}}</i></p>
                     </div>
                 </li>
@@ -153,8 +155,9 @@ border: 1px solid #B8CAD4;
                         p1: '予選結果はイベント予選期間終了日の翌日にGroupyアプリおよび公式Twitter @GGroupyyy にて発表いたします。'
                     },
                     rewards: [{
-                        p1: '予選ランキング上位5名かつ50万Like達成のユニット・ソロアイドル：決勝への参加権を獲得',
-                        p2: '50万Like達成のユニット・ソロアイドル：アプリの起動画面に登場（期間は1日間となります）',
+                        p1: 'ランキング上位3名のユニット・ソロアイドル：',
+                        p2: 'Groupy駅広告モデルとして起用',
+                        p4: 'さらにアプリの起動画面に登場（期間は1日間となります）',
                         p3: '※今回のイベントは、ユニット全員のLike数を合算した集計となりますがソロの方も参加可能です。',
                     }]
                 },
@@ -171,8 +174,8 @@ border: 1px solid #B8CAD4;
                 }else {
                     var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var title = `【Groupy駅看板モデル選定企画-予選】`;
-                var description = `上位5名＆50万Like達成のユニットは決勝に参加！動画がいっぱい投稿されているので、応援しよう。`;
+                var title = `【Groupy駅看板モデル選定企画】`;
+                var description = `上位3名は中国広州大型駅看板に掲載！動画がいっぱい投稿されているので、応援しよう。`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
