@@ -6,32 +6,6 @@ html,body {
     text-align: center;
     background: #2D285A;
 }
-@media screen and (max-width: 760px) {
-    .left-nav {
-        transform: scale(0.5);
-        left: -30px !important;
-        top: -165.25px !important;
-    }
-    .index-content,.index-address,.index-idol{
-        width: 100vw !important;
-    }
-    .ffacg-content {
-        margin-left: -50vw !important;
-        text-align: center!important;
-        padding: 12px;
-    }
-    .ffacg-title {
-        transform: scale(0.5);
-        margin-left: -125px !important;
-    }
-    .reservation-content {
-        margin-left: -50vw !important;
-    }
-    .reservation-box {
-        transform: scale(0.8);
-        margin-left: -20px !important;
-    }
-}
 // 轮播图内容
 .event-live {
     width:100%;

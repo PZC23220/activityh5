@@ -1,0 +1,488 @@
+html,body {
+    font-family: Verdana, Roboto, "Droid Sans", 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+}
+.content {
+    text-align: center;
+    background: #2D285A;
+}
+.index-address {
+    width: 96vw;
+}
+// 轮播图内容
+.event-live {
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+.event-content {
+    // width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.event-bg-content {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    line-height: 100vh;
+}
+.event-bg {
+    height: 100vh;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+.vertical-align {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+}
+// 首页图内容
+.index-content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 9vh;
+    box-sizing: border-box;
+}
+.index-idol {
+    margin: 10px 0;
+    width: 96vw;
+}
+.index-reservation {
+    width: 32vw;
+    margin-bottom: 5px;
+}
+.index-activity-content {
+    width: 80vw;
+    margin-bottom: 5px;
+}
+.index-time-start {
+    width: 87.6vw;
+    display: block;
+    margin: 0 auto;
+}
+.index-time-end {
+    width: 64vw;
+    margin-left: 5.3vw;
+}
+// ffacg
+.event-live-content {
+    position: relative;
+    .event-bg {
+        max-height: 700px;
+    }
+}
+.ffacg-content-p {
+    width: 92vw;
+    margin: 0 auto;
+}
+.ffacg-content-auto {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    -webkit-overflow-scrolling: touch;
+    left: 0;
+    top: 0;
+}
+.ffacg-content {
+    text-align: left;
+    height: auto;
+    color: #fff;
+    font-size: 12px;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1.8;
+    padding-top: 20px;
+    span {
+        display: inline-block;
+    }
+}
+.people {
+    background: #ae26d4;
+    margin: 0 5px;
+    padding: 0 3px;
+}
+.hp-links {
+    color: #fff;
+    display: block;
+    margin: 10px auto 0;
+    width: 92vw;
+    em {
+        text-decoration: underline;
+    }
+    >span,img {
+        vertical-align: middle;
+    }
+}
+.ffacg-goto {
+    height: 21px;
+    margin-left: 8px;
+}
+.performer {
+    background: #FFFFFF;
+    box-shadow: 1.5px 1.5px 0 0 #F81970, -1.5px -2px 0 0 #46F7FF;
+    font-size: 12px;
+    color: #F81970;
+    letter-spacing: 3.5px;
+    padding: 0 5px;
+    margin-top: 20px;
+    margin-left: 5.2vw;
+}
+.ffacg-tips {
+    margin-bottom: 30px;
+    span {
+        background: rgba(255,255,255,0.2);
+        height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+    }
+    span:first-child {
+        margin-right: 20px;
+    }
+}
+.desc-p {
+    margin: 0 auto;
+    width: 89.1vw;
+    overflow:hidden;
+    line-height: 14.5px;
+    padding: 6px 0;
+    span {
+        float: left;
+    }
+}
+.desc-p-2 {
+    width: 165px;
+}
+.times-content {
+    margin: 13px 0 20px;
+}
+.times-content-one {
+    height: 32px;
+    line-height: 32px;
+    >* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.ffacg-desc-p {
+    margin: 0 auto;
+    width: 89.1vw;
+    letter-spacing: 1.21px;
+    margin-top: 10px;
+}
+.times-content-one:first-child {
+    margin-right: 30px;
+}
+.time-point {
+    width: 4px;height: 4px;
+    background: #fff;
+    margin-right: 7px;
+    float: left;
+    margin-top: 5.25px;
+}
+.time-start {
+    margin-right: 10px;
+    width: 120px;
+}
+.time-start-2 {
+    width: 36vw;
+}
+.live-desc-p-2 {
+    width: 89.1vw;
+    margin: 0 auto;
+}
+.times {
+    font-size: 14px;
+    font-weight: 600;
+}
+.guangzhou-address {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    margin: 15px auto 7px;
+    width: 89.1vw;
+    line-height: 24px;
+}
+.haizhu-adress {
+    line-height: 22px;
+    margin: 0 auto;
+    width: 89.1vw;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.goole-map {
+   margin: 12px auto 0;
+    width: 89.1vw;
+    display: block;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+// .map-img {
+//     width: 660px;
+//     height: 240px;
+//     background-image : url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/address.png);
+//     background-position: 0 -462px;
+//     margin-top: 19px;
+// }
+.liveImg-content {
+    width: 89.1vw;
+    margin: 0 auto;
+    height: 67.275vw;
+    margin-top: 22px;
+    // margin-left: 16px;
+}
+.liveImg-content .event-live {
+    width: 89.1vw;
+    height: 67.275vw;
+    float: left;
+    img {
+        display:block;
+        width: 89.1vw;
+    }
+}
+.smallImg-content {
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 89.1vw;
+    >* {
+        float: left;
+    }
+}
+.imgTabs-content {
+    width: 89.1vw;
+    height: 45px;
+    overflow-y: hidden;
+    position: relative;
+    overflow-x: scroll;
+}
+.imgTabs {
+    width: 640.5px;
+    display: inline-block;
+    overflow: hidden;
+    height: 45px;
+    overflow: hidden;
+    margin-left: 0;
+    transition: all 0.5s;
+    img {
+        width: 60px;
+        height: 45px;
+        border: none;
+    }
+    >span {
+        float: left;
+        height: 45px;
+    }
+    >span:not(:first-child) {
+        margin-left: 4.5px;
+    }
+    span.active {
+        img {
+            border: 1px solid #F81970;
+            width: 58px;
+            height: 43px;
+        }
+    }
+}
+// live
+.live-title {
+    background-position: 0 -93px;
+}
+.live-desc-p {
+    width: 92.5vw;
+    margin: 0 auto;
+}
+.desc-times {
+    background: #F81970;
+    margin-right: 22px;
+    width: 112px;
+    text-align:center;
+}
+.times-content-3 .desc-times {
+    background: #E58A38;
+}
+.times-content-3 .times {
+    width: 80px;
+}
+.times-title-2 {
+    background-image: linear-gradient(-59deg, #5023A3 0%, #823EAF 98%);
+    width: 524px;
+    height: 38px;
+    line-height: 38px;
+    text-align:center;
+}
+.times-content-2 {
+    margin-left: 36px;
+}
+.times-content .times-content-one:last-child .time-point {
+    margin-left: 22px;
+}
+.map-img-2 {
+    background-position: 0 -728px;
+}
+// revervation
+.reservation-content {
+    text-align: left;
+    width: 100vw;
+    color: #fff;
+    font-size: 14px;
+    span {
+        display: inline-block;
+    }
+}
+.reservation-box {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 4.6vh 9.2vw 0;
+}
+.reservation-title {
+    text-align: center;
+    margin-bottom: 20px;
+    span {
+        width: 144px;
+        height: 35px;
+        background-image : url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/address.png);
+        background-position: 0 -385px;
+    }
+}
+.input-content {
+    margin-bottom: 12px;
+    p {
+        overflow: hidden;
+        line-height: 28px;
+        >* {
+            display: inline-block;vertical-align:middle;
+        }
+    }
+    input,select {
+        border: 1px solid #FFFFFF;
+        background: none;
+        width: 74.7vw;
+        height: 30px;line-height:30px;font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 9px;
+        color: #fff;
+        margin-left: 15px;
+    }
+    option {
+        color: #333;
+    }
+}
+.submit-reservation {
+    text-align: center;
+    margin-top: 16px;
+    span {
+        width: 37.3vw;
+        height: 36px;
+        line-height: 36px;
+        background: #F81970;
+        font-size: 16px;
+        letter-spacing: 1.09px;
+    }
+}
+.reservation-warning {
+    font-weight: 600;font-size:12px;
+    margin-bottom: 9px;
+    text-align: center;
+    letter-spacing: 1.45px;
+}
+.reservation-warning-2 {
+    font-size:12px;
+    width: 92.8vw;margin: 0 auto;
+}
+.reservation-p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 26.5px;
+}
+// 左栏菜单
+.left-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    // margin-top: -360px;
+    height: 9vh;
+    line-height: 9vh;
+    width: 100vw;
+    text-align:center;
+    background: rgba(48,35,174,0.25);
+    box-sizing: border-box;
+    >span {
+        display: inline-block;
+    }
+}
+.tabs {
+    text-align:center;
+    display: flex;
+}
+.tabs li {
+    flex:1;
+    height: 9vh;
+    transition: all 0.3s;
+    box-shadow: none;
+    img {
+        width: 9.4vw;
+        vertical-align:middle;
+    }
+    &:nth-child(3) {
+        img {
+            width: 17.3vw;
+        }
+        background-color: rgba(24, 14, 102,0.5);
+    }
+    &:nth-child(4) {
+        img {
+            width: 14vw;
+        }
+        background-color: rgba(49, 14, 102,0.5);
+    }
+    &:nth-child(2) {
+        img {
+            width: 15vw;
+        }
+        background-color: rgba(68, 14, 102,0.5);
+    }
+}
+.groupy-icon {
+    background-image : url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/icons.png);
+    background-position: 0 0;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 35px;
+}
+.tabs li.active {
+    height: 9.5vh;
+    box-shadow: 0 2px 0 0 #7F33AF;
+}
+.tabs li.active.one {
+    background: #440E66;
+}
+.tabs li.active.two {
+    background: #180E66;
+}
+.tabs li.active.three {
+    background: #310E66;
+}
+// toast 
+.toast {
+    position: absolute;
+    bottom: 100px;
+    background: #fff;
+    color: #333;
+    width: 280px;
+    font-size: 16px;
+    left: 50%;
+    margin-left: -140px;
+    padding: 12px 0;
+    border-radius: 4px;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+.toast.show {
+    transform: scale(1);
+}
