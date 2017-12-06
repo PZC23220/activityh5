@@ -170,6 +170,7 @@
 </style>
 <script>
   import http from '@api/js/http.js';
+  require('@api/js/common.js')
   import { swiper, swiperSlide } from 'vue-awesome-swiper';
   import $ from 'n-zepto';
   export default {
@@ -381,6 +382,9 @@
     },
     created: function() {
       let self = this;
+      window.setupWebViewJavascriptBridge(function(bridge) {
+          bridge.callHandler('setTitle', {'title':'Groupy New Year Festival ～in広州～'})
+      })
       $('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />').appendTo('#head')
     }
   }
