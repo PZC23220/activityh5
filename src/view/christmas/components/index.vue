@@ -131,7 +131,7 @@
                     var shareURL = `http://share.groupy.cn/html/activity_christmas/index.html?activityId=${getParams('activityId')}`;
                 }
                 var title = `【日本のクリスマスを紹介しよう企画】`;
-                var description = `上位1名がGroupy中国各アプリストアの画像に登場！動画がいっぱい投稿されているので、応援しよう。`;
+                var description = `内容の良い動画はスタンプを貼り付け・トップに固定表示！今すぐチェックして応援してね。`;
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-christmas.png`;
             window.setupWebViewJavascriptBridge(function(bridge) {
                 bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
