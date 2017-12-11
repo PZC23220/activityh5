@@ -38,6 +38,7 @@ module.exports = {
         groupyandroid_download: './src/view/groupyandroid_download',
         fun: './src/view/fun',
         attendance: './src/view/attendance',
+        christmas: './src/view/christmas',
         // youtube: './src/view/youtube',
     },
 };
