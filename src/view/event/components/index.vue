@@ -27,16 +27,26 @@
               <span class="performer">出演アイドル</span><br>
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
-              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start">日程</span><span class="times">2017年12月30日（土）</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">前物販</span><span class="times">11:00～13:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">ライブ</span><span class="times">13:30～15:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
-              <p>※タイムテーブルは決定次第公開いたします。<br>
+              <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月30日（土）</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">前物販</span><span class="times">11:00～13:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ</span><span class="times">13:30～15:00</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">13:30~13:40</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">13:40~13:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト</span><span class="times">13:50~14:20</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">14:20~14:50</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
+              <p style="margin-top: 10px;">
                 ※物販&#183;特典会の時間は変更する場合がございます。<br>
                 ※物販&#183;特典会はGroupy専用ブースにて行います。</p>
               <span class="performer">チケット代</span><br>
               <p class="desc-p"><i class="time-point"></i><span class="time-start" style="width: 400px;">VIPエリア（ステージに最も近いエリア）チケット</span><span class="times">60元（1000円）</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start" style="width: 400px;">FFACGチケット</span><span class="times">60元</span></p>
+              <p style="margin-top: 10px;">
+                ※受付は当日Groupyブースにて行いますので、VIPエリアチケットを予約された方は開演前にGroupyブースまでお越しください。<br>
+                ※Groupyブースのブース番号はA43、メインステージの右側です。<br>
+                ※FFACGチケットは現地のFFACGチケット窓口にてご購入いただく形になります。<br>
+                ※先着順でVIPエリアを予約された20名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。<br>
+                ※予約は12月4日12:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。</p>
               <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州保利世貿易博覧館 5/6号館 FFACG メインステージ</p>
               <p class="haizhu-adress"><span>(中国広東省広州市海珠区新港東路1000号)</span><a href="https://www.google.com.hk/maps/place/%E4%BF%9D%E5%88%A9%E4%B8%96%E8%B4%B8%E5%B1%95%E8%A7%88%E9%A6%86/@23.0983649,113.3583353,17z/data=!3m1!4b1!4m5!3m4!1s0x3402ffed1db3c62b:0x7fd136151062a33c!8m2!3d23.09836!4d113.360524?hl=zh-CN" target="_blank" class="goole-map"></a></p>

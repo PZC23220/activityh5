@@ -39,6 +39,6 @@ module.exports = {
         fun: './src/view/fun',
         attendance: './src/view/attendance',
         christmas: './src/view/christmas',
-        // youtube: './src/view/youtube',
+        spokesman: './src/view/spokesman',
     },
 };
