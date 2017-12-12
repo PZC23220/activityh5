@@ -70,6 +70,9 @@
                 <p v-html="activity.warning.p2"></p>
                 <p v-html="activity.warning.p3"></p>
                 <p v-html="activity.warning.p4"></p>
+                <p v-html="activity.warning.p5"></p>
+                <p v-html="activity.warning.p6"></p>
+                <p v-html="activity.warning.p7"></p>
             </div>
             <div class="activity_ranking" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
@@ -149,7 +152,7 @@
                         p1: 'Groupy中国語版の盛大リリースに伴い、中国各アプリストアのGroupy紹介画像のモデルを募集します。',
                         p2: '中国ではapple app storeの他、Tencent App Gem（应用宝）、PP Assistant(PP助手)など多くのアプリストアがあります。なんと7億人以上のスマホユーザーが利用しています。',
                         p3: '上位1名のアイドルはGroupy中国語版のイメージガールとして、各アプリストアに登場できます。',
-                        p4: 'アプリストアだけでなく、WEBメディア&183;SNS（Weibo、Bilibili、wechat等）にも、Groupyの広告と共に登場できちゃうかもよ！',
+                        p4: 'アプリストアだけでなく、WEBメディア・SNS（Weibo、Bilibili、wechat等）にも、Groupyの広告と共に登場できちゃうかもよ！',
                         p5: '中国の多くの人々に知ってもらえるこの大チャンスをぜひつかんでくだい！',
                         p6: '<i>※掲載期間：2018年1月20日～2018年2月20日</i>',
                         p7: '<i>※掲載場所：中国の各アプリストア：Tencent App Gem（应用宝）、PP Assistant(PP助手)、Wandoujia（.豌豆荚）、Baidu App Store（百度应用）、 91 Mobile Assistant（91助手 )など</i>',
