@@ -218,37 +218,52 @@
                 })
             },
             getList(token) {
-                let self = this;
-                let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
-                if(self.idx < 2) {
-                    http.get('/video/activityIdols',{
-                        params: {
-                             activityId:getParams('activityId'),
-                             rows: 3
-                        }
-                    }).then(function(res){
-                        console.log(res)
-                        self.ranking = res.data.ranking;
-                        if(res.data.isActivityEnded) {
-                            self.isOver = true;
-                        }else {
-                            self.isOver = false;
-                        }
-                        self.loadingShow = true;
-                    }).catch(function(){
-                        self.idx++;
-                        self.getList();
-                    });
-                }else {
-                     window.setupWebViewJavascriptBridge(function(bridge) {
-                        if(_lan === 'zh-cn') {
-                            bridge.callHandler('makeToast', '服务器出错，请稍后重试');
-                         }else {
-                            bridge.callHandler('makeToast', 'エラーが発生しました\nしばらくしてからもう一度お試しください');
-                         }
-                    })
+            let self = this;
+            let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
+            if(self.idx < 2) {
+                let token_ = getParams('token');
+                if(token) {
+                    http.defaults.headers.common['Authorization'] = 'Token '+token;
+                }else if(token_!='(null)' && token_!='') {
+                    http.defaults.headers.common['Authorization'] = 'Token ' + token_;
                 }
+                http.get('/video/activityIdols',{
+                    params: {
+                        activityId:getParams('activityId'),
+                        rows: 10
+                    }
+                }).then(function(res){
+                    self.ranking = res.data.ranking;
+                    self.activityInfo = res.data.activityInfo;
+                    if(res.data.self) {
+                        self.me = res.data.self;
+                        self.havedMe = true;
+                    }
+                    self.loadingShow = true;
+                    if(res.data.isActivityEnded) {
+                        self.isOver = true;
+                    }else {
+                        self.isOver = false;
+                    }
+                    console.log(res)
+                }).catch(function(){
+                    self.idx++;
+                    window.setupWebViewJavascriptBridge(function(bridge) {
+                        bridge.callHandler('getToken', {'targetType':'0','targetId':'0'}, function responseCallback(responseData) {
+                            self.getList(responseData.token);
+                        })
+                    })
+                });
+            }else {
+                 window.setupWebViewJavascriptBridge(function(bridge) {
+                    if(_lan === 'zh-cn') {
+                        bridge.callHandler('makeToast', '服务器出错，请稍后重试');
+                     }else {
+                        bridge.callHandler('makeToast', 'エラーが発生しました\nしばらくしてからもう一度お試しください');
+                     }
+                })
             }
+          }
         },
         mounted() {
         },
