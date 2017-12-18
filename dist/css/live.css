@@ -1,0 +1,36 @@
+.live_bg {
+    width:  100vw;
+    height: 100vh;
+}
+.content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+#J_prismPlayer {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 75vw !important;
+}
+.prism-big-play-btn {
+    left: 50% !important;
+    bottom: 50% !important;
+    transform: scale(0.6) !important;
+    margin-bottom: -45px !important;
+    margin-left: -45px !important;
+}
+.toast {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    height:  50px;
+    line-height: 50px;
+}
