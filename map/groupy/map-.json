@@ -15,7 +15,7 @@
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/live.js": "//js/live/live.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/http.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -32,7 +32,7 @@
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/live.js": "//js/live/live.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/http.js"
     }
   },
   "css": {
