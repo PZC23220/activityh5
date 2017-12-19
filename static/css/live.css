@@ -2,7 +2,6 @@
     width:  100vw;
     max-width: 500px;
     margin: 0 auto;
-    min-height: 1010px;
     height: 100vh;
     display: block;
 }
@@ -18,7 +17,7 @@
     left: 0;
     top: 0;
     width: 100vw;
-    min-height: 75vw !important;
+    min-height: 56vw !important;
 }
 .prism-big-play-btn {
     left: 50% !important;
@@ -94,4 +93,16 @@
     margin-right: 6px;
     float: left;
     margin-top: 8.5px;
+}
+video::-webkit-media-controls,
+video::-moz-media-controls,
+video::-webkit-media-controls-enclosure{
+    display:none !important;
+}
+
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel-container,
+video::-webkit-media-controls-start-playback-button {
+    display:none !important;
+    -webkit-appearance: none;
 }

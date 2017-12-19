@@ -59,59 +59,41 @@
     </div>
   </div>
   <script>
-    function getParams(key) {
-      if (location.search.indexOf("?") > -1) {
-        var _query = location.search.split('?')[1].split('&');
-        var _arr = {};
-        for (var i = 0; i < _query.length; i++) {
-          var _obj = _query[i].split('=');
-          _arr[(_obj[0])] = _obj[1];
-        }
-        return _arr[key];
-      } else {
-        return '';
-      }
-    }
+    var liveUrl = location.search.split('liveUrl=')[1];
     var player = new Aliplayer({
       id: "J_prismPlayer",
       autoplay: false,
-       isLive:false,
+       isLive:true,
        playsinline:true,
        width:"100%",
        height:"auto",
        controlBarVisibility:"always",
-       useH5Prism:false,
+       useH5Prism:true,
        useFlashPrism:false,
-       source:getParams('liveUrl'),
+       source: liveUrl,
        cover:"http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
-       skinLayout:[{"name":"fullControlBar","align":"tlabs","x":0,"y":0,"children":[{"name":"fullNormalScreenButton","align":"tr","x":24,"y":13},
-                {"name":"fullTimeDisplay","align":"tr","x":10,"y":12}]},
-                {"name":"controlBar","align":"blabs","x":0,"y":0,"children":[{"name":"fullScreenButton","align":"tr","x":20,"y":25}]},
+       skinLayout:[
                 {"name":"bigPlayButton","align":"blabs","x":30,"y":80},
-                {"name":"infoDisplay","align":"cc"}]
+                {"name":"H5Loading","align":"cc"}]
          },function(player){
-          console.log(player);
+          player.play();
         }
 
     );
-     player.on('ready',function(e) {
+    player.on('ready',function(e) {
       player.play();
    });
     player.on('error', function(e) {
       console.log(e);
       if(e.paramData.error_code == 4008 || e.paramData.error_code == 4014) {
-        document.getElementsByClassName('toast-error').style.display = 'block';
+        document.querySelector('.toast-error').style.display = 'block';
       }else {
         document.querySelector('.toast').style.display = 'block';
       }
     });
-    player.on('liveStreamStop', function(e) {
-      console.log(e)
-      document.getElementsByClassName('toast-error').style.display = 'block';
-    });
     player.on('ended', function(e) {
       console.log(e)
-      document.getElementsByClassName('toast').style.display = 'block';
+      document.querySelector('.toast').style.display = 'block';
     });
 
   </script>
