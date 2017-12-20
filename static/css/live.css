@@ -19,6 +19,9 @@
     width: 100vw;
     min-height: 56vw !important;
 }
+embed {
+    min-height: 56vw !important;
+}
 .prism-big-play-btn {
     left: 50% !important;
     bottom: 50% !important;
