@@ -40,6 +40,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="http://groupy.vip/favicon.ico" />
   <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.4.0/skins/default/aliplayer-min.css" />
   <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.4.0/aliplayer-min.js"></script>
+  <!-- <script type="text/javascript" src="../../js/vconsole.min.js"></script> -->
 </head>
 
 <body>
@@ -59,51 +60,26 @@
     </div>
   </div>
   <script>
-    var m3u8Url = location.search.split('m3u8Url=')[1].split('&flvUrl=')[0];
-    var flvUrl = location.search.split('m3u8Url=')[1].split('&flvUrl=')[1];
-    console.log(m3u8Url)
-    console.log(flvUrl)
-    var player;
-    var ua = navigator.userAgent.toLowerCase();
-    if (/iphone|ipad|ipod|safari/.test(ua)) {
-      player = new Aliplayer({
-        id: "J_prismPlayer",
-        autoplay: false,
-         isLive:true,
-         playsinline:true,
-         width:"100%",
-         height:"auto",
-         controlBarVisibility:"always",
-         useH5Prism:true,
-         useFlashPrism:false,
-         source:m3u8Url,
-         cover:"http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
-         skinLayout:[
-                {"name":"bigPlayButton","align":"blabs","x":30,"y":80},
-                {"name":"H5Loading","align":"cc"}]
-         },function(player){
+    var liveUrl = location.search.split('liveUrl=')[1];
+    console.log(liveUrl)
+    var player = new Aliplayer({
+    id: "J_prismPlayer",
+       autoplay: false,
+       isLive:true,
+       playsinline:true,
+       width:"100%",
+       height:"auto",
+       controlBarVisibility:"always",
+       useH5Prism:false,
+       useFlashPrism:false,
+       source:liveUrl,
+       cover:"http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
+       skinLayout:[{"name":"bigPlayButton","align":"blabs","x":30,"y":80},
+              {"name":"H5Loading","align":"cc"}]
+       },function(player){
         }
-      );
-    }{
-      player = new Aliplayer({
-        id: "J_prismPlayer",
-        autoplay: false,
-         isLive:true,
-         playsinline:true,
-         width:"100%",
-         height:"auto",
-         controlBarVisibility:"always",
-         useH5Prism:false,
-         useFlashPrism:true,
-         source:flvUrl,
-         cover:"http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
-         skinLayout:[
-                {"name":"bigPlayButton","align":"blabs","x":30,"y":80},
-                {"name":"H5Loading","align":"cc"}]
-         },function(player){
-        }
-      );
-    }
+    );
+    console.log(player)
     player.on('error', function(e) {
       console.log(e);
       if(e.paramData.error_code == 4008 || e.paramData.error_code == 4014) {
