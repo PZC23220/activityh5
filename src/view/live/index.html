@@ -59,8 +59,10 @@
     </div>
   </div>
   <script>
-    var m3u8Url = location.search.split('m3u8Url=')[1].split('flvUrl=')[0];
-    var flvUrl = location.search.split('m3u8Url=')[1].split('flvUrl=')[1];
+    var m3u8Url = location.search.split('m3u8Url=')[1].split('&flvUrl=')[0];
+    var flvUrl = location.search.split('m3u8Url=')[1].split('&flvUrl=')[1];
+    console.log(m3u8Url)
+    console.log(flvUrl)
     var player;
     var ua = navigator.userAgent.toLowerCase();
     if (/iphone|ipad|ipod|safari/.test(ua)) {
