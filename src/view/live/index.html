@@ -60,8 +60,19 @@
     </div>
   </div>
   <script>
-    var liveUrl = location.search.split('liveUrl=')[1];
-    console.log(liveUrl)
+    function getURL(key) {
+      if (location.search.indexOf("?") > -1) {
+        var _query = location.search.split('?')[1].split('&');
+        var _arr = {};
+        for (var i = 0; i < _query.length; i++) {
+          var _obj = _query[i].split('=');
+          _arr[(_obj[0])] = _obj[1];
+        }
+        return _arr[key];
+      } else {
+        return '';
+      }
+    }
     var player = new Aliplayer({
     id: "J_prismPlayer",
        autoplay: false,
@@ -72,7 +83,7 @@
        controlBarVisibility:"always",
        useH5Prism:false,
        useFlashPrism:false,
-       source:liveUrl,
+       source:decodeURIComponent(getURL('liveUrl')),
        cover:"http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
        skinLayout:[{"name":"bigPlayButton","align":"blabs","x":30,"y":80},
               {"name":"H5Loading","align":"cc"}]

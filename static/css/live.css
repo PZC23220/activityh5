@@ -100,6 +100,16 @@ embed {
     float: left;
     margin-top: 8.5px;
 }
+@media screen and (min-width: 500px) {
+    .content {
+        left: 50vw;
+        margin-left: -250px;
+    }
+    #J_prismPlayer,embed {
+        min-height: 280px !important;
+        max-height: 300px !important;
+    }
+}
 video::-webkit-media-controls,
 video::-moz-media-controls,
 video::-webkit-media-controls-enclosure{
