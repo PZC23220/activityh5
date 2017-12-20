@@ -18,6 +18,9 @@
     top: 0;
     width: 100vw;
     min-height: 56vw !important;
+    max-height: 60vw !important;
+    overflow: hidden;
+
 }
 embed {
     min-height: 56vw !important;
