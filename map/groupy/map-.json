@@ -36,7 +36,7 @@
     }
   },
   "css": {
-    "/css/undefined.css": "//css/live.css"
+    "/css/undefined.css": "//css/reset.css"
   },
   "static_root": ""
 }
