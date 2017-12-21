@@ -3,17 +3,14 @@
  */
 
 // 组件只有import之后才能使用
-// import index from './components/index.vue'
+import index from './components/index.vue'
 
 
-// const routes =
-//     [
-//         {
-//             path: '/',
-//             redirect: index,
-//         },{
-//             path: '/index',
-//             component: index,
-//         }
-//     ];
+const routes =
+    [
+        {
+            path: '/',
+            component: index,
+        }
+    ];
 export default routes;

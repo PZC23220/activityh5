@@ -100,70 +100,7 @@ embed {
     float: left;
     margin-top: 8.5px;
 }
-.likes-total {
-    margin-top: 12px;
-    margin-bottom: 6px;
-    height: 20px;
-    line-height: 20px;
-    color: #fff;
-    padding: 0 12px;
-    font-size: 14px;
-}
-.likes-total img {
-    width: 15px;
-    margin-right: 6.5px;
-    vertical-align: middle;
-}
-.likes-total span {
-    display: inline-block;
-    vertical-align: middle;
-}
-.gift-list {
-    overflow: hidden;
-    padding: 0 12px;
-}
-.gift-list li {
-    float: left;
-    position: relative;
-    width: calc((100vw - 64px)/9);
-}
-.gift-list li img {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 3px;
-}
-.gift-list li span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: rgba(255,81,110,0.8);
-    color: #fff;
-    border-radius: 50px;
-    font-size: 12px;
-    padding: 0 3.5px;
-}
-.gift-list li:not(:first-child) {
-    margin-left: 5px;
-}
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    text-align: center;
-    padding: 20px 0;
-}
-.footer .send-gift {
-    width: 70px;
-}
-.footer .top5 {
-    width: 95px;
-    position: absolute;
-    left: 50%;
-    top: 20px;
-    margin-left: 43px;
-}
+
 @media screen and (min-width: 500px) {
     .content {
         left: 50vw;

@@ -9,6 +9,6 @@
 <style lang="scss">
 /*  style标签之内会被作为css进行处理，所以需要使用css的注释形式   */
 /*  加上scoped可以将css的作用效果限定在该组件之内 */
- @import "../../css/reset.css";
+ @import "../../css/live.css";
 </style>
 
