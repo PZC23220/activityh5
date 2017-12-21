@@ -58,14 +58,14 @@
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月30日（土）</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">前物販</span><span class="times">11:00～13:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">前物販</span><span class="times">11:00 ～ 13:00</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">タイムテーブル</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">13:30~13:40</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">13:40~13:50</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト</span><span class="times">13:50~14:20</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">14:20~14:50</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">集合写真</span><span class="times">14:50~15:00</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">物販&#183;特典会</span><span class="times">15:00～16:30</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">13:30 ～ 13:40</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">13:40 ～ 13:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト</span><span class="times">13:50 ～ 14:20</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">14:20 ～ 14:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">集合写真</span><span class="times">14:50 ～ 15:00</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">物販&#183;特典会</span><span class="times">15:00 ～ 16:30</span></p>
               <p class="ffacg-desc-p">※タイムテーブルは決定次第公開いたします。<br>
                 ※物販&#183;特典会の時間は変更する場合がございます。<br>
                 ※物販&#183;特典会はGroupy専用ブースにて行います。</p>
@@ -138,11 +138,27 @@
               <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月31日（日）</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span><span class="times">11:00～13:15</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ二部</span><span class="times">14:00～16:15</span></p>
-              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span><span class="times">22:30～01:40</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">11:00 ～ 11:10</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェク</span><span class="times">11:10 ～ 11:30</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">11:30 ～ 11:40</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">11:40 ～ 12:00</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">物販</span><span class="times">12:15 ～ 13:10</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ二部</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">14:00 ～ 14:10</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">14:10 ～ 14:30</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">14:30 ～ 14:40</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェク</span><span class="times">14:40 ～ 15:00</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">物販</span><span class="times">15:15 ～ 16:15</span></p>
+              <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">22:30 ～ 22:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">14:40 ～ 15:00</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト（ part1）</span><span class="times">23:10 ～ 23:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">MC・カウントダウン</span><span class="times">23:50 ～ 0:00</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト（ part2）</span><span class="times">0:00 ～ 0:10</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">0:10 ～ 0:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">物販</span><span class="times">0:50  ～  1:40</span></p>
               <p style="margin-top: 10px;" class="live-desc-p-2">
-              ※タイムテーブルは決定次第公開いたします。<br>
               ※時間は微調整する場合がございます。</p>
               <span class="performer">チケット</span><br>
               <span class="times"style="margin-top: 20px;margin-left: 5.9vw;">一日券：420元（7000円）</span>
