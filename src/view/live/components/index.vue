@@ -46,8 +46,16 @@
         return;
       }
     },
-    computed: {
-
+    mounted() {
+      var self = this;
+      window.ranking_refresh = function() {
+        self.getVideo();
+      }
+      window.setupWebViewJavascriptBridge(function(bridge) {
+          bridge.registerHandler('ranking_refresh', function() {
+            self.getVideo();
+          })
+      });
     },
     created: function() {
       this.getVideo();      
