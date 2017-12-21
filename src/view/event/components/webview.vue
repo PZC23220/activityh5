@@ -153,9 +153,9 @@
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">カウントダウンライブ</span></p>
               <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">Wi-Fi-5</span><span class="times">22:30 ～ 22:50</span></p>
               <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">鈴原知花</span><span class="times">14:40 ～ 15:00</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト（ part1）</span><span class="times">23:10 ～ 23:50</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト(part1)</span><span class="times">23:10 ～ 23:50</span></p>
               <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">MC・カウントダウン</span><span class="times">23:50 ～ 0:00</span></p>
-              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト（ part2）</span><span class="times">0:00 ～ 0:10</span></p>
+              <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">アリエルプロジェクト(part2)</span><span class="times">0:00 ～ 0:10</span></p>
               <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">放課後プリンセス</span><span class="times">0:10 ～ 0:50</span></p>
               <p class="desc-p"><i style="visibility: hidden;" class="time-point"></i><span class="time-start time-start-2">物販</span><span class="times">0:50  ～  1:40</span></p>
               <p style="margin-top: 10px;" class="live-desc-p-2">
