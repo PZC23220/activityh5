@@ -113,8 +113,8 @@
       margin-right: 11px;
     }
     img {
-      width: 5.6vw;
-      max-width: 50px;
+      height: 5.6vh;
+      max-height: 50px;
       vertical-align: middle;
      margin-right: 8.5px;
     }
