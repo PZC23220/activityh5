@@ -1,32 +1,23 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly-over.png" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p><i>※<12月04日(月)お知らせ><br>より多くのユニットがイベントに参加できるよう、イベントの期間・特典等を修正させて頂きます。 詳細をご確認ください。大変申し訳ございませんが、ご理解いただきますようお願い致します。</i></p>
-                <p>上位3名のユニットは、中国・広州の中心地にある広州塔駅で大型看板に1ヶ月ジャック！さらに、Groupyアプリの起動画面に登場して貰います。</p>
-            </div>
-            <div class="activity_rule">
-                <h4>{{activity.desc.title}}</h4>
-                <p v-html="activity.desc.p1"></p>
-                <p v-html="activity.desc.p2"></p>
-                <p v-html="activity.desc.p3"></p>
-                <p v-html="activity.desc.p4"></p>
-                <p v-html="activity.desc.p5"></p>
-                <p v-html="activity.desc.p6"></p>
-                <p v-html="activity.desc.p7"></p>
-                <p v-html="activity.desc.p8"></p>
-                <!-- <p v-html="activity.rule.p3"></p> -->
+                <p>中国のエンタメ誌「娯楽・品味週刊」に、上位1名の所属ユニットメンバー全員が特集ページに登場する！是非奮ってご参加ください！</p>
             </div>
             <div class="activity_time">
-                <h4>予選期間</h4>
+                <h4>イベント期間</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2017年12月1日（金） 00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年12月10日（日） 23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2018年1月5日（金）00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年1月11日（木） 23:59:59</i></p>
                 </div>
+            </div>
+            <div class="activity_rule">
+                <h4>{{activity.obj.title}}</h4>
+                <p v-html="activity.obj.p1"></p>
             </div>
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
@@ -35,11 +26,16 @@
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
-                        <p><i style="color: #42A9DE;">{{activity.rewards[0].p3}}</i></p>
+                        <p>{{activity.rewards[0].p3}}</p>
                     </div>
                 </li>
             </ul>
+            <div class="activity_rule">
+                <h4>{{activity.desc.title}}</h4>
+                <p v-html="activity.desc.p1"></p>
+                <p v-html="activity.desc.p2"></p>
+                <p v-html="activity.desc.p3"></p>
+            </div>
             <div class="activity_rule">
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
@@ -52,10 +48,10 @@
                 <p v-html="activity.fansrule.p2"></p>
                 <p v-html="activity.fansrule.p3"></p>
             </div>
-            <div class="activity_rule">
+            <!-- <div class="activity_rule">
                 <h4>{{activity.warning.title}}</h4>
                 <p v-html="activity.warning.p1"></p>
-            </div>
+            </div> -->
             <div class="activity_ranking" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
                 <p class="no_ranking" v-if="ranking.length<0 && loadingShow">{{activity.noRanking}}</p>
@@ -84,17 +80,17 @@
         background: #f6fcff;
     }
     h2 {
-        background: #42A9DE;
+        background: #70BFE6;
     }
     h4 {
-        background-image: linear-gradient(-46deg,   #42A9DE 0%, #8DD0F3 100%);
+        background-image: linear-gradient(-46deg,   #3FA3D4 0%, #84CBEE 100%);
     }
     .activity_reward li {
-        background: #F1FAFF;
-border: 1px solid #B8CAD4;
+        background: #E8F7FF;
+        border: 1px solid #C3DAE5;
     }
     .activity_rule p i {
-        color: #42A9DE;
+        color: #70BFE6;
     }
 </style>
 <script>
@@ -111,7 +107,7 @@ border: 1px solid #B8CAD4;
                 isOver: false,
                 havedMe: false,
                 activity: {
-                    theme:'#Groupy広告モデル#',
+                    theme:'#娯楽品味週刊#',
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
@@ -124,41 +120,35 @@ border: 1px solid #B8CAD4;
                     all: '全体ランキング',
                     more: 'もっと見る',
                     rule: {
-                        title: '参加方法',
-                        p1: '1. イベント期間中、<i>「#Groupy広告モデル」</i>タグをつけて投稿してください。投稿内容は自由です。',
+                        title: '応募方法',
+                        p1: '1. イベント期間中、<i>「#娯楽品味週刊」</i>タグをつけて投稿してください。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。',
                         p4: '<i>※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</i>'
                     },
                     desc: {
-                        title: '掲載について',
-                        p1: '中国広州の地下鉄は、一日700万人以上が利用し、全市人口の65.8%を占めています！',
-                        p2: 'その中、広州で最も有名な観光スポットである広州タワーの下にあることから、命名された<i>「広州タワー駅」</i>にて、Groupyが広告出稿決定！',
-                        p3: '広州タワーは広州のCBD(中心業務地区)として地元の人だけではなく、海外観光客も多い！1日40万人が通過するところにあなたのグループの写真が掲載されちゃいます！',
-                        p4: 'ただいま、広告モデルを募集しております！',
-                        p5: '中国の多くの人々に知ってもらえるこの大チャンスをぜひつかんでくだい！',
-                        p6: '<i>※掲載期間：2018年1月1日～2018年1月31日</i>',
-                        p7: '<i>※掲載場所：広州地下鉄3号線広州塔駅</i>',
-                        p8: '<i>※サイズ：高さ1,520mm × 幅3,020mm</i>'
+                        title: '雑誌『娯楽・品味週刊』とは',
+                        p1: '「娯楽・品味週刊」は1989年に広東放送テレビにより創刊し、范氷々、劉涛、孫儷など中国の有名女優が掲載されている有名エンタメ雑誌です。',
+                        p2: '全国の20代から30代のサラリーマン・OLから人気を集め、発行部数が10万部を超え、広東省で6000ヶ所を超える書店・駅売店・スタンド・コンビニエンスストアで販売されています。',
+                        p3: '中国の華南地域における最も権威性のあるエンタメ誌として、北京、広州、上海、深センなど23都市の空港の中国南方空港VIPエリアに配置され、数多くの方に閲覧されています。'
                     },
                     obj: {
                         title: '対象',
-                        p1: '予選ランキング上位5名かつ50万Like達成のユニット・ソロアイドル'
+                        p1: 'ランキング1位のアイドルが所属するユニット（ソロの方も参加可能）'
                     },
                     fansrule: {
                         title: '集計方法',
-                        p1: '1.ユニット全員の参加動画のLike数の合計によってランキングが決まります（ソロの方も参加可能）。',
+                        p1: '1. 全ての参加動画のLike数（ハート）の合計によってランキングが決まります。',
                         p2: '2. ランキングはイベント詳細ページにリアルタイムで確認できます。',
-                        p3: '3.イベント期間外は、<i>「#Groupy広告モデル」</i>をつけて投稿しても集計されません。'
+                        p3: '3.イベント期間外は、<i>「#娯楽品味週刊」</i>をつけて投稿しても集計されません。'
                     },
                     warning: {
                         title: '注意事項',
                         p1: '予選結果はイベント予選期間終了日の翌日にGroupyアプリおよび公式Twitter @GGroupyyy にて発表いたします。'
                     },
                     rewards: [{
-                        p1: 'ランキング上位3名のユニット・ソロアイドル：',
-                        p2: 'Groupy駅広告モデルとして起用',
-                        p4: 'さらにアプリの起動画面に登場（期間は1日間となります）',
-                        p3: '※今回のイベントは、ユニット全員のLike数を合算した集計となりますがソロの方も参加可能です。',
+                        p1: 'ランキング1位の所属ユニットメンバー全員が「娯楽・品味週刊」の特集ページに登場！',
+                        p2: '※当選ユニットはプロフィールを1/15までにご提出いただきます。',
+                        p3: '※「娯楽・品味週刊」のライターによるインタービューの可能性もございますので、ご了承ください。'
                     }]
                 },
                 isFans: true,
@@ -170,17 +160,17 @@ border: 1px solid #B8CAD4;
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.vip/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `http://share.groupy.cn/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png`;
                 if(self.isFans) {
-                    var title = `【Groupy駅看板モデル選定企画】`;
-                    var description = `上位3名は広州駅看板に掲載！動画がいっぱい投稿したので、応援してね`;
+                    var title = `Groupy x「娯楽品味週刊」 `;
+                    var description = `大人気雑誌に登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;
                 }else {
-                    var title = `【Groupy駅看板モデル選定企画】`;
-                    var description = `上位3名は中国広州大型駅看板に掲載！動画がいっぱい投稿されているので、応援しよう。`;
+                    var title = `Groupy x「娯楽品味週刊」 `;
+                    var description = `1位が大人気雑誌に登場！動画がいっぱい投稿されているので、応援しよう`;
                 }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
@@ -229,7 +219,7 @@ border: 1px solid #B8CAD4;
                 this.getList();
             }
             window.setupWebViewJavascriptBridge(function(bridge) {
-                bridge.callHandler('setTitle', {'title':'Groupy広告モデル募集-予選'})
+                bridge.callHandler('setTitle', {'title':'Groupy x「娯楽品味週刊」'})
             })
         }
     }

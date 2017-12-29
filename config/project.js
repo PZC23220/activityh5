@@ -41,5 +41,6 @@ module.exports = {
         christmas: './src/view/christmas',
         spokesman: './src/view/spokesman',
         live: './src/view/live',
+        entertainmentWeekly: './src/view/entertainmentWeekly',
     },
 };
