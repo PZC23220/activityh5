@@ -10,29 +10,33 @@
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
                         <div class="img_content">
                             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
-                            <span class="avatar"><img v-lazy="ranking.length>0?(ranking[0].orgLogo?ranking[0].orgLogo:ranking[0].avatar):'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
+                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
                             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_1.png" class="ranking_pic">
                             <span class="idol_level">NO.1</span>
                         </div>
-                        <div class="name">{{ranking.length>0?(ranking[0].orgName?ranking[0].orgName:ranking[0].nickname):'...'}}</div>
+                        <div class="name">{{ranking.length>0?(ranking[0].nickname?ranking[0].nickname:'...'):'...'}}</div>
                         <div class="idol_desc">
                             <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(ranking.length>0?(ranking[0].popularity?ranking[0].popularity:0):0).toLocaleString()}}</em></span></p>
                             <p><span><em>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                         </div>
                     </div>
+                    <div class="ranking-fans-content" v-if="ranking.length>0">
+                        <div class="ranking-idol" v-for="(fans,key) in ranking[0].topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                    </div>
+                    <div class="fans-likes-ranking" v-if="ranking.length>0?ranking[0].topFansList.length > 0:false"><router-link :to="'/fans_ranking?idolId='+ranking[0].idol_id">応援ランキング</router-link></div>
                 </li>
                 <h2 style="width: 210px;" v-if="isOver"><span style="left: 0;"></span>アイドルランキング<span style="right: 0;"></span></h2>
-                <li v-for="(idol,key) in ranking" v-if="key > 0 && key < 10">
+                <li v-for="(idol,key) in ranking" v-if="key>0">
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
                                 <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown">
-                                <span class="avatar"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar"></span>
+                                <span class="avatar"><img v-lazy="idol.avatar"></span>
                                 <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_2.png" class="ranking_pic">
                                 <span class="idol_level">NO.{{key+1}}</span>
                             </div>
                             <div class="idol_content">
-                                <div class="name">{{idol.orgName?idol.orgName:idol.nickname}}</div>
+                                <div class="name">{{idol.nickname?idol.nickname:'...'}}</div>
                                 <div class="idol_desc">
                                     <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span></p>
                                     <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
@@ -40,6 +44,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="ranking-fans-content">
+                        <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                    </div>
+                    <div class="fans-likes-ranking" v-if="idol.topFansList.length > 0"><router-link :to="'/fans_ranking?idolId='+idol.idol_id">応援ランキング</router-link></div>
                 </li>
             </ul>
             <div class="read_videos" v-if="isFans && isOver" @click="toVideoList()">{{activity.videos}}</div>
@@ -79,19 +87,22 @@
             let self = this;
             let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
             if(self.idx < 2) {
-                http.get('/ranking/idolActVideoByOrganzation',{
+                http.get('/video/activityIdols',{
                     params: {
                         activityId:getParams('activityId'),
-                        row: 5
+                        rows: 10
                     }
                 }).then(function(res){
                     console.log(res)
                     self.ranking = res.data.ranking;
+                    self.loadingShow = true;
+                    var timeString = Date.parse(new Date());
                     self.activityInfo = res.data.activityInfo;
                     if(res.data.isActivityEnded) {
                         self.isOver = true;
+                    }else {
+                        self.isOver = false;
                     }
-                    self.loadingShow = true;
                 }).catch(function(){
                     self.idx++;
                     self.getList();
@@ -126,7 +137,4 @@
 </script>
 <style type="text/css" lang="scss" scoped>
      @import "../../../css/idol_activity_top10.scss";
-     .ranking-idol-content {
-        margin-bottom: 12px;
-     }
 </style>

@@ -56,11 +56,11 @@
                 <h4>{{activity.rewardList}}</h4>
                 <p class="no_ranking" v-if="ranking.length<0 && loadingShow">{{activity.noRanking}}</p>
                 <ul class="ranking_list">
-                    <li v-for="(idol,key) in ranking" v-if="ranking.length > 0 && key < 5">
+                    <li v-for="(idol,key) in ranking" v-if="ranking.length > 0 && key < 3">
                         <span :class="[{'first':key == 0},{'second':key == 1},{'three':key > 1}]">{{key+1}}</span>
-                        <div class="img_content"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar" class="avatar"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
+                        <div class="img_content"><img v-lazy="idol.avatar" class="avatar"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
                         <div class="idol_content">
-                            <span>{{idol.orgName?idol.orgName:idol.nickname}}</span>
+                            <span>{{idol.nickname?idol.nickname:'...'}}</span>
                             <div class="idol_desc">
                                 <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
                                 <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
@@ -181,22 +181,38 @@
                 let self = this;
                 let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
                 if(self.idx < 2) {
-                    http.get('/ranking/idolActVideoByOrganzation',{
+                    let token_ = getParams('token');
+                    if(token) {
+                        http.defaults.headers.common['Authorization'] = 'Token '+token;
+                    }else if(token_!='(null)' && token_!='') {
+                        http.defaults.headers.common['Authorization'] = 'Token ' + token_;
+                    }
+                    http.get('/video/activityIdols',{
                         params: {
-                            activityId:getParams('activityId')
+                            activityId:getParams('activityId'),
+                            rows: 10
                         }
                     }).then(function(res){
-                        console.log(res)
                         self.ranking = res.data.ranking;
+                        self.activityInfo = res.data.activityInfo;
+                        if(res.data.self) {
+                            self.me = res.data.self;
+                            self.havedMe = true;
+                        }
+                        self.loadingShow = true;
                         if(res.data.isActivityEnded) {
                             self.isOver = true;
                         }else {
                             self.isOver = false;
                         }
-                        self.loadingShow = true;
+                        console.log(res)
                     }).catch(function(){
                         self.idx++;
-                        self.getList();
+                        window.setupWebViewJavascriptBridge(function(bridge) {
+                            bridge.callHandler('getToken', {'targetType':'0','targetId':'0'}, function responseCallback(responseData) {
+                                self.getList(responseData.token);
+                            })
+                        })
                     });
                 }else {
                      window.setupWebViewJavascriptBridge(function(bridge) {

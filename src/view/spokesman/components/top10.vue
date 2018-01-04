@@ -48,7 +48,6 @@
                         <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
                     </div>
                     <div class="fans-likes-ranking" v-if="idol.topFansList.length > 0"><router-link :to="'/fans_ranking?idolId='+idol.idol_id">応援ランキング</router-link></div>
-                    <!-- <div class="reard_moer" v-if="isFans" @click="idol.idol_id?showIdolPage(idol.idol_id):false">{{activity.idolPage}}</div> -->
                 </li>
             </ul>
             <div class="read_videos" v-if="isFans && isOver" @click="toVideoList()">{{activity.videos}}</div>
@@ -96,7 +95,6 @@
                 }).then(function(res){
                     console.log(res)
                     self.ranking = res.data.ranking;
-                    self.me = res.data.self;
                     self.loadingShow = true;
                     var timeString = Date.parse(new Date());
                     self.activityInfo = res.data.activityInfo;
