@@ -7,11 +7,11 @@
       "/js/spokesman.js": "//js/spokesman/spokesman.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/subwayAds_finals.js": "//js/subwayAds_finals/subwayAds_finals.js",
       "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
       "/js/christmas.js": "//js/christmas/christmas.js",
+      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/live.js": "//js/live/live.js",
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
@@ -25,11 +25,11 @@
       "/js/spokesman.js": "//js/spokesman/spokesman.js",
       "/js/fun.js": "//js/fun/fun.js",
       "/js/halloween.js": "//js/halloween/halloween.js",
-      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/subwayAds_finals.js": "//js/subwayAds_finals/subwayAds_finals.js",
       "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
       "/js/christmas.js": "//js/christmas/christmas.js",
+      "/js/attendance.js": "//js/attendance/attendance.js",
       "/js/live.js": "//js/live/live.js",
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
@@ -38,7 +38,7 @@
     }
   },
   "css": {
-    "/css/undefined.css": "//css/reset.css"
+    "/css/undefined.css": "//css/live.css"
   },
   "static_root": ""
 }
