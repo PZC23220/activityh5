@@ -5,7 +5,7 @@
       <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/writing.png" alt="" class="download-writing">
       <div class="download-link-content">
         <a class="download-link" target="blank" :href="hrefs"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_apple.png" alt=""><span>iPhone</span></a>
-        <a class="download-link" style="background: #66AC20;" target="blank" href="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>Android</span></a>
+        <span class="download-link" style="background: #66AC20;" @click="get_app()"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>Android</span></span>
       </div>
       <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/phone.png" alt="" class="bg_banner">
     </div>
@@ -15,7 +15,6 @@
     </div>
   </div>
 </template>
-
 <script>
   var browser = {
     versions: function () {
@@ -44,6 +43,9 @@
       }
     },
     methods: {
+      get_app() {
+        window.location.assign('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk');
+      }
     },
     computed: {
     },
@@ -113,7 +115,7 @@
       margin-right: 11px;
     }
     img {
-      height: 5.6vh;
+      height: 4.6vh;
       max-height: 50px;
       vertical-align: middle;
      margin-right: 8.5px;
