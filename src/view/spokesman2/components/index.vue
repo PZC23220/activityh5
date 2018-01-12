@@ -1,12 +1,12 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman.jpg" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman2-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman2.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>Groupyのイメージガールになろう！上位１名は中国各アプリストア内のGroupy紹介画像のモデルとして1か月起用されちゃいます。<br>当選アイドルのファンランキング上位3名のファンの方に当選アイドルからの直筆サイン入りチェキをプレゼント！</p>
+                <p>大好評につき、Groupyのイメージガールになろう企画第2弾開催決定！上位１名は日本アプリストア内のGroupy紹介画像のモデルとして1か月起用されちゃいます。</p>
             </div>
             <div class="activity_rule">
                 <h4>{{activity.desc.title}}</h4>
@@ -21,8 +21,8 @@
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2017年12月15日（金）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2017年12月26日（火）23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2018年01月15日（月）00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年01月26日（金）23:59:59</i></p>
                 </div>
             </div>
             <div class="activity_rule">
@@ -70,9 +70,6 @@
                 <p v-html="activity.warning.p2"></p>
                 <p v-html="activity.warning.p3"></p>
                 <p v-html="activity.warning.p4"></p>
-                <p v-html="activity.warning.p5"></p>
-                <p v-html="activity.warning.p6"></p>
-                <p v-html="activity.warning.p7"></p>
             </div>
             <div class="activity_ranking" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
@@ -84,7 +81,6 @@
                         <div class="idol_content">
                             <span>{{idol.nickname?idol.nickname:'...'}}</span>
                             <div class="idol_desc">
-                                <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
                                 <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
                                 <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                             </div>
@@ -99,20 +95,20 @@
 </template>
 <style type="text/css">
     .content {
-        background: #f6fbfc;
+        background: #fefaff;
     }
     h2 {
-        background: #5DCFE3;
+        background: #C3A1D0;
     }
     h4 {
-        background-image: linear-gradient(-46deg, #3FC0D7 0%, #61DAEF 100%);
+        background-image: linear-gradient(-48deg, #B88BCB 3%, #D6ADE5 95%);
     }
     .activity_reward li {
-        background: #E8F7FA;
-        border: 1px solid #C3E5EC;
+        background: #FDF3FF;
+        border: 1px solid #E6D7EA;
     }
     .activity_rule p i {
-        color: #5DCFE3;
+        color: #C3A1D0;
     }
 </style>
 <script>
@@ -129,7 +125,7 @@
                 isOver: false,
                 havedMe: false,
                 activity: {
-                    theme:'#Groupyイメージガール#',
+                    theme:'#Groupyイメージガール2#',
                     time: 'イベント期間',
                     start: '開始日時',
                     end: '終了日時',
@@ -143,19 +139,19 @@
                     more: 'もっと見る',
                     rule: {
                         title: '応募方法',
-                        p1: '1. イベント期間中、<i>「#Groupyイメージガール」</i>タグをつけて投稿してください。投稿内容は自由です。',
+                        p1: '1. イベント期間中、<i>「#Groupyイメージガール2」</i>タグをつけて投稿してください。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。',
                         p4: '<i>※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</i>'
                     },
                     desc: {
                         title: '掲載について',
-                        p1: 'Groupy中国語版の盛大リリースに伴い、中国各アプリストアのGroupy紹介画像のモデルを募集します。',
-                        p2: '中国ではapple app storeの他、Tencent App Gem（应用宝）、PP Assistant(PP助手)など多くのアプリストアがあります。なんと7億人以上のスマホユーザーが利用しています。',
-                        p3: '上位1名のアイドルはGroupy中国語版のイメージガールとして、各アプリストアに登場できます。',
-                        p4: 'アプリストアだけでなく、WEBメディア・SNS（Weibo、Bilibili、wechat等）にも、Groupyの広告と共に登場できちゃうかもよ！',
-                        p5: '中国の多くの人々に知ってもらえるこの大チャンスをぜひつかんでくだい！',
-                        p6: '<i>※掲載期間：2018年1月20日～2018年2月20日</i>',
-                        p7: '<i>※掲載場所：中国の各アプリストア：Tencent App Gem（应用宝）、PP Assistant(PP助手)、Wandoujia（.豌豆荚）、Baidu App Store（百度应用）、 91 Mobile Assistant（91助手 )など</i>',
+                        p1: '大好評につき、Groupyのイメージガール選定企画第二弾を開催することになりました！',
+                        p2: '今回、Groupyは日本アプリストアのアプリ紹介画像のモデルを募集します。',
+                        p3: '上位1名のアイドルはGroupy日本語版のイメージガールとして、各アプリストアに登場できます。',
+                        p4: 'Groupy日本語版の新規ユーザーにいち早く知られる大チャンスを掴み取ろう！',
+                        p5: 'さらに、WEBメディア・SNS（Twitter等）にも、Groupyの広告と共に露出できちゃうかもよ！',
+                        p6: '<i>※掲載期間：2018年2月01日～2018年2月28日</i>',
+                        p7: '<i>※掲載場所：アプリストア（日本）：App Store、Google Play</i>',
                     },
                     obj: {
                         title: '対象',
@@ -165,27 +161,23 @@
                         title: '集計方法',
                         p1: '1.全ての参加動画のLike数（ハート）の合計によってランキングが決まります。',
                         p2: '2. ランキングはイベント詳細ページにリアルタイムで確認できます。',
-                        p3: '3.イベント期間外は、<i>「#Groupyイメージガール」</i>をつけて投稿しても集計されません。'
+                        p3: '3.イベント期間外は、<i>「#Groupyイメージガール2」</i>をつけて投稿しても集計されません。'
                     },
                     warning: {
                         title: '注意事項',
                         p1: '1.最終結果はイベント期間終了の翌日にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
-                        p2: '2.当選アイドルはアプリストア用の写真、直筆サイン入りチェキ及び起動画面掲載用の写真を2018年1月5日までにご提出いただきます。',
+                        p2: '2.当選アイドルはアプリストア用の写真及びトップバナー掲載用の写真を2018年1月5日までにご提出いただきます。',
                         p3: '3.掲載期間は1ヶ月を予定しております。それ以後は予告なく掲載内容を変更する場合があります。',
-                        p4: '4.アプリストア以外の他のメディアでも使用される可能性がありますがが、確実に露出を保証するものではありません。なお他のメディアで使用する際はアプリストア用の写真を使用いたします。',
-                        p5: '5.プレゼントの権利を獲得されたファンの方は、2018年1月1日までにprize@groupy.cn、または公式Twitter@GGroupyyyのDMにてご連絡ください。',
-                        p6: '6.ファンの方へのプレゼントは準備が出来次第、Groupy運営からお届けいたします。費用はすべて当社負担です。',
-                        p7: '7.プレゼントの権利は当選者本人のものとし、第三者へ譲渡・転売することはできません。'
+                        p4: '4.アプリストア以外の他のメディアでも使用される可能性がありますがが、確実に露出を保証するものではありません。なお他のメディアで使用する際はアプリストア用の写真を使用いたします。'
                     },
                     rewards: [{
-                        p1: 'ファンランキング（イベントにおけるファンランキング）上位3名の方に直筆サイン入りチェキをプレゼント',
-                        p2: '中国各アプリストア内のGroupy紹介画像のモデルとして起用！',
-                        p3: 'アプリの起動画面に登場（期間は2日間となります）',
-                        p4: 'Twitter公式アカウントで1位として発表'
+                        p1: '中国各アプリストア内のGroupy紹介画像のモデルとして起用！',
+                        p2: 'アプリ内のトップバナーに登場（期間は2日間となります）',
+                        p3: 'Twitter公式アカウントで1位として発表'
                     },{
-                        p1: 'アプリの起動画面に登場（期間は1日間となります）'
+                        p1: 'アプリ内のトップバナーに登場（期間は1日間となります）'
                     },{
-                        p1: 'アプリの起動画面に登場（期間は1日間となります）'
+                        p1: 'アプリ内のトップバナーに登場（期間は1日間となります）'
                     }]
                 },
                 isFans: true,
@@ -203,8 +195,8 @@
                         var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【イメージガール大募集】`;
-                    var description = `上位1名がGroupy中国各アプリストアの画像に登場！動画がいっぱい投稿したので、応援してね。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman.jpg`;
+                    var description = `上位1名がGroupy日本各アプリストアの画像に登場！動画がいっぱい投稿したので、応援してね。`;
+                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman2.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
                         var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&isFans=1`;
@@ -212,8 +204,8 @@
                         var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【イメージガール大募集】`;
-                    var description = `上位1名がGroupy中国各アプリストアの画像に登場！動画がいっぱい投稿されているので、応援しよう。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman.jpg`;
+                    var description = `上位1名がGroupy日本各アプリストアの画像に登場！動画がいっぱい投稿されているので、応援しよう。`;
+                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman2.jpg`;
                 }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
