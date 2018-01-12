@@ -190,9 +190,9 @@
                 var self = this;
                 if(self.isFans) {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idolId}`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idolId}`;
                     }
                     var title = `【イメージガール大募集】`;
                     var description = `上位1名がGroupy日本各アプリストアの画像に登場！動画がいっぱい投稿したので、応援してね。`;
