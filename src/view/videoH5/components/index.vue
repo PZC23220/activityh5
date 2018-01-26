@@ -39,6 +39,7 @@
                 me: {},
                 idx: 0,
                 idx2: 0,
+                belowHeight: 300,
                 loadingShow: false,
                 isOver: false,
                 havedMe: false,
@@ -62,11 +63,13 @@
                     let nowTime = Date.parse(new Date());
                     if(nowTime < deff) {
                         let deffDate = deff - nowTime;
-                        let times = new Date(deffDate);
-                        self.countimes.Dates = times.getDate(); //日
-                        self.countimes.Hours = times.getHours(); //小时
-                        self.countimes.Minutes = times.getMinutes(); //分
-                        self.countimes.Seconds = times.getSeconds(); //秒
+                        self.countimes.Dates = Math.floor(deffDate/(24*3600*1000)); //日
+                        var leave1=deffDate%(24*3600*1000)    //计算天数后剩余的毫秒数
+                        self.countimes.Hours = Math.floor(leave1/(3600*1000)); //小时
+                        var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数
+                        self.countimes.Minutes = Math.floor(leave2/(60*1000)); //分
+                        var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
+                        self.countimes.Seconds = Math.floor(leave3/1000); //秒
                     }else {
                         clearInterval(timer);
                         self.countDownShow = false;
@@ -94,12 +97,12 @@
                     var description = `#Groupyツイートキャンペーン @GGroupyyy 最も多くツイートされたアイドルがGroupy公式Twitter、Weiboのヘッダー画像に登場！応援しよう。`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
                 }
-                console.log(shareURL)
-                window.setupWebViewJavascriptBridge(function(bridge) {
-                    bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
-                })
+                // console.log(shareURL)
+                // window.setupWebViewJavascriptBridge(function(bridge) {
+                //     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
+                // })
             },
-            getList(token) {
+            getList() {
                 let self = this;
                 let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
                 if(self.idx < 2) {
@@ -123,7 +126,10 @@
                         let spt = document.createElement('script');
                         spt.src = 'https://platform.twitter.com/widgets.js';
                         document.getElementsByTagName('body')[0].appendChild(spt);
-                        console.log(res)
+                        // setTimeout(function(){
+                        //     console.log(document.getElementsByClassName('content')[0].offsetHeight)
+                        // },700)
+                        App.resize(document.body.getBoundingClientRect().height)
                     }).catch(function(){
                         self.idx++;
                         self.getList();
@@ -137,9 +143,15 @@
                          }
                     })
                 }
-            }
+            },
         },
         mounted() {
+            // let deff = document.getElementsByClassName('content')[0].clientHeight;
+            // if(deff > this.belowHeight) {
+            //     console.log(deff)
+            //     this.belowHeight = deff;
+            // }
+
         },
         created() {
             this.getList();
