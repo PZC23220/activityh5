@@ -1,0 +1,170 @@
+.content {
+    background: #fff;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+.banner {
+    width: 100%;
+    display: block;
+}
+h2 {
+    color: #FC4083;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+}
+.share-sns {
+    overflow: hidden;
+    padding: 0 12px 15px;
+    .sns {
+        height: 25px;
+        line-height: 25px;
+        border: 1px solid #009EF4;
+        border-radius: 25px;
+        color: #009EF4;
+        font-size: 12px;
+        padding: 0 9px;
+        display: inline-block;
+        float: left;
+        img {
+            width: 15px;
+            margin-right: 2px;
+        }
+    }
+    .facebook {
+        margin-right: 12px;
+        color: #33589D;
+        border-color: #33589d;
+    }
+    .detail {
+        float: right;
+        font-size: 14px;
+        line-height: 27px;
+        img {
+            height: 12px;
+            margin-left: 5.5px;
+        }
+    }
+}
+.countDown-content {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.countDown {
+    color: #FC4083;
+    margin-bottom: 6px;
+    height: 22px;
+    line-height: 22px;
+    >*,em {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    em {
+        width: 22.5px;
+        height: 22px;
+        background-image: url('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/bg_time.jpg');
+        background-size: 100%;
+        color: #fff;
+        font-size: 16px;
+        margin: 0 5px;
+        font-weight: 400;
+    }
+}
+.goal {
+    font-size: 16px;
+    color: #666;
+    font-weight: 600;
+}
+.idol-ranking {
+    background: #FFF5F7;
+    border: 1px solid #FFB2C6;
+    border-radius: 5px;
+    padding:8px 12px;
+    margin:0 12px;box-sizing: border-box;
+}
+.ranking-two {
+    display: flex;
+}
+.ranking-idol {
+    flex: 1;
+    text-align: ceter;
+    overflow: hidden;
+}
+.avatar-content {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+    // vertical-align: middle;
+    >span {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid #FC4083;
+        overflow: hidden;
+        img {
+            width: 50px;
+            min-height: 50px;
+        }
+    }
+    >img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15px;
+    }
+}
+.idolName-content {
+    display: block;
+    margin: 0 auto;
+    // max-width: calc(50vw - 90px);
+    span {
+        display: block;
+        text-align: center;
+        img {
+            width: 12px;
+            margin-right: 5px;
+        }
+    }
+    span,i {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    i {
+        max-width: calc(100% - 18px);
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.ranking-download {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-radius:25px;
+    font-size: 14px;
+    margin: 17px auto 0;
+}
+.no-ranking {
+    display: block;
+    margin: 0 auto;
+    width: 53.5px;
+}
+.no-ranking-tips {
+    text-align: center;
+    color: #999;
+    line-height: 24px;
+}
+.twitter-content {
+    padding: 0 12px;
+}
+.twitter-title {
+    padding-left: 20px;
+    line-height: 12px;
+    margin-top: 8px;
+    color: #999999;
+}

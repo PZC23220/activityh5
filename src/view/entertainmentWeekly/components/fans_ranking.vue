@@ -73,7 +73,6 @@
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no coin.png" alt="">
                     <p v-html="fans_text.noneGcoin"></p>
                 </div>
-            <!-- </scroller> -->
             </v-scroll>
          </div>
     </div>
@@ -82,7 +81,6 @@
      @import "../../../css/fans_ranking.scss";
 </style>
 <script>
-    // import VueScroller from 'vue-scroller';
     import Scroll from 'src/components/scroll.vue';
     import http from '@api/js/http.js';
     require('@api/js/common.js')
@@ -94,6 +92,8 @@
                 len: 20,
                 default1: false,
                 idx: 0,
+                havedlast: false,
+                offset: 0,
                 fans_text: {
                     noneGcoin: 'まだコインはないようです',
                     noneLike: 'まだLikeはないようです',
@@ -123,77 +123,73 @@
             },
             getRanking(token) {
                 let self = this;
-                if(self.idx < 2) {
-                    self.idx++;
-                    // let token_ = getParams('token');
-                    // if(token) {
-                    //     http.defaults.headers.common['Authorization'] = 'Token '+token;
-                    // }else if(token_!='(null)' && token_!='') {
-                    //     http.defaults.headers.common['Authorization'] = 'Token ' + token_;
-                    // }
-                    http.get('/ranking/idolActVideoByFans',{
-                        params: {
-                            activityId: getParams('activityId'),
-                            idolId: self.$route.query.idolId
-                        }
-                    }).then(function(res){
-                        console.log(res)
-                        if(res.status == 200) {
-                            if(res.data.length > 0) {
-                                self.default1 = false;
-                                self.rakingList = res.data;
-                                // for(var i=0;i<self.rakingList.length;i++) {
-                                //     if(self.rakingList[i].fansId == getParams('fansId')) {
-                                //         self.meObj = self.rakingList[i];
-                                //         self.meObj.position = (i+1);
-                                //         console.log(self.rakingList)
-                                //         return;
-                                //     }
-                                // }
-                            }else {
-                                self.default1 = true;
+                http.get('/ranking/idolActVideoByFans',{
+                    params: {
+                        activityId: getParams('activityId'),
+                        idolId: self.$route.query.idolId,
+                        offset: self.offset,
+                        limit: 20
+                    }
+                }).then(function(res){
+                    if(res.status == 200) {
+                        self.default1 = false;
+                        if(res.data.length > 0 ) {
+                            for(var i=0;i<res.data.length;i++){
+                                self.rakingList.push(res.data[i]);
                             }
+                            self.havedlast = false;
                         }else {
-                           self.default1 = true;
+                            self.havedlast = true;
                         }
-                    }).catch(function(err){
-                                self.getRanking();
-                    });
-
-                }else {
-                    // let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
-                    window.setupWebViewJavascriptBridge(function(bridge) {
-                        // if(_lan === 'zh-cn') {
-                        //     bridge.callHandler('makeToast', '服务器出错，请稍后重试');
-                        //  }else {
-                            bridge.callHandler('makeToast', 'エラーが発生しました\nしばらくしてからもう一度お試しください');
-                         // }
-                    })
-                }
+                    }else {
+                       self.default1 = true;
+                    }
+                })
             },
             refresh (done) {
                 var self = this;
+                 http.get('/ranking/idolActVideoByFans',{
+                    params: {
+                        activityId: getParams('activityId'),
+                        idolId: self.$route.query.idolId,
+                        offset: self.offset,
+                        limit: 20
+                    }
+                }).then(function(res){
+                    self.offset = 0;
+                    self.havedlast = false;
+                    self.default1 = false;
+                     self.rakingList = res.data;
+                }).catch(function(){
+                    self.default1 = true;
+                });
                 setTimeout(() => {
-                  self.idx = 0;
-                  self.getRanking();
-                  done()
-                }, 1500)
-            },
+                    done(true);
+                }, 500)
+          },
 
             infinite (done) {
-                var self = this;
-                if (self.rakingList.length < self.len) {
+            var self = this;
+            if(self.commentList.length>0) {
+               if (self.havedlast) {
                   setTimeout(() => {
                     done(true)
-                  }, 1500)
+                  }, 500)
                   return;
                 } else {
                     setTimeout(() => {
-                      self.len += 20;
+                      self.offset += 20;
+                      self.getRanking();
                       done()
-                    }, 1500)
+                    }, 500)
                 }
+            }else {
+              setTimeout(() => {
+                done(true)
+              }, 1500)
+              return;
             }
+          }
         },
         created() {
             var self = this;
