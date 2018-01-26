@@ -21,7 +21,7 @@
                 <a v-if="ranking.length > 0" @click="p_log('activityshare_activity_ranking')" target="_blank" :href="hrefs" class="download ranking-download">ランキング</a>
             </div> -->
             <div class="ranking-twitter">
-                <h5 class="twitter-title">Twitter@GGroupyyy にて公開</h5>
+                <h5 class="twitter-title">ランキングは公式Twitterにて公開</h5>
                 <div class="twitter-content" v-html='activityInfo.twitterWidgetCodeSnippet'>
 
                 </div>
