@@ -3,10 +3,10 @@
          <div class="content">
             <img :src="activityInfo.img" class="banner">
             <h2 class="">{{activityInfo.description}}</h2>
-            <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><a :href="activityInfo.actionInfo" class="detail">詳しくはこちら<img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></a></p>
+            <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><span @click="activityInfo.actionInfo?open_h5():false" class="detail">詳しくはこちら<img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></span></p>
             <div class="countDown-content">
                 <div class="countDown"><span>終了まであと</span><p class="timer"><em>{{countimes.Dates}}</em>日<em>{{countimes.Hours}}</em>時間<em>{{countimes.Minutes}}</em>分<em>{{countimes.Seconds}}</em>秒</p></div>
-                <div class="goal">対象：{{activityInfo.goal}}</div>
+                <div v-if="!isOver" class="goal">対象：{{activityInfo.goal}}</div>
             </div>
             <!-- <div class="idol-ranking">
                 <div class="countDown-content">
@@ -76,6 +76,13 @@
                     }
                 },1000)
             },
+            open_h5() {
+                let self = this;
+                window.setupWebViewJavascriptBridge(function(bridge) {
+                    bridge.callHandler('open_h5', {"url": self.activityInfo.actionInfo, "title": self.activityInfo.title})
+                      ()
+                })
+            },
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
@@ -104,6 +111,9 @@
                         self.ranking = res.data.ranking;
                         if(res.data.activityInfo) {
                             self.activityInfo = res.data.activityInfo;
+                            window.setupWebViewJavascriptBridge(function(bridge) {
+                                bridge.callHandler('setTitle', {'title':activityInfo.title})
+                            })
                             self.countDownFormat(res.data.activityInfo.endTime);
                         }
                         self.loadingShow = true;
@@ -149,9 +159,6 @@
             }else {
                 this.isFans = true;
             }
-            window.setupWebViewJavascriptBridge(function(bridge) {
-                bridge.callHandler('setTitle', {'title':'Groupyツイートキャンペーン'})
-            })
         }
     }
 </script>
