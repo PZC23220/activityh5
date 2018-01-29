@@ -1,13 +1,12 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png" class="banner">
-            <h2 class="">日中両国の多くの人に知ってもらう大チャンス！参加動画が一番「＃Groupyツイートキャンペーン」ハッシュタグでツイートされたアイドルは、Groupyの公式Twitter、Weiboのヘッダー画像に1ヶ月登場できます！<br>※ 毎日11時及び19時に公式Twitter@GGroupyyyにてランキングを更新します。</h2>
+            <img :src="activityInfo.img" class="banner">
+            <h2 class="">{{activityInfo.description}}</h2>
             <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><a :href="activityInfo.actionInfo" class="detail">詳しくはこちら<img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></a></p>
             <div class="countDown-content">
                 <div class="countDown"><span>終了まであと</span><p class="timer"><em>{{countimes.Dates}}</em>日<em>{{countimes.Hours}}</em>時間<em>{{countimes.Minutes}}</em>分<em>{{countimes.Seconds}}</em>秒</p></div>
-                <div class="goal">対象：参加動画が「＃Groupyツイートキャンペーン」ハッシュタグをつけて一番ツイートされたアイドル</div>
+                <div class="goal">対象：{{activityInfo.goal}}</div>
             </div>
             <!-- <div class="idol-ranking">
                 <div class="countDown-content">
@@ -23,8 +22,7 @@
             </div> -->
             <div class="ranking-twitter">
                 <h5 class="twitter-title">ランキングは公式Twitterにて公開</h5>
-                <!-- <div class="twitter-content" v-html='activityInfo.twitterWidgetCodeSnippet'> -->
-                <div class="twitter-content" v-html='`<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">『Groupy Live vol.4』開催決定 ?<br>?日程 1/28(日) <br>?会場 CLUB CAMELOT B3 <br>?時間 OPEN 16:45 START 17:00<br>?料金 前売2500円 当日3000円（別途1D600円） <br>※Groupyアプリレベル15以上の方は500円off<br>?出演アイドル・タイムテーブルはこちら?<a href="https://twitter.com/hashtag/Groupy?src=hash&amp;ref_src=twsrc%5Etfw">#Groupy</a> <a href="https://t.co/YdTgt9GkMd">pic.twitter.com/YdTgt9GkMd</a></p>&mdash; Groupy 公式✵イメージガール企画第2弾開催中 (@GGroupyyy) <a href="https://twitter.com/GGroupyyy/status/956435325689085952?ref_src=twsrc%5Etfw">January 25, 2018</a></blockquote>`'>
+                <div class="twitter-content" v-html='activityInfo.twitterWidgetCodeSnippet'>
 
                 </div>
             </div>
@@ -63,9 +61,8 @@
                 clearInterval(timer);
                 timer = setInterval(function(){
                     let nowTime = Date.parse(new Date());
-                    let times = 1518101999000;
-                    if(nowTime < times) {
-                        let deffDate = times - nowTime;
+                    if(nowTime < deff) {
+                        let deffDate = deff - nowTime;
                         self.countimes.Dates = Math.floor(deffDate/(24*3600*1000)); //日
                         var leave1=deffDate%(24*3600*1000)    //计算天数后剩余的毫秒数
                         self.countimes.Hours = Math.floor(leave1/(3600*1000)); //小时
@@ -118,7 +115,7 @@
                         self.ranking = res.data.ranking;
                         if(res.data.activityInfo) {
                             self.activityInfo = res.data.activityInfo;
-                            // self.countDownFormat(res.data.activityInfo.endTime);
+                            self.countDownFormat(res.data.activityInfo.endTime);
                         }
                         self.loadingShow = true;
                         if(res.data.isActivityEnded) {
@@ -126,9 +123,9 @@
                         }else {
                             self.isOver = false;
                         }
-                        // let spt = document.createElement('script');
-                        // spt.src = 'https://platform.twitter.com/widgets.js';
-                        // document.getElementsByTagName('body')[0].appendChild(spt);
+                        let spt = document.createElement('script');
+                        spt.src = 'https://platform.twitter.com/widgets.js';
+                        document.getElementsByTagName('body')[0].appendChild(spt);
                         // setTimeout(function(){
                         //     console.log(document.getElementsByClassName('content')[0].offsetHeight)
                         // },700)
@@ -158,7 +155,6 @@
         },
         created() {
             this.getList();
-            this.countDownFormat();
             if(getParams('isFans') == 1) {
                 this.isFans = false;
             }else {
