@@ -78,29 +78,18 @@
             },
             shareSns(val) {
                 var self = this;
-                if(self.isFans) {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
-                    }
-                    var title = `【Groupyツイートキャンペーン】`;
-                    var description = `#Groupyツイートキャンペーン @GGroupyyy 最も多くツイートされたアイドルがGroupy公式Twitter、Weiboのヘッダー画像に登場！応援してね。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
+                if(location.hostname == 'activity.groupy.vip') {
+                    var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
-                    }
-                    var title = `【Groupyツイートキャンペーン】`;
-                    var description = `#Groupyツイートキャンペーン @GGroupyyy 最も多くツイートされたアイドルがGroupy公式Twitter、Weiboのヘッダー画像に登場！応援しよう。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
+                    var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                // console.log(shareURL)
-                // window.setupWebViewJavascriptBridge(function(bridge) {
-                //     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
-                // })
+                var title = self.activityInfo.shareTitle;
+                var description = self.activityInfo.shareDesc;
+                var shareImg = self.activityInfo.img;
+                console.log(shareURL)
+                window.setupWebViewJavascriptBridge(function(bridge) {
+                    bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
+                })
             },
             getList() {
                 let self = this;
