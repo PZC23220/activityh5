@@ -108,28 +108,35 @@
                             rows: 3
                         }
                     }).then(function(res){
-                        self.ranking = res.data.ranking;
-                        if(res.data.activityInfo) {
-                            self.activityInfo = res.data.activityInfo;
-                            window.setupWebViewJavascriptBridge(function(bridge) {
-                                bridge.callHandler('setTitle', {'title':activityInfo.title})
-                            })
-                            self.countDownFormat(res.data.activityInfo.endTime);
-                        }
-                        self.loadingShow = true;
-                        if(res.data.isActivityEnded) {
-                            self.isOver = true;
+                        console.log('res.status:'+res.status)
+                        console.log('res.errorMsg:'+res.errorMsg)
+                        console.log('res.data:'+res.data)
+                        if(res.data) {
+                            if(res.data.ranking) {
+                                self.ranking = res.data.ranking;
+                            }
+                            if(res.data.activityInfo) {
+                                self.activityInfo = res.data.activityInfo;
+                                window.setupWebViewJavascriptBridge(function(bridge) {
+                                    bridge.callHandler('setTitle', {'title':self.activityInfo.title})
+                                })
+                                self.countDownFormat(res.data.activityInfo.endTime);
+                            }
+                            self.loadingShow = true;
+                            if(res.data.isActivityEnded) {
+                                self.isOver = true;
+                            }else {
+                                self.isOver = false;
+                            }
+                            let spt = document.createElement('script');
+                            spt.src = 'https://platform.twitter.com/widgets.js';
+                            document.getElementsByTagName('body')[0].appendChild(spt);
                         }else {
-                            self.isOver = false;
+                            self.idx++;
+                            self.getList();
                         }
-                        let spt = document.createElement('script');
-                        spt.src = 'https://platform.twitter.com/widgets.js';
-                        document.getElementsByTagName('body')[0].appendChild(spt);
-                        // setTimeout(function(){
-                        //     console.log(document.getElementsByClassName('content')[0].offsetHeight)
-                        // },700)
-                        // App.resize(document.body.getBoundingClientRect().height)
-                    }).catch(function(){
+                    }).catch(function(err){
+                        console.log(err)
                         self.idx++;
                         self.getList();
                     });
