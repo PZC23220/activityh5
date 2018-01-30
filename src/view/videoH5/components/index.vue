@@ -5,8 +5,8 @@
             <h2 class="">{{activityInfo.description}}</h2>
             <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><span @click="activityInfo.actionInfo?open_h5():false" class="detail">詳しくはこちら<img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></span></p>
             <div class="countDown-content">
-                <div class="countDown"><span>終了まであと</span><p class="timer"><em>{{countimes.Dates}}</em>日<em>{{countimes.Hours}}</em>時間<em>{{countimes.Minutes}}</em>分<em>{{countimes.Seconds}}</em>秒</p></div>
-                <div v-if="!isOver" class="goal">対象：{{activityInfo.goal}}</div>
+                <div v-if="!isOver || countDownShow" class="countDown"><span>終了まであと</span><p class="timer"><em>{{countimes.Dates}}</em>日<em>{{countimes.Hours}}</em>時間<em>{{countimes.Minutes}}</em>分<em>{{countimes.Seconds}}</em>秒</p></div>
+                <div class="goal">対象：{{activityInfo.goal}}</div>
             </div>
             <!-- <div class="idol-ranking">
                 <div class="countDown-content">
@@ -45,6 +45,7 @@
                 havedMe: false,
                 isFans: true,
                 showsStart: false,
+                countDownShow: true,
                 activityInfo: {},
                 countimes: {
                     Dates: 0,
