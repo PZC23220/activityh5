@@ -6,7 +6,7 @@
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>日中両国の多くの人に知ってもらう大チャンス！参加動画が一番<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグで<i>ツイート</i>されたアイドルは、Groupyの公式Twitter、Weiboのヘッダー画像に1ヶ月登場できます！</p>
+                <p>日中両国の多くの人に知ってもらう大チャンス！参加動画が一番<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグで一番多くツイーターに反映されたアイドルは、Groupyの公式Twitter、Weiboのヘッダー画像に1ヶ月登場できます！</p>
             </div>
             <div class="activity_rule">
                 <h4>{{activity.desc.title}}</h4>
@@ -120,15 +120,15 @@
                     desc: {
                         title: '掲載について',
                         p1: 'もっと自分の動画をより多くの人に見てもらいたいという熱い気持ちを持っているアイドルの方に朗報です！',
-                        p2: 'Groupyツイートキャンペーンを開催決定！期間中、参加動画がファンに一番<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグをつけて<i>ツイート</i>されたアイドルは、Groupyの公式Twitter、公式Weiboの一番目立つヘッダー画像に1ヶ月登場します！',
+                        p2: 'Groupyツイートキャンペーンを開催決定！期間中、参加動画がファンに一番<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグで一番多くツイッターに反映されたアイドルは、Groupyの公式Twitter、公式Weiboの一番目立つヘッダー画像に1ヶ月登場します！',
                         p4: 'この大チャンスを活かしてもっと自分のことを日中両国のいろんな人に知ってもらいましょう！あなたをフォローする人もきっと増えるはず！',
                         p6: '<i>※掲載場所：Groupy 公式Twitter（@GGroupyyy）、公式Weibo（@GGroupy）のヘッダー画像</i>',
                         p7: '<i>※掲載期間：2018年3月1日～2018年3月31日（時間が変更する場合がございます）</i>',
                     },
                     obj: {
                         title: '対象',
-                        p1: '期間中に、参加動画が<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグをつけて最も多く<i>ツイート</i>されたアイドル',
-                        p2: '<i>※ 参加動画が「＃Groupyツイートキャンペーン」ハッシュタグをつけずにツイートされた場合は集計されません。</i>',
+                        p1: '期間中に、参加動画が<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグをつけて最も多くツイッターに反映されたアイドル',
+                        p2: '<i>※ 全ての参加動画の「#Groupyツイートキャンペーン」ハッシュタグをつけてツイートされた回数（リツイート数も含め）の合計によってランキングが決まります。</i>',
                         p3: '<i>※ 同一の参加動画が同一のユーザーに複数ツイートされた場合は、一回として集計させていただきます。</i>',
                         p4: '※ 毎日11時及び19時に公式Twitter@GGroupyyyにてキャンペーンランキングを更新します。',
                     },
