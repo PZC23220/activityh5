@@ -4,6 +4,12 @@ i{
 img,i,em {
     vertical-align: middle;
 }
+@font-face {
+    font-family: 'Helvetica Condensed Bold Italic';
+    src: url('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/font/Helvetica_Condensed_Bold_Italic/Helvetica%20Condensed%20Bold%20Italic.eot');
+    src: url('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/font/Helvetica_Condensed_Bold_Italic/Helvetica%20Condensed%20Bold%20Italic.woff2') format('woff2'),
+         url('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/font/Helvetica_Condensed_Bold_Italic/Helvetica%20Condensed%20Bold%20Italic.eot?#iefix') format('embedded-opentype');
+}
 body >* {
     max-width: 500px;
     margin: 0 auto;
