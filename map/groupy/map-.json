@@ -4,6 +4,7 @@
       "/js/event.js": "//js/event/event.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/ffacg201805.js": "//js/ffacg201805/ffacg201805.js",
       "/js/spokesman2.js": "//js/spokesman2/spokesman2.js",
       "/js/books.js": "//js/books/books.js",
       "/js/spokesman.js": "//js/spokesman/spokesman.js",
@@ -19,12 +20,13 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
+      "/js/ffacg201805.js": "//js/ffacg201805/ffacg201805.js",
       "/js/spokesman2.js": "//js/spokesman2/spokesman2.js",
       "/js/books.js": "//js/books/books.js",
       "/js/spokesman.js": "//js/spokesman/spokesman.js",
@@ -40,7 +42,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {

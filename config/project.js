@@ -45,5 +45,6 @@ module.exports = {
         spokesman2: './src/view/spokesman2',
         twitter: './src/view/twitter',
         videoH5: './src/view/videoH5',
+        ffacg201805: './src/view/ffacg201805',
     },
 };
