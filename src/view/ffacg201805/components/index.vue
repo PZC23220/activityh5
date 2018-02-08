@@ -1,8 +1,8 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.png" class="banner">
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
@@ -78,20 +78,20 @@
 </template>
 <style type="text/css">
     .content {
-        background: #eef6fd;
+        background: #fffbfd;
     }
     h2 {
-        background: #5E8FC4;
+        background: #EA5AA5;
     }
     h4 {
-        background-image: linear-gradient(-48deg, #5388C4 8%, #8EB6E3 94%);
+        background-image: linear-gradient(-48deg, #E7529F 8%, #F88CC4 94%);
     }
     .activity_reward li {
-        background: #EBF3FC;
-        border: 1px solid #BBD3EC;
+        background: #FFF7FB;
+        border: 1px solid #E7DCE1;
     }
     .activity_rule p i {
-        color: #5E8FC4;
+        color: #EA5AA5;
     }
 </style>
 <script>
@@ -172,7 +172,7 @@
                     }
                     var title = `【#Groupy広告モデル1 】`;
                     var description = `上位1名は来場者数20万人超えの中国広州FFACG特大看板に掲載！応援してね(*≧∀≦*)~`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.png`;
+                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
                         var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&isFans=1`;
@@ -181,7 +181,7 @@
                     }
                     var title = `【#Groupy広告モデル1 】`;
                     var description = `上位1名は来場者数20万人超えの中国広州FFACG特大看板に掲載！応援しよう！`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.png`;
+                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.jpg`;
                 }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
