@@ -14,6 +14,7 @@
                 <p v-html="activity.desc.p2"></p>
                 <p v-html="activity.desc.p3"></p>
                 <p v-html="activity.desc.p4"></p>
+                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/maimeng1.jpg">
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
