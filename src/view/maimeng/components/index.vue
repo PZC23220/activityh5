@@ -28,7 +28,7 @@
                 <li>
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
-                        <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
+                        <p><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
