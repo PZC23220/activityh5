@@ -34,6 +34,7 @@
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
+                        <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                     </div>
                 </li>
             </ul>
@@ -134,7 +135,7 @@
                         p4: 'FFACGに訪れる多くの方にあなたをアピールする大チャンスです！',
                         p5: '<i>※掲載期間：2018年4月29日（日）-2018年5月1日（火）</i>',
                         p6: '<i>※掲載場所：中国広州で開催予定の第18回FFACG</i>',
-                        p7: '<i>※サイズ：高さ6m × 幅2.5m</i>',
+                        p7: '<i>※サイズ：高さ2.5m × 幅6m</i>',
                         p8: '<i>17th FFACG開催の模様：'
                     },
                     obj: {
@@ -153,7 +154,8 @@
                         p2: '2.当選アイドルは掲載用の写真を2018年2月28日までにご提出いただきます。',
                     },
                     rewards: [{
-                        p1: '中国・広州で開催される18th FFACGの特大看板に、Groupyの広告モデルとして起用！',
+                        p1: 'ランキング上位1名のアイドル：',
+                        p2: '中国・広州で開催される18th FFACGの特大看板に、Groupyの広告モデルとして起用！',
                     }]
                 },
                 isFans: true,
@@ -166,18 +168,18 @@
                 var self = this;
                 if(self.isFans) {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.vip/html/activity_ffacg201805/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `http://share.groupy.cn/html/activity_ffacg201805/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【#Groupy広告モデル1 】`;
                     var description = `上位1名は来場者数20万人超えの中国広州FFACG特大看板に掲載！応援してね(*≧∀≦*)~`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201805.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `http://share.groupy.vip/html/activity_ffacg201805/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_spokesman/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `http://share.groupy.cn/html/activity_ffacg201805/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【#Groupy広告モデル1 】`;
                     var description = `上位1名は来場者数20万人超えの中国広州FFACG特大看板に掲載！応援しよう！`;
