@@ -20,7 +20,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -42,7 +42,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {
