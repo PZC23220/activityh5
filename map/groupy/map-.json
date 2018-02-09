@@ -2,6 +2,7 @@
   "js": {
     "min": {
       "/js/event.js": "//js/event/event.js",
+      "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
       "/js/ffacg201805.js": "//js/ffacg201805/ffacg201805.js",
@@ -19,11 +20,12 @@
       "/js/live.js": "//js/live/live.js",
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
-      "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
+      "/js/maimeng.js": "//js/maimeng/maimeng.js",
       "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
+      "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/subwayAds.js": "//js/subwayAds/subwayAds.js",
       "/js/someJapanese.js": "//js/someJapanese/someJapanese.js",
       "/js/ffacg201805.js": "//js/ffacg201805/ffacg201805.js",
@@ -41,7 +43,7 @@
       "/js/live.js": "//js/live/live.js",
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
-      "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
+      "/js/maimeng.js": "//js/maimeng/maimeng.js",
       "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },

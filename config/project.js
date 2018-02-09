@@ -46,5 +46,6 @@ module.exports = {
         twitter: './src/view/twitter',
         videoH5: './src/view/videoH5',
         ffacg201805: './src/view/ffacg201805',
+        maimeng: './src/view/maimeng',
     },
 };
