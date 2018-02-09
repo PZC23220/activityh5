@@ -18,8 +18,8 @@
                 <p v-html="activity.desc.p6"></p>
                 <p v-html="activity.desc.p7"></p>
                 <p v-html="activity.desc.p8"></p>
-                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/newsjet/detail/8.jpg">
-                <img style="width:100%;padding: 0 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/newsjet/detail/3.jpg">
+                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg1.jpg">
+                <img style="width:100%;padding: 0 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg2.jpg">
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
