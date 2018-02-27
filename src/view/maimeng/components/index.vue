@@ -136,9 +136,9 @@
                         p2: '麦萌对手戏は世界初のスマホだけで他人と共演できる新感覚アフレコアプリとして、リリースから3年でユーザー数1000万人を突破し、中国で数多くの日本文化愛好者を集めただけ出なく、中国の人気声優にも愛用されています。',
                         p3: 'そんな麦萌对手戏アプリにて、Groupyアイドル特別コラムを開設決定！第一回に出演する日本人アイドルを募集します。',
                         p4: '千万日本文化愛好者に知ってもらう大チャンス！ぜひご応募ください。',
-                        p5:'<i>公式HP：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">http://www.meng2u.com</a></i>',
-                        p6:'<i>人気コラム1：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/KcYf2s</a></i>',
-                        p7:'<i>人気コラム2：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/VPk8JM</a></i><br>',
+                        p5:'<i>公式HP：<a href="http://www.meng2u.com" target="_blank" style="color: #F68B00;text-decoration: underline;">http://www.meng2u.com</a></i>',
+                        p6:'<i>人気コラム1：<a href="https://goo.gl/KcYf2s" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/KcYf2s</a></i>',
+                        p7:'<i>人気コラム2：<a href="https://goo.gl/VPk8JM" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/VPk8JM</a></i><br>',
                         p8:'<i>上位１名のアイドルの出演作品は麦萌对手戏アプリ内のトップバナーに掲載予定：</i>',
                     },
                     obj: {
