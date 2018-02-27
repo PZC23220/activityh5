@@ -183,7 +183,7 @@
                         var shareURL = `http://share.groupy.cn/html/activity_maimeng/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【#Groupyx麦萌コラボ 】`;
-                    var description = `上位1名は中国最大級アフレコアプリ「麦萌対手戏」に声で出演！応援してね(*≧∀≦*)~`;
+                    var description = `上位1名は上位1名はGroupyアイドル特別コラムに出演できますので、応援してください！(*≧∀≦*)~`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-maimeng.jpg`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
@@ -192,7 +192,7 @@
                         var shareURL = `http://share.groupy.cn/html/activity_maimeng/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【#Groupyx麦萌コラボ 】`;
-                    var description = `上位1名は中国最大級アフレコアプリ「麦萌対手戏」に声で出演！応援しよう！`;
+                    var description = `上位1名はGroupyアイドル特別コラムに出演できますので！みんな応援をお願い！`;
                     var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-maimeng.jpg`;
                 }
                 console.log(shareURL)
