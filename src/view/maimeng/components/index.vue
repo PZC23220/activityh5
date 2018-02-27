@@ -6,7 +6,7 @@
             <h2>{{activity.theme}}</h2>
             <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
-                <p>1位のアイドルは中国最大級アフレコアプリ「麦萌対手戏」に声で出演！ぜひご参加ください～♪</p>
+                <p>「麦萌对手戏」にて、Groupyアイドル特別コラム開設決定！<br>1位のアイドルはGroupyアイドル特別コラムの第一回に出演いただきます！ぜひご参加ください～♪</p>
             </div>
             <div class="activity_rule">
                 <h4>{{activity.desc.title}}</h4>
@@ -14,7 +14,11 @@
                 <p v-html="activity.desc.p2"></p>
                 <p v-html="activity.desc.p3"></p>
                 <p v-html="activity.desc.p4"></p>
-                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/maimeng1.jpg">
+                <p v-html="activity.desc.p5"></p>
+                <p v-html="activity.desc.p6"></p>
+                <p v-html="activity.desc.p7"></p>
+                <p v-html="activity.desc.p8"></p>
+                <img style="width:50%;padding: 12px 0 12px 12px;display: block;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/maimeng1.jpg">
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
@@ -35,6 +39,7 @@
                         <p><span></span><i>{{activity.rewards[0].p5}}</i></p>
                         <p><i style="color: #F68B00;">{{activity.rewards[0].p6}}</i></p>
                         <p><i style="color: #F68B00;">{{activity.rewards[0].p7}}</i></p>
+                        <p><i style="color: #F68B00;">{{activity.rewards[0].p8}}</i></p>
                     </div>
                 </li>
             </ul>
@@ -42,6 +47,7 @@
                 <h4>{{activity.rule.title}}</h4>
                 <p v-html="activity.rule.p1"></p>
                 <p v-html="activity.rule.p2"></p>
+                <p v-html="activity.rule.p3"></p>
                 <p v-html="activity.rule.p4"></p>
             </div>
             <div class="activity_rule">
@@ -121,14 +127,19 @@
                         title: '応募方法',
                         p1: '1. イベント期間中、<i>「#Groupyx麦萌コラボ」</i>タグをつけて投稿してください。投稿内容は自由です。',
                         p2: '2.イベント期間中は、動画を何本投稿しても問題ありません。',
+                        p3: '<i>※日本人アイドル参加限定</i>',
                         p4: '<i>※投稿する際、タグ欄からタグを選択してください。入力のタグは認識されないのでご注意ください。</i>'
                     },
                     desc: {
                         title: '「麦萌对手戏」とは？',
-                        p1: '麦萌对手戏とは、中国最大級の声優気分を味わえる二次元アフレコアプリです。気軽に他のユーザー・人気声優の投稿した音声と共演してアプリを楽しめます。また、台本を投稿し、他のユーザー・人気声優にアフレコ出演して貰うことができ、アプリの魅力はさまざま！（公式HP：http://www.meng2u.com/）',
-                        p2: '世界初のスマホで他人と共演できる新感覚アフレコアプリとして、リリースから3年でユーザー数が1000万人を突破し、中国で多数の人気声優にも愛用されています。',
-                        p3: 'そんな麦萌对手戏アプリで、Groupyアイドル特別コラム設立決定！第1期に出演できるアイドルを募集しております。',
-                        p4: '自分の声を1000万人超えのユーザーに発信して、輝くチャンス！ぜひご応募ください。'
+                        p1: '麦萌对手戏とは、中国最大級の声優気分を味わえる二次元アフレコアプリです。気軽に他のユーザー・人気声優の投稿した音声と共演できます。また、台本を投稿し、他のユーザー・人気声優にアフレコ出演して貰うこともでき、アプリの魅力はさまざまです！',
+                        p2: '麦萌对手戏は世界初のスマホだけで他人と共演できる新感覚アフレコアプリとして、リリースから3年でユーザー数1000万人を突破し、中国で数多くの日本文化愛好者を集めただけ出なく、中国の人気声優にも愛用されています。',
+                        p3: 'そんな麦萌对手戏アプリにて、Groupyアイドル特別コラムを開設決定！第一回に出演する日本人アイドルを募集します。',
+                        p4: '千万日本文化愛好者に知ってもらう大チャンス！ぜひご応募ください。',
+                        p5:'<i>公式HP：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">http://www.meng2u.com</a></i>',
+                        p6:'<i>人気コラム1：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/KcYf2s</a></i>',
+                        p7:'<i>人気コラム2：<a href="" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/VPk8JM</a></i><br>',
+                        p8:'<i>上位１名のアイドルの出演作品は麦萌对手戏アプリ内のトップバナーに掲載予定：</i>',
                     },
                     obj: {
                         title: '対象',
@@ -148,12 +159,13 @@
                     },
                     rewards: [{
                         p1: 'ランキング上位1名のアイドル：',
-                        p2: 'Groupyアイドル特別コラム第1期の声の出演権を獲得',
-                        p3: '出演作品は麦萌对手戏アプリの「专题」といった一番人気カテゴリのトップに固定表示',
+                        p2: 'Groupyアイドル特別コラム第1回の出演権を獲得',
+                        p3: '出演作品は麦萌对手戏アプリ内のトップバナーに掲載',
                         p4: '出演作品は中国各人気SNS・動画サイトにも公開（Weibo、WeChat、Bilibili...）',
-                        p5: '麦萌对手戏アプリの起動画面に掲載（期間は1週間となります）',
-                        p6: '※音声の収録は3月中旬に東京都内某所で行う予定です。',
-                        p7: '※作品の公開は2018年4月上旬を予定しております。',
+                        p5: 'コラムのプロモーションポスターのモデルとして起用（ポスターは麦萌对手戏アプリの起動画面に1週間掲載）',
+                        p6: '※台本はGroupyと麦萌对手戏が共に作成します。第一回の内容は面白い日本語を教える予定です。',
+                        p7: '※音声の収録は東京都内某所で行います。日時は事務所と打ち合わせの上決めます。',
+                        p8: '作品の公開は2018年4月上旬を予定しております。',
                     }]
                 },
                 isFans: true,
