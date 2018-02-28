@@ -18,7 +18,7 @@
                 <p v-html="activity.desc.p6"></p>
                 <p v-html="activity.desc.p7"></p>
                 <p v-html="activity.desc.p8"></p>
-                <img style="width:50%;padding: 12px 0 12px 12px;display: block;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/maimeng1.jpg">
+                <img style="width:100%;padding: 12px;display: block;box-sizing:border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/maimeng1.jpg">
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
@@ -37,7 +37,6 @@
                         <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p5}}</i></p>
-                        <p><i style="color: #F68B00;">{{activity.rewards[0].p6}}</i></p>
                         <p><i style="color: #F68B00;">{{activity.rewards[0].p7}}</i></p>
                         <p><i style="color: #F68B00;">{{activity.rewards[0].p8}}</i></p>
                     </div>
@@ -132,10 +131,10 @@
                     },
                     desc: {
                         title: '「麦萌对手戏」とは？',
-                        p1: '麦萌对手戏とは、中国最大級の声優気分を味わえる二次元アフレコアプリです。気軽に他のユーザー・人気声優の投稿した音声と共演できます。また、台本を投稿し、他のユーザー・人気声優にアフレコ出演して貰うこともでき、アプリの魅力はさまざまです！',
+                        p1: '麦萌对手戏(マイムン ドゥイ ショウ シ)とは、中国最大級の声優気分を味わえる二次元アフレコアプリです。気軽に他のユーザー・人気声優の投稿した音声と共演できます。また、台本を投稿し、他のユーザー・人気声優にアフレコ出演して貰うこともでき、アプリの魅力はさまざまです！',
                         p2: '麦萌对手戏は世界初のスマホだけで他人と共演できる新感覚アフレコアプリとして、リリースから3年でユーザー数1000万人を突破し、中国で数多くの日本文化愛好者を集めただけ出なく、中国の人気声優にも愛用されています。',
                         p3: 'そんな麦萌对手戏アプリにて、Groupyアイドル特別コラムを開設決定！第一回に出演する日本人アイドルを募集します。',
-                        p4: '千万日本文化愛好者に知ってもらう大チャンス！ぜひご応募ください。',
+                        p4: '一千万人の日本文化愛好者に知ってもらう大チャンス！ぜひご応募ください。',
                         p5:'<i>公式HP：<a href="http://www.meng2u.com" target="_blank" style="color: #F68B00;text-decoration: underline;">http://www.meng2u.com</a></i>',
                         p6:'<i>人気コラム1：<a href="https://goo.gl/KcYf2s" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/KcYf2s</a></i>',
                         p7:'<i>人気コラム2：<a href="https://goo.gl/VPk8JM" target="_blank" style="color: #F68B00;text-decoration: underline;">https://goo.gl/VPk8JM</a></i><br>',
@@ -159,12 +158,11 @@
                     },
                     rewards: [{
                         p1: 'ランキング上位1名のアイドル：',
-                        p2: 'Groupyアイドル特別コラム第1回の出演権を獲得',
-                        p3: '出演作品は麦萌对手戏アプリ内のトップバナーに掲載',
-                        p4: '出演作品は中国各人気SNS・動画サイトにも公開（Weibo、WeChat、Bilibili...）',
+                        p2: 'Groupyアイドル特別コラム第1回に出演（面白い日本語を紹介する内容の台本を用意します。）',
+                        p3: 'コラムは麦萌对手戏アプリ内のトップバナーに掲載',
+                        p4: '中国各人気SNS・動画サイトでも紹介されます（Weibo、WeChat、Bilibili...）',
                         p5: 'コラムのプロモーションポスターのモデルとして起用（ポスターは麦萌对手戏アプリの起動画面に1週間掲載）',
-                        p6: '※台本はGroupyと麦萌对手戏が共に作成します。第一回の内容は面白い日本語を教える予定です。',
-                        p7: '※音声の収録は東京都内某所で行います。日時は事務所と打ち合わせの上決めます。',
+                        p7: '※音声の収録は東京都内で行います。日時は打ち合わせの上決定します。',
                         p8: '作品の公開は2018年4月上旬を予定しております。',
                     }]
                 },
