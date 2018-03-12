@@ -292,6 +292,24 @@ h4 {
         border-color: #33589d;
     }
 }
+.activity_rule {
+    position: relative;
+}
+.shares {
+    position: absolute;
+    right: 12px;
+    top: 13.5px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 0 9px;
+    img {
+        width: 19px;
+        margin-right: 3px;
+    }
+}
 .page_defalt {
     height: 489.75px;
 }

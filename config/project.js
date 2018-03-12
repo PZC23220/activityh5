@@ -47,5 +47,6 @@ module.exports = {
         videoH5: './src/view/videoH5',
         ffacg201805: './src/view/ffacg201805',
         maimeng: './src/view/maimeng',
+        interview: './src/view/interview',
     },
 };
