@@ -23,7 +23,7 @@
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
                     <p><span>{{activity.start}}</span><i>2018年03月16日（周五）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>03月24日（周六）23:59:59</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年03月24日（周六）23:59:59（中国时间）</i></p>
                 </div>
             </div>
             <ul class="activity_reward">
