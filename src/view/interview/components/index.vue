@@ -161,7 +161,7 @@
                     }
                     var title = `Groupy独家采访`;
                     var description = `我正在参加Groupy官方采访权争夺战，发了很多有趣的视频，希望大家多多支持！#Groupy#`;
-                    var shareImg = `http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/acticity_banner/activity-interview.png`;
+                    var shareImg = `http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/activity-interview.png`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
                         var shareURL = `http://share.groupy.vip/html/activity_interview/index.html?activityId=${getParams('activityId')}&isFans=1`;
@@ -170,7 +170,7 @@
                     }
                     var title = `Groupy独家采访`;
                     var description = `我家小偶像正在参加GroupyAPP的官方采访权争夺战，发了很多有趣视频，请大家多多支持！#Groupy#`;
-                    var shareImg = `http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/acticity_banner/activity-interview.png`;
+                    var shareImg = `http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/activity-interview.png`;
                 }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
