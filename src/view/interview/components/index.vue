@@ -5,7 +5,7 @@
             <img v-else src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/activity-interview.png" class="banner">
             <h2>{{activity.theme}}</h2>
             <!-- <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p> -->
-            <div class="activity_rule">
+            <div class="activity_rule" v-if="isFans">
                 <p>中国区爱豆专属的Groupy官方采访权争夺战盛大来袭！活动期间获得Like数TOP1的爱豆将接受Groupy采访，并在各大官方平台推荐曝光。马上参与让更多人Get你的萌点~~~</p>
             </div>
             <div class="activity_rule">
