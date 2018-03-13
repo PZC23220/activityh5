@@ -23,7 +23,7 @@
                 <h4>{{activity.time}}</h4>
                 <div class="duration_time">
                     <p><span>{{activity.start}}</span><i>2018年03月16日（周五）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2018年03月24日（周六）23:59:59（中国时间）</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年03月24日（周六）23:59:59</i></p>
                 </div>
             </div>
             <ul class="activity_reward">
@@ -105,7 +105,7 @@
                 havedMe: false,
                 activity: {
                     theme:'#Groupy官方采访#',
-                    time: '活动时间',
+                    time: '活动时间（中国时间）',
                     start: '开始时间',
                     end: '结束时间',
                     rewardList: '活动排名',
@@ -127,7 +127,7 @@
                         p1: '中国区爱豆的专属活动终于来啦！Groupy官方采访权争夺战盛大开启！！！！',
                         p2: '活动期间获得Like数排名TOP1的爱豆将接受Groupy官方采访，并在APP内・微信・微博等各大官方SNS平台面向千万粉丝做推广曝光，让更多小伙伴Get你的萌点~~~',
                         p3: '还有更多国内爱豆专属福利等着你，记得要来参加哦♪',
-                        p4: '采访形式：Groupy官方提出问题 - 胜出爱豆以文字形式回答',
+                        p4: '采访形式：Groupy官方提出问题（问题围绕爱豆及其所属团体展开） - 胜出爱豆以文字形式回答',
                         p5:'采访时间：3月下旬',
                         p6:'文章公布时间：3-4月之间',
                         p7:'文章发布平台：Groupy APP・微博・微信公众号等各大官方SNS平台',
