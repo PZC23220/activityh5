@@ -90,9 +90,11 @@
               <div class="content-right content-right-last">
                 <h4 class="content-title">{{htmlInfo.ffacg.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.ffacg.address2}}</p>
-                <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_ffacg.png"class="ffacg-gmap ffacg-gmap-2" v-if="lan=='zh-cn'">
-                <gmap-map
-                    v-else
+                <a href="https://j.map.baidu.com/KNBIO" target="_black" v-if="lan=='zh-cn'">
+                  <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_ffacg.png" class="ffacg-gmap ffacg-gmap-2">
+                </a>
+                <a href="https://www.google.com.hk/maps/place/%E4%B8%AD%E5%9B%BD%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E6%B5%B7%E7%8F%A0%E5%8C%BA%E7%90%B6%E6%B4%B2%E5%A4%A7%E9%81%93%E4%B8%9C2%E5%8F%B7-8%E5%8F%B7/@23.1005539,113.369271,17z" v-else>
+                  <gmap-map
                     :center="center2"
                     :zoom="15"
                     class="ffacg-gmap">
@@ -105,6 +107,7 @@
                       @click="center2=m.position"
                     ></gmap-marker>
                   </gmap-map>
+                </a>
               </div>
             </div>
           </div>
@@ -182,9 +185,9 @@
               <div class="content-right content-right-last">
                 <h4 class="content-title">{{htmlInfo.live.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.live.address2}}</p>
-                <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_livehouse.png"class="ffacg-gmap ffacg-gmap-2" v-if="lan=='zh-cn'">
-                <gmap-map
-                    v-else
+                <a href="https://j.map.baidu.com/TxCIO" target="_black" v-if="lan=='zh-cn'"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_livehouse.png"class="ffacg-gmap ffacg-gmap-2"></a>
+                <a href="https://www.google.com.hk/maps/search/%E5%B9%BF%E5%B7%9E%E5%B8%82%E6%B5%B7%E7%8F%A0%E5%8C%BA%E6%96%B0%E6%B8%AF%E4%B8%9C%E8%B7%AF1088%E5%8F%B7%E5%85%AD%E5%85%83%E7%B4%A0%E4%BD%93%E9%AA%8C%E5%A4%A9%E5%9C%B0%E4%B8%80%E5%B1%82/@23.0994859,113.368761,17z" target="_black" v-else>
+                  <gmap-map
                     :center="center"
                     :zoom="15"
                     class="ffacg-gmap">
@@ -197,6 +200,7 @@
                       @click="center2=m.position"
                     ></gmap-marker>
                   </gmap-map>
+                </a>
               </div>
             </div>
           </div>
