@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="cn_tips width900" v-if="lan=='zh-cn'">
-          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="https://shop323210088.taobao.com/" target="_black">https://shop323210088.taobao.com/</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
           <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
@@ -137,7 +137,7 @@
           </div>
         </div>
         <div class="cn_tips width900" v-if="lan=='zh-cn'">
-          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.https://shop323210088.taobao.com/" target="_black">https://shop323210088.taobao.com/</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
           <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
@@ -222,7 +222,7 @@
           </div>
         </div>
         <div class="cn_tips width900" v-if="lan=='zh-cn'">
-          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.https://shop323210088.taobao.com/" target="_black">https://shop323210088.taobao.com/</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
           <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
@@ -256,10 +256,10 @@
           <li class="idol_tsp" style="padding-top: 1.25rem;"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_tsp.png"><p>Tokyo Sweet Party</p></li>
         </ul>
       </div>
-      <!-- 马上预约按钮 -->
+      <!-- 马上购票按钮 -->
       <div class="reservation-bigBtn box cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></div>
       <div class="cn_tips width900" v-if="lan=='zh-cn'">
-        <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+        <p>※点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.https://shop323210088.taobao.com/" target="_black">https://shop323210088.taobao.com/</a></p>
         <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
         <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
         <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
@@ -286,7 +286,7 @@
         </li>
       </nav>
     </div>
-    <!-- 马上预约弹窗 -->
+    <!-- 马上购票弹窗 -->
     <div class="reservation" :class="[{'reservationShow':reservationShow},{'box':reservationShow}]">
       <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_close.png" class="close cursor" @click="closeWindow()">
       <div class="reservation-content">
@@ -637,10 +637,10 @@
             liveDesc: 'Groupy偶像祭~4.30~',
             tourTitle: '粉丝同游',
             tourDesc: 'Groupy偶像祭~5.1~',
-            restitle: '马上预约',
-            resDesc: '~马上预约嗨起来~',
+            restitle: '马上购票',
+            resDesc: '~马上购票嗨起来~',
           },
-          reservation: '马上预约',
+          reservation: '马上购票',
           asuka: '葉月Asuka',
           desc: '详情',
           idols: '出演爱豆',
