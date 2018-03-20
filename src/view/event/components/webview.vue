@@ -292,12 +292,12 @@
               showsName = '(31日)New Year Live 1日券';
             }
             var data_ = {
-              showsId: self.Slive, 
-              showsName: showsName, 
-              showsDescription:'元旦中国行', 
-              firstName: self.Sname, 
-              email: self.Semail, 
-              nums: self.Snums 
+              showsId: self.Slive,
+              showsName: showsName,
+              showsDescription:'元旦中国行',
+              firstName: self.Sname,
+              email: self.Semail,
+              nums: self.Snums
             }
             http.post('/shows/applyOffical',JSON.stringify(data_))
             .then(function(res){

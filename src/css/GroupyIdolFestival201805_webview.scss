@@ -1,0 +1,254 @@
+@import "../../css/reset.css";
+@import "GroupyIdolFestival201805";
+
+@media screen and (max-height:820px) {
+  /* iPad 横 l */
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (max-height:760px) {
+  /* iPad 横 l */
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  /* iPad 横 l */
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  #nav_bar {
+    display: block;
+  }
+  .Groupy-web {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .tabs-li {
+    display: none;
+  }
+  .tabs-groupy-icon  {
+    float: left;
+    margin-top: 0.6875rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* iPad 縦 m */
+  .tabs {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid  #E8637A;
+  }
+  .tabs-groupy-icon {
+    padding: 0 20px;
+    img {
+        width: 37px;
+    }
+    .Groupy-web {
+        font-size: 18.5px;
+    }
+   }
+   .reservation {
+    top: 51px;
+    line-height: calc(100vh - 51px);
+   }
+   .reservationShow {
+    height: calc(100vh - 51px);
+   }
+   .reservation-title {
+    width: 56.5vw;
+    height: 8.93333vw;
+    line-height: 8vw;
+   }
+   .close {
+    right: 13px;
+    width: 25px;
+   }
+   .form {
+    width: 93vw;
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 8px;
+   }
+   .form-dashed {
+    border-width: 2px;
+    border-radius: 8px;
+    padding: 5px 20px;
+   }
+   .input-content {
+    position: relative;
+    margin-bottom: 5px;
+    >* {
+        float: none;
+    }
+    span {
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        line-height: 21px;
+        padding-left: 4px;
+    }
+    input,select {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    em {
+        position: absolute;
+        right: 10px;
+        top: 21px;
+        line-height: 40px;
+        font-size: 10px;
+        -webkit-transform:scale(0.83333);
+        text-align: right;
+    }
+   }
+   .form-tips {
+    margin-left: -6%;
+    font-size: 10px;
+    -webkit-transform:scale(0.83333);
+    p {
+        margin-bottom: 4.5px;
+    }
+   }
+   .form-submite {
+    width: 66.66667vw;
+    margin-top: 10px;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+   }
+}
+
+@media screen and (max-width:736px) {
+  /* iPhone 横 ms */
+  html {
+    font-size: 15px;
+  }
+  .groupy-may {
+    width:51.46667vw;
+    margin-bottom: 10px;
+  }
+  .reservation-title {
+    font-size: 14px;
+   }
+  .main-content {
+    padding-top: 71px;
+  }
+  .idol-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 5px;
+    li {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+        img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .idol_asuka {
+        padding-top: 20px;
+    }
+  }
+  .ffacg-title {
+    width: 80vw;
+    font-size: 12px;
+    margin-top: 30px;
+    span {
+        line-height: 8vw;
+    }
+    img {
+        height: auto;
+    }
+  }
+  .ffacg-imgs {
+    padding: 0 20px;
+    >* {
+        float: none;
+        margin-right: 0;
+    }
+    .img-desc {
+        text-align: center;
+    }
+    .ffacg-right >* {
+        margin-bottom: 8px;
+    }
+  }
+  .ffacg-h3title {
+    font-size: 16px;
+  }
+  .ffacg-p {
+    font-size: 12px;
+  }
+  .reservation-btn {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto 0;
+    display: block;
+  }
+  .ffacg-desc-tile {
+    font-size: 14px;
+    margin: 16px auto;
+    span {
+        width: 4px;
+        height: 4px;
+    }
+    >* {
+        margin-right: 10px;
+    }
+  }
+  .ffacg-desc {
+    margin: 0 13px;
+    border: 2px solid rgba(0,136,211,0.25);
+    border-radius: 7px;
+    padding: 6px;
+  }
+  .ffacg-dashed {
+    border: 2px dashed rgba(0,136,211,0.25);
+    border-radius: 4.5px;
+    padding: 0 15px;
+  }
+  .dashed-content {
+    padding-top: 20px;
+  }
+  .content-left {
+    font-size: 12px;
+    margin-right: 10px;
+    width: 40px;
+  }
+  .content-right {
+    width: calc(100% - 50px);
+    padding-bottom: 16px;
+  }
+  .content-title {
+    font-size: 12px;
+  }
+  .content-desc {
+    margin-bottom: 0;
+    font-size:10px;-webkit-transform:scale(0.83333);
+    margin-left: -8%;
+  }
+  .reservation-bigBtn {
+    margin: 30px auto;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}

@@ -48,5 +48,6 @@ module.exports = {
         ffacg201805: './src/view/ffacg201805',
         maimeng: './src/view/maimeng',
         interview: './src/view/interview',
+        GroupyIdolFestival201805: './src/view/GroupyIdolFestival201805',
     },
 };

@@ -1,0 +1,662 @@
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    background-image: url(http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg.png);
+    background-repeat: repeat;
+}
+.cursor {
+    cursor: pointer;
+}
+.overflow {
+    overflow: hidden;
+}
+.nav_open {
+    overflow: hidden;
+}
+.content {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+a {
+    color: #1B87CD;
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+.width900{
+    max-width: 45rem;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.width1100{
+    max-width: 55rem;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+// 滚屏内容
+// 萤火虫专场
+.main-content {
+    position: relative;
+    padding-top: 8rem;
+    overflow: hidden;
+}
+.img_1 {
+    position: absolute;
+    left: 50%;
+    top: 12.5rem;
+    margin-left: -28rem;
+    width: 2.5rem;
+}
+.img_1_2 {
+    top: 98rem;
+}
+.img_1_3 {
+    top: 165rem;
+}
+.img_1_4 {
+    top: 230rem;
+}
+.img_1_5 {
+    top: 310rem;
+}
+.img_2 {
+    position: absolute;
+    left: 50%;
+    top: 28rem;
+    margin-left: 26rem;
+    width: 1.75rem;
+}
+.img_2_2 {
+    top: 120rem;
+}
+.img_2_3 {
+    top: 183rem;
+}
+.img_2_4 {
+    top: 263rem;
+}
+.groupy-may {
+    width: 24rem;
+    display: block;
+    margin: 0 auto 2.5rem;
+    position: relative;
+}
+.idol-content {
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+.idol-content li {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #F1AA26;
+    line-height: 0.9rem;
+    img {
+        margin-bottom: 1rem;
+    }
+}
+.idol_sfm {
+    padding-top: 0.5rem;
+    position: relative;
+    img {
+        width: 14rem;
+        height: auto;
+    }
+}
+.idol_asuka {
+    padding-top: 3rem;
+    img {
+        width: 11.5rem;
+    }
+    p {
+        color: #929A0F;
+    }
+}
+.idol_tsp {
+     img {
+        width: 13rem;
+    }
+    p {
+        color: #F13A81;
+    }
+}
+.idol_xigua {
+    img {
+        width: 11.5rem;
+    }
+    p {
+        color: #D53939;
+    }
+}
+.ffacg-title {
+    width: 42.8rem;
+    // background-image : url(http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg_ffacg.png);
+    // background-size: cover;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 3.5rem auto 0.5rem;
+    position: relative;
+    img {
+        display: block;
+        width: 100%;
+        height: 3.26rem;
+    }
+    span {
+        position: absolute;
+        left: 0;
+        line-height: 3rem;
+        width: 100%;
+        top: 0;
+    }
+}
+.ffacg-time {
+    font-size: 1.4rem;
+    color: #F13A81;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.ffacg-left {
+    float: left;
+    margin-right: 1.65rem;
+    img {
+        width: 17rem;
+        display: block;
+        margin: 0 auto 0.6rem;
+    }
+    p {
+        font-size: 0.7rem;
+        color: #60BEEE;
+        margin-left: 0.7rem;
+        font-weight: 400;
+    }
+}
+.ffacg-right{
+    float: left;
+    max-width: 26rem;
+}
+.ffacg-h3title {
+    font-size: 1.6rem;
+    color: #D5D5D5;
+    margin-bottom: 0.2rem;
+}
+.ffacg-p {
+    font-size: 0.8rem;
+    color: #333333;
+    margin-bottom: 0.4rem;
+}
+.reservation-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    background: #D90C5B;
+    border-radius: 0.25rem;
+    margin-top: 0.4rem;
+    em,img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    img {
+        width: 0.5rem;
+        margin-left: 0.75rem;
+    }
+}
+.ffacg-desc-tile {
+    font-size: 1.1rem;
+    color: #F1B100;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    >* {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1.25rem;
+    }
+    span {
+        background: #F1B100;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+    }
+    span:last-child {
+        margin-right: 0;
+    }
+}
+.ffacg-desc-tile-green {
+    color: #00916E;
+    span {
+        background: #00916E;
+    }
+}
+.ffacg-desc-tile-pink {
+    color: #F13A81;
+    span {
+        background: #F13A81;
+    }
+}
+.ffacg-desc {
+    border: 0.2rem solid rgba(0,136,211,0.25);
+    border-radius: 0.7rem;
+    padding: 0.85rem;
+}
+.ffacg-dashed {
+    border: 0.2rem dashed rgba(0,136,211,0.25);
+    border-radius: 0.45rem;
+    padding: 0 3.75rem 1.25rem 1.75rem;
+}
+.dashed-content {
+    overflow: hidden;
+    padding-top: 2rem;
+}
+.content-left {
+    margin-right: 1.75rem;
+    width: 4.4rem;
+    font-size: 1.2rem;
+    color: #0088D3;
+    opacity: 0.9;
+    float: left;
+}
+.content-right {
+    float: left;
+    width: 30rem;
+    border-bottom: 1px dashed #C1C1C1;
+    padding-bottom: 1.3rem;
+}
+.content-right-last {
+    border: none;
+}
+.content-title {
+    font-size: 0.9rem;
+    color: #333333;
+    margin-bottom: 0.5rem;
+    span {
+        display: inline-block;
+        // width: 11rem;
+        margin-right: 1.6rem;
+    }
+    em {
+        display: inline-block;
+        color: #F13A81;
+    }
+}
+.content-desc {
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+.ffacg-gmap {
+    width: 100%;
+    height: 12rem;
+}
+.live-imgs {
+    padding: 0 0.5rem;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+// live&Off会
+.live-time {
+    color: #0088D3;
+}
+.ffacg-p-2 {
+    margin-bottom: 2.8rem;
+}
+// 粉丝同游
+.tour-time {
+    color: #00916E;
+}
+// 马上预约
+.reservation-bigBtn {
+    width: 25rem;
+    margin: 6rem auto;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    background: #D90C5B;
+    border-radius: 0.5rem;
+    >* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    img {
+        width: 0.75rem;
+        margin-left: 1.85rem;
+    }
+}
+// 左栏菜单
+.tabs {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 5rem;
+    line-height: 5rem;
+    width: 100vw;
+    text-align:center;
+    background: #fff;
+    z-index: 2;
+    border-bottom: #ee627c solid 2px;
+    overflow: hidden;
+    >span {
+        display: inline-block;
+    }
+}
+.tabs >* {
+    transition: all 0.3s;
+    box-shadow: none;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    padding: 0 2.3rem;
+    border-right: solid rgba(229, 39, 97, 0.2) 1px;
+    text-decoration: none;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.tabs .tabs-li-blue {
+    border-right: 1px solid rgba(27, 135, 205 , 0.2);
+    .tab-desc {
+        color: rgb(27, 135, 205);
+    }
+}
+.tabs .tabs-li-green {
+    border-right: 1px solid  rgba(27, 142, 112, 0.2);
+    .tab-desc {
+        color: rgb(27, 142, 112);
+    }
+}
+.tabs .tabs-li-none {
+    border-right: none;
+    .tab-desc {
+        color: #F1B100;
+    }
+}
+.tabs-groupy-icon {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    img {
+        width: 3.75rem;
+        vertical-align: middle;
+    }
+}
+.Groupy-web {
+    font-size: 1.85rem;
+    color: #F13A81;
+    display: none;
+    margin-left: 11px;
+}
+.tab-title {
+    font-size: 1.1rem;
+    color: #343434;
+    margin-bottom: 0.35rem;
+}
+.tab-desc {
+    font-size: 0.8rem;
+    color: #F13A81;
+    opacity: 0.8;
+}
+.tabs .tabs-li:hover {
+    transform: scale(1.1)
+}
+// toast
+.toast {
+    position: absolute;
+    bottom: 5rem;
+    background: #fff;
+    color: #333;
+    width: 14rem;
+    font-size: 0.8rem;
+    left: 50%;
+    margin-left: -7rem;
+    padding: 0.6rem 0;
+    border-radius: 0.2rem;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+.toast.show {
+    transform: scale(1);
+}
+// 预约窗口
+.reservation,.navWindow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    line-height: 100vh;
+    z-index: 3;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    transition: height 0.3s;
+}
+.reservationShow {
+    height: 100vh;
+}
+.close {
+    position: absolute;
+    width: 2rem;
+    top: 1.1rem;
+    right: 5.3rem;
+}
+.reservation-content,.navs {
+    display: inline-block;
+    vertical-align: middle;
+}
+.reservation-title {
+    // background-image: url();
+    // background-size: cover;
+    line-height: 2.8rem;
+    height: 3.2rem;
+    width: 20.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin: 0 auto 1.3rem;
+    position: relative;
+    img {
+        width: 100%;
+        display: block;
+    }
+    span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+.form {
+    background: #FFFFFF;
+    border: 4px solid #71CDFF;
+    border-radius: 0.7rem;
+    width: 46rem;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.form-dashed {
+    border: 4px dashed rgba(0,136,211,0.25);
+    border-radius: 9px;
+    padding: 2rem 1rem;
+}
+.input-content {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    >* {
+        float: left;
+    }
+    span {
+        text-align: right;
+        width: 7.3rem;
+        margin-right: 1.5rem;
+        color: #0088D3;
+    }
+    input,select {
+        width: 23rem;
+        height: 2.5rem;
+        border: 2px solid #C0D9E7;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        color: #333333;
+        margin-right: 0.75rem;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    input:focus,select:focus {
+        border: 2px solid #0088D3;
+    }
+    em {
+        font-size: 0.8rem;
+        color: #F13A81;
+    }
+}
+.form-tips {
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 400;
+    margin-left: 8.8rem;
+    line-height: 1.1rem;
+    text-align: left;
+    max-width: 29rem;
+    em {
+        color: #1B87CD;
+        text-decoration: underline;
+    }
+    p {
+        margin-bottom: 0.7rem;
+    }
+}
+.form-submite {
+    background: #D90C5B;
+    border-radius: 10px;
+    text-align: center;
+    width: 25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin: 2rem auto 0;
+}
+// 导航弹窗
+.navWindow {
+    top: 51px;
+    height: 0;
+    line-height: calc(100vh - 51px);
+}
+.navWindowShow {
+    height: calc(100vh - 51px);
+}
+.navs >*{
+    width: 90vw;
+    display: block;
+    margin: 20px auto;
+    background: #F13A81;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 12px;
+    padding: 12.5px 0;
+    text-decoration: none
+}
+.navs-title {
+    font-size: 18px;
+}
+.navs .navs-blue {
+    background: #0088D3;
+}
+.navs .navs-green {
+    background: #00916E;
+}
+.navs .navs-yellow {
+    background: #F1B100;
+}
+/* nav_bar ----------*/
+
+#nav_bar {
+  float: right;
+  display: none;
+  width: 30px;
+  height: 17px;
+  margin-top: 16.5px;
+  padding: 0;
+  margin-right: 20px;
+}
+
+#nav_bar:hover {
+  cursor: pointer;
+}
+
+#nav_bar span {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+#nav_bar:after,
+#nav_bar span:before,
+#nav_bar span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #F13A81;
+  left: 0;
+  top: calc( 50% + 5.5px);
+  transition: all 0.2s ease-out;
+}
+#nav_bar:after {
+    width: 30px;
+    left: calc(50% - 15px);
+}
+
+#nav_bar:after {
+  top: 0;
+}
+
+#nav_bar span:before {
+  top: calc( 50% - 1.5px);
+}
+
+#nav_bar span:after {
+  bottom: 28%;
+}
+
+#nav_bar:hover:after {
+  top: 0;
+}
+
+#nav_bar:hover span:after {
+  bottom: 35%;
+}
+
+.overflow #nav_bar:after {
+  top: calc(50% - 3px);
+  transform: rotate(135deg);
+}
+
+.overflow #nav_bar span:before {
+  opacity: 0;
+}
+
+.overflow #nav_bar span:after {
+  top: calc(50% - 3px);
+  transform: rotate(-135deg);
+}
