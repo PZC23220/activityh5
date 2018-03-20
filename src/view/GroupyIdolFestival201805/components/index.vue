@@ -54,7 +54,7 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
-        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+        <div class="cn_tips width900" v-if="lan=='zh-cn'">
           <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
@@ -136,7 +136,7 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
-        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+        <div class="cn_tips width900" v-if="lan=='zh-cn'">
           <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
@@ -221,7 +221,7 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
-        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+        <div class="cn_tips width900" v-if="lan=='zh-cn'">
           <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
           <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
           <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
@@ -258,7 +258,7 @@
       </div>
       <!-- 马上预约按钮 -->
       <div class="reservation-bigBtn box cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></div>
-      <div class="cn_tips width900" v-if="lan=='zh-ch'">
+      <div class="cn_tips width900" v-if="lan=='zh-cn'">
         <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
         <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
         <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
@@ -290,7 +290,7 @@
     <div class="reservation" :class="[{'reservationShow':reservationShow},{'box':reservationShow}]">
       <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_close.png" class="close cursor" @click="closeWindow()">
       <div class="reservation-content">
-        <h4 class="reservation-title"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg_book.png"><span>预 约</span></h4>
+        <h4 class="reservation-title"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg_book.png"><span>{{htmlInfo.resContent.btn}}</span></h4>
         <div class="form">
           <div class="form-dashed">
             <div class="input-content">
