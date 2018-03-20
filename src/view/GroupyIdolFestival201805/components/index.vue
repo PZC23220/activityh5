@@ -557,7 +557,7 @@
     created: function() {
       let self = this;
       window.setupWebViewJavascriptBridge(function(bridge) {
-          bridge.callHandler('setTitle', {'title':'Groupy New Year Festival ～in広州～'})
+          bridge.callHandler('setTitle', {'title':'Groupy Idol Festival May 2018~in広州~'})
       })
       let ua = navigator.userAgent.toLowerCase();
       let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
@@ -571,7 +571,7 @@
             liveDesc: 'Groupy偶像祭~4.30~',
             tourTitle: '粉丝同游',
             tourDesc: 'Groupy偶像祭~5.1~',
-            restitle: 'ライブ予約',
+            restitle: '马上预约',
             resDesc: '~马上预约嗨起来~',
           },
           reservation: '马上预约',
