@@ -54,6 +54,12 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
+        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
+          <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
+          <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
+        </div>
         <h4 class="ffacg-desc-tile box"><span></span><span></span><em>{{htmlInfo.desc}}</em><span></span><span></span></h4>
         <div class="ffacg-desc width900 box">
           <div class="ffacg-dashed">
@@ -61,6 +67,9 @@
               <div class="content-left">{{htmlInfo.date}}</div>
               <div class="content-right">
                 <h4 class="content-title"><span>{{htmlInfo.ffacg.date}}</span></h4>
+                <h4 class="content-title"><span>{{htmlInfo.ffacg.date1Desc}}</span><em>{{htmlInfo.ffacg.date1}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.ffacg.date2Desc}}</span><em>{{htmlInfo.ffacg.date2}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.ffacg.date3Desc}}</span><em>{{htmlInfo.ffacg.date3}}</em></h4>
               </div>
             </div>
             <div class="dashed-content">
@@ -127,6 +136,12 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
+        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
+          <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
+          <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
+        </div>
         <h4 class="ffacg-desc-tile box"><span></span><span></span><em>{{htmlInfo.desc}}</em><span></span><span></span></h4>
         <div class="ffacg-desc width900 box">
           <div class="ffacg-dashed">
@@ -134,12 +149,24 @@
               <div class="content-left">{{htmlInfo.date}}</div>
               <div class="content-right">
                 <h4 class="content-title"><span>{{htmlInfo.live.date}}</span></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date1}}</span></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date1_1Desc}}</span><em>{{htmlInfo.live.date1_1}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date1_2Desc}}</span><em>{{htmlInfo.live.date1_2}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date1_3Desc}}</span><em>{{htmlInfo.live.date1_3}}</em></h4>
+                <h4 class="content-title" v-if="htmlInfo.live.date2"><span>{{htmlInfo.live.date2Desc}}</span><em>{{htmlInfo.live.date2}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date3}}</span></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date3_1Desc}}</span><em>{{htmlInfo.live.date3_1}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date3_2Desc}}</span><em>{{htmlInfo.live.date3_2}}</em></h4>
+                <h4 class="content-title"><span>{{htmlInfo.live.date3_3Desc}}</span><em>{{htmlInfo.live.date3_3}}</em></h4>
               </div>
             </div>
             <div class="dashed-content">
               <div class="content-left">{{htmlInfo.money}}</div>
               <div class="content-right">
                 <h4 class="content-title"><span>{{htmlInfo.live.money1Desc}}</span><em>{{htmlInfo.live.money1}}</em></h4>
+                <h4 class="content-title" v-if="htmlInfo.live.money2"><span>{{htmlInfo.live.money2Desc}}</span><em>{{htmlInfo.live.money2}}</em></h4>
+                <h4 class="content-title" v-if="htmlInfo.live.money3"><span>{{htmlInfo.live.money3Desc}}</span><em>{{htmlInfo.live.money3}}</em></h4>
+                <h4 class="content-title" v-if="htmlInfo.live.money4"><span>{{htmlInfo.live.money4Desc}}</span><em>{{htmlInfo.live.money4}}</em></h4>
                 <p class="content-desc" v-html="htmlInfo.live.moneyDesc1"></p>
                 <p class="content-desc">{{htmlInfo.live.moneyDesc2}}</p>
                 <p class="content-desc">{{htmlInfo.live.moneyDesc3}}</p>
@@ -194,6 +221,12 @@
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
+        <div class="cn_tips width900" v-if="lan=='zh-ch'">
+          <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+          <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
+          <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
+          <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
+        </div>
         <h4 class="ffacg-desc-tile box"><span></span><span></span><em>{{htmlInfo.desc}}</em><span></span><span></span></h4>
         <div class="ffacg-desc width900 box">
           <div class="ffacg-dashed">
@@ -216,14 +249,21 @@
           </div>
         </div>
         <h4 class="ffacg-desc-tile ffacg-desc-tile-green box"><span></span><span></span><em>{{htmlInfo.idols}}</em><span></span><span></span></h4>
-        <ul class="idol-content width900 box">
-          <li class="idol_sfm"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_sfm.png"><p>Shine Fine<br>Movement</p></li>
+        <ul class="idol-content width1100 box">
+          <li class="idol_sfm" style="padding-top: 1.75rem;"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_sfm.png"><p>Shine Fine<br>Movement</p></li>
+          <li class="idol_xigua"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_xigua.png"><p>夏芽優李</p></li>
           <li class="idol_asuka"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_asuka.png"><p>{{htmlInfo.asuka}}</p></li>
-          <li class="idol_tsp"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_tsp.png"><p>Tokyo Sweet Party</p></li>
+          <li class="idol_tsp" style="padding-top: 1.25rem;"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_tsp.png"><p>Tokyo Sweet Party</p></li>
         </ul>
       </div>
       <!-- 马上预约按钮 -->
       <div class="reservation-bigBtn box cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></div>
+      <div class="cn_tips width900" v-if="lan=='zh-ch'">
+        <p>※点击马上预约将跳转至Groupy官方淘宝店购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a></p>
+        <p>※淘宝报名购买4月30日一日通手环时，请备注真实的活动信息来源（从哪里得知此活动：Groupy官方宣传、麦萌App、其他），否则可能错失萤火虫漫展VIP门票赠送资格哦。</p>
+        <p>※咨询：contact@groupy.vip / Groupy官方淘宝店客服</p>
+        <p>※请粉丝自行购买车票和预订住宿酒店等。</p>
+      </div>
     </div>
     <!-- 导航弹窗 -->
     <div class="navWindow" :class="[{'navWindowShow':navWindowShow},{'box':navWindowShow}]">
@@ -340,9 +380,9 @@
           idols: '出演アイドル',
           date: '日程',
           yen: '',
+          asuka: '葉月あすか',
           address: '場所',
           money: 'チケット代',
-          asuka: '葉月あすか',
           may: 'http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/slogan_jp.png',
           ffacg: {
             title: 'Groupy in 18th FFACG',
@@ -353,15 +393,21 @@
             descp2: 'そこで、日本アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
             descp3: 'イベントHP：',
             date: '2018年4月29日（日）',
+            date1Desc: '前物販',
+            date2Desc: 'メインステージ出演',
+            date3Desc: '物販特典会',
+            date1: '11:30~13:00',
+            date2: '13:30~15:00',
+            date3: '15:30~17:00',
             money1Desc: 'VIPエリア（ステージに最も近いエリア）チケット',
             money2Desc: 'FFACGチケット',
             money1: '50元（1000円）',
-            money2: '60元',
+            money2: '60元（別途）',
             moneyDesc1:'※受付は当日Groupyブースにて行いますので、VIPエリアチケットを予約された方は開演前にGroupyブースまでお越し下さい（日本円でのご購入が可能です）。',
-            moneyDesc2:'※Groupyブースのブース番号は決定次第公開いたします。',
+            moneyDesc2:'※Groupyブースのブース番号はA46です。',
             moneyDesc3:'※FFACGチケットは現地のFFACGチケット窓口にてご購入いただく形になります（ご購入は中国元になります）。',
-            moneyDesc4:'※先着順でVIPエリアを予約された10名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。',
-            moneyDesc5:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
+            moneyDesc4:'※先着順でVIPエリアを予約された15名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。',
+            moneyDesc5:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
             moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
             address1: '中国広州国際採購中心',
             address2: '(中国広東省広州市海珠区琶洲大道東路2-8号)　',
@@ -372,15 +418,31 @@
             title2: '~4.30~',
             imgDesc: 'Groupy New Year Festival -カウントダウンパーティ現場',
             descTitle: 'Live & OFF会',
-            descp1: '中国・広州でのGroupy主催ライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
+            descp1: '中国・広州でGroupyが主催するライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
             date: '2018年4月30日（月）',
-            money1Desc: '一日券（Live&FanMeeting）',
+            date1: 'ライブ一部：',
+            date1_1Desc: '開場',
+            date1_2Desc: '開演',
+            date1_3Desc: '物販',
+            date1_1: '13:45～14:00',
+            date1_2: '14:00～15:30',
+            date1_3: '15:30～17:00',
+            date2Desc: 'ファンミーティング',
+            date2: '17:30～18:50',
+            date3: 'ライブ二部：',
+            date3_1Desc: '開場',
+            date3_2Desc: '開演',
+            date3_3Desc: '物販',
+            date3_1: '19:15～19:30',
+            date3_2: '19:30～21:00',
+            date3_3: '21:00～22:30',
+            money1Desc: '一日券（2回Live&FanMeeting）',
             money1: '400元（7000円）',
             moneyDesc1:'※ライブごとのチケットは販売しておりませんので、ご了承ください。',
             moneyDesc2:'※整理番号でご入場をご案内致します。',
             moneyDesc3:'※日本円でのご購入が可能です。',
-            moneyDesc4:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
-            moneyDesc5:'※ご予約後、後日に確認・案内メールをお送りいたしますので、ご確認いただきます。',
+            moneyDesc4:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
+            moneyDesc5:'※ご予約後、後日に確認・案内メールをお送りいたしますので、ご確認ください。',
             moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
             address1: '中国Mao Live house',
             address2: '(中国広東省広州市海珠区新港東路1088号六元素体験天地F1)',
@@ -394,7 +456,7 @@
             date: '2018年5月1日（火）',
             money1: '400元（7000円）',
             moneyDesc1:'※受付は当日現場にて行います。日本円でのご購入が可能です。',
-            moneyDesc2:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
+            moneyDesc2:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
             moneyDesc3:'※ご予約後、後日確認・案内メールをお送りいたしますので、ご確認いただきます。',
             moneyDesc4:'※タイムテーブル・場所などは決定次第公開いたします。',
           },
@@ -494,7 +556,7 @@
               self.idx++;
               if(self.lan === 'zh-cn') {
                 alert('信息登记成功！请前往淘宝自行购票～');
-                window.location.href='http://m.tb.cn/h.WFFfKzA';
+                window.location.href='https://shop323210088.taobao.com/';
               }else{
                 self.toast = '予約しました！';
                 alert('予約しました！');
@@ -526,9 +588,13 @@
         }
       },
       showWindow() {
-        this.reservationShow = true;
-        this.navWindowShow = false;
-        $('html, body').addClass('nav_open');
+        if(this.lan == 'zh-cn') {
+          window.open('https://shop323210088.taobao.com/','_blank');
+        }else {
+          this.reservationShow = true;
+          this.navWindowShow = false;
+          $('html, body').addClass('nav_open');
+        }
       },
       closeWindow() {
         this.reservationShow = false;
@@ -548,7 +614,7 @@
     },
     mounted() {
       this.scrollReveal.reveal('.box', {
-        duration: 500,
+        duration: 600,
       });
     },
     computed: {
@@ -567,7 +633,7 @@
           nav: {
             ffacgTitle: '萤火虫专场',
             ffacgDesc: 'Groupy偶像祭~4.29~',
-            liveTitle: 'Live & Off会主场',
+            liveTitle: '主场Live&Off会',
             liveDesc: 'Groupy偶像祭~4.30~',
             tourTitle: '粉丝同游',
             tourDesc: 'Groupy偶像祭~5.1~',
@@ -584,21 +650,27 @@
           may: 'http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/slogan_cn.png',
           ffacg: {
             title: 'Groupy 偶像祭-萤火虫专场',
-            title2: '~4.29~',
+            title2: '~ 4月29日 ~',
             imgDesc: '17th 漫展活动现场摄图',
             descTitle: ' 18th FFACG',
-            descp1: '人流量超过20万、华南地区最大的商业动漫游戏展萤火虫动漫嘉年华（第18届）即将开启！',
+            descp1: '人流量超过20万、华南地区最大的商业动漫游戏展萤火虫动漫嘉年华（18th）4月29日即将开启！',
             descp2: '马上报名，与爱豆在中国嗨起来吧！',
             descp3: '活动官网：',
             date: '2018年4月29日（周日）',
+            date1Desc: '前物贩',
+            date2Desc: '主舞台演出',
+            date3Desc: '物贩特典会',
+            date1: '11:30~13:00',
+            date2: '13:30~15:00',
+            date3: '15:30~17:00',
             money1Desc: '内场手环',
-            money2Desc: 'FFACG门票',
+            money2Desc: '萤火虫漫展门票',
             money1: '50元',
-            money2: '60元',
+            money2: '60元（需自行购买）',
             moneyDesc1:'※预约了内场手环的亲们请在当天到Groupy展位领取手环。',
-            moneyDesc2:'※Groupy展位番号将于近日公布。',
-            moneyDesc3:'※FFACG门票请自行到FFACG购票窗口购买。',
-            moneyDesc4:'※活动将于3月20日19:00开始接受预约。在本网站填写预约信息并提交完毕后，请到Groupy官方淘宝店购买手环。否则预约将失效。',
+            moneyDesc2:'※Groupy展位番号为A46。',
+            moneyDesc3:'※萤火虫漫展门票请自行购买，',
+            moneyDesc4:'※活动将于3月20日19:00开始接受预约。请到Groupy官方淘宝店购买手环。否则预约将失效。',
             moneyDesc5:'※Timetable・特典会等详情将在近日公布。',
             address1: '广州国际采购中心',
             address2: '（广东省广州市海珠区琶洲大道东路2-8号）',
@@ -611,18 +683,38 @@
             descTitle: 'Live & OFF会',
             descp1: '来参加Groupy广州主场Live，跟爱豆一起欢度五一小长假！不够过瘾？还有Off会等你来~',
             date: '2018年4月30日（周一）',
-            money1Desc: '一日通手环（Live&Off会）',
-            money1: '400元',
-            moneyDesc1:'※官网只限预约一日通手环。<br>若需购买单场手环，请直接到Groupy官方淘宝店进行购买：<a href="http://m.tb.cn/h.WFFfKzA" target="_black">http://m.tb.cn/h.WFFfKzA</a>',
+            date1: 'live一部：',
+            date1_1Desc: '开场',
+            date1_2Desc: '开演',
+            date1_3Desc: '物贩',
+            date1_1: '13:45～14:00',
+            date1_2: '14:00～15:30',
+            date1_3: '15:30～17:00',
+            date3: 'live二部：',
+            date3_1Desc: '开场',
+            date3_2Desc: '开演',
+            date3_3Desc: '物贩',
+            date3_1: '19:15～19:30',
+            date3_2: '19:30～21:00',
+            date3_3: '21:00～22:30',
+            money1Desc: '单场Live手环',
+            money2Desc: '双场Live手环（2场Live ）',
+            money3Desc: 'off会手环',
+            money4Desc: '一日通手环（2场Live&Off会）',
+            money1: ' 80元',
+            money2: '150元',
+            money3: '300元',
+            money4: '400元',
+            moneyDesc1:'※购买off会手环或一日通门票，入场可获得随机偶像私房拍立得一张。',
             moneyDesc2:'※活动当天根据整理番号入场。',
-            moneyDesc3:'※活动将于3月20日19:00开始接受预约。在本网站填写预约信息并提交完毕后，请到Groupy官方淘宝店购买一日通手环。否则预约将失效。',
+            moneyDesc3:'※活动将于3月20日19:00开始接受预约。请到Groupy官方淘宝店购买一日通手环。否则预约将失效。',
             moneyDesc4:'※在淘宝购买一日通手环前10名的亲们，我们将各送出漫展VIP门票一张。送完即止。',
             moneyDesc6:'※Timetable・特典会等详情将在近日公布。',
             address1: '广州Mao Livehouse',
             address2: '（广州市海珠区新港东路1088号六元素体验天地一层）',
           },
           tour: {
-            title: 'Groupy偶像祭-粉丝同游',
+            title: 'Groupy 偶像祭-粉丝同游',
             title2: '~ 5月1日 ~',
             imgDesc: '广州景色',
             descTitle: 'TOUR',
@@ -630,8 +722,8 @@
             date: '2018年5月1日（周二）',
             money1: '400元',
             money1Desc: '门票价格',
-            moneyDesc1:'※预约了粉丝同游的亲们请在当天现场领取手环。',
-            moneyDesc2:'※活动将于3月20日19:00开始接受预约。在本网站填写预约信息并提交完毕后，请到Groupy官方淘宝店购买手环。否则预约将失效。',
+            moneyDesc1:'※活动当天请按时到达指定集合地点，过时不候，此次报名费用中包含活动场所的门票一张，参加者无需另外购票。活动全程请听从带队staff的安排，请勿擅自离队。',
+            moneyDesc2:'※活动将于3月20日19:00开始接受预约。请到Groupy官方淘宝店购买手环。否则预约将失效。',
             moneyDesc4:'※Timetable・地点等详情将在近日公布。',
           },
           resContent: {
@@ -641,7 +733,7 @@
             form: '从哪里得知此活动',
             tip1: '※咨询：',
             tip2: '※基本信息填写结束，按下“预约”按钮后，请到Groupy官方淘宝店【Groupy应援线上店】购买门票，购票成功后预约才正式生效。否则预约作废。',
-            tip3: '※Groupy官方淘宝购票链接：<a href="http://m.tb.cn/h.WFFfKzA">http://m.tb.cn/h.WFFfKzA</a>',
+            tip3: '※Groupy官方淘宝购票链接：<a href="https://shop323210088.taobao.com/">https://shop323210088.taobao.com/</a>',
             tip4: '※请粉丝自行购买车票和预订住宿酒店等。',
             btn: '预 约',
             op1: '(4.29)Groupy偶像祭-萤火虫专场',
@@ -681,15 +773,21 @@
             descp2: 'そこで、日本アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
             descp3: 'イベントHP：',
             date: '2018年4月29日（日）',
+            date1Desc: '前物販',
+            date2Desc: 'メインステージ出演',
+            date3Desc: '物販特典会',
+            date1: '11:30~13:00',
+            date2: '13:30~15:00',
+            date3: '15:30~17:00',
             money1Desc: 'VIPエリア（ステージに最も近いエリア）チケット',
             money2Desc: 'FFACGチケット',
             money1: '50元（1000円）',
-            money2: '60元',
+            money2: '60元（別途）',
             moneyDesc1:'※受付は当日Groupyブースにて行いますので、VIPエリアチケットを予約された方は開演前にGroupyブースまでお越し下さい（日本円でのご購入が可能です）。',
-            moneyDesc2:'※Groupyブースのブース番号は決定次第公開いたします。',
+            moneyDesc2:'※Groupyブースのブース番号はA46です。',
             moneyDesc3:'※FFACGチケットは現地のFFACGチケット窓口にてご購入いただく形になります（ご購入は中国元になります）。',
-            moneyDesc4:'※先着順でVIPエリアを予約された10名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。',
-            moneyDesc5:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
+            moneyDesc4:'※先着順でVIPエリアを予約された15名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。',
+            moneyDesc5:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
             moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
             address1: '中国広州国際採購中心',
             address2: '(中国広東省広州市海珠区琶洲大道東路2-8号)　',
@@ -700,15 +798,31 @@
             title2: '~4.30~',
             imgDesc: 'Groupy New Year Festival -カウントダウンパーティ現場',
             descTitle: 'Live & OFF会',
-            descp1: '中国・広州でのGroupy主催ライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
+            descp1: '中国・広州でGroupyが主催するライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
             date: '2018年4月30日（月）',
-            money1Desc: '一日券（Live&FanMeeting）',
+            date1: 'ライブ一部：',
+            date1_1Desc: '開場',
+            date1_2Desc: '開演',
+            date1_3Desc: '物販',
+            date1_1: '13:45～14:00',
+            date1_2: '14:00～15:30',
+            date1_3: '15:30～17:00',
+            date2Desc: 'ファンミーティング',
+            date2: '17:30～18:50',
+            date3: 'ライブ二部：',
+            date3_1Desc: '開場',
+            date3_2Desc: '開演',
+            date3_3Desc: '物販',
+            date3_1: '19:15～19:30',
+            date3_2: '19:30～21:00',
+            date3_3: '21:00～22:30',
+            money1Desc: '一日券（2回Live&FanMeeting）',
             money1: '400元（7000円）',
             moneyDesc1:'※ライブごとのチケットは販売しておりませんので、ご了承ください。',
             moneyDesc2:'※整理番号でご入場をご案内致します。',
             moneyDesc3:'※日本円でのご購入が可能です。',
-            moneyDesc4:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
-            moneyDesc5:'※ご予約後、後日に確認・案内メールをお送りいたしますので、ご確認いただきます。',
+            moneyDesc4:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
+            moneyDesc5:'※ご予約後、後日に確認・案内メールをお送りいたしますので、ご確認ください。',
             moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
             address1: '中国Mao Live house',
             address2: '(中国広東省広州市海珠区新港東路1088号六元素体験天地F1)',
@@ -722,7 +836,7 @@
             date: '2018年5月1日（火）',
             money1: '400元（7000円）',
             moneyDesc1:'※受付は当日現場にて行います。日本円でのご購入が可能です。',
-            moneyDesc2:'※予約は3月20日19:00に受付を開始させていただきます。予約フォームを公開しますので、本サイトをチェックしてください。',
+            moneyDesc2:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
             moneyDesc3:'※ご予約後、後日確認・案内メールをお送りいたしますので、ご確認いただきます。',
             moneyDesc4:'※タイムテーブル・場所などは決定次第公開いたします。',
           },

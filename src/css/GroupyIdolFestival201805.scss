@@ -1,14 +1,13 @@
-@font-face {
-    font-family: 'Toppan Bunkyu Midashi Mincho StdN ExtraBold';
-    src: url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.eot');
-    src: url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.eot?#iefix') format('embedded-opentype'),
-         url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.woff') format('woff'),
-         url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.TTF') format('truetype'),
-         url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.svg#Toppan Bunkyu Midashi Mincho StdN ExtraBold') format('svg');
-}
+// @font-face {
+//     font-family: 'Toppan Bunkyu Midashi Mincho StdN ExtraBold';
+//     src: url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.eot');
+//     src: url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/Toppan%20Bunkyu%20Midashi%20Mincho%20StdN%20ExtraBold.eot?#iefix') format('embedded-opentype'),
+//          url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/ToppanBunkyuMidashiMincho-Extrabold.woff') format('woff'),
+//          url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/ToppanBunkyuMidashiMincho-Extrabold.ttf') format('truetype'),
+//          url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/ToppanBunkyuMidashiMincho-Extrabold.svg#Toppan Bunkyu Midashi Mincho StdN ExtraBold') format('svg');
+// }
 html {
-    font-family: "Helvetica Neue",'Toppan Bunkyu Midashi Mincho StdN ExtraBold', Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    // font-family: Verdana, Roboto, "Droid Sans", 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 20px;
     font-weight: 600;
     background-color: #fff;
@@ -19,10 +18,12 @@ html {
     cursor: pointer;
 }
 .overflow {
-    overflow: hidden;
+    width: 100%;
+    position: fixed;
 }
 .nav_open {
-    overflow: hidden;
+    width: 100%;
+    position: fixed;
 }
 .content {
     position: relative;
@@ -52,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
     position: relative;
     padding-top: 8rem;
+    padding-bottom: 2rem;
     overflow: hidden;
 }
 .img_1 {
@@ -326,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
 // 马上预约
 .reservation-bigBtn {
     width: 25rem;
-    margin: 6rem auto;
+    margin: 6rem auto 2rem;
     height: 3rem;
     line-height: 3rem;
     text-align: center;
@@ -668,4 +670,13 @@ h1, h2, h3, h4, h5, h6 {
 .overflow #nav_bar span:after {
   top: calc(50% - 3px);
   transform: rotate(-135deg);
+}
+.cn_tips {
+    font-size: 0.7rem;
+    color: #999;
+    font-weight: 400;
+    padding: 0.3rem 12px 0;
+    p {
+        padding: 0.25rem;
+    }
 }
