@@ -90,7 +90,9 @@
               <div class="content-right content-right-last">
                 <h4 class="content-title">{{htmlInfo.ffacg.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.ffacg.address2}}</p>
+                <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_ffacg.png"class="ffacg-gmap" v-if="lan=='zh-cn'">
                 <gmap-map
+                    v-else
                     :center="center2"
                     :zoom="15"
                     class="ffacg-gmap">
@@ -180,7 +182,9 @@
               <div class="content-right content-right-last">
                 <h4 class="content-title">{{htmlInfo.live.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.live.address2}}</p>
+                <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/map_livehouse.png"class="ffacg-gmap" v-if="lan=='zh-cn'">
                 <gmap-map
+                    v-else
                     :center="center"
                     :zoom="15"
                     class="ffacg-gmap">
