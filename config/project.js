@@ -49,5 +49,6 @@ module.exports = {
         maimeng: './src/view/maimeng',
         interview: './src/view/interview',
         GroupyIdolFestival201805: './src/view/GroupyIdolFestival201805',
+        spokesman3: './src/view/spokesman3',
     },
 };
