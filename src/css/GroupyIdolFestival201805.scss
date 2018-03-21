@@ -6,6 +6,9 @@
 //          url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/ToppanBunkyuMidashiMincho-Extrabold.ttf') format('truetype'),
 //          url('http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/font/ToppanBunkyuMidashiMinchoStdNExtraBold/ToppanBunkyuMidashiMincho-Extrabold.svg#Toppan Bunkyu Midashi Mincho StdN ExtraBold') format('svg');
 // }
+a,div{
+    -webkit-user-select: auto;
+}
 html {
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-size: 20px;
