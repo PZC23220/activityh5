@@ -39,7 +39,7 @@
                 <li>
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
-                        <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
+                        <p><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
@@ -160,9 +160,9 @@
                     warning: {
                         title: '注意事項',
                         p1: '1. 最終結果はイベント期間終了の翌日にGroupyアプリおよび公式Twitter@GGroupyyyにて発表いたします。',
-                        p2: '2. 当選アイドルはアプリストア用の写真及びトップバナー掲載用の写真を2018年1月30日までにご提出いただきます。',
+                        p2: '2. 当選アイドルはアプリストア用の写真及びトップバナー掲載用の写真を2018年4月3日までにご提出いただきます。',
                         p3: '3. 掲載期間は2週間を予定しております。それ以後は予告なく掲載内容を変更する場合がございます。',
-                        p4: '4. アプリストア・Twitter以外の他のメディアでも使用される可能性がありますがが、確実に露出を保証するものではありません。なお他のメディアで使用する際はアプリストア用の写真を使用いたします。'
+                        p4: '4. アプリストア・Twitter以外の他のメディアでも使用される可能性がありますが、確実に露出を保証するものではありません。なお他のメディアで使用する際はアプリストア用の写真を使用いたします。'
                     },
                     rewards: [{
                         p1: 'ランキング1位に：',
