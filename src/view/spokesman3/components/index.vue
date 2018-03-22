@@ -22,6 +22,7 @@
                 <p v-html="activity.desc.p9"></p>
                 <p v-html="activity.desc.p10"></p>
                 <p v-html="activity.desc.p11"></p>
+                <p v-html="activity.desc.p12"></p>
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
@@ -150,6 +151,7 @@
                         p9: '<i>・アプリストア（App Store日本、Google Play日本）内の桜をテーマにしたGroupyアプリ紹介画像</i>',
                         p10: '<i>・Groupy 公式Twitter（@GGroupyyy）のヘッダー画像</i>',
                         p11: 'さらに！！！ファンの方に向けて、Groupy公式Twitterにて桜シーズン限定の豪華プレゼント企画を03月26日に開催決定！ぜひお見逃しなく！',
+                        p12: '*<i>ご注意：</i>イメージガールになろう企画、及びファン向けのプレゼント企画はGroupyが独力で企画したイベントであります。Apple.Inc等、他の団体とは一切関係ありません。',
                     },
                     fansrule: {
                         title: '集計方法',
