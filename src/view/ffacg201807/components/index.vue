@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-         <div class="content">
+        <div class="content">
             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807.png" class="banner">
             <h2 class="box">{{activity.theme}}</h2>
             <!-- <p class="share-sns box" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p> -->
@@ -44,11 +44,13 @@
                         <p><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
-                        <p><i style="color: #fbfeff;">{{activity.rewards[0].p4}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p5}}</i></p>
+                        <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
+                        <p><i style="color: #fbfeff;">{{activity.rewards[0].p5}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p6}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p7}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p8}}</i></p>
+                        <p><span></span><i>{{activity.rewards[0].p9}}</i></p>
+                        <p><i style="color: #fbfeff;">{{activity.rewards[0].p10}}</i></p>
                     </div>
                 </li>
             </ul>
@@ -68,7 +70,7 @@
                 <p v-html="activity.fansrule.p5"></p>
                 <p v-html="activity.fansrule.p6"></p>
             </div>
-         </div>
+        </div>
     </div>
 </template>
 <style type="text/css">
@@ -164,11 +166,13 @@
                         p1: '期間中Like数ランキング１位のグループ：',
                         p2: '7月14日~7月16日に開催される「Groupy Idol Festival July 2018~in広州~」の出演権',
                         p3: '中国での露出チャンス（看板広告・雑誌・メディア・SNS等）',
-                        p4: '※ 飛行機代・宿泊費・食費はGroupyが負担（Staffを含め8名まで）',
-                        p5: '活动期间获得Like数排名第一的偶像团体：',
-                        p6: '7月14日~7月16日举办的Groupy偶像祭 July 2018~in广州~出演权',
-                        p7: '中国各大曝光机会（看板，杂志，媒体、sns...）',
-                        p8: '每场Live的物贩时间（物贩手续费30%）',
+                        p4: 'ライブごとに物販時間あり（物販手数料30%）',
+                        p5: '※ 飛行機代・宿泊費・食費はGroupyが負担（Staffを含め8名まで）',
+                        p6: '活动期间获得Like数排名第一的偶像团体：',
+                        p7: '7月14日~7月16日举办的Groupy偶像祭 July 2018~in广州~出演权',
+                        p8: '中国各大曝光机会（看板，杂志，媒体、sns...）',
+                        p9: '每场Live的物贩时间（物贩手续费30%）',
+                        p10: '出演团体来往的飞机票、住宿费、用餐费由Groupy全权承担（包括Staff，8名以内）',
                     }]
                 },
                 isFans: true,
