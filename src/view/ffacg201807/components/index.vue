@@ -193,7 +193,7 @@
                 var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807.png`;
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {
-                    bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
+                    bridge.callHandler('share', {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
                 })
             }
         },
