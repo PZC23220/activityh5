@@ -34,12 +34,8 @@
   }
   .tabs-groupy-icon  {
     float: left;
-    margin-top: 0.6875rem;
+    margin-top: 6.5px;
   }
-}
-
-@media screen and (max-width:768px) {
-  /* iPad 縦 m */
   .tabs {
     height: 50px;
     line-height: 50px;
@@ -48,12 +44,22 @@
   .tabs-groupy-icon {
     padding: 0 20px;
     img {
-        width: 37px;
+        height: 37px;
     }
     .Groupy-web {
         font-size: 18.5px;
     }
-   }
+  }
+  .changeLan {
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  /* iPad 縦 m */
+
    .reservation {
     top: 51px;
     line-height: calc(100vh - 51px);

@@ -179,8 +179,9 @@ h1, h2, h3, h4, h5, h6 {
 .ffacg-left {
     float: left;
     margin-right: 1.65rem;
+    width: 17rem;
     img {
-        width: 17rem;
+        width: 100%;
         display: block;
         margin: 0 auto 0.6rem;
     }
@@ -188,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.7rem;
         color: #60BEEE;
         margin-left: 0.7rem;
+        margin-right: 0.7rem;
         font-weight: 400;
     }
 }
@@ -403,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     border: none;
     img {
-        width: 3.75rem;
+        height: 3.75rem;
         vertical-align: middle;
     }
 }
@@ -685,4 +687,14 @@ h1, h2, h3, h4, h5, h6 {
     p {
         padding: 0.25rem;
     }
+}
+.changeLan {
+    font-size: 14px;
+    color: #F13A81;
+    border: 1px solid #F13A81;
+    padding: 2px 8px;
+    border-radius: 2px;
+}
+.form-img {
+    width: 200px;
 }
