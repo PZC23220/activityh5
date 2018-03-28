@@ -437,7 +437,7 @@
           live: {
             title: 'Live & Fan Meeting',
             title2: '~4.30~',
-            imgDesc: 'Groupy New Year Festival -カウントダウンパーティ現場',
+            imgDesc: 'Groupy New Year Festival -<br>カウントダウンパーティ現場',
             descTitle: 'Live & OFF会',
             descp1: '中国・広州でGroupyが主催するライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
             date: '2018年4月30日（月）',
@@ -709,7 +709,7 @@
             live: {
               title: 'Live & Fan Meeting',
               title2: '~4.30~',
-              imgDesc: 'Groupy New Year Festival -カウントダウンパーティ現場',
+              imgDesc: 'Groupy New Year Festival -<br>カウントダウンパーティ現場',
               descTitle: 'Live & OFF会',
               descp1: '中国・広州でGroupyが主催するライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
               date: '2018年4月30日（月）',
@@ -793,18 +793,10 @@
           }
         }
         if(type == 'nums') {
-          if(lan == 'zh-cn') {
-            if(val) {
-              this.phoneIsNone = false;
-            }else {
-              this.phoneIsNone = true;
-            }
+          if(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(val)) {
+            this.phoneIsNone = false;
           }else {
-            if(/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(val)) {
-              this.phoneIsNone = false;
-            }else {
-              this.phoneIsNone = true;
-            }
+            this.phoneIsNone = true;
           }
         }
       },
