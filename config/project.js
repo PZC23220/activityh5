@@ -51,5 +51,6 @@ module.exports = {
         GroupyIdolFestival201805: './src/view/GroupyIdolFestival201805',
         spokesman3: './src/view/spokesman3',
         ffacg201807: './src/view/ffacg201807',
+        ffacg201807_preliminaries: './src/view/ffacg201807_preliminaries',
     },
 };

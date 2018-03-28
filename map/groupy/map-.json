@@ -16,6 +16,7 @@
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/subwayAds_finals.js": "//js/subwayAds_finals/subwayAds_finals.js",
       "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
+      "/js/ffacg201807_preliminaries.js": "//js/ffacg201807_preliminaries/ffacg201807_preliminaries.js",
       "/js/twitter.js": "//js/twitter/twitter.js",
       "/js/ffacg201807.js": "//js/ffacg201807/ffacg201807.js",
       "/js/christmas.js": "//js/christmas/christmas.js",
@@ -25,7 +26,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -43,6 +44,7 @@
       "/js/halloween.js": "//js/halloween/halloween.js",
       "/js/subwayAds_finals.js": "//js/subwayAds_finals/subwayAds_finals.js",
       "/js/subwayAds_preliminaries.js": "//js/subwayAds_preliminaries/subwayAds_preliminaries.js",
+      "/js/ffacg201807_preliminaries.js": "//js/ffacg201807_preliminaries/ffacg201807_preliminaries.js",
       "/js/twitter.js": "//js/twitter/twitter.js",
       "/js/ffacg201807.js": "//js/ffacg201807/ffacg201807.js",
       "/js/christmas.js": "//js/christmas/christmas.js",
@@ -52,7 +54,7 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {
