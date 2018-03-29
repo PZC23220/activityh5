@@ -8,7 +8,7 @@
                 <p>Groupy Idol Festival July 2018~in広州~出演権争奪イベントに参加できるアイドルを募集中！興味のある方はお気軽に<i>wanted@groupy.vip</i>までご応募ください。</p>
                 <p>Groupy偶像祭 July 2018~in广州~出演权争夺战即将开启！现招募参赛团体，马上邮件联系<i>wanted@groupy.vip</i>解锁您的参赛权吧♪～</p>
             </div>
-            <span class="shares" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
+            <span class="shares box" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
             <div class="activity_rule box">
                 <h4>{{activity.desc.title}}</h4>
                 <p v-html="activity.desc.p1"></p>

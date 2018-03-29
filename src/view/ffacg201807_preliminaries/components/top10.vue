@@ -1,11 +1,12 @@
 <template>
     <div class="main">
         <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
-            <h2 style="width: 155px;" v-if="isOver"><span style="left: 0;"></span>入賞アイドル<span style="right: 0;"></span></h2>
-            <h2 v-else><span style="left: 0;"></span>{{activity.theme}}<span style="right: 0;"></span></h2>
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
+            <h2 class="box" style="width: 155px;" v-if="isOver"><span style="left: 0;"></span>入賞アイドル<span style="right: 0;"></span></h2>
+            <h2 class="box" v-else><span style="left: 0;"></span>{{activity.theme}}<span style="right: 0;"></span></h2>
             <ul class="ranking_list">
-                <li>
+                <li class="box">
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
                         <div class="img_content">
                             <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
@@ -20,7 +21,7 @@
                         </div>
                     </div>
                 </li>
-                <li v-for="(idol,key) in ranking" v-if="isOver?(key > 0 && key < 3):key > 0">
+                <li class="box" v-for="(idol,key) in ranking" v-if="isOver?(key > 0 && key < 3):key > 0">
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
@@ -46,10 +47,12 @@
 </template>
 <script>
     import http from '@api/js/http.js';
+    import scrollReveal from  'scrollreveal'
     require('@api/js/common.js')
     export default {
         data() {
             return {
+              scrollReveal:scrollReveal(),
                 ranking: [],
                 idx: 0,
                 idx2: 0,
@@ -112,6 +115,9 @@
           },
         },
         mounted() {
+          this.scrollReveal.reveal('.box', {
+            duration: 600,
+          });
         },
         created() {
             let isFans = getParams('isFans');

@@ -1,13 +1,14 @@
 <template>
     <div class="main">
          <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
-            <h2>{{activity.theme}}</h2>
+            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries-over.jpg" class="banner">
+            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
+            <h2 class="box">{{activity.theme}}</h2>
             <div class="activity_rule box">
                 <p>上位1名のグループはGroupy Idol Festival July 2018~in広州~に出演して頂きます！！ぜひご参加ください～♪</p>
                 <p>排名第一的团体即可获得Groupy偶像祭 July 2018~in广州~出演权！一定要踊跃参加哦。</p>
             </div>
-            <span v-if="isFans" class="shares" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
+            <span v-if="isFans" class="shares box" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
             <div class="activity_rule box">
                 <h4>{{activity.desc.title}}</h4>
                 <p v-html="activity.desc.p1"></p>
@@ -34,14 +35,14 @@
                 <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg1.jpg">
                 <img style="width:100%;padding: 0 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg2.jpg">
             </div>
-            <div class="activity_time">
+            <div class="activity_time box">
                 <h4>集計期間（日本時間 活动时间）</h4>
                 <div class="duration_time">
                     <p><span>{{activity.start}}</span><i>2018年04月01日（日）00:00:00</i></p>
                     <p><span>{{activity.end}}</span><i>2018年04月08日（日）23:59:59</i></p>
                 </div>
             </div>
-            <ul class="activity_reward">
+            <ul class="activity_reward box">
                 <h4>{{activity.award}}（活动奖品）</h4>
                 <li>
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
@@ -77,7 +78,7 @@
                 <p v-html="activity.obj.p7"></p>
                 <p v-html="activity.obj.p8"></p>
             </div>
-            <div class="activity_rule">
+            <div class="activity_rule box">
                 <h4>{{activity.fansrule.title}}</h4>
                 <p v-html="activity.fansrule.p1"></p>
                 <p v-html="activity.fansrule.p2"></p>
@@ -90,7 +91,7 @@
                 <p v-html="activity.fansrule.p9"></p>
                 <p v-html="activity.fansrule.p10"></p>
             </div>
-            <div class="activity_ranking" v-if="isFans">
+            <div class="activity_ranking box" v-if="isFans">
                 <h4>{{activity.rewardList}}</h4>
                 <p class="no_ranking" v-if="ranking.length<0 && loadingShow">{{activity.noRanking}}</p>
                 <ul class="ranking_list">
@@ -133,10 +134,12 @@
 </style>
 <script>
     import http from '@api/js/http.js';
+    import scrollReveal from  'scrollreveal'
     require('@api/js/common.js')
     export default {
         data() {
             return {
+                scrollReveal:scrollReveal(),
                 ranking: [],
                 me: {},
                 idx: 0,
@@ -288,6 +291,9 @@
             }
         },
         mounted() {
+          this.scrollReveal.reveal('.box', {
+            duration: 600,
+          });
         },
         created() {
             if(getParams('isFans') == 1) {
