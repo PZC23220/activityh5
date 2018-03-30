@@ -48,14 +48,14 @@
                     <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p3}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p4}}</i></p>
+                        <p><i>{{activity.rewards[0].p2}}</i></p>
+                        <p><i>{{activity.rewards[0].p3}}</i></p>
+                        <p><i>{{activity.rewards[0].p4}}</i></p>
                         <p><i style="color: #50B5D0;">{{activity.rewards[0].p5}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p6}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p7}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p8}}</i></p>
-                        <p><span></span><i>{{activity.rewards[0].p9}}</i></p>
+                        <p><i>{{activity.rewards[0].p6}}</i></p>
+                        <p><i>{{activity.rewards[0].p7}}</i></p>
+                        <p><i>{{activity.rewards[0].p8}}</i></p>
+                        <p><i>{{activity.rewards[0].p9}}</i></p>
                         <p><i style="color: #50B5D0;">{{activity.rewards[0].p10}}</i></p>
                     </div>
                 </li>
