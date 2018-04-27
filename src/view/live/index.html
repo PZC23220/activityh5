@@ -42,9 +42,9 @@
   <link rel="stylesheet" href="../../css/reset.css" />
   <link rel="stylesheet" href="../../css/live.css" />
   <link rel="shortcut icon" type="image/x-icon" href="http://groupy.vip/favicon.ico" />
-  <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.4.0/skins/default/aliplayer-min.css" />
-  <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.4.0/aliplayer-min.js"></script>
-  <!-- <script type="text/javascript" src="../../js/vconsole.min.js"></script> -->
+  <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/2.6.0/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/2.6.0/aliplayer-min.js"></script>
+  <script type="text/javascript" src="../../js/vconsole.min.js"></script>
 </head>
 
 <body>
@@ -89,17 +89,16 @@
         isLive: true,
         playsinline: true,
         width: "100%",
-        height: "auto",
+        height: "282px",
         controlBarVisibility: "always",
         useH5Prism: false,
-        useFlashPrism: false,
-        source: liveUrl,
+        useFlashPrism: true,
+        source:"http://vsh.groupy.vip/groupy/13557.m3u8?auth_key=1524811011-0-0-c918e448a8cfb552a96dd48aa83b6723",
         cover: "http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/pic_live.jpg",
         skinLayout: [{ "name": "bigPlayButton", "align": "blabs", "x": 30, "y": 80 },
           { "name": "H5Loading", "align": "cc" }
         ]
       }, function(player) {});
-      console.log(player)
       player.on('error', function(e) {
         console.log(e);
         if (e.paramData.error_code == 4008 || e.paramData.error_code == 4014) {
