@@ -52,5 +52,6 @@ module.exports = {
         spokesman3: './src/view/spokesman3',
         ffacg201807: './src/view/ffacg201807',
         ffacg201807_preliminaries: './src/view/ffacg201807_preliminaries',
+        MayLiveImages: './src/view/MayLiveImages',
     },
 };
