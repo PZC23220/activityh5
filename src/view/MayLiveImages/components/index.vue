@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-      <h3 class="bigTitle">{{banner.bigTitle1}}</h3>
+      <h3>{{banner.bigTitle1}}</h3>
       <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/1.jpg" class="banner">
       <p class="banner-title">{{banner.title1}}</p>
       <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/2.jpg" class="banner">
@@ -27,7 +27,10 @@
 </template>
 <style scoped>
   .index {
-    background: #f0f0f0;
+    padding-top: 30px;
+    background-color: #fff;
+    background-image: url(http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg.png);
+    background-repeat: repeat;
   }
   .banner {
     width: 100vw;
@@ -37,14 +40,24 @@
   }
   h3,p {
     text-align: center;
-    line-height: 3;
+    width: 100vw;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
   }
   h3 {
     font-size: 18px;
     font-weight: 600;
+    line-height: 4;
+  }
+  .bigTitle {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
   }
   p {
+    line-height: 3;
     font-size: 14px;
+    margin-bottom:  30px;
   }
 </style>
 <script>
