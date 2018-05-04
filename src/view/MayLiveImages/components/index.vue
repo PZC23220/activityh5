@@ -74,6 +74,39 @@
       var self = this;
     },
     created: function() {
+      var ua = navigator.userAgent.toLowerCase();
+      let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();
+      if(_lan === 'zh-cn') {
+        this.banner = {
+          bigTitle1: '4.29 酷狗蘑菇X萤火虫动漫音乐嘉年华',
+          title1: 'Shine Fine Movement-舞台精彩瞬间',
+          title2: 'Tokyo Sweet Party-舞台精彩瞬间',
+          title3: '幕后花絮',
+          bigTitle2: '4.30 Groupy Live',
+          title4: 'Shine Fine Movement-舞台精彩瞬间',
+          title5: 'Tokyo Sweet Party-舞台精彩瞬间',
+          title6: '夏芽优李-舞台精彩瞬间',
+          title7: '叶月飞鸟-舞台精彩瞬间',
+          bigTitle3: '5.1 恒宝商演',
+          title9: '大合照',
+          title10: '大家按的手印'
+        }
+      }else {
+        this.banner = {
+          bigTitle1: '4.29 FFACG',
+          title1: 'Shine Fine Movement-ライブの素敵な瞬間',
+          title2: 'Tokyo Sweet Party-ライブの素敵な瞬間',
+          title3: 'オフショット',
+          bigTitle2: '4.30 Groupy Live',
+          title4: 'Shine Fine Movement-ライブの素敵な瞬間',
+          title5: 'Tokyo Sweet Party-ライブの素敵な瞬間',
+          title6: '夏芽優李-ライブの素敵な瞬間',
+          title7: '葉月あすか-ライブの素敵な瞬間',
+          bigTitle3: '5.1 ショッピングモールライブ',
+          title9: '集合写真',
+          title10: '皆さんの手形プレート'
+        }
+      }
     }
   }
 </script>
