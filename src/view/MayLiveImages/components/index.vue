@@ -27,7 +27,6 @@
 </template>
 <style scoped>
   .index {
-    padding-top: 30px;
     background-color: #fff;
     background-image: url(http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg.png);
     background-repeat: repeat;
@@ -52,7 +51,8 @@
   }
   .bigTitle {
     margin-top: 40px;
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
+    box-shadow: 6px 0 1px 0 rgba(59,59,59,.2);
   }
   p {
     line-height: 3;
