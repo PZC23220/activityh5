@@ -5,72 +5,72 @@
                  <ul class="comment_list" v-if="default1==false">
                     <div class="con_left" :class="{'left_hide':rakingList.length>0}">
                         <li>
-                            <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                            <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                         <li>
-                           <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                           <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                         <li>
-                           <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                           <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                         <li>
                            <span>4</span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                         <li>
                            <span>5</span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                         <li>
                            <span>5</span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png"alt="" class="avatar">
                             <div class="fans_content">
                                 <span><em>...</em></span>
-                                <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
+                                <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png" alt="">0</span>
                             </div>
                         </li>
                     </div>
                     <li v-for="(idol,key) in rakingList" v-if="key < len">
-                        <span v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
-                        <span v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
-                        <span v-if="key == 2"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
+                        <span v-if="key == 0"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_1.png" alt=""></span>
+                        <span v-if="key == 1"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_2.png" alt=""></span>
+                        <span v-if="key == 2"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_metal_3.png" alt=""></span>
                         <span v-if="key > 2" :class="[{'second':key>8},{'three':key>98}]">{{key+1}}</span>
                         <span class="avatar"><img v-lazy="idol.avatar" alt=""></span>
                         <div class="fans_content">
                             <span>
                                 <em>{{idol.nickname?idol.nickname:'...'}}</em>
                                 <span class="level">Lv.{{idol.level_platform?idol.level_platform:0}}</span>
-                                <!-- <img class="medal_level" :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/medal/icon_medal_'+(idol.medal)+'.png'" v-if="idol?(idol.medal&&idol.medal>0):false" alt=""> -->
+                                <!-- <img class="medal_level" :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/medal/icon_medal_'+(idol.medal)+'.png'" v-if="idol?(idol.medal&&idol.medal>0):false" alt=""> -->
                             </span>
-                            <span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png" alt="">{{idol.score?Number(idol.score).toLocaleString(): 0}}</span>
+                            <span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png" alt="">{{idol.score?Number(idol.score).toLocaleString(): 0}}</span>
                         </div>
                     </li>
                 </ul>
                 <div class="default_page default_page3"  v-if="default1">
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no coin.png" alt="">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no coin.png" alt="">
                     <p v-html="fans_text.noneGcoin"></p>
                 </div>
             </v-scroll>

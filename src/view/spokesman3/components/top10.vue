@@ -1,27 +1,27 @@
 <template>
     <div class="main">
         <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman3-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman3.png" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman3-over.png" class="banner">
+            <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-spokesman3.png" class="banner">
             <h2 style="width: 155px;" v-if="isOver"><span style="left: 0;"></span>入賞アイドル<span style="right: 0;"></span></h2>
             <h2 v-else><span style="left: 0;"></span>{{activity.theme}}<span style="right: 0;"></span></h2>
             <ul class="ranking_list">
                 <li>
                     <div class="ranking-idol-content" @click="isFans&&ranking.length>0?(ranking[0].idol_id?showIdolPage(ranking[0].idol_id):false):false">
                         <div class="img_content">
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
-                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
-                            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_1.png" class="ranking_pic">
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown">
+                            <span class="avatar"><img v-lazy="ranking.length>0?ranking[0].avatar:'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_img.png'"></span>
+                            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_1.png" class="ranking_pic">
                             <span class="idol_level">NO.1</span>
                         </div>
                         <div class="name">{{ranking.length>0?(ranking[0].nickname?ranking[0].nickname:'...'):'...'}}</div>
                         <div class="idol_desc">
-                            <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(ranking.length>0?(ranking[0].popularity?ranking[0].popularity:0):0).toLocaleString()}}</em></span></p>
+                            <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(ranking.length>0?(ranking[0].popularity?ranking[0].popularity:0):0).toLocaleString()}}</em></span></p>
                             <p><span><em>{{Number(ranking.length>0?(ranking[0].videoCount?ranking[0].videoCount:0):0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                         </div>
                     </div>
                     <div class="ranking-fans-content" v-if="ranking.length>0">
-                        <div class="ranking-idol" v-for="(fans,key) in ranking[0].topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                        <div class="ranking-idol" v-for="(fans,key) in ranking[0].topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
                     </div>
                     <div class="fans-likes-ranking" v-if="ranking.length>0?ranking[0].topFansList.length > 0:false"><router-link :to="'/fans_ranking?idolId='+ranking[0].idol_id">応援ランキング</router-link></div>
                 </li>
@@ -30,22 +30,22 @@
                     <div class="ranking-idol-content" @click="isFans&&idol.idol_id?showIdolPage(idol.idol_id):false">
                         <div class="idolranking_content">
                             <div class="img_content">
-                                <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown">
+                                <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown">
                                 <span class="avatar"><img v-lazy="idol.avatar"></span>
-                                <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_2.png" class="ranking_pic">
+                                <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/pic_ranking_2.png" class="ranking_pic">
                                 <span class="idol_level">NO.{{key+1}}</span>
                             </div>
                             <div class="idol_content">
                                 <div class="name">{{idol.nickname?idol.nickname:'...'}}</div>
                                 <div class="idol_desc">
-                                    <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span></p>
+                                    <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span></p>
                                     <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="ranking-fans-content">
-                        <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
+                        <div class="ranking-idol" v-for="(fans,key) in idol.topFansList" v-if="key < 3"><p class="avatar-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="fans.avatar"></span></p><p class="idolName-content"><span>{{fans.nickname?fans.nickname:'...'}}</span><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(fans.score?fans.score:0).toLocaleString()}}</i></span></p></div>
                     </div>
                     <div class="fans-likes-ranking" v-if="idol.topFansList.length > 0"><router-link :to="'/fans_ranking?idolId='+idol.idol_id">応援ランキング</router-link></div>
                 </li>

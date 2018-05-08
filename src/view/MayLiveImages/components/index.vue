@@ -1,26 +1,26 @@
 <template>
   <div class="index">
       <h3>{{banner.bigTitle1}}</h3>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/1.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/1.jpg" class="banner">
       <p class="banner-title">{{banner.title1}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/2.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/2.jpg" class="banner">
       <p class="banner-title">{{banner.title2}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/3.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/3.jpg" class="banner">
       <p class="banner-title">{{banner.title3}}</p>
       <h3 class="bigTitle">{{banner.bigTitle2}}</h3>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/4.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/4.jpg" class="banner">
       <p class="banner-title">{{banner.title4}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/5.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/5.jpg" class="banner">
       <p class="banner-title">{{banner.title5}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/6.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/6.jpg" class="banner">
       <p class="banner-title">{{banner.title6}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/7.jpg" class="banner"><br>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/8.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/7.jpg" class="banner"><br>
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/8.jpg" class="banner">
       <p class="banner-title">{{banner.title7}}</p>
       <h3 class="bigTitle">{{banner.bigTitle3}}</h3>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/9.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/9.jpg" class="banner">
       <p class="banner-title">{{banner.title9}}</p>
-      <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/10.jpg" class="banner">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/liveImages/201805live/10.jpg" class="banner">
       <p class="banner-title">{{banner.title10}}</p>
     </swiper>
   </div>
@@ -28,7 +28,7 @@
 <style scoped>
   .index {
     background-color: #fff;
-    background-image: url(http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg.png);
+    background-image: url(https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/bg.png);
     background-repeat: repeat;
   }
   .banner {

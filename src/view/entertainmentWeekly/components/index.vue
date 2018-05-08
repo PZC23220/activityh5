@@ -1,10 +1,10 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly-over.png" class="banner">
+            <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png" class="banner">
             <h2>{{activity.theme}}</h2>
-            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
                 <p>中国のエンタメ誌「娯楽・品味週刊」に、上位1名の所属ユニットメンバー全員が特集ページに登場する！是非奮ってご参加ください！</p>
             </div>
@@ -22,7 +22,7 @@
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><i>{{activity.rewards[0].p2}}</i></p>
@@ -58,12 +58,12 @@
                 <ul class="ranking_list">
                     <li v-for="(idol,key) in ranking" v-if="ranking.length > 0 && key < 3">
                         <span :class="[{'first':key == 0},{'second':key == 1},{'three':key > 1}]">{{key+1}}</span>
-                        <div class="img_content"><img v-lazy="idol.avatar" class="avatar"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
+                        <div class="img_content"><img v-lazy="idol.avatar" class="avatar"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
                         <div class="idol_content">
                             <span>{{idol.nickname?idol.nickname:'...'}}</span>
                             <div class="idol_desc">
-                                <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
-                                <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
+                                <!-- <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
+                                <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
                                 <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                             </div>
                         </div>
@@ -160,11 +160,11 @@
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.vip/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.cn/html/activity_entertainmentWeekly/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-entertainmentWeekly.png`;
                 if(self.isFans) {
                     var title = `Groupy x「娯楽品味週刊」 `;
                     var description = `大人気雑誌に登場できるイベント参加中、動画をいっぱい投稿したので、応援してね`;

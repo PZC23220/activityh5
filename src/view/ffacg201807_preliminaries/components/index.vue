@@ -1,14 +1,14 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries-over.jpg" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries-over.jpg" class="banner">
+            <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg" class="banner">
             <h2 class="box">{{activity.theme}}</h2>
             <div class="activity_rule box">
                 <p>上位1名のグループはGroupy Idol Festival July 2018~in広州~に出演して頂きます！！ぜひご参加ください～♪</p>
                 <p>排名第一的团体即可获得Groupy偶像祭 July 2018~in广州~出演权！一定要踊跃参加哦。</p>
             </div>
-            <span v-if="isFans" class="shares box" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
+            <span v-if="isFans" class="shares box" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
             <div class="activity_rule box">
                 <h4>{{activity.desc.title}}</h4>
                 <p v-html="activity.desc.p1"></p>
@@ -32,8 +32,8 @@
                 <p v-html="activity.desc.p19"></p>
                 <p v-html="activity.desc.p20"></p>
                 <p v-html="activity.desc.p21"></p>
-                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg1.jpg">
-                <img style="width:100%;padding: 0 12px;display: block;box-sizing: border-box;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg2.jpg">
+                <img style="width:100%;padding: 12px;display: block;box-sizing: border-box;" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg1.jpg">
+                <img style="width:100%;padding: 0 12px;display: block;box-sizing: border-box;" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/ffacg2.jpg">
             </div>
             <div class="activity_time box">
                 <h4>集計期間（日本時間 活动时间）</h4>
@@ -45,7 +45,7 @@
             <ul class="activity_reward box">
                 <h4>{{activity.award}}（活动奖品）</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
                         <p><i>{{activity.rewards[0].p2}}</i></p>
@@ -97,12 +97,12 @@
                 <ul class="ranking_list">
                     <li v-for="(idol,key) in ranking" v-if="ranking.length > 0 && key < 5">
                         <span :class="[{'first':key == 0},{'second':key == 1},{'three':key > 1}]">{{key+1}}</span>
-                        <div class="img_content"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar" class="avatar"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
+                        <div class="img_content"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar" class="avatar"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
                         <div class="idol_content">
                             <span>{{idol.orgName?idol.orgName:idol.nickname}}</span>
                             <div class="idol_desc">
-                                <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
-                                <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
+                                <!-- <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
+                                <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
                                 <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                         p2: '・7月14日：第19回FFACGのメインステージに出演 ',
                         p3: '・7月15日：Groupy Live出演（場所：Mao Livehouse 広州、キャパ800人）',
                         p4: '・7月16日：ファン参加型広州観光ツアー',
-                        p5: '<i>※FFACGとは、毎回来場者が20万人超の中国華南地区において最大級のアニメゲームイベントFirefly ACG Festivalです。（公式HP：<a href="http://www.fireflyacg.com</a>" target="_blank">http://www.fireflyacg.com）</i>',
+                        p5: '<i>※FFACGとは、毎回来場者が20万人超の中国華南地区において最大級のアニメゲームイベントFirefly ACG Festivalです。（公式HP：<a href="https://www.fireflyacg.com</a>" target="_blank">https://www.fireflyacg.com）</i>',
                         p6: '出演アイドルは３組を予定し、その中の1枠をイベントで決めます。Groupyアプリ内の出演権争奪イベント上位１名のグループは出演していただきます！ ',
                         p7: '中国の超大人気な舞台に輝き、多くの人に知ってもらチャンス！ぜひふるってご応募ください。',
                         p8: 'さらに！！！ファンの方に向けて、4月1日~4月3日にGroupyコイン50%増量キャンペーンを実施決定！期間中に購入したコインに応じてもれなく50%分をプレゼントします。',
@@ -184,7 +184,7 @@
                         p13: '・7月14日：第19届萤火虫游戏嘉年华',
                         p14: '・7月15日：主场Live（场地：Mao Livehouse 广州，可容纳800人）',
                         p15: '・7月16日：粉丝同游',
-                        p16: '<i>※萤火虫游戏嘉年华是中国华南地区最大型的动漫游戏展览,每届到场人数高达20万。（官网：<a href="http://www.fireflyacg.com" target="_blank">http://www.fireflyacg.com</a>）</i>',
+                        p16: '<i>※萤火虫游戏嘉年华是中国华南地区最大型的动漫游戏展览,每届到场人数高达20万。（官网：<a href="https://www.fireflyacg.com" target="_blank">https://www.fireflyacg.com</a>）</i>',
                         p17: '届时表演嘉宾预计为3组，其中1组将在本次活动中决定。在争夺战中获得第一名的参赛团体，将获得Groupy偶像祭 July 2018~in广州~出演权！一定要来参加哦。',
                         p18: '另！！！4月1日~4月3日我们为粉丝准备了充值送G币大回馈活动！活动期间充值G币，将额外获赠相应充值额度的50%G币。',
                         p19: '<i>*注意：</i>',
@@ -241,11 +241,11 @@
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_ffacg201807_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.vip/html/activity_ffacg201807_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_ffacg201807_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.cn/html/activity_ffacg201807_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_preliminaries.jpg`;
                 if(self.isFans) {
                     var title = `【#GroupyIdolFestival】`;
                     var description = `#Groupy 上位1名のグループはGroupy Idol Festival July 2018~in広州~に出演！応援してね~`;

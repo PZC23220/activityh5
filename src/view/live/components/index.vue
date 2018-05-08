@@ -1,12 +1,12 @@
 <template>
   <div class="index">
-    <div class="likes-total"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/timeline_icon_likes.png" alt=""><span>{{Number(popularity?popularity:0).toLocaleString()}}</span></div>
+    <div class="likes-total"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/timeline_icon_likes.png" alt=""><span>{{Number(popularity?popularity:0).toLocaleString()}}</span></div>
       <ul class="gift-list">
         <li v-for="gift in videoGifts"><img :src="gift.giftImg" alt=""><span v-if="gift.giftNums > 1">{{gift.giftNums}}</span></li>
       </ul>
     <div class="footer">
-      <img @click.stop="support()" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/likes.png" class="send-gift" alt="">
-      <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/icon_.png" class="top5" alt="">
+      <img @click.stop="support()" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/likes.png" class="send-gift" alt="">
+      <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Live/icon_.png" class="top5" alt="">
     </div>
   </div>
 </template>
@@ -58,7 +58,7 @@
       });
     },
     created: function() {
-      this.getVideo();      
+      this.getVideo();
     }
   }
 </script>

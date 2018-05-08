@@ -1,16 +1,16 @@
 <template>
   <div class="content">
     <div class="download-content">
-      <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/index.png" alt="" class="download-groupy">
-      <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/writing.png" alt="" class="download-writing">
+      <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/index.png" alt="" class="download-groupy">
+      <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/writing.png" alt="" class="download-writing">
       <div class="download-link-content">
-        <a class="download-link" target="blank" :href="hrefs"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_apple.png" alt=""><span>iPhone</span></a>
-        <span class="download-link" style="background: #66AC20;" @click="get_app()"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>Android</span></span>
+        <a class="download-link" target="blank" :href="hrefs"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_apple.png" alt=""><span>iPhone</span></a>
+        <span class="download-link" style="background: #66AC20;" @click="get_app()"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/icon_android.png" alt=""><span>Android</span></span>
       </div>
-      <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/phone.png" alt="" class="bg_banner">
+      <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/phone.png" alt="" class="bg_banner">
     </div>
     <div class="mask-content" v-if="maskShow">
-      <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/arrow.png" alt="">
+      <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/android_download/arrow.png" alt="">
       <p>请在浏览器中打开<br>下载app</p>
     </div>
   </div>
@@ -44,7 +44,7 @@
     },
     methods: {
       get_app() {
-        window.location.assign('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk');
+        window.location.assign('https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk');
       }
     },
     computed: {

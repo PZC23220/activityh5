@@ -1,10 +1,10 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries-over.jpg" class="banner">
+            <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg" class="banner">
             <h2>{{activity.theme}}</h2>
-            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
                 <p><i>※<12月04日(月)お知らせ><br>より多くのユニットがイベントに参加できるよう、イベントの期間・特典等を修正させて頂きます。 詳細をご確認ください。大変申し訳ございませんが、ご理解いただきますようお願い致します。</i></p>
                 <p>上位3名のユニットは、中国・広州の中心地にある広州塔駅で大型看板に1ヶ月ジャック！さらに、Groupyアプリの起動画面に登場して貰います。</p>
@@ -31,7 +31,7 @@
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
@@ -62,12 +62,12 @@
                 <ul class="ranking_list">
                     <li v-for="(idol,key) in ranking" v-if="ranking.length > 0 && key < 5">
                         <span :class="[{'first':key == 0},{'second':key == 1},{'three':key > 1}]">{{key+1}}</span>
-                        <div class="img_content"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar" class="avatar"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
+                        <div class="img_content"><img v-lazy="idol.orgLogo?idol.orgLogo:idol.avatar" class="avatar"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_1.png" class="crown" v-if="key == 0"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_2.png" class="crown" v-if="key == 1"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/icon_crown_3.png" class="crown" v-if="key > 1"></div>
                         <div class="idol_content">
                             <span>{{idol.orgName?idol.orgName:idol.nickname}}</span>
                             <div class="idol_desc">
-                                <!-- <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
-                                <p><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
+                                <!-- <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_coins.png"><em>{{Number(idol.gcoin?idol.gcoin:0).toLocaleString()}}</em></span><i>{{activity.Gcoin}}</i></p> -->
+                                <p><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><em>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</em></span><!-- <i>{{activity.like}}</i> --></p>
                                 <p><span><em>{{Number(idol.videoCount?idol.videoCount:0).toLocaleString()}}</em></span><i>{{activity.works}}</i></p>
                             </div>
                         </div>
@@ -170,11 +170,11 @@ border: 1px solid #B8CAD4;
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.vip/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.cn/html/activity_subwayAds_preliminaries/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAds_preliminaries.jpg`;
                 if(self.isFans) {
                     var title = `【Groupy駅看板モデル選定企画】`;
                     var description = `上位3名は広州駅看板に掲載！動画がいっぱい投稿したので、応援してね`;

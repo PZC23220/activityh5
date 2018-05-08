@@ -223,7 +223,7 @@ export default {
   color: #666;
 }
 .yo-scroll .loadingImg i {
-    background-image: url(http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/loading.gif);
+    background-image: url(https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/loading.gif);
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;

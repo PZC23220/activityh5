@@ -3,7 +3,7 @@
          <div class="content">
             <img :src="activityInfo.img" class="banner">
             <h2 class="">{{activityInfo.description}}</h2>
-            <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><span @click="activityInfo.actionInfo?open_h5():false" class="detail">詳しくはこちら<img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></span></p>
+            <p class="share-sns"><span class="sns facebook" @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span class="sns" @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span><span @click="activityInfo.actionInfo?open_h5():false" class="detail">詳しくはこちら<img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/arrow/icon_arrow_gray.png"></span></p>
             <div class="countDown-content">
                 <div v-if="!isOver || countDownShow" class="countDown"><span>終了まであと</span><p class="timer"><em>{{countimes.Dates}}</em>日<em>{{countimes.Hours}}</em>時間<em>{{countimes.Minutes}}</em>分<em>{{countimes.Seconds}}</em>秒</p></div>
                 <div class="goal">対象：{{activityInfo.goal}}</div>
@@ -14,9 +14,9 @@
                     <div class="goal">対象：{{activityInfo.goal}}</div>
                 </div>
                 <div class="ranking-two">
-                    <div class="ranking-idol"  v-for="(idol , key) in ranking" v-if="key < 3"><p class="avatar-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="idol.avatar"></span></p><p class="idolName-content"><span>{{idol.nickname?idol.nickname:'...'}}</span><span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</i></span></p></div>
+                    <div class="ranking-idol"  v-for="(idol , key) in ranking" v-if="key < 3"><p class="avatar-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/crown_metal/ranking_'+ (key+1) +'.png'"><span><img v-lazy="idol.avatar"></span></p><p class="idolName-content"><span>{{idol.nickname?idol.nickname:'...'}}</span><span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/icon/timeline_icon_likes.png"><i>{{Number(idol.popularity?idol.popularity:0).toLocaleString()}}</i></span></p></div>
                 </div>
-                <img class="no-ranking" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no%20ranking.jpg" v-if="ranking.length <= 0">
+                <img class="no-ranking" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_no%20ranking.jpg" v-if="ranking.length <= 0">
                 <p class="no-ranking-tips" v-if="ranking.length <= 0">ランキング集計中...</p>
                 <a v-if="ranking.length > 0" @click="p_log('activityshare_activity_ranking')" target="_blank" :href="hrefs" class="download ranking-download">ランキング</a>
             </div> -->
@@ -87,9 +87,9 @@
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
                 var title = self.activityInfo.shareTitle;
                 var description = self.activityInfo.shareDesc;

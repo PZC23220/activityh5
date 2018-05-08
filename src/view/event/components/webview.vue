@@ -2,16 +2,16 @@
   <div class="content">
     <swiper :options="swiperOption" ref="mySwiper" class="event-content">
         <swiper-slide id="swiper1" class="event-live">
-          <div class="event-bg-content"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_1.jpg" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_1.jpg" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/groupy festival.png" class="index-address"><br>
-            <img @click="changePagesLi(1)" class="index-reservation" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/reservation_1.png"><br>
-            <img @click="changePagesLi(2)" class="index-activity-content" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFACG_1.png"><br>
-            <img @click="changePagesLi(3)" class="index-activity-content index-activity-content-end" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/Live_1.png"><br>
+            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/groupy festival.png" class="index-address"><br>
+            <img @click="changePagesLi(1)" class="index-reservation" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/reservation_1.png"><br>
+            <img @click="changePagesLi(2)" class="index-activity-content" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFACG_1.png"><br>
+            <img @click="changePagesLi(3)" class="index-activity-content index-activity-content-end" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/Live_1.png"><br>
           </div>
         </swiper-slide>
         <swiper-slide id="swiper4" class="event-live">
-          <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_index.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="index-content reservation-content">
             <div class="reservation-box">
               <div class="input-content">
@@ -44,18 +44,18 @@
           </div>
         </swiper-slide>
         <swiper-slide id="swiper2" class="event-live swiper-no-swiping">
-          <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_2.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_2.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="ffacg-content-auto" id="scroll1">
             <div class="index-content ffacg-content">
-              <img class="index-time-start" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFAGC_time.png" id="ffacg-content-auto-3"><br>
+              <img class="index-time-start" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFAGC_time.png" id="ffacg-content-auto-3"><br>
               <p class="ffacg-content-p">来場者数<i class="people">20万人</i>超の<i class="people" style="background: #7230e9;">中国最大級</i>のアニメ、ゲームのイベント第17回Firefly ACG Festival<br>
               （下記FFACGという）にてメインステージ及び専用ブースへの出展が決定しました。<br><br>
               Groupyのメインステージの利用時間はなんと90分！そこで、日本アイドルがFFACGに初登場！<br>
               推しメンと共にこの記念すべき一日を盛り上げましょう。
             </p>
-              <a href="http://www.fireflyacg.com/" target="_blank" class="hp-links"><span>イベントHP：<em>http://www.fireflyacg.com/</em></span><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/arrow.png" class="index-activity-goto ffacg-goto"></span></a>
+              <a href="https://www.fireflyacg.com/" target="_blank" class="hp-links"><span>イベントHP：<em>https://www.fireflyacg.com/</em></span><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/arrow.png" class="index-activity-goto ffacg-goto"></span></a>
               <span class="performer">出演アイドル</span><br>
-              <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/idol.png'" class="index-idol"><br>
+              <img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月30日（土）</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">前物販</span><span class="times">11:00 ～ 13:00</span></p>
@@ -75,53 +75,53 @@
               <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州保利世貿易博覧館 5/6号館<br>FFACG メインステージ</p>
               <p class="haizhu-adress"><span>(中国広東省広州市海珠区新港東路1000号)</span></p>
-              <a href="https://www.google.com.hk/maps/place/%E4%BF%9D%E5%88%A9%E4%B8%96%E8%B4%B8%E5%B1%95%E8%A7%88%E9%A6%86/@23.0983649,113.3583353,17z/data=!3m1!4b1!4m5!3m4!1s0x3402ffed1db3c62b:0x7fd136151062a33c!8m2!3d23.09836!4d113.360524?hl=zh-CN" target="_blank" class="goole-map"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/ffacg-map.png" alt=""></a>
+              <a href="https://www.google.com.hk/maps/place/%E4%BF%9D%E5%88%A9%E4%B8%96%E8%B4%B8%E5%B1%95%E8%A7%88%E9%A6%86/@23.0983649,113.3583353,17z/data=!3m1!4b1!4m5!3m4!1s0x3402ffed1db3c62b:0x7fd136151062a33c!8m2!3d23.09836!4d113.360524?hl=zh-CN" target="_blank" class="goole-map"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/ffacg-map.png" alt=""></a>
               <span class="performer">第16回までの開催の模様</span><br>
               <swiper :options="swiperOption2" ref="mySwiper2" class="event-content liveImg-content">
                 <swiper-slide class="event-live" id="swiper11">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/1.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/1.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper12">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/2.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/2.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper13">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/3.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/3.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper14">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/4.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/4.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper15">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/5.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/5.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper16">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/6.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/6.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper17">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/7.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/7.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper18">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/8.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/8.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper19">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/9.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/9.jpg'">
                 </swiper-slide>
                 <swiper-slide class="event-live" id="swiper100">
-                  <img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/10.jpg'">
+                  <img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live/10.jpg'">
                 </swiper-slide>
               </swiper>
               <div class="smallImg-content" id="ffacg-content-auto-1">
                 <div class="imgTabs-content">
                   <div class="imgTabs">
-                    <span class="imgtabs-span active" @click="changePagesSpan(0)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/1.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(1)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/2.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(2)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/3.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(3)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/4.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(4)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/5.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(5)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/6.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(6)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/7.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(7)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/8.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(8)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/9.jpg'"></span>
-                    <span class="imgtabs-span" @click="changePagesSpan(9)"><img v-lazy="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/10.jpg'"></span>
+                    <span class="imgtabs-span active" @click="changePagesSpan(0)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/1.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(1)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/2.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(2)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/3.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(3)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/4.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(4)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/5.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(5)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/6.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(6)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/7.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(7)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/8.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(8)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/9.jpg'"></span>
+                    <span class="imgtabs-span" @click="changePagesSpan(9)"><img v-lazy="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/smallLive/10.jpg'"></span>
                   </div>
                 </div>
               </div>
@@ -129,13 +129,13 @@
           </div>
         </swiper-slide>
         <swiper-slide id="swiper3" class="event-live swiper-no-swiping">
-          <div class="event-bg-content"><img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_3.jpg'" class="event-bg"><span class="vertical-align"></span></div>
+          <div class="event-bg-content"><img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/bg_3.jpg'" class="event-bg"><span class="vertical-align"></span></div>
           <div class="ffacg-content-auto" id="scroll2">
             <div class="index-content ffacg-content">
-              <img class="index-time-end" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live_2.png" id="ffacg-content-auto-4"><br>
+              <img class="index-time-end" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live_2.png" id="ffacg-content-auto-4"><br>
               <p class="live-desc-p"><i class="people">中国&#183;広州</i>でのGroupy主催ライブに参加し、<br>2017年最後の日に推しメンと<i class="people" style="background: #e17e31;">特別な思い出</i>を作りましょう。<br></p>
               <span class="performer">出演アイドル</span><br>
-              <img :src="'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
+              <img :src="'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/img_idol.png'" class="index-idol"><br>
               <span class="performer">詳 細</span><br>
               <p class="desc-p" style="margin-top: 10px;"><i class="time-point"></i><span class="time-start time-start-2">日程</span><span class="times">2017年12月31日（日）</span></p>
               <p class="desc-p"><i class="time-point"></i><span class="time-start time-start-2">ライブ一部</span></p>
@@ -169,7 +169,7 @@
               <span class="performer">場 所</span><br>
               <p class="guangzhou-address">中国広州TU凸空間</p>
               <p class="haizhu-adress"><span> (中国広東省広州市越秀区広州大道中361-365号東方花苑F1)</span></p>
-              <a href="https://www.google.com.hk/maps/place/TU%E5%87%B8%E7%A9%BA%E9%97%B4/@23.1286471,113.3125053,17z/data=!3m1!4b1!4m5!3m4!1s0x3402f93b30c66829:0xb654a12f6a3e38ae!8m2!3d23.1286471!4d113.314694?hl=zh-CN" target="_blank" class="goole-map"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live-map.png" alt=""></a>
+              <a href="https://www.google.com.hk/maps/place/TU%E5%87%B8%E7%A9%BA%E9%97%B4/@23.1286471,113.3125053,17z/data=!3m1!4b1!4m5!3m4!1s0x3402f93b30c66829:0xb654a12f6a3e38ae!8m2!3d23.1286471!4d113.314694?hl=zh-CN" target="_blank" class="goole-map"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live-map.png" alt=""></a>
               <br>
             </div>
           </div>
@@ -177,10 +177,10 @@
     </swiper>
     <div class="left-nav">
       <ul class="tabs">
-        <li class="tabs-li" @click="changePagesLi(0)"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/icon_groupy_128.png" alt=""></li>
-        <li class="tabs-li" @click="changePagesLi(1)"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/reservation.png" alt=""></li>
-        <li class="tabs-li" @click="changePagesLi(2)"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFAGC.png" alt=""></li>
-        <li class="tabs-li" @click="changePagesLi(3)"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live.png" alt=""></li>
+        <li class="tabs-li" @click="changePagesLi(0)"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/icon_groupy_128.png" alt=""></li>
+        <li class="tabs-li" @click="changePagesLi(1)"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/reservation.png" alt=""></li>
+        <li class="tabs-li" @click="changePagesLi(2)"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/FFAGC.png" alt=""></li>
+        <li class="tabs-li" @click="changePagesLi(3)"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/Groupywebsite/live.png" alt=""></li>
       </ul>
     </div>
     <div class="toast" :class="{'show':toastShow}" v-html="toast"></div>

@@ -1,9 +1,9 @@
 <template>
     <div class="main">
         <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance.jpg" class="banner">
-            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
-            <img class="attendance-title" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance-title.png" alt="">
+            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance.jpg" class="banner">
+            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <img class="attendance-title" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance-title.png" alt="">
             <p class="attendance-desc">Groupyアプリおよび公式Twitter @GGroupyyy にて発表されます。<br>※アプリでの掲載期間は１ヶ月間となります。</p>
             <ul class="ranking_list">
                 <li v-for="(idol,key) in ranking">
@@ -16,7 +16,7 @@
                             <p><span>{{Number(idol.popularityCount?idol.popularityCount:0).toLocaleString()}}</span><i>Likes</i></p>
                         </div>
                     </div>
-                    <img class="attendance-bg" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance-bg.png" alt="">
+                    <img class="attendance-bg" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance-bg.png" alt="">
                 </li>
             </ul>
         </div>
@@ -38,13 +38,13 @@
             shareSns(val) {
                 var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}&dateCount=${getParams('dateCount')}`;
+                    var shareURL = `https://share.groupy.vip/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}&dateCount=${getParams('dateCount')}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}&dateCount=${getParams('dateCount')}`;
+                    var shareURL = `https://share.groupy.cn/html/activity_attendance/index.html?startDate=${getParams('startDate')}&endDate=${getParams('endDate')}&dateCount=${getParams('dateCount')}`;
                 }
                 var title = `【Groupy皆勤賞】`;
                 var description = `${getParams('month')}月の皆勤賞が発表されました。今すぐ確認しましょう。＃Groupy `;
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance.jpg`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-attendance.jpg`;
                 window.setupWebViewJavascriptBridge(function(bridge) {
                     bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
                 })

@@ -1,9 +1,9 @@
 <template>
     <div class="main">
          <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-christmas.png" class="banner">
+            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-christmas.png" class="banner">
             <h2>{{activity.theme}}</h2>
-            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
                 <p>Groupyは、内容の良い動画をより多くのユーザーに観てもらうために、動画を厳選し「いいね」「大人気」「オススメ」といったスタンプを動画に貼り付け、またはトップに固定してユーザーの注目を集める！<br>app storeから最新バージョンをアップデートしてくださいね♪</p>
             </div>
@@ -31,7 +31,7 @@
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
@@ -126,13 +126,13 @@
           shareSns(val) {
             var self = this;
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_christmas/index.html?activityId=${getParams('activityId')}`;
+                    var shareURL = `https://share.groupy.vip/html/activity_christmas/index.html?activityId=${getParams('activityId')}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_christmas/index.html?activityId=${getParams('activityId')}`;
+                    var shareURL = `https://share.groupy.cn/html/activity_christmas/index.html?activityId=${getParams('activityId')}`;
                 }
                 var title = `【日本のクリスマスを紹介しよう企画】`;
                 var description = `内容の良い動画はスタンプを貼り付け・トップに固定表示！今すぐチェックして応援してね。`;
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-christmas.png`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-christmas.png`;
             window.setupWebViewJavascriptBridge(function(bridge) {
                 bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
             })

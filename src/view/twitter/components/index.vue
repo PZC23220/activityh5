@@ -1,10 +1,10 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-over.png" class="banner">
-            <img v-else src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-over.png" class="banner">
+            <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png" class="banner">
             <h2>{{activity.theme}}</h2>
-            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <p class="share-sns" v-if="isFans"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
                 <p>日中両国の多くの人に知ってもらう大チャンス！参加動画が一番<i>「＃Groupyツイートキャンペーン」</i>ハッシュタグで一番多くツイーターに反映されたアイドルは、Groupyの公式Twitter、Weiboのヘッダー画像に1ヶ月登場できます！</p>
             </div>
@@ -15,8 +15,8 @@
                 <p v-html="activity.desc.p4"></p>
                 <p v-html="activity.desc.p6"></p>
                 <p v-html="activity.desc.p7"></p>
-                <p><img style="display:block;width:100%;border-radius: 6px;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-twitter.jpg"></p>
-                <p><img style="display:block;width:100%;border-radius: 6px;" src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-weibo.jpg"></p>
+                <p><img style="display:block;width:100%;border-radius: 6px;" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-twitter.jpg"></p>
+                <p><img style="display:block;width:100%;border-radius: 6px;" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter-weibo.jpg"></p>
             </div>
             <div class="activity_time">
                 <h4>{{activity.time}}</h4>
@@ -35,7 +35,7 @@
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i>{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
@@ -162,22 +162,22 @@
                 var self = this;
                 if(self.isFans) {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `https://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                        var shareURL = `https://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                     }
                     var title = `【Groupyツイートキャンペーン】`;
                     var description = `#Groupyツイートキャンペーン @GGroupyyy 最も多くツイートされたアイドルがGroupy公式Twitter、Weiboのヘッダー画像に登場！応援してね。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
+                    var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
                 }else {
                     if(location.hostname == 'activity.groupy.vip') {
-                        var shareURL = `http://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `https://share.groupy.vip/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }else {
-                        var shareURL = `http://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                        var shareURL = `https://share.groupy.cn/html/activity_twitter/index.html?activityId=${getParams('activityId')}&isFans=1`;
                     }
                     var title = `【Groupyツイートキャンペーン】`;
                     var description = `#Groupyツイートキャンペーン @GGroupyyy 最も多くツイートされたアイドルがGroupy公式Twitter、Weiboのヘッダー画像に登場！応援しよう。`;
-                    var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
+                    var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-twitter.png`;
                 }
                 console.log(shareURL)
                 window.setupWebViewJavascriptBridge(function(bridge) {

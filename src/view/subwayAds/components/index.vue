@@ -1,9 +1,9 @@
 <template>
     <div class="main">
          <div class="content">
-            <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAdsApply.png" class="banner">
+            <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-subwayAdsApply.png" class="banner">
             <h2>{{activity.theme}}</h2>
-            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
+            <p class="share-sns"><span @click="shareSns('share_facebook')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_facebook_1.png"><i>シェア</i></span><span @click="shareSns('share_twitter')"><img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/sns/icon_twitter_1.png"><i>ツイート</i></span></p>
             <div class="activity_rule">
                 <p>決勝上位3名のグループは、中国・広州の中心地にある広州塔駅で大型看板に1ヶ月ジャック！1日40万人が通過するところにあなたのグループの写真が掲載されちゃいます！応募は<i>wanted@groupy.vip‍</i> までイベント参加の旨をお伝えください。</p>
             </div>
@@ -45,14 +45,14 @@
             <ul class="activity_reward">
                 <h4>{{activity.award}}</h4>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i style="font-weight: 600;">{{activity.rewards[0].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[0].p2}}</i></p>
                     </div>
                 </li>
                 <li>
-                    <img src="http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
+                    <img src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/activity/icon_1.png">
                     <div class="reward_desc">
                         <p><span></span><i style="font-weight: 600;">{{activity.rewards[1].p1}}</i></p>
                         <p><span></span><i>{{activity.rewards[1].p2}}</i></p>
@@ -156,22 +156,22 @@
             var self = this;
             if(self.isFans) {
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `https://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
+                    var shareURL = `https://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&idolId=${self.me.idol_id}`;
                 }
                 var title = `【Groupy駅看板モデル選定企画】`;
                 var description = `中国広州大型駅看板モデル選定企画に応募しました。予選は12月1日から、応援してね`;
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }else {
                 if(location.hostname == 'activity.groupy.vip') {
-                    var shareURL = `http://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.vip/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }else {
-                    var shareURL = `http://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
+                    var shareURL = `https://share.groupy.cn/html/activity_subwayAds/index.html?activityId=${getParams('activityId')}&isFans=1`;
                 }
                 var title = `【Groupy駅看板モデル選定企画】`;
                 var description = `中国広州大型駅看板モデルを募集中！推しメンを招待して大活躍のキッカケを作ってあげよう！`;
-                var shareImg = `http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
+                var shareImg = `https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-books.jpg`;
             }
             window.setupWebViewJavascriptBridge(function(bridge) {
                 bridge.callHandler(val, {'title':title,'description':description,'shareImg':shareImg,'shareURL':shareURL})
