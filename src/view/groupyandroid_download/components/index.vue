@@ -44,7 +44,7 @@
     },
     methods: {
       get_app() {
-        window.location.assign('https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.fans-12-1.1.2.apk');
+        window.location.assign('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.android.apk');
       }
     },
     computed: {
