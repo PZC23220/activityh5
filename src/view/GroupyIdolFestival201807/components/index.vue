@@ -41,11 +41,11 @@
       <div class="banner"><img :src="htmlInfo.may" class="width1200"></div>
       <!-- 萤火虫专场 -->
       <div id="box-ffacg">
-        <h2 class="ffacg-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"></h2>
+        <h2 class="ffacg-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
         <div class="ffacg-time box">{{htmlInfo.ffacg.title2}}</div>
         <div class="ffacg-imgs width900">
           <div class="ffacg-left box">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_1.webp" class="img_ffacg box">
+            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_1.jpg" class="img_ffacg box">
             <p class="img-desc box">{{htmlInfo.ffacg.imgDesc}}</p>
           </div>
           <div class="ffacg-right box">
@@ -114,18 +114,18 @@
         </div>
         <h4 class="ffacg-desc-tile box"><span></span><span></span><em>{{htmlInfo.ffacg.th17}}</em><span></span><span></span></h4>
         <ul class="idol-content width1100 box">
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_2.webp"></li>
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_1.webp"></li>
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_3.webp"></li>
+          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_2.jpg"></li>
+          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_1.jpg"></li>
+          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_3.jpg"></li>
         </ul>
       </div>
       <!-- Live & Off会主场 -->
       <div id="box-live">
-        <h2 class="ffacg-title live-title box" id="live"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"><span>{{htmlInfo.live.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"></h2>
+        <h2 class="ffacg-title live-title box" id="live"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span>{{htmlInfo.live.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
         <div class="ffacg-time live-time box">{{htmlInfo.live.title2}}</div>
         <div class="ffacg-imgs width900 box">
           <div class="ffacg-left">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_3.webp" class="img_ffacg">
+            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_3.jpg" class="img_ffacg">
             <p class="img-desc" v-html="htmlInfo.live.imgDesc"></p>
           </div>
           <div class="ffacg-right box">
@@ -201,11 +201,11 @@
       </div>
       <!-- 粉丝同游 -->
       <div id="box-toure">
-        <h2 class="ffacg-title tour-title box" id="tour"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"><span>{{htmlInfo.tour.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"></h2>
+        <h2 class="ffacg-title tour-title box" id="tour"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span>{{htmlInfo.tour.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
         <div class="ffacg-time tour-time box">{{htmlInfo.tour.title2}}</div>
         <div class="ffacg-imgs width900">
           <div class="ffacg-left box">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_4.webp" class="img_ffacg">
+            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_4.jpg" class="img_ffacg">
             <p class="img-desc">{{htmlInfo.tour.imgDesc}}</p>
           </div>
           <div class="ffacg-right box">
@@ -281,7 +281,7 @@
       <div class="reservation-content">
         <div class="form">
           <div class="form-dashed">
-            <h2 class="ffacg-title reservation-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.resContent.btn}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.webp" class="inlineBlock"></h2>
+            <h2 class="ffacg-title reservation-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.resContent.btn}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
             <div class="input-content">
               <span>{{htmlInfo.resContent.name}}</span>
               <input v-model="Sname" type="text" :placeholder="htmlInfo.resContent.name" name="" @input="foucusCount(Sname,'name')" v-on:blur="foucusCount(Sname,'name')">
@@ -356,127 +356,142 @@
         nameIsNone: false,
         isJp: true,
         htmlInfo: {
-          nav: {
-            ffacgTitle: 'Groupy in 18th FFACG',
-            ffacgDesc: '~4.29~',
-            liveTitle: 'Live & Fan Meeting',
-            liveDesc: '~4.30~',
-            tourTitle: 'Groupy Idol Tour',
-            tourDesc: '~5.1~',
-            restitle: '今すぐ予約',
-            resDesc: '~受付中~',
-          },
-          reservation: '今すぐ予約',
-          desc: '詳細',
-          idols: '出演アイドル',
-          date: '日程',
-          yen: '',
-          asuka: '葉月あすか',
-          address: '場所',
-          money: 'チケット代',
-          may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/slogan_jp.png',
-          ffacg: {
-            title: 'Groupy in 18th FFACG',
-            title2: '~4.29~',
-            imgDesc: 'Groupy in 17th FFACG現場',
-            descTitle: ' 18th FFACG',
-            descp1: '大好評につき、2018年もGroupyは、来場者数20万人超の中国最大級のアニメゲームのイベント第18回Firefly ACG Festival（下記FFACGという）にてメインステージ及び専用ブースへの出展が決定しました。',
-            descp2: 'そこで、日本アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
-            descp3: 'イベントHP：',
-            date: '2018年4月29日（日）',
-            date1Desc: '前物販',
-            date2Desc: 'メインステージ出演',
-            date3Desc: '物販特典会',
-            date1: '11:30~13:00',
-            date2: '13:30~15:00',
-            date3: '15:30~17:00',
-            money1Desc: 'VIPエリア（ステージに最も近いエリア）チケット',
-            money2Desc: 'FFACGチケット',
-            money1: '50元（1000円）',
-            money2: '60元（別途）',
-            moneyDesc1:'※受付は当日Groupyブースにて行いますので、VIPエリアチケットを予約された方は開演前にGroupyブースまでお越し下さい（日本円でのご購入が可能です）。',
-            moneyDesc2:'※Groupyブースのブース番号はA46です。',
-            moneyDesc3:'※FFACGチケットは現地のFFACGチケット窓口にてご購入いただく形になります（ご購入は中国元になります）。',
-            moneyDesc4:'※先着順でVIPエリアを予約された15名の方にFFACGチッケトをプレゼントします。チッケトの受取り方は別途ご案内致します。',
-            moneyDesc5:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
-            moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
-            address1: '中国広州国際採購中心',
-            address2: '(中国広東省広州市海珠区琶洲大道東路2-8号)　',
-            th17: '第17回までの開催の模様',
-          },
-          live: {
-            title: 'Live & Fan Meeting',
-            title2: '~4.30~',
-            imgDesc: 'Groupy New Year Festival -<br>カウントダウンパーティ現場',
-            descTitle: 'Live & OFF会',
-            descp1: '中国・広州でGroupyが主催するライブ・ファンミーティングに参加し、2018年のゴールデンウィーク（GW）に推しメンと素晴らしい一日を作りましょう！',
-            date: '2018年4月30日（月）',
-            date1: 'ライブ一部：',
-            date1_1Desc: '開場',
-            date1_2Desc: '開演',
-            date1_3Desc: '物販',
-            date1_1: '13:45～14:00',
-            date1_2: '14:00～15:30',
-            date1_3: '15:30～17:00',
-            date2Desc: 'ファンミーティング',
-            date2: '17:30～18:50',
-            date3: 'ライブ二部：',
-            date3_1Desc: '開場',
-            date3_2Desc: '開演',
-            date3_3Desc: '物販',
-            date3_1: '19:15～19:30',
-            date3_2: '19:30～21:00',
-            date3_3: '21:00～22:30',
-            money1Desc: '一日券（2回Live&FanMeeting）',
-            money1: '400元（7000円）',
-            moneyDesc1:'※ライブごとのチケットは販売しておりませんので、ご了承ください。',
-            moneyDesc2:'※整理番号でご入場をご案内致します。',
-            moneyDesc3:'※日本円でのご購入が可能です。',
-            moneyDesc4:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
-            moneyDesc5:'※ご予約後、後日に確認・案内メールをお送りいたしますので、ご確認ください。',
-            moneyDesc6:'※タイムテーブル・特典会などは決定次第公開いたします。',
-            address1: '中国Mao Live house',
-            address2: '(中国広東省広州市海珠区新港東路1088号六元素体験天地F1)',
-          },
-          tour: {
-            title: 'Groupy Idol Tour',
-            title2: '~5.1~',
-            imgDesc: '中国・広州の夜景',
-            descTitle: 'TOUR',
-            descp1: 'Groupy Idol Festival最後の日に、アイドルたちと遊びに行くという企画がこの度実現！今までにない楽しさが盛り沢山、ぜひ衝撃ツアーをご参加ください～♪',
-            date: '2018年5月1日（火）',
-            date1Desc: '集合',
-            date2Desc: '入園',
-            date3Desc: '退園・入口に集合',
-            date4Desc: '全員で記念撮影',
-            date5Desc: '解散',
-            date1: '15:00~15:30',
-            date2: '15:30',
-            date3: '18:30',
-            date4: '18:30~19:00',
-            date5: '19:00',
-            money1: '400元（7000円）',
-            moneyDesc1:'※受付は当日現場にて行います。日本円でのご購入が可能です。',
-            moneyDesc2:'※予約は3月20日20:00（日本時間）に受付を開始させていただきますので、本サイトをチェックしてください。',
-            moneyDesc3:'※ご予約後、後日確認・案内メールをお送りいたしますので、ご確認いただきます。',
-            moneyDesc4:'※タイムテーブル・場所などは決定次第公開いたします。',
-          },
-          resContent: {
-            name: 'お名前',
-            phone: 'メールアドレス',
-            activity: 'イベントを選択',
-            form: '',
-            tip1: 'お問い合わせ：',
-            tip2: '*予約された方に、後日メールにて詳細をご案内致します。',
-            tip3: '*支払い方につて、現時点では現地での支払いになりますが、他の支払い方が出来次第、改めてご案内致します。',
-            btn: '予約する',
-            op1: '(4.29)Groupy in 18th FFACG',
-            op2: '(4.30)Groupy Live & Fan Meeting',
-            op3: '(5.1)Groupy Idol Tour',
-            numsTips: 'メールアドレスを入力してください',
-            nameTips: 'お名前をご入力ください'
+            nav: {
+              ffacgTitle: '19th FFACG',
+              ffacgDesc: '~7.14~',
+              liveTitle: 'Live&Fan Meeting',
+              liveDesc: '~7.15~',
+              tourTitle: 'Tour',
+              tourDesc: '~7.16~',
+              restitle: '今すぐ予約',
+              resDesc: '~受付中~',
+            },
+            reservation: '今すぐ予約',
+            desc: '詳細',
+            idols: '出演アイドル',
+            date: '日程',
+            yen: '',
+            asuka: '葉月あすか',
+            address: '場所',
+            money: 'チケット代',
+            changeLan: '中文',
+            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title2.png',
+            ffacg: {
+              title: 'Groupy in 19th FFACG',
+              title2: '~7.14~',
+              imgDesc: 'Groupy in 18th FFACG現場',
+              descTitle: '19th FFACG',
+              descp1: '来場者数20万人超の中国最大級のコミケFirefly ACG Festival第19回（下記FFACGという）にてメインステージ及び専用ブースへの出展がまた決定しました。',
+              descp2: 'そこで、日本、中国アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
+              descp3: 'コミケHP：',
+              date: '2018年7月14日（土）',
+              date1Desc: '前物販',
+              date2Desc: 'メインステージ出演',
+              date3Desc: '物販特典会',
+              date1: '10:00~12:00',
+              date2: '12:00~14:00',
+              date3: '14:10~17:00',
+              money1Desc: 'セットチケット',
+              // money2Desc: 'FFACGチケット',
+              money1: '2000円',
+              // money2: '60元（別途）',
+              moneyDesc1:'※予約方法については、当ページ一番下の注意事項にてご確認ください。',
+              // moneyDesc2:'下記のメールアドレスまでご連絡をお願いいたします。',
+              // moneyDesc3:'◇必要事項',
+              // moneyDesc4:'お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。',
+              // moneyDesc5:'※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。',
+              // moneyDesc6:'※入場順については、チケット予約の先着順となることをご留意ください。',
+              // moneyDesc7:'※お問い合せ<br>メールアドレス：<a href="mailto:contact@groupy.vip" target="_black">contact@groupy.vip</a><br>LineグループQRコード：',
+              // moneyImg:'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg',
+              address1: '広州琶洲保利世贸博览馆3階5、6号館',
+              address2: '1000 Xingang E Rd, Haizhu Qu, Guangzhou Shi（地下鉄8号線「琶洲駅」）',
+              th17: '第18回までの開催の模様',
+            },
+            live: {
+              title: 'Groupy Live & Fan Meeting',
+              title2: '~7.15~',
+              imgDesc: 'Groupy Idol Festival  -5月イベント現場',
+              descTitle: 'Live & OFF会',
+              descp1: 'ライブとファンミーティングを、一日思う存分楽しんで頂けます！',
+              date: '2018年7月15日（日）',
+              date1Desc: 'ライブ一部',
+              date1: '詳細時間後ほどお知らせいたします',
+              // date1_1Desc: '開場',
+              // date1_2Desc: '開演',
+              // date1_3Desc: '物販',
+              // date1_1: '13:45～14:00',
+              // date1_2: '14:00～15:30',
+              // date1_3: '15:30～17:00',
+              date2Desc: 'ファンミーティング',
+              date2: '',
+              date3Desc: 'ライブ二部',
+              date3: '',
+              // date3_1Desc: '開場',
+              // date3_2Desc: '開演',
+              // date3_3Desc: '物販',
+              // date3_1: '19:15～19:30',
+              // date3_2: '19:30～21:00',
+              // date3_3: '21:00～22:30',
+              money1Desc: '一日券',
+              money1: '8000円',
+              moneyDesc1:'※予約方法については、当ページ一番下の注意事項にてご確認ください。',
+              // moneyDesc2:'下記のメールアドレスまでご連絡をお願いいたします。',
+              // moneyDesc3:'◇必要事項',
+              // moneyDesc4:'お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。',
+              // moneyDesc5:'※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。',
+              // moneyDesc6:'※入場順については、チケット予約の先着順となることをご留意ください。',
+              address1: '広州Mao Live house',
+              address2: '1088 Xingang E Rd, Haizhu Qu, Guangzhou Shi（地下鉄8号線「琶洲駅」 D出口）',
+            },
+            tour: {
+              title: 'Groupy Idol Tour',
+              title2: '~7.16~',
+              imgDesc: '中国・広州の夜景',
+              descTitle: 'TOUR',
+              descp1: 'Groupy Idol Festival最後の日に、アイドルたちと遊びに行くという企画がこの度実現！今までにない楽しさが盛り沢山、ぜひ衝撃ツアーをご参加ください～♪',
+              date: '2018年7月16日（月・祝）',
+              // date1Desc: '集合',
+              // date2Desc: '入園',
+              // date3Desc: '退園・入口に集合',
+              // date4Desc: '全員で記念撮影',
+              // date5Desc: '解散',
+              // date1: '15:00~15:30',
+              // date2: '15:30',
+              // date3: '18:30',
+              // date4: '18:30~19:00',
+              // date5: '19:00',
+              money1: '13000円',
+              moneyDesc1:'※ファンツアーは参加者10名以上のアイドルグループのみ行いますので、ご予約の際は、ご希望のグループを記入してください。',
+              moneyDesc2:'※予約時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。',
+              moneyDesc3:'※タイムテーブル・集合場所などは決定次第ご連絡いたします。',
+              moneyDesc4:'※おすすめホテル情報はGroupyツイッターまでご確認ください。',
+              moneyDesc5:'※チケットの受取について<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。',
+              moneyDesc6:'※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください',
+            },
+            warning: {
+              title: ' 注意事項',
+              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip" target="_blank">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>※チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
+              desc2: '',
+              img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg'
+            },
+            resContent: {
+              name: 'お名前',
+              phone: 'メールアドレス',
+              activity: 'イベントを選択する',
+              form: '',
+              tip1: '注意事項',
+              tip2: '※航空券や滞在ホテルなどは、お客様ご自身でご手配いただきますようお願いいたします。',
+              tip3: '※おすすめホテル情報はGroupyツイッターでご確認ください。',
+              tip4: '※メールアドレス：<a href="mailto:contact@groupy.vip">contact@groupy.vip</a>',
+              tip5: '※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください',
+              btn: '予約する',
+              op1: '(7.14)Groupy in 19th FFACG',
+              op2: '(7.15)Groupy Live & Fan Meeting',
+              op3: '(7.16)Groupy Idol Tour',
+              numsTips: 'メールアドレスを入力してください',
+              nameTips: 'お名前をご入力ください'
+            }
           }
-        }
       }
     },
     methods: {
@@ -508,7 +523,7 @@
             address: '场地',
             money: '价格',
             changeLan: '日本語',
-            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title.webp',
+            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title.png',
             ffacg: {
               title: '燃动夏日・Groupy萤火虫漫展专场',
               title2: '~7.14~',
