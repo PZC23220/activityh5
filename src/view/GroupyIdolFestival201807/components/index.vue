@@ -46,7 +46,7 @@
             <h3 class="ffacg-h3title">{{htmlInfo.ffacg.descTitle}}</h3>
             <p class="ffacg-p">{{htmlInfo.ffacg.descp1}}</p>
             <p class="ffacg-p">{{htmlInfo.ffacg.descp2}}</p>
-            <p class="ffacg-p">{{htmlInfo.ffacg.descp3}}<a href="https://www.fireflyacg.com">https://www.fireflyacg.com</a></p>
+            <p class="ffacg-p">{{htmlInfo.ffacg.descp3}}<a href="http://www.fireflyacg.com">http://www.fireflyacg.com</a></p>
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
         </div>
@@ -56,19 +56,19 @@
             <div class="dashed-content">
               <div class="content-left">{{htmlInfo.date}}</div>
               <div class="content-right">
-                <h4 class="content-title"><span>{{htmlInfo.ffacg.date}}</span></h4>
+                <h4 class="content-title">{{htmlInfo.ffacg.date}}</h4>
                 <h4 class="content-title"><span>{{htmlInfo.ffacg.date1Desc}}</span><em>{{htmlInfo.ffacg.date1}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.ffacg.date2Desc}}</span><em>{{htmlInfo.ffacg.date2}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.ffacg.date3Desc}}</span><em>{{htmlInfo.ffacg.date3}}</em></h4>
               </div>
             </div>
             <div class="dashed-content">
-              <div class="content-left">{{htmlInfo.money}}</div>
+              <div class="content-left" :class="{'small':lan!='zh-cn'}">{{htmlInfo.money}}</div>
               <div class="content-right">
                 <h4 class="content-title"><span>{{htmlInfo.ffacg.money1Desc}}</span><em>{{htmlInfo.ffacg.money1}}</em></h4>
-                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;">*セットチケットはFFACG入場チケット及びVIPエリア料金は含まれています。</p>
+                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;font-size: 0.7rem;">*セットチケットはFFACG入場チケット及びVIPエリアチケットが含まれています。<br>*VIPエリアとはメインステージに最も近いエリアのことです。</p>
                 <h4 class="content-title" v-if="htmlInfo.ffacg.money2Desc"><span>{{htmlInfo.ffacg.money2Desc}}</span><em>{{htmlInfo.ffacg.money2}}</em></h4>
-                <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;">*套票含漫展门票+Groupy内场票</p>
+                <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;font-size: 0.7rem;">*套票含漫展门票+Groupy内场票</p>
                 <p class="content-desc">{{htmlInfo.ffacg.moneyDesc1}}</p>
                 <!-- <p class="content-desc">{{htmlInfo.ffacg.moneyDesc2}}</p> -->
                 <!-- <p class="content-desc" v-if="htmlInfo.tour.moneyDesc3">{{htmlInfo.tour.moneyDesc3}}</b></p>
@@ -124,7 +124,7 @@
           </div>
           <div class="ffacg-right box">
             <h3 class="ffacg-h3title">{{htmlInfo.live.descTitle}}</h3>
-            <p class="ffacg-p">{{htmlInfo.live.descp1}}</p>
+            <p class="ffacg-p" v-html="htmlInfo.live.descp1"></p>
             <p class="ffacg-p" v-html="htmlInfo.live.descp2">{{htmlInfo.live.descp2}}</p>
             <span class="reservation-btn cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></span>
           </div>
@@ -135,12 +135,12 @@
             <div class="dashed-content">
               <div class="content-left">{{htmlInfo.date}}</div>
               <div class="content-right">
-                <h4 class="content-title"><span>{{htmlInfo.live.date}}</span></h4>
+                <h4 class="content-title">{{htmlInfo.live.date}}</h4>
                 <h4 class="content-title"><span>{{htmlInfo.live.date1Desc}}</span><em>{{htmlInfo.live.date1}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.date1_1Desc"><span>{{htmlInfo.live.date1_1Desc}}</span><em>{{htmlInfo.live.date1_1}}</em></h4>
                 <!-- <h4 class="content-title"><span>{{htmlInfo.live.date1_2Desc}}</span><em>{{htmlInfo.live.date1_2}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.live.date1_3Desc}}</span><em>{{htmlInfo.live.date1_3}}</em></h4> -->
-                <h4 class="content-title" v-if="htmlInfo.live.date2"><span>{{htmlInfo.live.date2Desc}}</span><em>{{htmlInfo.live.date2}}</em></h4>
+                <h4 class="content-title" v-if="htmlInfo.live.date2Desc"><span>{{htmlInfo.live.date2Desc}}</span><em>{{htmlInfo.live.date2}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.live.date3Desc}}</span><em>{{htmlInfo.live.date3}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.date3_1Desc"><span>{{htmlInfo.live.date3_1Desc}}</span><em>{{htmlInfo.live.date3_1}}</em></h4>
                 <!-- <h4 class="content-title"><span>{{htmlInfo.live.date3_2Desc}}</span><em>{{htmlInfo.live.date3_2}}</em></h4>
@@ -148,15 +148,15 @@
               </div>
             </div>
             <div class="dashed-content">
-              <div class="content-left">{{htmlInfo.money}}</div>
+              <div class="content-left" :class="{'small':lan!='zh-cn'}">{{htmlInfo.money}}</div>
               <div class="content-right">
                 <h4 class="content-title"><span>{{htmlInfo.live.money1Desc}}</span><em>{{htmlInfo.live.money1}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.money2"><span>{{htmlInfo.live.money2Desc}}</span><em>{{htmlInfo.live.money2}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.money3"><span>{{htmlInfo.live.money3Desc}}</span><em>{{htmlInfo.live.money3}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.money4"><span>{{htmlInfo.live.money4Desc}}</span><em>{{htmlInfo.live.money4}}</em></h4>
-                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;">*一日券は2部ライプ及びファンミーティング料金が含まれています。</p>
+                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;font-size: 0.7rem;">*一日券はライプ昼部・夜部及びファンミーティングの料金が含まれています。</p>
                 <!-- <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;">＊双场票团购福利：Groupy淘宝官方提供双场门票团购优惠，5人成团免1人门票</p> -->
-                <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 1rem;">※双场演唱会参加早鸟、粉红票、5人成团活动</p>
+                <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 1rem;font-size: 0.7rem;">※双场演唱会参加早鸟、粉红票、5人成团活动</p>
                 <p class="content-desc" v-html="htmlInfo.live.moneyDesc1"></p>
                 <!-- <p class="content-desc" v-html="htmlInfo.live.moneyDesc2"></p>
                 <p class="content-desc" v-html="htmlInfo.live.moneyDesc3"></p>
@@ -215,7 +215,7 @@
             <div class="dashed-content">
               <div class="content-left">{{htmlInfo.date}}</div>
               <div class="content-right">
-                <h4 class="content-title"><span>{{htmlInfo.tour.date}}</span></h4>
+                <h4 class="content-title">{{htmlInfo.tour.date}}</h4>
                 <!-- <h4 class="content-title"><span>{{htmlInfo.tour.date1Desc}}</span><em>{{htmlInfo.tour.date1}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.tour.date2Desc}}</span><em>{{htmlInfo.tour.date2}}</em></h4>
                 <h4 class="content-title"><span>{{htmlInfo.tour.date3Desc}}</span><em>{{htmlInfo.tour.date3}}</em></h4>
@@ -224,10 +224,10 @@
               </div>
             </div>
             <div class="dashed-content">
-              <div class="content-left">{{htmlInfo.money}}</div>
+              <div class="content-left" :class="{'small':lan!='zh-cn'}">{{htmlInfo.money}}</div>
               <div class="content-right content-right-last">
                 <h4 class="content-title"><em>{{htmlInfo.tour.money1}}</em></h4>
-                <p class="content-desc" style="color: #1b318e;" v-html="htmlInfo.tour.moneyDesc1"></p>
+                <p class="content-desc" style="color: #1b318e;font-size: 0.7rem;" v-html="htmlInfo.tour.moneyDesc1"></p>
                 <!-- <p class="content-desc" v-html="htmlInfo.tour.moneyDesc2"></p>
                 <p class="content-desc" v-if="htmlInfo.tour.moneyDesc3">{{htmlInfo.tour.moneyDesc3}}</b></p>
                 <p class="content-desc">{{htmlInfo.tour.moneyDesc4}}</p>
@@ -240,13 +240,21 @@
         </div>
       </div>
       <!-- 马上购票按钮 -->
+      <h4 class="ffacg-desc-tile box" id="warning"><span></span><span></span><em>{{htmlInfo.warning.title}}</em><span></span><span></span></h4>
+      <div class="ffacg-desc width900 box">
+        <div class="ffacg-dashed warning">
+            <div v-html="htmlInfo.warning.desc">
+            </div>
+            <div class="tour-qq"><p class="inlineBlock"><span v-html="htmlInfo.warning.desc2"></span></p><img class="form-img inlineBlock" v-lazy="htmlInfo.warning.img"></div>
+        </div>
+      </div>
       <div class="reservation-bigBtn box cursor" @click="showWindow()"><em>{{htmlInfo.reservation}}</em><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/icon_1.png"></div>
-      <div class="ffacg-desc warning width900" id="warning">
-        <div class="titles" v-html="htmlInfo.warning.title"></div>
+      <!-- <div class="ffacg-desc warning width900" id="warning"> -->
+        <!-- <div class="titles" v-html="htmlInfo.warning.title"></div>
         <div v-html="htmlInfo.warning.desc">
         </div>
         <div class="tour-qq"><p class="inlineBlock"><span v-html="htmlInfo.warning.desc2"></span></p><img class="form-img inlineBlock" v-lazy="htmlInfo.warning.img"></div>
-      </div>
+      </div> -->
     </div>
     <!-- 导航弹窗 -->
     <div class="navWindow" :class="[{'navWindowShow':navWindowShow},{'box':navWindowShow}]">
@@ -357,10 +365,10 @@
               liveDesc: '~7.15~',
               tourTitle: 'Tour',
               tourDesc: '~7.16~',
-              restitle: '今すぐ予約',
+              restitle: 'メールで予約',
               resDesc: '~受付中~',
             },
-            reservation: '今すぐ予約',
+            reservation: 'メールで予約',
             desc: '詳細',
             idols: '出演アイドル',
             date: '日程',
@@ -375,7 +383,7 @@
               title2: '~7.14~',
               imgDesc: 'Groupy in 18th FFACG現場',
               descTitle: '19th FFACG',
-              descp1: '来場者数20万人超の中国最大級のコミケFirefly ACG Festival第19回（下記FFACGという）にてメインステージ及び専用ブースへの出展がまた決定しました。',
+              descp1: '来場者数20万人超の中国最大級のコミケ「Firefly ACG Festival」第19回（下記FFACGという）にGroupyが参加することが決定しました。今回はなんと三回目になります！',
               descp2: 'そこで、日本、中国アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
               descp3: 'コミケHP：',
               date: '2018年7月14日（土）',
@@ -384,7 +392,7 @@
               date3Desc: '物販特典会',
               date1: '10:00~12:00',
               date2: '12:00~14:00',
-              date3: '14:10~17:00',
+              date3: '14:10~16:00',
               money1Desc: 'セットチケット',
               // money2Desc: 'FFACGチケット',
               money1: '2000円',
@@ -399,7 +407,7 @@
               // moneyImg:'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg',
               address1: '広州琶洲保利世贸博览馆3階5、6号館',
               address2: '1000 Xingang E Rd, Haizhu Qu, Guangzhou Shi（地下鉄8号線「琶洲駅」）',
-              th17: '第18回までの開催の模様',
+              th17: '第18回までの開催模様',
             },
             live: {
               title: 'Groupy Live & Fan Meeting',
@@ -409,7 +417,7 @@
               descp1: 'ライブとファンミーティングを、一日思う存分楽しんで頂けます！',
               date: '2018年7月15日（日）',
               date1Desc: 'ライブ一部',
-              date1: '詳細時間後ほどお知らせいたします',
+              date1: 'タイムテーブルは決定次第お知らせ致します。',
               // date1_1Desc: '開場',
               // date1_2Desc: '開演',
               // date1_3Desc: '物販',
@@ -464,7 +472,7 @@
             },
             warning: {
               title: ' 注意事項',
-              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>※チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
+              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br><b>※チケットの受取について</b><br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
               desc2: '',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg'
             },
@@ -521,7 +529,7 @@
             ffacg: {
               title: '燃动夏日・Groupy萤火虫漫展专场',
               title2: '~7.14~',
-              imgDesc: '18th漫展活动现场摄图',
+              imgDesc: '18届漫展活动现场摄图',
               descTitle: ' 19th FFACG',
               descp1: 'Groupy三度降临人流量超过20万的广州萤火虫动漫嘉年华。7月14日即将开启！马上报名，与爱豆在中国嗨起来吧！',
               descp2: '马上报名，与爱豆在中国嗨起来吧！',
@@ -532,7 +540,7 @@
               date3Desc: '偶像周边产品/物贩',
               date1: '10:00~12:00',
               date2: '12:00~14:00',
-              date3: '14:10~17:00',
+              date3: '14:10~16:00',
               money1Desc: 'Groupy内场票',
               money2Desc: '萤火虫套票',
               money1: '50元',
@@ -559,7 +567,7 @@
               // date1_2Desc: '偶像小茶会',
               // date1_3Desc: 'B场演唱会 ',
               // date1_4Desc: '偶像周边产品/物贩 ',
-              date1: '时间暂定',
+              date1: '',
               date1_1: '',
               // date1_2: '',
               // date1_3: '',
@@ -574,8 +582,8 @@
               date3_1: '',
               // date3_2: '19:30～21:00',
               // date3_3: '21:00～22:30',
-              money1Desc: '音乐节A场/B场单场演唱会',
-              money2Desc: '音乐节双场演唱会',
+              money1Desc: 'A场/B场单场演唱会',
+              money2Desc: '双场演唱会',
               money3Desc: '偶像小茶会',
               // money4Desc: '一日通手环（2场Live&Off会）',
               money1: ' 120元',
@@ -594,7 +602,7 @@
               title2: '~7.16~',
               imgDesc: '广州景色',
               descTitle: 'TOUR',
-              descp1: '燃动夏日・Groupy像祭的最后一天我们将进行爱豆与粉丝同游活动！<br>发现爱豆们私下的一面，这段难得的旅途不容错过~',
+              descp1: '燃动夏日・Groupy偶像祭的最后一天我们将进行爱豆与粉丝同游活动！<br>发现爱豆们私下的一面，这段难得的旅途不容错过~',
               date: '2018年7月16日（周一）',
               // date1Desc: '集合',
               // date2Desc: '入园',
@@ -647,10 +655,10 @@
               liveDesc: '~7.15~',
               tourTitle: 'Tour',
               tourDesc: '~7.16~',
-              restitle: '今すぐ予約',
+              restitle: 'メールで予約',
               resDesc: '~受付中~',
             },
-            reservation: '今すぐ予約',
+            reservation: 'メールで予約',
             desc: '詳細',
             idols: '出演アイドル',
             date: '日程',
@@ -665,7 +673,7 @@
               title2: '~7.14~',
               imgDesc: 'Groupy in 18th FFACG現場',
               descTitle: '19th FFACG',
-              descp1: '来場者数20万人超の中国最大級のコミケFirefly ACG Festival第19回（下記FFACGという）にてメインステージ及び専用ブースへの出展がまた決定しました。',
+              descp1: '来場者数20万人超の中国最大級のコミケ「Firefly ACG Festival」第19回（下記FFACGという）にGroupyが参加することが決定しました。今回はなんと三回目になります！',
               descp2: 'そこで、日本、中国アイドルがFFACGの最も豪華なメインステージに登場！推しメンとと共にこの記念すべき一日を盛り上げましょう。',
               descp3: 'コミケHP：',
               date: '2018年7月14日（土）',
@@ -674,7 +682,7 @@
               date3Desc: '物販特典会',
               date1: '10:00~12:00',
               date2: '12:00~14:00',
-              date3: '14:10~17:00',
+              date3: '14:10~16:00',
               money1Desc: 'セットチケット',
               // money2Desc: 'FFACGチケット',
               money1: '2000円',
@@ -689,7 +697,7 @@
               // moneyImg:'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg',
               address1: '広州琶洲保利世贸博览馆3階5、6号館',
               address2: '1000 Xingang E Rd, Haizhu Qu, Guangzhou Shi（地下鉄8号線「琶洲駅」）',
-              th17: '第18回までの開催の模様',
+              th17: '第18回までの開催模様',
             },
             live: {
               title: 'Groupy Live & Fan Meeting',
@@ -698,8 +706,8 @@
               descTitle: 'Live & OFF会',
               descp1: 'ライブとファンミーティングを、一日思う存分楽しんで頂けます！',
               date: '2018年7月15日（日）',
-              date1Desc: 'ライブ一部',
-              date1: '詳細時間後ほどお知らせいたします',
+              date1Desc: 'ライブ昼部',
+              date1: 'タイムテーブルは決定次第お知らせ致します。',
               // date1_1Desc: '開場',
               // date1_2Desc: '開演',
               // date1_3Desc: '物販',
@@ -708,7 +716,7 @@
               // date1_3: '15:30～17:00',
               date2Desc: 'ファンミーティング',
               date2: '',
-              date3Desc: 'ライブ二部',
+              date3Desc: 'ライブ夜部',
               date3: '',
               // date3_1Desc: '開場',
               // date3_2Desc: '開演',
@@ -754,7 +762,7 @@
             },
             warning: {
               title: ' 注意事項',
-              desc: '(1)必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip">contact@groupy.vip</a><br><br>(2)必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>(3)予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>(4)入場順については、チケット予約の先着順となることをご留意ください。<br><br>(5)ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>(6)タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>(7)おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>(8)チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>(※)何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
+              desc: '(1)必要事項を記入された上、下記のメールアドレスまでご連絡ください。<br><b><a style="font-size: 1rem;" href="mailto:contact@groupy.vip">contact@groupy.vip</a></b><br><br>(2)必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/イベント内容<br>上記の項目をメールに記入しご予約ください。<br><br>(3)予約開始時間について<br>2018/5/17 21時よりご予約の受付を開始いたします。<br><br>(4)入場順につきましては、各ライブイベント共にチケット予約の先着順となります。<br><br>(5)ご予約後、後ほど案内のメールをお送りさせていただきます。<br><br>(6)タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>(7)おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br><b>(8)チケットの受取について</b><br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※ご不明点がございましたら、メール、またはQRコードをスキャンしていただきまして、Lineグループにてお問い合わせくださいませ。<br>',
               desc2: '',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg'
             },
