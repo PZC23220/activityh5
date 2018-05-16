@@ -23,15 +23,9 @@
       <button class="changeLan cursor" @click="changeLan()">{{htmlInfo.changeLan}}</button>
     </nav>
     <div class="main-content">
-     <!--  <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_1.png" class="img_1">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_1.png" class="img_1 img_1_2">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_1.png" class="img_1 img_1_3">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_1.png" class="img_1 img_1_4">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_1.png" class="img_1 img_1_5">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_2.png" class="img_2">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_2.png" class="img_2 img_2_2">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_2.png" class="img_2 img_2_3">
-      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/img_2.png" class="img_2 img_2_4"> -->
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/decorate.png" class="img_1">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/decorate.png" class="img_1 img_1_2">
+      <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/decorate.png" class="img_1 img_1_3">
       <!-- <img :src="htmlInfo.may" class="groupy-may box"> -->
      <!--  <ul class="idol-content width900 box">
         <li class="idol_sfm"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_sfm.png"><p>Shine Fine<br>Movement</p></li>
@@ -41,11 +35,11 @@
       <div class="banner"><img :src="htmlInfo.may" class="width1200"></div>
       <!-- 萤火虫专场 -->
       <div id="box-ffacg">
-        <h2 class="ffacg-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
+        <h2 class="ffacg-title box" style="margin-top:0;" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
         <div class="ffacg-time box">{{htmlInfo.ffacg.title2}}</div>
         <div class="ffacg-imgs width900">
           <div class="ffacg-left box">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_1.jpg" class="img_ffacg box">
+            <img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_1.jpg'" class="img_ffacg box">
             <p class="img-desc box">{{htmlInfo.ffacg.imgDesc}}</p>
           </div>
           <div class="ffacg-right box">
@@ -91,7 +85,7 @@
                 <h4 class="content-title">{{htmlInfo.ffacg.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.ffacg.address2}}</p>
                 <a href="https://j.map.baidu.com/iqLvP" target="_black" v-if="lan=='zh-cn'">
-                  <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/ffacg.jpg" class="ffacg-gmap ffacg-gmap-2">
+                  <img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/ffacg.jpg'" class="ffacg-gmap ffacg-gmap-2">
                 </a>
                 <a href="https://goo.gl/maps/JrafPbdh3pR2" v-else>
                   <gmap-map
@@ -114,9 +108,9 @@
         </div>
         <h4 class="ffacg-desc-tile box"><span></span><span></span><em>{{htmlInfo.ffacg.th17}}</em><span></span><span></span></h4>
         <ul class="idol-content width1100 box">
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_2.jpg"></li>
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_1.jpg"></li>
-          <li class="live-imgs"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_3.jpg"></li>
+          <li class="live-imgs"><img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture1.jpg'"></li>
+          <li class="live-imgs"><img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2_1.jpg'"></li>
+          <li class="live-imgs"><img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture2.jpg'"></li>
         </ul>
       </div>
       <!-- Live & Off会主场 -->
@@ -125,7 +119,7 @@
         <div class="ffacg-time live-time box">{{htmlInfo.live.title2}}</div>
         <div class="ffacg-imgs width900 box">
           <div class="ffacg-left">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_3.jpg" class="img_ffacg">
+            <img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_3.jpg'" class="img_ffacg">
             <p class="img-desc" v-html="htmlInfo.live.imgDesc"></p>
           </div>
           <div class="ffacg-right box">
@@ -178,7 +172,7 @@
               <div class="content-right content-right-last">
                 <h4 class="content-title">{{htmlInfo.live.address1}}</h4>
                 <p class="content-desc">{{htmlInfo.live.address2}}</p>
-                <a href="https://j.map.baidu.com/AbXvP" target="_black" v-if="lan=='zh-cn'"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/maolive.jpg"class="ffacg-gmap ffacg-gmap-2"></a>
+                <a href="https://j.map.baidu.com/AbXvP" target="_black" v-if="lan=='zh-cn'"><img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/maolive.jpg'"class="ffacg-gmap ffacg-gmap-2"></a>
                 <a href="https://goo.gl/maps/FYLbnkAGCuq" target="_black" v-else>
                   <gmap-map
                     :center="center"
@@ -205,7 +199,7 @@
         <div class="ffacg-time tour-time box">{{htmlInfo.tour.title2}}</div>
         <div class="ffacg-imgs width900">
           <div class="ffacg-left box">
-            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_4.jpg" class="img_ffacg">
+            <img v-lazy="'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/picture_4.jpg'" class="img_ffacg">
             <p class="img-desc">{{htmlInfo.tour.imgDesc}}</p>
           </div>
           <div class="ffacg-right box">
@@ -251,7 +245,7 @@
         <div class="titles" v-html="htmlInfo.warning.title"></div>
         <div v-html="htmlInfo.warning.desc">
         </div>
-        <div class="tour-qq"><p class="inlineBlock"><span v-html="htmlInfo.warning.desc2"></span></p><img class="form-img inlineBlock" :src="htmlInfo.warning.img"></div>
+        <div class="tour-qq"><p class="inlineBlock"><span v-html="htmlInfo.warning.desc2"></span></p><img class="form-img inlineBlock" v-lazy="htmlInfo.warning.img"></div>
       </div>
     </div>
     <!-- 导航弹窗 -->
@@ -470,7 +464,7 @@
             },
             warning: {
               title: ' 注意事項',
-              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip" target="_blank">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>※チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
+              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>※チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
               desc2: '',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg'
             },
@@ -528,7 +522,7 @@
               title: '燃动夏日・Groupy萤火虫漫展专场',
               title2: '~7.14~',
               imgDesc: '18th漫展活动现场摄图',
-              descTitle: ' 18th FFACG',
+              descTitle: ' 19th FFACG',
               descp1: 'Groupy三度降临人流量超过20万的广州萤火虫动漫嘉年华。7月14日即将开启！马上报名，与爱豆在中国嗨起来吧！',
               descp2: '马上报名，与爱豆在中国嗨起来吧！',
               descp3: '萤火虫漫展官网：',
@@ -623,8 +617,8 @@
             },
             warning: {
               title: ' 购票事宜',
-              desc: '※门票将于5月17日晚上八点开始售卖，点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="https://shop323210088.taobao.com" target="_blank">https://shop323210088.taobao.com</a><br>※入场顺序官方TB渠道付款时间排序。<br>其他平台购买者，按到场顺序在已有番号基础上进行番号排序。 <br>※请粉丝自行购买车票和预订住宿酒店等。也可留意官博微博酒店抽奖活动<br><br><b>关于萤火虫专场</b><br>※购买套票的亲们请在漫展入口的 萤火虫办证中心（或找到Groupy工作人员），兑换漫展套票<br>※购买内场票的亲们请在当天到GroupyA43展位领取。<br><br><b>关于偶像音乐节</b><br>※活动当天凭淘宝兑换号或者个人姓名电话信息在现场兑票。<br>※音乐节入场顺序，按双场票＞单场票＞无番号 进行入场。<br><br>',
-              desc2: '※咨询：<br>QQ群：671740145<br>邮箱：contact@groupy.vip <br>淘宝：Groupy应援线上店',
+              desc: '(1)门票将于5月17日晚上八点开始售卖，点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="https://shop323210088.taobao.com" target="_blank">https://shop323210088.taobao.com</a><br>(2)入场顺序官方TB渠道付款时间排序。<br>其他平台购买者，按到场顺序在已有番号基础上进行番号排序。 <br>(3)请粉丝自行购买车票和预订住宿酒店等。也可留意官博微博酒店抽奖活动<br><br><b>关于萤火虫专场</b><br>(1)购买套票的亲们请在漫展入口的 萤火虫办证中心（或找到Groupy工作人员），兑换漫展套票<br>(2)购买内场票的亲们请在当天到GroupyA43展位领取。<br><br><b>关于偶像音乐节</b><br>(1)活动当天凭淘宝兑换号或者个人姓名电话信息在现场兑票。<br>(2)音乐节入场顺序，按双场票＞单场票＞无番号 进行入场。<br><br>',
+              desc2: '※咨询：<br>QQ群：671740145<br>邮箱：<a href="mailto:contact@groupy.vip">contact@groupy.vip</a> <br>淘宝：Groupy应援线上店',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/QQ.jpg'
             },
             resContent: {
@@ -760,7 +754,7 @@
             },
             warning: {
               title: ' 注意事項',
-              desc: '※必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip" target="_blank">contact@groupy.vip</a><br><br>※必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>※予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>※入場順については、チケット予約の先着順となることをご留意ください。<br><br>※ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>※タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>※おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>※チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>※何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
+              desc: '(1)必要事項を下記のメールアドレスまでご連絡をお願いいたします。<a href="mailto:contact@groupy.vip">contact@groupy.vip</a><br><br>(2)必要事項について<br>お名前/連絡先（携帯番号、メールアドレス）/枚数<br>上記の項目をメールに記入しご予約ください。<br><br>(3)予約開始時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。<br><br>(4)入場順については、チケット予約の先着順となることをご留意ください。<br><br>(5)ご予約後、後ほど確認・案内メールをお送りしますので、ご確認ください。<br><br>(6)タイムテーブル・集合場所などは決定次第メールもしくはLineにてご連絡いたします。<br><br>(7)おすすめホテル情報はGroupyツイッターまでご確認ください。<br><br>(8)チケットの受取について（加粗）<br>チケット受取のご案内は、予約時に確認メールでご案内しますので必ずご確認ください。<br>当日、案内に従って集合場所にお越し下さい。お支払いは、中国元または日本円の現金払いとなります。<br><br>(※)何かご質問がございましたら、QRコードをスキャンされ、Lineグループでお問い合わせまでご連絡ください<br>',
               desc2: '',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/line.jpg'
             },

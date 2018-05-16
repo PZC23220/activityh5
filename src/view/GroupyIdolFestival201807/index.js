@@ -8,8 +8,8 @@ import main from './main.vue'
 Vue.use(VueRouter);
 Vue.use(VueLazyload, {
         preLoad: 1,
-        error: 'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_groupy.jpg',
-        loading: 'https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/h5_groupy/default_img/default_groupy.jpg',
+        error: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/groupyWebsite/default_img.jpg',
+        loading: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/groupyWebsite/default_img.jpg',
         attempt: 1
 })
 
