@@ -625,7 +625,7 @@
             },
             warning: {
               title: ' 购票事宜',
-              desc: '(1)门票将于5月17日晚上八点开始售卖，点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="https://shop323210088.taobao.com" target="_blank">https://shop323210088.taobao.com</a><br>(2)入场顺序官方TB渠道付款时间排序。<br>其他平台购买者，按到场顺序在已有番号基础上进行番号排序。 <br>(3)请粉丝自行购买车票和预订住宿酒店等。也可留意官博微博酒店抽奖活动<br><br><b>关于萤火虫专场</b><br>(1)购买套票的亲们请在漫展入口的 萤火虫办证中心（或找到Groupy工作人员），兑换漫展套票<br>(2)购买内场票的亲们请在当天到GroupyA43展位领取。<br><br><b>关于偶像音乐节</b><br>(1)活动当天凭淘宝兑换号或者个人姓名电话信息在现场兑票。<br>(2)音乐节入场顺序，按双场票＞单场票＞无番号 进行入场。<br><br>',
+              desc: '(1)门票将于5月17日晚上八点开始售卖，点击马上购票将跳转至Groupy官方淘宝店购票链接：<a href="https://shop323210088.taobao.com" target="_blank">https://shop323210088.taobao.com</a><br>(2)入场顺序官方TB渠道付款时间排序。<br>其他平台购买者，按到场顺序在已有番号基础上进行番号排序。 <br>(3)请粉丝自行购买车票和预订住宿酒店等。也可留意官博微博酒店抽奖活动<br><br><b>关于萤火虫专场</b><br>(1)购买套票的亲们请在漫展入口的 萤火虫办证中心（或找到Groupy工作人员），兑换漫展套票<br><br><b>关于偶像音乐节</b><br>(1)活动当天凭淘宝兑换号或者个人姓名电话信息在现场兑票。<br>(2)音乐节入场顺序，按双场票＞单场票＞无番号 进行入场。<br><br>',
               desc2: '※咨询：<br>QQ群：671740145<br>邮箱：<a href="mailto:contact@groupy.vip">contact@groupy.vip</a> <br>淘宝：Groupy应援线上店',
               img: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/QQ.jpg'
             },
