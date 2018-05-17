@@ -154,7 +154,7 @@
                 <h4 class="content-title" v-if="htmlInfo.live.money2"><span>{{htmlInfo.live.money2Desc}}</span><em>{{htmlInfo.live.money2}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.money3"><span>{{htmlInfo.live.money3Desc}}</span><em>{{htmlInfo.live.money3}}</em></h4>
                 <h4 class="content-title" v-if="htmlInfo.live.money4"><span>{{htmlInfo.live.money4Desc}}</span><em>{{htmlInfo.live.money4}}</em></h4>
-                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;font-size: 0.7rem;">*一日券はライプ昼部・夜部及びファンミーティングの料金が含まれています。</p>
+                <p class="content-desc" v-if="lan!='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;font-size: 0.7rem;">*一日券はライプ昼部・夜部及びファンミーティングの料金が含まれています。<br>※80分間推しメンと一緒に軽食タイム！お楽しみコーナーもあります！</p>
                 <!-- <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 0.5rem;">＊双场票团购福利：Groupy淘宝官方提供双场门票团购优惠，5人成团免1人门票</p> -->
                 <p class="content-desc" v-if="lan=='zh-cn'" style="color: #1B318E;margin-bottom: 1rem;font-size: 0.7rem;">※双场演唱会参加早鸟、粉红票、5人成团活动</p>
                 <p class="content-desc" v-html="htmlInfo.live.moneyDesc1"></p>
@@ -463,7 +463,7 @@
               // date4: '18:30~19:00',
               // date5: '19:00',
               money1: '13000円',
-              moneyDesc1:'※ファンツアーは参加者10名以上のアイドルグループのみ行いますので、ご予約の際は、ご希望のグループを記入してください。',
+              moneyDesc1:'※ファンツアーは参加者10名以上のアイドルグループのみ行いますので、ご予約の際は、ご希望のグループを記入してください。<br>※広州で人気の娯楽施設で特別な時間を推しメンと一緒に！（5時間程度）<br>※広州で人気の娯楽施設で特別な時間を推しメンと一緒に！（5時間程度）',
               moneyDesc2:'※予約時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。',
               moneyDesc3:'※タイムテーブル・集合場所などは決定次第ご連絡いたします。',
               moneyDesc4:'※おすすめホテル情報はGroupyツイッターまでご確認ください。',
@@ -753,7 +753,7 @@
               // date4: '18:30~19:00',
               // date5: '19:00',
               money1: '13000円',
-              moneyDesc1:'※ファンツアーは参加者10名以上のアイドルグループのみ行いますので、ご予約の際は、ご希望のグループを記入してください。',
+              moneyDesc1:'※ファンツアーは参加者10名以上のアイドルグループのみ行いますので、ご予約の際は、ご希望のグループを記入してください。<br>※広州で人気の娯楽施設で特別な時間を推しメンと一緒に！（5時間程度）',
               moneyDesc2:'※予約時間について<br>2018/5/17 夜9時間よりご予約の受付を開始いたします。',
               moneyDesc3:'※タイムテーブル・集合場所などは決定次第ご連絡いたします。',
               moneyDesc4:'※おすすめホテル情報はGroupyツイッターまでご確認ください。',
