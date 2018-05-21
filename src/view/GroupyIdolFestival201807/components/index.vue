@@ -395,7 +395,7 @@
           setWrapperSize :true,
           spaceBetween: 30,
           slidesPerView: 3,
-          slidesPerGroup: 3,
+          slidesPerGroup: 1,
           autoplay: 3000,
           autoplayDisableOnInteraction: false,
           loop: true,
