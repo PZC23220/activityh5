@@ -36,11 +36,11 @@
         <img :src="htmlInfo.may" class="width1200">
         <swiper :options="swiperOption" ref="mySwiper" class="banner_container">
             <!-- slides -->
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
@@ -48,11 +48,11 @@
         <img :src="htmlInfo.may" class="width1200">
         <swiper :options="swiperOption2" ref="mySwiper" class="banner_container">
             <!-- slides -->
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
-            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
+            <swiper-slide><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
