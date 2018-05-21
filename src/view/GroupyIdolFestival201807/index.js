@@ -4,8 +4,11 @@ import VueRouter from 'vue-router'
 import routes  from './router.js'
 import VueLazyload from 'vue-lazyload'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import main from './main.vue'
+require('swiper/dist/css/swiper.css');
 Vue.use(VueRouter);
+Vue.use(VueAwesomeSwiper);
 Vue.use(VueLazyload, {
         preLoad: 1,
         error: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/groupyWebsite/default_img.jpg',

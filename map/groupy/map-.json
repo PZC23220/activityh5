@@ -62,6 +62,7 @@
     }
   },
   "css": {
+    "/css/GroupyIdolFestival201807.css": "//css/GroupyIdolFestival201807.css",
     "/css/undefined.css": "//css/live.css"
   },
   "static_root": ""

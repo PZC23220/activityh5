@@ -32,10 +32,33 @@
         <li class="idol_asuka"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_asuka.png"><p>{{htmlInfo.asuka}}</p></li>
         <li class="idol_tsp"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival/idol_tsp.png"><p>Tokyo Sweet Party</p></li>
       </ul> -->
-      <div class="banner"><img :src="htmlInfo.may" class="width1200"></div>
+      <div class="banner banner1">
+        <img :src="htmlInfo.may" class="width1200">
+        <swiper :options="swiperOption" ref="mySwiper" class="banner_container">
+            <!-- slides -->
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
+       <div class="banner banner2">
+        <img :src="htmlInfo.may" class="width1200">
+        <swiper :options="swiperOption2" ref="mySwiper" class="banner_container">
+            <!-- slides -->
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/huase.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/notall.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/yinv.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/AA.jpg"></swiper-slide>
+            <swiper-slide><img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/tsd.jpg"></swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
+      </div>
       <!-- 萤火虫专场 -->
       <div id="box-ffacg">
-        <h2 class="ffacg-title box" style="margin-top:0;" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
+        <h2 class="ffacg-title box" id="ffacg"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"><span class="inlineBlock">{{htmlInfo.ffacg.title}}</span><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/gradient.png" class="inlineBlock"></h2>
         <div class="ffacg-time box">{{htmlInfo.ffacg.title2}}</div>
         <div class="ffacg-imgs width900">
           <div class="ffacg-left box">
@@ -329,6 +352,7 @@
 </template>
 <script>
   import http from '@api/js/http.js';
+  import { swiper, swiperSlide } from 'vue-awesome-swiper';
   require('@api/js/common.js')
   import scrollReveal from  'scrollreveal'
   export default {
@@ -357,6 +381,30 @@
         phoneIsNone: false,
         nameIsNone: false,
         isJp: true,
+        swiperOption2: {
+          setWrapperSize :true,
+          autoplay: 3000,
+          autoplayDisableOnInteraction: false,
+          loop: true,
+          speed: 2000,
+          pagination : '.swiper-pagination',
+          grabCursor: true,
+          paginationClickable: true,
+        },
+        swiperOption: {
+          setWrapperSize :true,
+          spaceBetween: 30,
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          autoplay: 3000,
+          autoplayDisableOnInteraction: false,
+          loop: true,
+          speed: 2000,
+          pagination : '.swiper-pagination',
+          grabCursor: true,
+          paginationClickable: true,
+          // loopAdditionalSlides : 5,
+        },
         htmlInfo: {
             nav: {
               ffacgTitle: '19th FFACG',
@@ -377,7 +425,7 @@
             address: '場所',
             money: 'チケット代',
             changeLan: '中文',
-            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title2.png',
+            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/subject2.png',
             ffacg: {
               title: 'Groupy in 19th FFACG',
               title2: '~7.14~',
@@ -525,7 +573,7 @@
             address: '场地',
             money: '价格',
             changeLan: '日本語',
-            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title.png',
+            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/subject.png',
             ffacg: {
               title: '燃动夏日・Groupy萤火虫漫展专场',
               title2: '~7.14~',
@@ -667,7 +715,7 @@
             address: '場所',
             money: 'チケット代',
             changeLan: '中文',
-            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/title2.png',
+            may: 'https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/idolFestival201807/subject2.png',
             ffacg: {
               title: 'Groupy in 19th FFACG',
               title2: '~7.14~',
@@ -926,7 +974,7 @@
     },
     created: function() {
       window.setupWebViewJavascriptBridge(function(bridge) {
-          bridge.callHandler('setTitle', {'title':'Groupy Idol Festival May 2018~in広州~'})
+          bridge.callHandler('setTitle', {'title':'Groupy Idol Festival July 2018~in広州~'})
       })
       let ua = navigator.userAgent.toLowerCase();
       let _lan = (navigator.browserLanguage || navigator.language).toLowerCase();

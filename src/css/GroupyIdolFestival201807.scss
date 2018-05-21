@@ -127,6 +127,12 @@ a {
     width: 100%;
   }
 }
+.banner_container {
+    padding: 1.5rem 0 0;
+}
+.banner2 {
+    display: none;
+}
 .idol-content li {
     flex: 1;
     font-size: 0.9rem;
@@ -768,4 +774,11 @@ a {
   p {
     margin-right: 1.5rem;
   }
+}
+.swiper-pagination-bullet {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.swiper-pagination-bullet-active {
+     background: #874BF8;
 }
