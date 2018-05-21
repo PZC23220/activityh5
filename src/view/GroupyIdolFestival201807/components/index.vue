@@ -399,7 +399,6 @@
           autoplay: 3000,
           autoplayDisableOnInteraction: false,
           loop: true,
-          speed: 2000,
           pagination : '.swiper-pagination',
           grabCursor: true,
           paginationClickable: true,
