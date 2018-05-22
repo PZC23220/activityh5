@@ -3,6 +3,7 @@
     "min": {
       "/js/event.js": "//js/event/event.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
+      "/js/ffacg201807_spokesman.js": "//js/ffacg201807_spokesman/ffacg201807_spokesman.js",
       "/js/maimeng.js": "//js/maimeng/maimeng.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/spokesman3.js": "//js/spokesman3/spokesman3.js",
@@ -33,6 +34,7 @@
     "debug": {
       "/js/event.js": "//js/event/event.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
+      "/js/ffacg201807_spokesman.js": "//js/ffacg201807_spokesman/ffacg201807_spokesman.js",
       "/js/maimeng.js": "//js/maimeng/maimeng.js",
       "/js/entertainmentWeekly.js": "//js/entertainmentWeekly/entertainmentWeekly.js",
       "/js/spokesman3.js": "//js/spokesman3/spokesman3.js",

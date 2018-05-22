@@ -54,5 +54,6 @@ module.exports = {
         ffacg201807_preliminaries: './src/view/ffacg201807_preliminaries',
         MayLiveImages: './src/view/MayLiveImages',
         GroupyIdolFestival201807: './src/view/GroupyIdolFestival201807',
+        ffacg201807_spokesman: './src/view/ffacg201807_spokesman',
     },
 };

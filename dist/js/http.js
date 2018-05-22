@@ -2,6 +2,7 @@ import axios from 'axios'
 
 var instance = axios.create({
     // baseURL: 'http://192.168.1.107:8031/japi/',
+    // baseURL: 'http://api.groupy.vip',
     baseURL: 'https://'+ location.host +'/japi/',
     timeout: 8000
 });
