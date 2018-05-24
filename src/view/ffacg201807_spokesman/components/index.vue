@@ -39,8 +39,8 @@
             <div class="activity_time box">
                 <h4>イベント期間（日本時間 活动时间）</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2018年5月25日（金）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2018年6月1日（金）23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2018年5月27日（日）00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年6月3日（日）23:59:59</i></p>
                 </div>
             </div>
             <ul class="activity_reward box">
@@ -177,21 +177,21 @@
                     },
                     desc: {
                         title: 'FFACGとは？',
-                        p1: 'FFACGとは、来場者数20万人超えの中国最大級のコミケであるFirefly ACG Festival（蛍火虫動漫遊戯嘉年華）です（公式HP：<a href="http://www.fireflyacg.com" target="_blank">http://www.fireflyacg.com</a>）。',
-                        p2: '大好評につき、なんと！Groupyは3回目で7月のFFACGにメインステージ及び専用ブースへの出展が決定しました。',
+                        p1: 'FFACGとは、来場者数20万人超えの中国最大級のコミケであるFirefly ACG Festival（蛍火虫動漫遊戯嘉年華）です<br>（公式HP：<a href="http://www.fireflyacg.com" target="_blank">http://www.fireflyacg.com</a>）。',
+                        p2: '大好評につき、なんと！Groupyは3回目で7月のFFACGにメインステージへの出展が決定しました。💕',
                         p3: 'ただ今、Groupy巨大広告のモデルを募集しております。上位1名は19th FFACGの特大看板に掲載されちゃいます！',
                         p4: '特大というばどれぐらい？なんと2.5m × 6mであり、連続四日間で掲載！',
-                        p5: '多くの方にあなたをアピールする大チャンスです！ すぐ参加しよう！',
+                        p5: '多くの方にあなたをアピールする大チャンスです！ すぐ参加しよう！ (ง •̀_•́)ง',
                         p6: '<i>※掲載期間：2018年7月14日（土）-2018年7月17日（火）</i>',
                         p7: '<i>※掲載場所：中国広州で開催予定の第19回FFACG</i>',
                         p8: '<i>※サイズ：高さ2.5m × 幅6m</i>',
                         p10: '18th FFACG開催の模様：',
                         p11: '萤火虫漫展是什么？',
-                        p12: '萤火虫漫展是人流量超过20万的中国最大型动漫游戏二次元活动漫展活动（Firefly ACG Festival）（官网：<a href="http://www.fireflyacg.com" target="_blank">http://www.fireflyacg.com</a>）',
-                        p13: '由于之前活动获得粉丝们的强烈好评，2018年7月，Groupy将三降萤火虫漫展，再次进行精彩的主舞台表演（爱心表情）',
+                        p12: '萤火虫漫展是人流量超过20万的中国最大型动漫游戏二次元活动漫展活动（Firefly ACG Festival）<br>（官网：<a href="http://www.fireflyacg.com" target="_blank">http://www.fireflyacg.com</a>）',
+                        p13: '由于之前活动获得粉丝们的强烈好评，2018年7月，Groupy将三降萤火虫漫展，再次进行精彩的主舞台表演💕',
                         p14: 'Now，我们正在招募Groupy形象代言人。第一名就能够登上FFACG特大广告位！',
                         p15: '特大有多大？6M*2.5M！6M*2.5M！6M*2.5M！',
-                        p16: '4天！4天的漫展都能看到你哦！大家认识你的绝好良机，一定要来参加哦',
+                        p16: '4天！4天的漫展都能看到你哦！大家认识你的绝好良机，一定要来参加哦 (ง •̀_•́)ง',
                         p17: '<i>曝光时间：2018年7月14日（六）-2018年7月17日（二）</i>',
                         p18: '<i>曝光场所：在中国广州举办的第19届FFACG</i>',
                         p19: '<i>广告位大小：高6m × 宽2.5m</i>',
@@ -218,9 +218,9 @@
                     warning: {
                         title: '注意事項',
                         p1: '1. 最終結果はイベント期間終了の翌日にGroupyアプリ、公式Twitter@Groupyyyにて発表させていただきます。',
-                        p2: '2. 当選アイドルグループは掲載用の写真を2018年6月5日までにご提出いただきます。',
+                        p2: '2. 当選アイドルグループは掲載用の写真を2018年6月8日までにご提出いただきます。',
                         p3: '1. 活动结果将在活动结束后的第二天通过GroupyApp专用页面、官方微博、Twitter官号公布',
-                        p4: '2. 获奖爱豆团体请在6月5号之前准备好广告看板的照片形象。',
+                        p4: '2. 获奖爱豆团体请在6月8号之前准备好广告看板的照片形象。',
                     },
                     rewards: [{
                         p1: 'ランキング上位1名のアイドルグループ',
