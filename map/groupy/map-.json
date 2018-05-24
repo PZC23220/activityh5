@@ -29,7 +29,7 @@
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/MayLiveImages.js": "//js/MayLiveImages/MayLiveImages.js",
       "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
@@ -60,12 +60,12 @@
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/MayLiveImages.js": "//js/MayLiveImages/MayLiveImages.js",
       "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
-      "/js/undefined.js": "//js/zepto.touchWipe.js"
+      "/js/undefined.js": "//js/vconsole.min.js"
     }
   },
   "css": {
     "/css/GroupyIdolFestival201807.css": "//css/GroupyIdolFestival201807.css",
-    "/css/undefined.css": "//css/live.css"
+    "/css/undefined.css": "//css/reset.css"
   },
   "static_root": ""
 }
