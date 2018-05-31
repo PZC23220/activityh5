@@ -39,8 +39,8 @@
             <div class="activity_time box">
                 <h4>イベント期間（日本時間 活动时间）</h4>
                 <div class="duration_time">
-                    <p><span>{{activity.start}}</span><i>2018年5月27日（日）00:00:00</i></p>
-                    <p><span>{{activity.end}}</span><i>2018年6月3日（日）23:59:59</i></p>
+                    <p><span>{{activity.start}}</span><i>2018年6月3日（日）00:00:00</i></p>
+                    <p><span>{{activity.end}}</span><i>2018年6月10日（日）23:59:59</i></p>
                 </div>
             </div>
             <ul class="activity_reward box">
@@ -218,9 +218,9 @@
                     warning: {
                         title: '注意事項',
                         p1: '1. 最終結果はイベント期間終了の翌日にGroupyアプリ、公式Twitter@Groupyyyにて発表させていただきます。',
-                        p2: '2. 当選アイドルグループは掲載用の写真を2018年6月8日までにご提出いただきます。',
+                        p2: '2. 当選アイドルグループは掲載用の写真を2018年6月14日までにご提出いただきます。',
                         p3: '1. 活动结果将在活动结束后的第二天通过GroupyApp专用页面、官方微博、Twitter官号公布',
-                        p4: '2. 获奖爱豆团体请在6月8号之前准备好广告看板的照片形象。',
+                        p4: '2. 获奖爱豆团体请在6月14号之前准备好广告看板的照片形象。',
                     },
                     rewards: [{
                         p1: 'ランキング上位1名のアイドルグループ',
