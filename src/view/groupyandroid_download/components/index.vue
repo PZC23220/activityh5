@@ -62,6 +62,7 @@
       }else {
         self.maskShow = false;
       }
+      console.log(self.maskShow)
       if (/iphone|ipad|ipod/.test(ua)) {
           this.hrefs = 'itms-apps://itunes.apple.com/app/id1270083927';
       }else {
