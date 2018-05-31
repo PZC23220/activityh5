@@ -1,15 +1,15 @@
 <template>
     <div class="main">
          <div class="content">
-            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_spokesman-over.jpg" class="banner">
+            <img v-if="isOver" src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_spokesman-over.jpg" class="banner  animated fadeIn">
             <img v-else src="https://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/acticity_banner/activity-ffacg201807_spokesman.jpg" class="banner">
-            <h2 class="box">{{activity.theme}}</h2>
-            <div class="activity_rule box">
+            <h2 class=" animated fadeIn">{{activity.theme}}</h2>
+            <div class="activity_rule  animated fadeIn">
                 <p>アイドル必見！<br>上位1名のアイドルは、来場者数20万人超えの19th FFACGに、Groupyの広告モデルとして特大看板に登場できます！</p>
                 <p>爱豆必看！<br>第一名的爱豆将作为Groupy形象代言人，在华南地区最大型漫展萤火虫（人流量超20万）大曝光！</p>
             </div>
-            <span v-if="isFans" class="shares box" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
-            <div class="activity_rule box">
+            <span v-if="isFans" class="shares  animated fadeIn" style="position: relative;left: 12px;right: auto;top: 0;padding: 4px 9px;" @click="shareSns()"><img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/activity_banner/shareAll.jpg">シェア</span>
+            <div class="activity_rule  animated fadeIn">
                 <h4>{{activity.desc.title}}</h4>
                 <p v-html="activity.desc.p1"></p>
                 <p v-html="activity.desc.p2"></p>
