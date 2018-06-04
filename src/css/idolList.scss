@@ -172,7 +172,6 @@ html {
 }
 .group-btns a {
     line-height: 2rem;
-    margin-right: 2rem;
     border-radius: 0.25rem;
     border: 0.05rem solid #0088D3;
     margin-bottom: 0.75rem;
@@ -255,7 +254,7 @@ html {
 }
 @media screen and (max-width:500px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
       }
     .group-logo {
         width: 21vw;

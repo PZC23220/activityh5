@@ -1,17 +1,17 @@
 <template>
   <div class="idolGroup_index">
     <!-- content -->
-    <h2 class="page-title"><b>入驻爱豆 - {{type == 'China'? '中国' : '日本'}}</b><br><small>Idol Group - {{type == 'China'? 'China' : 'Japan'}}</small></h2>
+    <h2 class="page-title"><b>入驻团队 - {{type == 'China'? '中国' : '日本'}}</b><br><small>Idol Group - {{type == 'China'? 'China' : 'Japan'}}</small></h2>
     <div class="idol-content">
         <!-- anthors -->
           <swiper :options="swiperOption2" ref="groupSwiper2" class="swiper-content">
             <swiper-slide class="banner-slides" v-for="(team,index1) in idolList1" :key="index1" v-if="index1%5 == 0">
               <ul class="group-list">
                 <li class="list-content" v-for="(idol,$index) in idolList1" :key="$index" v-if="($index >= index1) && ($index < index1+5)">
-                    <router-link :to="'/group?id='+idol.id" class="group-logo"><span :style="'background-image:url('+ idol.smallLogo +');'"></span></router-link>
+                    <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-logo"><span :style="'background-image:url('+ idol.smallLogo +');'"></span></router-link>
                     <div class="group-desc">
-                      <router-link :to="'/group?id='+idol.id" class="group-name">{{idol.nameChinese}}</router-link>
-                      <router-link :to="'/group?id='+idol.id" class="group-info" v-html="TransferString(idol.introduceChinese)"></router-link>
+                      <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-name">{{idol.nameChinese}}</router-link>
+                      <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-info" v-html="TransferString(idol.introduceChinese)"></router-link>
                     </div>
                 </li>
               </ul>
@@ -74,7 +74,7 @@ export default {
     },
     getGroupList(type) {
       let self = this;
-      http.get(`http://api.groupy.vip/group/getListToWeb?type=${type}`).then(function(res){
+      http.get(`https://api.groupy.vip/group/getListToWeb?type=${type}`).then(function(res){
         self.idx = 1;
         if(res.data.orgList){
           self.idolList1 = res.data.orgList;
