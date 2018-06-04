@@ -1,9 +1,9 @@
 import axios from 'axios'
-
+// console.log(location)
 var instance = axios.create({
     // baseURL: 'http://192.168.1.107:8031/japi/',
     // baseURL: 'http://api.groupy.vip',
-    baseURL: 'https://'+ location.host +'/japi/',
+    baseURL: location.origin +'/japi/',
     timeout: 8000
 });
 instance.interceptors.response.use(function(response){
