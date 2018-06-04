@@ -29,7 +29,7 @@
       </div>
     </div>
     <!-- <div class="goIndex"><router-link to="/index?type=Japan">日本爱豆</router-link><router-link to="/index?type=China">中国爱豆</router-link></div> -->
-    <div class="group-btns group-translateX"><router-link :to="'/index?type='+type" data-hover="&lt;&nbsp;&nbsp;团队列表"><span>&lt;&nbsp;&nbsp;团队列表</span></router-link></div>
+    <div class="group-btns group-translateX"><router-link :to="'/index?type='+type" data-hover="团队列表"><span>&lt;&nbsp;&nbsp;团队列表</span></router-link></div>
   </div>
 </template>
 <script>
