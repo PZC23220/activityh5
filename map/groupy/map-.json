@@ -2,7 +2,7 @@
   "js": {
     "min": {
       "/js/event.js": "//js/event/event.js",
-      "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
+      "/js/wechatIdolList.js": "//js/wechatIdolList/wechatIdolList.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
       "/js/ffacg201807_spokesman.js": "//js/ffacg201807_spokesman/ffacg201807_spokesman.js",
       "/js/maimeng.js": "//js/maimeng/maimeng.js",
@@ -29,12 +29,12 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/MayLiveImages.js": "//js/MayLiveImages/MayLiveImages.js",
-      "/js/wechatIdolList.js": "//js/wechatIdolList/wechatIdolList.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     },
     "debug": {
       "/js/event.js": "//js/event/event.js",
-      "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
+      "/js/wechatIdolList.js": "//js/wechatIdolList/wechatIdolList.js",
       "/js/GroupyIdolFestival201805.js": "//js/GroupyIdolFestival201805/GroupyIdolFestival201805.js",
       "/js/ffacg201807_spokesman.js": "//js/ffacg201807_spokesman/ffacg201807_spokesman.js",
       "/js/maimeng.js": "//js/maimeng/maimeng.js",
@@ -61,8 +61,8 @@
       "/js/groupy_download.js": "//js/groupy_download/groupy_download.js",
       "/js/groupyandroid_download.js": "//js/groupyandroid_download/groupyandroid_download.js",
       "/js/MayLiveImages.js": "//js/MayLiveImages/MayLiveImages.js",
-      "/js/wechatIdolList.js": "//js/wechatIdolList/wechatIdolList.js",
-      "/js/undefined.js": "//js/vconsole.min.js"
+      "/js/GroupyIdolFestival201807.js": "//js/GroupyIdolFestival201807/GroupyIdolFestival201807.js",
+      "/js/undefined.js": "//js/zepto.touchWipe.js"
     }
   },
   "css": {

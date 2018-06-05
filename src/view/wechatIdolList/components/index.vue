@@ -1,14 +1,14 @@
 <template>
   <div class="idolGroup_index">
     <!-- content -->
-    <h2 class="page-title"><b>入驻团队 - {{type == 'China'? '中国' : '日本'}}</b><br><small>Idol Group - {{type == 'China'? 'China' : 'Japan'}}</small></h2>
+    <h2 class="page-title animated fadeIn"><b>入驻团队 - {{type == 'China'? '中国' : '日本'}}</b><br><small>Idol Group - {{type == 'China'? 'China' : 'Japan'}}</small></h2>
     <div class="idol-content">
         <!-- anthors -->
           <swiper :options="swiperOption2" ref="groupSwiper2" class="swiper-content">
             <swiper-slide class="banner-slides" v-for="(team,index1) in idolList1" :key="index1" v-if="index1%5 == 0">
               <ul class="group-list">
-                <li class="list-content" v-for="(idol,$index) in idolList1" :key="$index" v-if="($index >= index1) && ($index < index1+5)">
-                    <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-logo"><span :style="'background-image:url('+ idol.smallLogo +');'"></span></router-link>
+                <li class="list-content animated fadeIn" v-for="(idol,$index) in idolList1" :key="$index" v-if="($index >= index1) && ($index < index1+5)">
+                    <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-logo"><span :style="'background-image:url('+ TransSrc(idol.smallLogo) +');'"></span></router-link>
                     <div class="group-desc">
                       <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-name">{{idol.nameChinese}}</router-link>
                       <router-link :to="'/group?id='+idol.id + '&type=' + type" class="group-info" v-html="TransferString(idol.introduceChinese)"></router-link>
@@ -17,9 +17,9 @@
               </ul>
             </swiper-slide>
           </swiper>
-          <div class="group-page group-page1" v-if="idolList1.length > 0"><span v-for="(team,index1) in idolList1" :key="index1" v-if="index1%5 == 0" :class="{'active':index1 == 0}" @click="changeSwipers2(index1/5)">{{index1/5+1}}</span></div>
-          <div class="groupy-default"  v-if="idolList1.length <= 0 && idx == 1">
-            <img src="http://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/groupyWebsite/img_default_1.png">
+          <div class="group-page group-page1 animated fadeIn" v-if="idolList1.length > 0"><span v-for="(team,index1) in idolList1" :key="index1" v-if="index1%5 == 0" :class="{'active':index1 == 0}" @click="changeSwipers2(index1/5)">{{index1/5+1}}</span></div>
+          <div class="groupy-default animated fadeIn"  v-if="idolList1.length <= 0 && idx == 1">
+            <img src="https://photoh5-cn.oss-cn-shenzhen.aliyuncs.com/groupyWebsite/img_default_1.png">
             <p>网络错误，请稍后重试！</p>
           </div>
     </div>
@@ -56,6 +56,15 @@ export default {
     }
   },
   methods: {
+    TransSrc(content) {
+     let string = content;
+     try{
+        string=string.replace(/http:/g,"https:")
+     }catch(e) {
+        console.log(e.message);
+     }
+     return string;
+    },
     TransferString(content) {
      let string = content;
      try{
@@ -67,6 +76,10 @@ export default {
      return string;
     },
     changeSwipers2(val) {
+      setTimeout(function() {
+        let ele = document.querySelector('.page-title');
+        ele.scrollIntoView();
+      },0);
       let tabs = $('.group-page1 span');
       tabs.removeClass('active');
       tabs.eq(val).addClass('active');
