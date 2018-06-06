@@ -76,7 +76,6 @@
     max-width: 980px;
     margin: 0 auto;
     height: 100vh;
-    padding-top: 7.47226vh;
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -84,6 +83,8 @@
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    padding-top: 7.47226vh;
+    background-image: linear-gradient(124deg, #FF9A6D 0%, #FF5390 100%);
     >img {
       display:block;
       margin: 0 auto;
@@ -166,7 +167,6 @@
     }
   }
   body {
-    background-image: linear-gradient(124deg, #FF9A6D 0%, #FF5390 100%);
     background-size: cover;
     min-height: 100vh;
   }
