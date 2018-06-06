@@ -82,6 +82,8 @@
   }
   .download-content {
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
     >img {
       display:block;
       margin: 0 auto;
@@ -89,11 +91,11 @@
   }
   .download-writing {
     width: 72.8vw;
-    max-width: 550px;
+    max-width: 364px;
   }
   .download-groupy {
     width: 17.06666vw;
-    max-width: 128px;
+    max-width: 85px;
     margin-bottom: 14px !important;
   }
   .download-link-content {
@@ -106,18 +108,17 @@
     flex: 1;
     display: block;
     color: #fff;
-    margin: 14px 0;
+    margin: 20px 0 2.5vh;
     background: #000000;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
-    height: 7.49625vh;
-    line-height: 7.49625vh;
+    padding: 10px 0;
     &:first-child {
       margin-right: 11px;
     }
     img {
-      height: 4.6vh;
-      max-height: 50px;
+      height: 3.6vh;
+      max-height: 40px;
       vertical-align: middle;
      margin-right: 8.5px;
     }
@@ -135,7 +136,7 @@
   }
   .bg_banner {
     width: 88vw;
-    max-width: 660px;
+    max-width: 500px;
   }
   .mask-content {
     position: absolute;
