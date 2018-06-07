@@ -51,7 +51,7 @@
       },
       getLink() {
         let self = this;
-        http.get('/shows/getDownUrl').then(function(res){
+        http.get('/device/getDownUrl').then(function(res){
           if(res.data) {
             self.androidUrl = res.data.appUrl;
           }
