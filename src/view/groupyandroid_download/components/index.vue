@@ -35,23 +35,34 @@
     language: (navigator.browserLanguage || navigator.language).toLowerCase()
   }
   import $ from 'n-zepto';
+  import http from '@api/js/http.js';
   export default {
     data() {
       return {
         maskShow: false,
-        hrefs: 'itms-apps://itunes.apple.com/app/id1270083927'
+        hrefs: 'itms-apps://itunes.apple.com/app/id1270083927',
+        androidUrl: 'http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.android.apk'
       }
     },
     methods: {
       get_app() {
-        window.location.assign('http://photoh5-jp.oss-ap-northeast-1.aliyuncs.com/optupload/com.groupy.app.android.apk');
+        console.log(this.androidUrl);
+        window.location.assign(this.androidUrl);
+      },
+      getLink() {
+        let self = this;
+        http.get('/shows/getDownUrl').then(function(res){
+          if(res.data) {
+            self.androidUrl = res.data.appUrl;
+          }
+        })
       }
     },
     computed: {
     },
     created: function() {
       let self = this;
-      console.log(browser)
+      this.getLink();
       if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
         var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
         if (ua.match(/MicroMessenger/i) == "micromessenger" || ua.match(/WeiBo/i) == "weibo") {
@@ -62,7 +73,6 @@
       }else {
         self.maskShow = false;
       }
-      console.log(self.maskShow)
       if (/iphone|ipad|ipod/.test(ua)) {
           this.hrefs = 'itms-apps://itunes.apple.com/app/id1270083927';
       }else {
